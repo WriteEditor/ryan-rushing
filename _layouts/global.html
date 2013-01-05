@@ -1,0 +1,119 @@
+<!doctype html>
+
+	<html>
+		<head>
+			<title>Ryan Rushing, designer</title>
+			
+			<meta charset="utf-8" />
+			<meta name="description" content="Ryan Rushing is a designer in the Dallas area, who makes stuff like websites, lettery things and screenprints." /> 
+			<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1 user-scalable=yes"/>
+			
+			<!-- CSS -->
+			<link rel="stylesheet" type="text/css" href="/css/reset.css"/>
+			<link rel="stylesheet" type="text/css" href="/css/global.css"/> 
+			<link rel="stylesheet" type="text/css" href="/css/gridset.css"/>
+
+			<!-- Fonts -->
+			<link href='http://fonts.googleapis.com/css?family=Bitter:400,700,400italic' rel='stylesheet' type='text/css'>
+
+
+		{% if page.custom_style %} 
+			<link rel="stylesheet" type="text/css" href="/css/{{ page.custom_style }}" /> 
+		{% else %}
+			<link rel="stylesheet" type="text/css" href="/css/v5.css"/>
+		{% endif %}
+
+		<!--jQuery
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>-->
+		</head>
+		<body>
+			<div class="wrapper">
+				<header>
+					
+					<div class="l-all m-all s-all">
+						{% if page.url contains 'writing' or page.url contains 'projects' or page.url contains 'about' %}
+						<ul id="site-nav" class="l1 m1 s1">
+							<li><a href="/about">about</a></li>
+							<li><a href="/writing">writing</a></li>
+						</ul>
+						{% endif %}
+
+
+						<ul id="contact-info" class="l2-l4 m3 s-hide">
+							<li><a href="http://twitter.com/drawingtype">Twitter</a></li>
+							<li><a href="http://facebook.com/drawingtype">Facebook</a></li>
+							<li><a href="http://dribbble.com/ryanrushing">Dribbble</a></li>
+							<li><a href="mailto:get@ryan-rushing.com">Email</a></li>
+						</ul>
+
+						
+					</div>
+					
+					<div class="l-all m-all s-all">
+						<div class="l1 m1 s1" id="logo-wrap">					
+					
+							{% if page.logo %} 
+								<a href="/"><img src="/img/for-projects/{{ page.logo }}" alt="{{ page.title }}"/></a>
+							{% else %}
+								<a href="/"><img{% if page.category contains 'writing' %} class="writing-logo"{% endif %} src="/img/ryan-rushing-logo.png" alt=""></a>
+							{% endif %}
+
+						</div>
+							
+						<hgroup class="l2-l4 m2 s2">
+							<h1>{{ page.title }}</h1>
+							{% if page.subtitle %} 
+								<h2>{{ page.subtitle }}</h2>
+							{% else %}
+								<h2>{{ page.date | date: "%B %d, %Y" }}</h2>
+							{% endif %}
+						</hgroup>
+					</div>
+
+				</header>
+			</div>
+
+			{{ content }}
+
+			<div class="wrapper">
+				<div class="s-all">
+					<footer class="l2-l3 m2-m3 s-all">
+						<span class="s-hide">
+							I&rsquo;d love to hear from you! You can reach me on <a href="http://twitter.com/drawingtype">Twitter</a>, <a href="http://facebook.com/drawingtype">Facebook</a>, or get at me through email: <a href="mailto:get@ryan-rushing.com">get@ryan-rushing.com</a>. If you&rsquo;re curious, you can <a href="/about">read more about me</a>.
+						</span>
+
+						<div class="l-hide m-hide">
+							<div class="s-all">
+								<a href="/about/">Learn more about me here,</a> and if you want to contact me, I'd be happy to hear from you!
+
+								<ul id="contact-info" >
+									<li><a href="mailto:get@ryan-rushing.com">Email</a></li>
+									<li><a href="http://twitter.com/drawingtype">Twitter</a></li>
+									<li><a href="http://facebook.com/drawingtype">Facebook</a></li>
+									<li><a href="http://dribbble.com/ryanrushing">Dribbble</a></li>
+								</ul>
+							</div>
+						</div>
+					</footer>
+				</div>
+			</div>
+
+		<script src="https://get.gridsetapp.com/13102/overlay/"></script>
+		<script src="/js/gridset-overlay.js"></script>
+
+		<script type="text/javascript">
+
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-19474850-1']);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+
+		</script>
+
+		</body>
+</html>

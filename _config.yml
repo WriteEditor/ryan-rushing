@@ -1,0 +1,4 @@
+auto:       true
+server:     true
+permalink:  /writing/:year/:month/:day/:title
+baseurl:    /

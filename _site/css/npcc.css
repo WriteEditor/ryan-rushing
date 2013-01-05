@@ -1,0 +1,11 @@
+
+/* Custom CSS for the North Point project http://ryan-rushing.com  */
+
+body { background: #fff; font-family: 'Open Sans', sans-serif; }
+
+blockquote small { font-size: 50%; display: block; width: 100%;} 
+
+figure		{ float: left;}
+figure img { border: 1px solid #aaa; float: left;}
+figure img.screenshot { border: none;}
+figcaption { text-align: center;}

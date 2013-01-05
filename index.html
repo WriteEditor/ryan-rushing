@@ -1,0 +1,56 @@
+---
+layout: global
+title: Ryan Rushing
+subtitle: Designer
+---
+
+<article id="about">
+	<div class="wrapper">
+		<div class="l2-l3 m2-m3 s-all">
+			<p>
+				I  tell peoples&rsquo; stories at <a href="http://canyoudefinelove.com">Can you define love?</a>, and my wife and I make handmade things to sell at <a href="http://www.wecreatehappy.com">The Happy Factory</a>. I&rsquo;m also a UX designer at <a href="http://kalkomey.com">Kalkomey</a>.
+			</p> 
+	
+			<p>
+				<a href="/about">Curiouser and curiouser?</a>
+			</p>
+		</div>
+	</div>
+</article>
+
+<div class="wrapper" id="writings-projects">
+	<nav class="l2 m2 s-all" id="writings">
+		<h3>Writings</h3>
+		<ul>
+			{% for item in site.categories.writing offset:0 limit:7 %}
+			<li>
+				<a href="{{ item.url }}">{{ item.title }}</a>
+			</li>
+			{% endfor %}
+		</ul>
+	</nav>
+
+	<nav class="l3 m2 s-all" id="projects">
+		<h3>Projects</h3>
+		<ul>
+			<li><a href="http://canyoudefinelove.com">Can you define love?</a></li>
+			<li><a href="http://npcc.cc">North Point Christian Church</a></li>
+			<li><a href="http://wecreatehappy.com">The Happy Factory</a></li>
+			<li><a href="http://peepersdallas.com">Peeper's</a></li>
+		</ul>
+
+		<p>
+			I'm writing case studies for these projects; if you'd like to be notified when they're published, please <a href="http://twitter.com/drawingtype">follow me</a> on Twitter or <a href="https://tinyletter.com/ryanrushing">sign up</a> for the newsletter.
+		</p>
+
+		{% comment %}
+		<!-- <ul>
+			{% for item in site.categories.projects %}
+			<li>
+				<a href="{{ item.url }}">{{ item.title }}</a>
+			</li>
+			{% endfor %}
+		</ul> -->
+		{% endcomment %}
+	</nav>
+</div>
