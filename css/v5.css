@@ -2,6 +2,8 @@
 
 body        { background: #f9f9f9; font-family: 'Bitter';}
 
+#face       { margin: 20px 0;}
+
 #about          { margin: 0 0 20px 0; width: 100%; background: #f3f3f3; float: left; clear: both; border-top: 1px dotted #ccc; border-bottom: 1px dotted #ccc; padding: 40px 0;}
 #about ul       { margin: 20px 0; list-style: disc inside; }
 

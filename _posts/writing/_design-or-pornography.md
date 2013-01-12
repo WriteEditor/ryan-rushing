@@ -1,7 +1,11 @@
-#Design or Pornography
+---
+layout: listing
+title: Design or Pornography
+category: writing
+---
 
-A favorite conversation topic among designers seems to be whether something should be classified as design or art, and the logical extension is whether the creator was acting as a designer, or simply an artist. 
+Occasionally the conversation topic arises among designers asking whether something should be classified as design or art. We discuss whether or not the creator was acting as a designer or simply an artist, implying the latter is more undesirable.
 
-The label of artist in this context isn't considered desirable, when the designer label is the other option.
+When work is diminished to art, we're saying the work lacks inherent value, other than visual stimulation. (Alternatively, when we elevate work to art, we're essentially saying it came to existence by unknown, black magic.) A fork in the kitchen drawer is design, but a fork on a pedistool in the museum is art.
 
-To break this down a little further, when work is considered art, and not design, the argument has little to do with looks, but rather the argument inherently revolves around *meaning*. Was thought, research, and study, poured into the final product? Many folks would call that design. Unless you're talking to Leonardo Da Vinci, the painter the Mona Lisa.
+When we ask whether 
