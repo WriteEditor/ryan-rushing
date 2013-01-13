@@ -15,7 +15,7 @@ gs = {
 					
 						var gw = document.getElementById('gridsetoverlaywrap');
 					
-						if (!gw) gs.show(['l','m','s'], [4,3,2], [1100,650,400]);
+						if (!gw) gs.show(['l','m','s'], [4,4,2], [1000,600,400]);
 						else document.body.removeChild(gw);
 						
 						gs.prevent(e);
@@ -98,5 +98,5 @@ gs = {
 
 };
 
-if (window.location.href.match('gridset=show')) gs.show(['l','m','s'], [4,3,2], [1100,650,400]);
-else gs.init(['l','m','s'], [4,3,2], [1100,650,400]);
+if (window.location.href.match('gridset=show')) gs.show(['l','m','s'], [4,4,2], [1000,600,400]);
+else gs.init(['l','m','s'], [4,4,2], [1000,600,400]);

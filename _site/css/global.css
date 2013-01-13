@@ -2,7 +2,7 @@
 
 *           { box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box;}
 body		{ line-height: 1.6; font-size: 120%;}
-.wrapper    { width: 65%; margin: 0 auto; max-width: 900px; overflow: hidden;}
+.wrapper    { width: 80%; margin: 0 auto; max-width: 900px; overflow: hidden;}
 
 header          { width: 100%; float: left; clear: both; margin: 50px 0 0 0;}
 #contact-info   { text-align: right; list-style: none;}
@@ -47,34 +47,21 @@ footer:hover 	{ opacity: 1;}
 footer #contact-info  { text-align: center; margin: 40px 0 0 0;}
 
 
+/* Media Queries */
 
 
-
-
-
-
-
-@media only screen and (max-width : 1100px)	{
-	.wrapper    { width: 80%;}
+@media only screen and (max-width : 1000px) {
+	.wrapper    { width: 75%;}
 }
 
-
-
-
-
-@media only screen and (max-width : 650px)	{
-	.wrapper    { width: 85%;}
-	footer { opacity: 1; margin: 40px 0 80px 0;}
-}
-
-
-@media only screen and (max-width : 450px)	{
-
-	header { margin: 20px 0 0 0;}
-	hgroup {margin-bottom: 20px;}
+@media only screen and (max-width : 450px)  {
+	/*.wrapper    { width: 65%;}*/
+	footer 		{ opacity: 1; margin: 40px 0 80px 0;}
+	header 		{ margin: 40px 0 20px 0;}
+	hgroup 		{ margin-bottom: 20px;}
 }
 
 @media only screen and (max-width : 400px)	{
-	.wrapper    { width: 90%;}
+	.wrapper    { width: 85%;}
 
 }

@@ -8,7 +8,7 @@ body        { background: #f9f9f9; font-family: 'Bitter';}
 #about ul       { margin: 20px 0; list-style: disc inside; }
 
 #writings-projects, #individual     { clear: both; border-bottom: 2px solid #eb1072; overflow: hidden; padding: 0 0 40px 0;}
-#writings-projects ul   { list-style: disc inside;}
+#writings-projects ul               { list-style: disc inside;}
 
 #archive    { list-style: none !important;}
 #archive a	{ padding: 10px 0;} 
@@ -53,34 +53,27 @@ a:hover { color: #cc0e60;}
 
 
 *::selection, *::-moz-selection        { background: #214F84; color: #f9f9f9;}
-
 a::selection, a::-moz-selection     { color: #aaa;  text-decoration: none;}
 
 
+/* Media Queries */
 
-@media only screen and (max-width : 1100px) {
-     #archive p  { float: left; clear: left;} 
 
+@media only screen and (max-width : 1000px) {
+    #archive p              { float: left; clear: left;} 
+    #projects p             { width: 100%; float: left;}
+   /* #writings-projects h3   { text-align: center;}
+    #writings-projects ul   { text-align: center; list-style: none;}*/
 }
 
-@media only screen and (max-width : 800px)  {
-    body { font-size: 100%;}     
-
+@media only screen and (max-width : 500px) {
+    body                    { font-size: 100%;}
+    /*#writings-projects h3   { text-align: center; width: 100%; margin: 0;} 
+    #writings-projects ul   { width: 100%; }*/
+   
 }
-
-@media only screen and (max-width : 650px)  {
-          
-
-}
-
 
 @media only screen and (max-width : 450px)  {
 
-    #about { padding: 20px 0; margin: 0}
-
-}
-
-@media only screen and (max-width : 400px)  {
-
-
+    #about                  { padding: 20px 0; margin: 0}
 }
