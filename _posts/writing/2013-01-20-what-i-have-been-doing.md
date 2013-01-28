@@ -1,6 +1,6 @@
 ---
 layout: listing
-title: What I&rsquo;ve Been Doing
+title: What I Have Been Doing
 category: writing
 ---
 
