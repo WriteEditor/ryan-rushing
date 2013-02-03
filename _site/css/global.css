@@ -33,7 +33,7 @@ ol { list-style: decimal-leading-zero outside; }
 ol { padding: 20px 0 20px 40px; } 
 
 #individual figure		{ padding: 40px 0;}
-#individual p + p, #about p + p, img + p 	{ text-indent: 20px;}
+#individual p + p, #about p + p	{ text-indent: 20px;}
 #individual ul			{ margin: 20px 0; list-style: disc inside; }
 #individual h3, #about h3, #writings-projects h3 { font-weight: 700;}
 #individual ul p + p 		{ text-indent: 0; }
