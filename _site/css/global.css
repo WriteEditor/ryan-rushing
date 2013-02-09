@@ -40,6 +40,8 @@ ol { padding: 20px 0 20px 40px; }
 
 #archive h3 { font-weight: 400;} 
 
+#discus_thread { padding: 20px 0 0 0 !important;}
+
 footer 			{ float: left; clear: both; width: 100%; margin: 40px 0 200px 0; opacity: .5;}
 footer:hover 	{ opacity: 1;}
 
