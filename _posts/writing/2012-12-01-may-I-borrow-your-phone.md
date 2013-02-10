@@ -1,5 +1,5 @@
 ---
-layout: listing
+layout: individual
 title: May I Borrow Your Phone?
 category: writing
 ---

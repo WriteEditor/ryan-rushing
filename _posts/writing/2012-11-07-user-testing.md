@@ -1,5 +1,5 @@
 ---
-layout: listing
+layout: individual
 title: User Testing
 category: writing
 ---

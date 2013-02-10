@@ -1,5 +1,5 @@
 ---
-layout: listing
+layout: individual
 title: Men Die But Ideas Never Do
 category: writing
 ---

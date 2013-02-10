@@ -1,5 +1,5 @@
 ---
-layout: listing
+layout: individual
 title: On How Digital is Ruining Discovery
 category: writing
 ---

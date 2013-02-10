@@ -1,5 +1,5 @@
 ---
-layout: listing
+layout: individual
 title: The Importance of Handwriting
 category: writing
 ---

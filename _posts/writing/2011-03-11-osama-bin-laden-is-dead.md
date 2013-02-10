@@ -1,5 +1,5 @@
 ---
-layout: listing
+layout: individual
 title: Osama bin Laden is Dead
 category: writing
 ---

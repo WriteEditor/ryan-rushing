@@ -1,5 +1,5 @@
 ---
-layout: listing
+layout: individual
 title: The Problem with Infinity
 category: writing
 ---

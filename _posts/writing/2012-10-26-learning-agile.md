@@ -1,5 +1,5 @@
 ---
-layout: listing
+layout: individual
 title: Learning Agile
 category: writing
 ---

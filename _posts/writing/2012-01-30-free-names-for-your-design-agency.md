@@ -1,5 +1,5 @@
 ---
-layout: listing
+layout: individual
 title: Free Names For Your Agency
 category: writing
 ---

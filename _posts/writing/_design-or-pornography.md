@@ -1,5 +1,5 @@
 ---
-layout: listing
+layout: individual
 title: Design or Pornography
 category: writing
 ---

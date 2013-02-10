@@ -1,5 +1,5 @@
 ---
-layout: listing
+layout: individual
 title: I Need to Write More
 category: writing
 ---

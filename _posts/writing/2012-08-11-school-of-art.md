@@ -1,5 +1,5 @@
 ---
-layout: listing
+layout: individual
 title: School of Art
 category: writing
 ---

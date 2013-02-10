@@ -1,5 +1,5 @@
 ---
-layout: listing
+layout: individual
 title: On Church Design
 category: writing
 ---

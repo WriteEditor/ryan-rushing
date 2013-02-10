@@ -1,5 +1,5 @@
 ---
-layout: listing
+layout: individual
 title: On Listening To Music
 category: writing
 ---

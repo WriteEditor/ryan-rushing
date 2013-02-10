@@ -1,5 +1,5 @@
 ---
-layout: listing
+layout: individual
 title: The Destruction of the Void
 category: writing
 ---

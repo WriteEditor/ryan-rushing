@@ -1,7 +1,8 @@
 ---
-layout: listing
+layout: individual
 title: All Magic Tricks Have an Ending
 category: writing
+description: I'm fascinated with illusions, especially close-up magic like card tricks. Being a willing participant in a brain-hacking, to witness something impossible, is incredibly exciting and attractive.
 ---
 
 <img src="../../../../../img/in-writings/poof.jpg" alt="Poof" title="Gone like the wind." />

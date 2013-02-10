@@ -1,5 +1,5 @@
 ---
-layout: listing
+layout: individual
 title: Don't Assume
 category: writing
 ---

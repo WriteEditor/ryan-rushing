@@ -1,5 +1,5 @@
 ---
-layout: listing
+layout: individual
 title: Walking With Closed Eyes
 categories: [writing]
 ---

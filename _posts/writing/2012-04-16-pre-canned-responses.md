@@ -1,5 +1,5 @@
 ---
-layout: listing
+layout: individual
 title: On Pre-Canned Responses
 category: writing
 ---

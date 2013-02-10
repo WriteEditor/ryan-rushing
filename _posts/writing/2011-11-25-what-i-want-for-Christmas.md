@@ -1,5 +1,5 @@
 ---
-layout: listing
+layout: individual
 title: What I Want for Christmas
 category: writing
 ---

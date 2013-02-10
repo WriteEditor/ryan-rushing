@@ -1,5 +1,5 @@
 ---
-layout: listing
+layout: individual
 title: A Brief History and Other Stuff
 category: writing
 ---

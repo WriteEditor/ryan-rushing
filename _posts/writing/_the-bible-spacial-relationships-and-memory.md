@@ -1,5 +1,5 @@
 ---
-layout: listing
+layout: individual
 title: The Bible, Memory, and Spacial Relationships
 category: writing
 ---
