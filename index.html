@@ -22,7 +22,7 @@ subtitle: Designer
 	<nav class="l2 m1-m2 s-all" id="writings">
 		<h3>Writings</h3>
 		<ul>
-			{% for item in site.categories.writing offset:0 limit:5 %}
+			{% for item in site.categories.writing offset:0 limit:12 %}
 			<li>
 				<a href="{{ item.url }}">{{ item.title }}</a>
 			</li>
@@ -31,7 +31,16 @@ subtitle: Designer
 	</nav>
 
 	<nav class="l3 m3-m4 s-all" id="projects">
-		<h3>Projects</h3>
+		<h3>Lettering</h3>
+		<ul>
+			{% for item in site.categories.lettering %}
+			<li>
+				<a href="{{ item.url }}">{{ item.title }}</a>
+			</li>
+			{% endfor %}
+		</ul>
+
+		<h3>Projects (external links)</h3>
 		<ul>
 			<li><a href="http://canyoudefinelove.com">Can you define love?</a></li>
 			<li><a href="http://npcc.cc">North Point Christian Church</a></li>
@@ -39,15 +48,5 @@ subtitle: Designer
 			<li><a href="http://peepersdallas.com">Peeper&rsquo;s</a></li>
 			<li><a href="http://rachelrushing.com">Rachel Rushing</a></li>
 		</ul>
-
-		{% comment %}
-		<!-- <ul>
-			{% for item in site.categories.projects %}
-			<li>
-				<a href="{{ item.url }}">{{ item.title }}</a>
-			</li>
-			{% endfor %}
-		</ul> -->
-		{% endcomment %}
 	</nav>
 </div>

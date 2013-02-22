@@ -45,14 +45,19 @@
 
 		</head>
 		<body>
+
+			{% if site.url == 'http://localhost:4000' %}
+				<h6 style="position:fixed; width: 100%; text-align: center; font-weight: 400; font-size: 14px; opacity: .5; background: #efefef;">site url: localhost:4000</h6>
+			{% endif %}
+
 			<div class="wrapper">
 				<header>
 					
 					<div class="l-all m-all s-all">
-						{% if page.url contains 'writing' or page.url contains 'projects' or page.url contains 'about' %}
+						{% if page.url contains 'writing' or page.url contains 'projects' or page.url contains 'about' or page.url contains 'lettering' %}
 						<ul id="site-nav" class="l1 m1 s1">
-							<li><a href="/about">about</a></li>
 							<li><a href="/writing">writing</a></li>
+							<li><a href="/lettering">lettering</a></li>
 						</ul>
 						{% endif %}
 
@@ -71,9 +76,9 @@
 						<div class="l1 m1 s1" id="logo-wrap">					
 					
 							{% if page.logo %} 
-								<a href="/"><img src="/img/for-projects/{{ page.logo }}" alt="{{ page.title }}"/></a>
+								<a href="/about/"><img src="/img/for-projects/{{ page.logo }}" alt="{{ page.title }}"/></a>
 							{% else %}
-								<a href="/"><img{% if page.category contains 'writing' %} class="writing-logo"{% endif %} src="/img/ryan-rushing-logo.png" alt=""></a>
+								<a href="/about/"><img{% if page.category contains 'writing' %} class="writing-logo"{% endif %} src="/img/ryan-rushing-logo.png" alt=""></a>
 							{% endif %}
 
 						</div>

@@ -17,7 +17,7 @@ body        { background: #f9f9f9; font-family: 'Bitter';}
 #archive a	{ padding: 10px 0;} 
 img.writing-logo{ opacity: .3;}
 
-#archive a, #archive p, #archive li, img.writing-logo, a, footer	{
+#lettering-archive a img, #archive a, #archive p, #archive li, img.writing-logo, a, footer	{
 
 	transition-property: all;
     transition-duration: 200ms;
@@ -42,6 +42,9 @@ img.writing-logo{ opacity: .3;}
 
 img.writing-logo:hover { opacity: 1;}
 a:hover { color: #cc0e60;}
+
+#lettering-archive a img {border: 2px solid #F9F9F9; margin: 20px 0} 
+#lettering-archive a:hover img { border: 2px solid #cc0e60; }
 
 
 #archive li, #archive a     { float: left; clear: both; width: 100%;}

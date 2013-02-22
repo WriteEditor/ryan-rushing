@@ -1,7 +1,7 @@
 /*--- STYLE ALL THE THINGS --*/
 
 *           { box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box;}
-body		{ line-height: 1.6; font-size: 120%;}
+body		{ line-height: 1.8; font-size: 110%;}
 .wrapper    { width: 80%; margin: 0 auto; max-width: 900px; overflow: hidden;}
 
 header          { width: 100%; float: left; clear: both; margin: 50px 0 0 0;}
@@ -33,7 +33,7 @@ ol { list-style: decimal-leading-zero outside; }
 ol { padding: 20px 0 20px 40px; } 
 
 #individual figure		{ padding: 40px 0;}
-#individual p + p, #about p + p	{ text-indent: 20px;}
+#individual p + p, #about p + p	{ text-indent: 50px;}
 #individual ul			{ margin: 20px 0; list-style: disc inside; }
 #individual h3, #about h3, #writings-projects h3 { font-weight: 700;}
 #individual ul p + p 		{ text-indent: 0; }

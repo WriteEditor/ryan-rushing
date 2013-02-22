@@ -3,8 +3,121 @@
 	<channel>
 		<title>Ryan Rushing, designer</title>
 		<description>Ryan is a designer living in the Dallas-area. Sometimes he writes.</description>
-		<link>http://ryan-rushing.com</link>
-		<atom:link href="http://ryan-rushing.com/feed.xml" rel="self" type="application/rss+xml" />
+		<link>http://localhost:4000</link>
+		<atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+		
+			<item>
+				<title>Alice in Wonderland</title>
+				<description>&lt;img alt='Alice in Wonderland lettering' src='../../../../../img/lettering/wonderland-detail.jpg' title='Alice in Wonderland lettering' /&gt;</description>
+				<pubDate>Thu, 21 Feb 2013 00:00:00 -0600</pubDate>
+				<link>http://localhost:4000/lettering/alice-in-wonderland/</link>
+				<guid isPermaLink="true">http://localhost:4000/lettering/alice-in-wonderland/</guid>
+			</item>
+		
+			<item>
+				<title>Texas lasso</title>
+				<description>&lt;img alt='Lettering' src='../../../../../img/lettering/texas-big.png' title='Texas Lettering' /&gt;
+&lt;p&gt;&lt;a href='http://drbl.in/gIDh'&gt;View this on Dribbble&lt;/a&gt;&lt;/p&gt;</description>
+				<pubDate>Thu, 21 Feb 2013 00:00:00 -0600</pubDate>
+				<link>http://localhost:4000/lettering/texas/</link>
+				<guid isPermaLink="true">http://localhost:4000/lettering/texas/</guid>
+			</item>
+		
+			<item>
+				<title>R.A.</title>
+				<description>&lt;img alt='R.A. initials' src='../../../../../img/lettering/r-a.gif' title='R.A. initials' /&gt;</description>
+				<pubDate>Thu, 21 Feb 2013 00:00:00 -0600</pubDate>
+				<link>http://localhost:4000/lettering/ra/</link>
+				<guid isPermaLink="true">http://localhost:4000/lettering/ra/</guid>
+			</item>
+		
+			<item>
+				<title>Pen and Ink Lettering</title>
+				<description>&lt;img alt='lettering, pen and ink' src='../../../../../img/lettering/lettering.jpg' title='lettering, pen and ink' /&gt;</description>
+				<pubDate>Thu, 21 Feb 2013 00:00:00 -0600</pubDate>
+				<link>http://localhost:4000/lettering/pen-and-ink/</link>
+				<guid isPermaLink="true">http://localhost:4000/lettering/pen-and-ink/</guid>
+			</item>
+		
+			<item>
+				<title>Numbers</title>
+				<description>&lt;img alt='the number two' src='../../../../../img/lettering/2-detail.jpg' title='the number two' /&gt;</description>
+				<pubDate>Thu, 21 Feb 2013 00:00:00 -0600</pubDate>
+				<link>http://localhost:4000/lettering/numbers/</link>
+				<guid isPermaLink="true">http://localhost:4000/lettering/numbers/</guid>
+			</item>
+		
+			<item>
+				<title>Andrew Greer</title>
+				<description>&lt;h3 id='initial_sketch'&gt;Initial sketch&lt;/h3&gt;
+&lt;img alt='Andrew Greer calligraphy lettering' src='http://localhost:4000/img/lettering/andrew-greer.gif' title='Andrew Greer calligraphy lettering' /&gt;
+&lt;h3 id='final_vector'&gt;Final vector&lt;/h3&gt;
+&lt;img alt='Andrew Greer calligraphy lettering' src='http://localhost:4000/img/lettering/andrew-greer.gif' title='Andrew Greer calligraphy lettering' /&gt;
+&lt;p&gt;&lt;a href='http://dribbble.com/shots/541034-Andrew-Greer'&gt;View this on Dribbble&lt;/a&gt;&lt;/p&gt;</description>
+				<pubDate>Thu, 21 Feb 2013 00:00:00 -0600</pubDate>
+				<link>http://localhost:4000/lettering/andrew/</link>
+				<guid isPermaLink="true">http://localhost:4000/lettering/andrew/</guid>
+			</item>
+		
+			<item>
+				<title>The Problem with Infinity</title>
+				<description>&lt;h3 id='the_old_days'&gt;The Old Days&lt;/h3&gt;
+
+&lt;p&gt;Historically speaking, making something meant it was tangible, but the idea of a created object is changing dramatically to include digital items. Having more resourses, such as time, money, and natural resources, means we can create more physical objects. When dealing with physical items, there&amp;#8217;s always a one-to-one trade: creating things demands resources, and creating lots of things demands lots of resources.&lt;/p&gt;
+
+&lt;p&gt;After objects are made, the concept of the one-to-one trade-off carries over into the business world when some form of currency is accepted for the object. You give me this, and I give you that. Simple. However, when it comes to digital products, there is the perplexing problem of &lt;em&gt;infinity&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;The written word, whether by printing press or by human hand, has been around for millenia. When Gutenburg invented the printing press in 1450s, he didn&amp;#8217;t change the fundamental limitations of phyics, however, he did increase the effenciecy of making a large number of physical items. More books, less time. After selling those books, they&amp;#8217;ve been replaced by something else, and the one-to-one trade has happened again. Eventually I&amp;#8217;ll sell all my books and, if I want to sell more, I&amp;#8217;ll need to make more.&lt;/p&gt;
+
+&lt;p&gt;Now fast-forward a few years to the present day. Enormous libraries contain an unfathomable number of pages, covers, and letters holding vast amounts of information and stories, and yet, there is a limit to how many physical books can exist. Between the resources it takes to create books and the physical space it takes to store books, we are still faced with limits.&lt;/p&gt;
+
+&lt;h3 id='close_enough_to_infinity'&gt;Close Enough to Infinity&lt;/h3&gt;
+
+&lt;p&gt;In the digital world, space is cheap and abundant. While Earth&amp;#8217;s available physical space is decreasing, the digital world seems to be expanding at break-neck speeds. (Much like our actual universe, funnily enough.) Whether we&amp;#8217;re talking about the &lt;a href='http://en.wikipedia.org/wiki/Cloud_computing'&gt;Cloud&lt;/a&gt;, Internet, or just personal computers or mobile devices, all have a vast, fantastic space incomparable to physical space.&lt;/p&gt;
+
+&lt;p&gt;Our brains find the concept of infinity difficult to understand, and yet we&amp;#8217;re creating products that live solely in that world. We&amp;#8217;re trying to use the same one-to-one model we use with physical items to solve the problems we&amp;#8217;re encountering.&lt;/p&gt;
+
+&lt;p&gt;and since there&amp;#8217;s no to digital items, we should approach the problem with a different model with entirely different variables.&lt;/p&gt;
+
+&lt;h3 id='one_copy_to_rule_them_all'&gt;One Copy to Rule Them All&lt;/h3&gt;
+
+&lt;p&gt;If our magnificent libraries decided to completely replace their entire collection with digital items, they could dramatically reduce the physical space they&amp;#8217;re currently occupying. If they convert all their paper materials into .ePub, .mobi, and PDF files and place them onto servers, you no longer need many amenities physical libraries need.&lt;/p&gt;
+
+&lt;p&gt;In fact, digital libraries already exist. You don&amp;#8217;t need to drive there, you don&amp;#8217;t need to open a door to walk in, and most importantly, &lt;strong&gt;there is no longer the physical limitation of one copy.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;If you go to a physical library, and check out a book, you now have that book. Although the content may be the same, the copy you&amp;#8217;re holding is unique; to break it down to an unneccsary level, each copy of a book is using its own set of molecules unique to it.&lt;/p&gt;
+
+&lt;p&gt;Before the libriaian will allow you take the book home, you must give a promise to return the book. There&amp;#8217;s our one-to-one model at work. I give you this; you give me that.&lt;/p&gt;
+
+&lt;p&gt;However when we drop infinity into the mix, you can check out the book, leave, and the next person in line right behind you can check out the same book. And the next. And the next. All the way into infinity, and you&amp;#8217;ll never run out of any of that book. In fact, there are no &amp;#8220;molecules&amp;#8221; at play with digital items, which means they are the exact same item. Clones, if you will. Digitial clones.&lt;/p&gt;
+
+&lt;h3 id='there_is_a_trade_not_onetoone_though'&gt;There is a Trade, Not One-to-One Though&lt;/h3&gt;
+
+&lt;p&gt;Since the electronic universe exists &lt;em&gt;inside&lt;/em&gt; this physical universe, we still have to deal with the physics of the situation. When a book is checked out of the physical library, remember there is more happening than simply a book getting checked out. The door opens when patrons walk in and out causing the heating and cooling system to work a little bit harder; the librarian may have to stop doing one task in order to check out your book; after you return the book, the shelver has to spend time to put the book back on the shelf in the right location.&lt;/p&gt;
+
+&lt;p&gt;All these little things that happen in a physical library are far less in a digital one, but they still exist. Servers still have to be cooled (probably more than a physical library), and when 10,000 people are downloading a book in an hour, the servers will work harder and heat up a little more, causing the cooling system to work harder.&lt;/p&gt;
+
+&lt;h3 id='al_gorithm_inventor'&gt;Al Gorithm, Inventor&lt;/h3&gt;
+
+&lt;h4 id='disclaimer_im_not_a_mathematician_nor_do_i_know_the_intracies_of_servers_please_point_out_something_if_its_incorrect'&gt;Disclaimer: I&amp;#8217;m not a mathematician, nor do I know the intracies of servers. Please point out something if it&amp;#8217;s incorrect.&lt;/h4&gt;
+
+&lt;p&gt;In the digital world, what is the magic number of books available to check out? At what point is a digital system challenged by the volume of users it can support?&lt;/p&gt;
+
+&lt;p&gt;#n linear graph)&lt;/p&gt;
+
+&lt;p&gt;In a physical library the number is easy: one. Or perhaps, if you have two copies of the book: two. More can&amp;#8217;t be checked out because more don&amp;#8217;t exist. One-to-one.&lt;/p&gt;
+
+&lt;p&gt;#n curved graph)&lt;/p&gt;
+
+&lt;p&gt;At some point, this graph goes from vertical to horizontal, and in the circle is where the tipping point is. That&amp;#8217;s where the cost of traffic outweighs the cost of providing an infinite number of books. The same book can be downloaded x number of times, so long as the number of downloads prior to x doesn&amp;#8217;t exceed the cost of resources used.&lt;/p&gt;
+
+&lt;h3 id='the_point'&gt;The Point&lt;/h3&gt;
+
+&lt;p&gt;We are treating&lt;/p&gt;</description>
+				<pubDate>Wed, 20 Feb 2013 00:00:00 -0600</pubDate>
+				<link>http://localhost:4000/writing/2013/02/20/the-problem-with-infinity</link>
+				<guid isPermaLink="true">http://localhost:4000/writing/2013/02/20/the-problem-with-infinity</guid>
+			</item>
 		
 			<item>
 				<title>All Magic Tricks Have an Ending</title>
@@ -23,8 +136,8 @@
 
 &lt;p&gt;Our products, new ideas, and even artistic talents aren&amp;#8217;t magic tricks. They are no less amazing, or more believable at first exposure, but where magic tricks send us whirling back to reality when they end, our groundbreaking inventions don&amp;#8217;t. They continue on and affect our reality in more ways than a ten minute adrenaline rush, and that&amp;#8217;s more amazing than making the Statue of Liberty vanish into thin air and bringing it back.&lt;/p&gt;</description>
 				<pubDate>Sun, 03 Feb 2013 00:00:00 -0600</pubDate>
-				<link>http://ryan-rushing.com/writing/2013/02/03/all-magic-tricks-have-an-ending</link>
-				<guid isPermaLink="true">http://ryan-rushing.com/writing/2013/02/03/all-magic-tricks-have-an-ending</guid>
+				<link>http://localhost:4000/writing/2013/02/03/all-magic-tricks-have-an-ending</link>
+				<guid isPermaLink="true">http://localhost:4000/writing/2013/02/03/all-magic-tricks-have-an-ending</guid>
 			</item>
 		
 			<item>
@@ -37,8 +150,8 @@
 
 &lt;p&gt;Learn to command your own hand into well-written communication, and I have full confidence you&amp;#8217;ll become a more attentive, detail-oriented, patient designer.&lt;/p&gt;</description>
 				<pubDate>Sun, 27 Jan 2013 00:00:00 -0600</pubDate>
-				<link>http://ryan-rushing.com/writing/2013/01/27/the-importance-of-handwriting</link>
-				<guid isPermaLink="true">http://ryan-rushing.com/writing/2013/01/27/the-importance-of-handwriting</guid>
+				<link>http://localhost:4000/writing/2013/01/27/the-importance-of-handwriting</link>
+				<guid isPermaLink="true">http://localhost:4000/writing/2013/01/27/the-importance-of-handwriting</guid>
 			</item>
 		
 			<item>
@@ -81,164 +194,8 @@
 
 &lt;p&gt;I&amp;#8217;m writing, reading, making improvements to this site, drawing lettering, and constantly keeping track of all ideas, not matter how big or small; there are lots of them.&lt;/p&gt;</description>
 				<pubDate>Sun, 20 Jan 2013 00:00:00 -0600</pubDate>
-				<link>http://ryan-rushing.com/writing/2013/01/20/what-i-have-been-doing</link>
-				<guid isPermaLink="true">http://ryan-rushing.com/writing/2013/01/20/what-i-have-been-doing</guid>
-			</item>
-		
-			<item>
-				<title>May I Borrow Your Phone?</title>
-				<description>&lt;p&gt;I have a beard and long, uncut hair. I wear old hoodies and boots and beanies, and by the end of the day, I&amp;#8217;m tired and don&amp;#8217;t say much to people on the train.&lt;/p&gt;
-
-&lt;p&gt;One day I was on my way to meet my wife at a different train station than usual, where she was going to pick me up so we could head over to her studio.&lt;/p&gt;
-
-&lt;p&gt;I pulled out my phone to call her, but unfortunately, the battery had been drained and my phone was laying lifeless in my palm. I was about 20 minutes from the station, and I needed to get in touch with Rachel.&lt;/p&gt;
-
-&lt;p&gt;Normally, I wouldn&amp;#8217;t be afraid to ask anyone a question, however the question I needed to ask this time hinged on whether or not a person trusted me with their phone. Living in a smartphone dominated world means I wasn&amp;#8217;t simply asking to borrow a phone, but rather, I was asking to be trusted with a device which had access to their Email, Calendar, Facebook, Twitter, financal institutions such as Mint or Paypal, Internet history, and of course, Letterpress games.&lt;/p&gt;
-
-&lt;p&gt;I scoped out the target, a middle-aged woman, who was sitting across the aisle. I took off my thick, dark-green jacket and beanie; my attempt to seem less threating. I start practicing my question.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&amp;#8220;Ma&amp;#8217;am, can I please borrow your cell phone?&amp;#8221; &lt;em&gt;Too forward.&lt;/em&gt;&lt;/li&gt;
-
-&lt;li&gt;&amp;#8220;Excuse me. May I please borrow your phone?&amp;#8221; &lt;em&gt;Overly nice, she&amp;#8217;d be suspicious.&lt;/em&gt;&lt;/li&gt;
-
-&lt;li&gt;&amp;#8220;Hi, excuse me, would you mind if I borrowed your phone for a quick call?&amp;#8221; &lt;em&gt;Perfect. Friendly, to the point. Just the right amount of information.&lt;/em&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The train doors shut, and the next station wouldn&amp;#8217;t be for 10 minutes. On this train line, that&amp;#8217;s the longest between stops. She&amp;#8217;ll know this, and realize I have nowhere to run. Plus, the conductor is standing right there! Now is my chance.&lt;/p&gt;
-
-&lt;p&gt;Leaning in my seat toward her, &amp;#8220;Hi, excuse me.&amp;#8221; I said to the woman who was very interested in her book.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;No response. Crap, I didn&amp;#8217;t expect this. That book must be awesome.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;A bit louder, &amp;#8220;Hi, ma&amp;#8217;am?&amp;#8221;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Nothing. Surely she can hear me, right?&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;The conductor and I make eye contact and we both shrug.&lt;/p&gt;
-
-&lt;p&gt;Practically yelling, &amp;#8220;Excuse me, ma&amp;#8217;am?&amp;#8221; &lt;em&gt;She looks up, thank God.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&amp;#8220;Hi, not sure if you could hear me not.&amp;#8221; I fake laugh. She is not amused.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Remember the script, Ryan!&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&amp;#8220;Would you mind if I borrowed your phone for a quick call? My phone is dead and I need to call my wife who&amp;#8217;s waiting at the final stop.&amp;#8221;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Crap, way too much information. There&amp;#8217;s no way she&amp;#8217;ll believe that.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&amp;#8221;&amp;#8230;,&amp;#8221; says the bookworm.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;&amp;#8230;&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&amp;#8221;I&amp;#8217;d&amp;#8230; rather not.&amp;#8221;&lt;/p&gt;
-
-&lt;p&gt;Nodding, I barely get out, &amp;#8220;Okay.&amp;#8221;&lt;/p&gt;
-
-&lt;p&gt;What?! Two minutes before this train wreck of a conversation, I saw her sliding her fingertips around the device with the training of an Angry Birds veteran.&lt;/p&gt;
-
-&lt;p&gt;Then I realized how much of a gamble this request was. I have no idea if I looked different (perhaps in an alternate universe where sans-beard, I worked in a suit and tie and had the charm of a prince), Jane McNotrust and I would be best friends. In that world we&amp;#8217;d talk about the days when phone batteries lasted nothing short of a week and how phones only placed calls or maybe sent a text message.&lt;/p&gt;
-
-&lt;p&gt;But we don&amp;#8217;t live there. We live in a world of consolidation and efficiency. Because of our investment into this idea of singular devices and connectibility, the request to call a loved one for less than 60 seconds, turns into a stress-inducing judgement call with much more to lose than just a cheap phone and some contact information.&lt;/p&gt;
-
-&lt;p&gt;After Jane left me high and dry, the conductor, having witnessed all this, chuckled and walked over. He reached into his pocket and pulled out his phone and handed it to me.&lt;/p&gt;
-
-&lt;p&gt;I quietly laughed, thanked him, and called my wife on his old Motorola Razr. The call quality was exceptional.&lt;/p&gt;</description>
-				<pubDate>Sat, 01 Dec 2012 00:00:00 -0600</pubDate>
-				<link>http://ryan-rushing.com/writing/2012/12/01/may-I-borrow-your-phone</link>
-				<guid isPermaLink="true">http://ryan-rushing.com/writing/2012/12/01/may-I-borrow-your-phone</guid>
-			</item>
-		
-			<item>
-				<title>User Testing</title>
-				<description>&lt;p&gt;Yesterday was my first experience testing a site that I designed. (For these tests, we used &lt;a href='http://usertesting.com'&gt;http://usertesting.com&lt;/a&gt;). The users followed a script with tasks, and as they tried to run through the script, they recorded their screens and articulated what they were thinking.&lt;/p&gt;
-
-&lt;p&gt;Watching the users interact with the site was humbling and quite odd for me. It was a very cool experience to see someone use a site, following the path you intend for them to take to find specific information.&lt;/p&gt;</description>
-				<pubDate>Wed, 07 Nov 2012 00:00:00 -0600</pubDate>
-				<link>http://ryan-rushing.com/writing/2012/11/07/user-testing</link>
-				<guid isPermaLink="true">http://ryan-rushing.com/writing/2012/11/07/user-testing</guid>
-			</item>
-		
-			<item>
-				<title>Working Pattern</title>
-				<description>&lt;p&gt;Working everyday is hard, and keeping a pattern is difficult. Plans naturally change, yet we willingly tie ourselves to a pattern on which our entire life leans.&lt;/p&gt;
-
-&lt;p&gt;I don&amp;#8217;t drive to work. Thankfully, I&amp;#8217;m able to rely on public transit to get to and from work with no problem. My commute consists of a 20 minute train ride (between two trains), a 20 minute bus ride, and a 20 minute walk. The trains and buses arrive at the same time every day (most of the time), and my walking time is very peaceful.&lt;/p&gt;
-
-&lt;p&gt;In the mornings I leave my apartment at the same time everyday, walk in the &lt;a href='http://kalkomey.com'&gt;Kalkomey&lt;/a&gt; doors at about the same time, sit down at my desk and do work. In the evenings, I leave at the same time everyday and get home at 5:02pm consistently. My wife and I go to bed around 9 pm every night.&lt;/p&gt;
-
-&lt;p&gt;In fact, my wife and I rely so heavily on our daily repetition, last year we got rid of both our extremely unreliable cars and bought a single, reliable vehicle. Also, since she&amp;#8217;s also a public transit fiend, our car doesn&amp;#8217;t move for most of the week. It&amp;#8217;s glorious. The system that I&amp;#8217;ve subscribed to may seem like a huge headache, and to be honest, when one delay sets off other delays, it is, but this happens rarely. However, the limitations set by my commute are quickly handled by planning ahead, allowing room for error, and not getting angry when things go awry.&lt;/p&gt;
-
-&lt;p&gt;If I used our car more often and owned a smartphone hooked into the internet, keeping schedule would be &lt;em&gt;more&lt;/em&gt; difficult for me, not less difficult. Traps like looking at Reddit for a few more minutes, not showering until a few minutes later, or getting an extra 30 minutes of sleep has caused tardiness more often than I&amp;#8217;d like to admit. I thought I could spare the time, since I controlled my pattern.&lt;/p&gt;
-
-&lt;p&gt;In the environment I&amp;#8217;ve set up, I don&amp;#8217;t make decisions about the perfect timing to beat traffic, nor do I think about the last second I can wait to wake up in the morning. Those plans are out of my hand, which allows me to focus on accomplishing more important things.&lt;/p&gt;</description>
-				<pubDate>Mon, 05 Nov 2012 00:00:00 -0600</pubDate>
-				<link>http://ryan-rushing.com/writing/2012/11/05/working-pattern</link>
-				<guid isPermaLink="true">http://ryan-rushing.com/writing/2012/11/05/working-pattern</guid>
-			</item>
-		
-			<item>
-				<title>Learning Agile</title>
-				<description>&lt;p&gt;I&amp;#8217;ve been on the UX team at &lt;a href='http://kalkomey.com/'&gt;Kalkomey&lt;/a&gt; for about three weeks now, and I&amp;#8217;ve learned lots. One thing I&amp;#8217;ve learned about is Agile and &lt;a href='http://en.wikipedia.org/wiki/Scrum_(development'&gt;Scrum&lt;/a&gt;, and although the specific lingo is still very new to me, I&amp;#8217;m getting the hang of it and cannot imagine another way to develop web apps.&lt;/p&gt;
-
-&lt;p&gt;The primary idea of Agile is this: focus on a set of features for a time, then release it. Yes those features (or “user stories” as they are sometimes called) could be improved, yes there could be more of them, but the point is to get it out there. Once it&amp;#8217;s released and in a live “beta test” of sorts, watch how users interact with it, take notes, and start the process again.&lt;/p&gt;
-
-&lt;p&gt;Iteration is the key. Iterate on the features that users use.&lt;/p&gt;
-
-&lt;p&gt;Although this may seem like common sense, it isn&amp;#8217;t. In fact, it&amp;#8217;s against my nature as a designer to release something not packed with features, which have the tiniest bit of attention built into them. However, in web/software development, the “&lt;a href='http://en.wikipedia.org/wiki/Release_early,_release_often'&gt;release early, release often&lt;/a&gt;” model makes the most sense. Don&amp;#8217;t misunderstand me, the Agile method isn&amp;#8217;t meant release incomplete features, but rather, the goal is release a small number of completed features, which are core to your app/product first. Once need arises for more stuff, introduce more stuff, but only when you need it.&lt;/p&gt;
-
-&lt;p&gt;I love this idea so much that I&amp;#8217;ve incorporated it into my personal life - even housework. Focusing my attention on doing one thing at a time, with a larger goal in mind, has taken a lot of the stress away from cleaning the entire apartment. Breaking my chores into bite-size pieces helps not get overwhelmed when I see the &lt;em&gt;whole&lt;/em&gt; apartment needs a top to bottom cleaning.&lt;/p&gt;
-
-&lt;p&gt;I realize many of you have been practicing this method for a while, but if you&amp;#8217;ve never tried it out, give it a shot. You won&amp;#8217;t develop apps the same way again.&lt;/p&gt;</description>
-				<pubDate>Fri, 26 Oct 2012 00:00:00 -0500</pubDate>
-				<link>http://ryan-rushing.com/writing/2012/10/26/learning-agile</link>
-				<guid isPermaLink="true">http://ryan-rushing.com/writing/2012/10/26/learning-agile</guid>
-			</item>
-		
-			<item>
-				<title>Don't Assume</title>
-				<description>&lt;p&gt;I once saw a homeless guy give a burrito to another homeless guy, and a few minutes later give another burrito to someone else. My misconception that all homeless people were out for themselves was blown out of the water. The idea that they were less fortunate because they had less money, left my mind.&lt;/p&gt;
-
-&lt;p&gt;In design, it&amp;#8217;s important for us not to assume anything. We can&amp;#8217;t guess what others will do, because people surprise us. They will do something unexpected, and if our decisions were based on personal preference or bad research, we&amp;#8217;ll be caught off guard. I try not to assume when it comes to design. It&amp;#8217;s not really about being awesome, it&amp;#8217;s about paying attention.&lt;/p&gt;</description>
-				<pubDate>Wed, 03 Oct 2012 00:00:00 -0500</pubDate>
-				<link>http://ryan-rushing.com/writing/2012/10/03/dont-assume</link>
-				<guid isPermaLink="true">http://ryan-rushing.com/writing/2012/10/03/dont-assume</guid>
-			</item>
-		
-			<item>
-				<title>On Drinking Sprite</title>
-				<description>&lt;p&gt;By definition, a sprite is an elf or fairy, so next time you drink Sprite&lt;sup&gt;&amp;reg;&lt;/sup&gt;, imagine you&amp;#8217;re consuming the life-force of a magical elfin fairy creature.&lt;/p&gt;
-
-&lt;p&gt;Your pain is my gain, Tinkerbell.&lt;/p&gt;</description>
-				<pubDate>Mon, 27 Aug 2012 00:00:00 -0500</pubDate>
-				<link>http://ryan-rushing.com/writing/2012/08/27/sprite</link>
-				<guid isPermaLink="true">http://ryan-rushing.com/writing/2012/08/27/sprite</guid>
-			</item>
-		
-			<item>
-				<title>School of Art</title>
-				<description>&lt;h3 id='my_experiences_were_awesome'&gt;My experiences were awesome&lt;/h3&gt;
-
-&lt;p&gt;From the Fall of 2004 to the Spring of 2009, I attended Louisiana Tech University. The first four months (two quarters) in school I was learning to be a mechanical engineer and hated most of it. In choosing a major, my goal wasn&amp;#8217;t to be in an industry I loved, but rather, make mucho dinero. Because of my disinterest and laziness, my GPA dropped to 1.8, and I had lost part of my scholarships by the end of those two quarters. Soon after, my father gave me a thorough kicking of the buttocks and made me realize some important things about school and the reason why I was there. When I returned after the Christmas break that first year, I promptly changed my major to something I knew I would love, and although it was a bit of a risk, as I didn&amp;#8217;t know entirely what graphic design was, I knew it involved computers and art: two of my favorite things. The first class I took was a beginner drawing class. Students who couldn&amp;#8217;t draw were taught the fundamentals of artistic expression, eventually developing skills to draw a decent still life, and I was in love after the first assignment. As I spent more time in general education classes, I began to bring together knowledge from other fields into my art and themes from psychology, physics, and literature played starring roles in many projects. Other art classes in the first year, which were focused entirely on design fundamentals, had curriculum for sculpting, painting, a lot of drawing, and even performance art. The first year was playful for me, and we were encouraged to experiment and embarrass ourselves if necessary. Those assignments where we didn&amp;#8217;t restrain ourselves, we learned the most.&lt;/p&gt;
-
-&lt;p&gt;After getting past the first year in the Communication Design program, I started my foray into graphic design, which was much more difficult. Far behind were the days of bad craft for the sake of getting an idea out. There were no longer any excuses for sloppy work, conceptually or craft-wise. The slightest pencil mark left on the edge of the paper dropped the project a half-letter grade. Forgetting to put the label on the back of the finished, mounted project dropped another half-letter grade. That first year was about developing a killer attention to detail.&lt;/p&gt;
-
-&lt;p&gt;Once the project allowed more room for imagination and conceptual decision-making, critiques became more intense, and the classroom became a (somewhat) safe sparring ground for students to go head-to-project with other students. Nothing was sacred, and those who expressed their freedom to point out imbalances, inconsistencies, and improper communication in their peers&amp;#8217; work were rewarded by strengthening the ability to articulate what they could feel. These students excelled, while those with a more lackadaisical nature did not.&lt;/p&gt;
-
-&lt;p&gt;As a design/art student, I was given grades I felt I didn&amp;#8217;t deserve (on both ends of the spectrum), but regardless of the final number, I tried to never lose sight of one simple goal: to absorb as much experience and knowledge I could in respect to the fundamentals of design. I wanted my muscles to drip contrast, bulge with color, and sweat balance.&lt;/p&gt;
-
-&lt;p&gt;Of course, there were some things I didn&amp;#8217;t learn. Not that they weren&amp;#8217;t taught to me, but I was either too distracted, bored, or lazy (or all of the the above), which caused some very important things to flake off into the whirlpool that was college. However, the things that I did take away, far exceeded that of those I didn&amp;#8217;t. In the same vein, there are subjects I wish the curriculum focused more on, so that I would have been more prepared for those first jobs, but in reality, college cannot teach everything about the industry.&lt;/p&gt;
-
-&lt;h3 id='the_nature_of_switzerland'&gt;The Nature of Switzerland&lt;/h3&gt;
-
-&lt;p&gt;College is a neutral, exactly like any other path or opportunity. There are fantastic and mind-blowing things about it, things I wouldn&amp;#8217;t trade for the world, and things that have dramatically altered other paths I encountered after Fall 2004. I was in a university band, I joined a fraternity, I learned how to step. I learned about psychology and literature and economics and business and marketing and music. I developed an interest in writing and learned how to create a voice within that writing, Confidence, responsibility, time-management were forcibly practiced daily. I met my wife and other life-long friends. Alternatively, many detrimental things happened, things I wish I&amp;#8217;d done differently.&lt;/p&gt;
-
-&lt;p&gt;To get the most out of anything, you must work. You must work hard. Opportunity will knock, but only if a door exist. If there is no door, build one. If there isn&amp;#8217;t lumber available, use a different material. No apprenticeship, no internship, no train ride, no vacation, and no formal education on Earth will yield useful results if your attitude is content with minimum accomplishment.&lt;/p&gt;
-
-&lt;p&gt;Whether we&amp;#8217;re talking about college or some other path, keep in mind the beauty of life: nothing is ever final, until you die. Although not easy, you can always choose another path. If path X didn&amp;#8217;t work for you, try path C and D. If path A didn&amp;#8217;t work for you, try M. Don&amp;#8217;t feel like any one path is any easier that the other, just different. Different challenges and different results. Different doors will open and others will close.&lt;/p&gt;</description>
-				<pubDate>Sat, 11 Aug 2012 00:00:00 -0500</pubDate>
-				<link>http://ryan-rushing.com/writing/2012/08/11/school-of-art</link>
-				<guid isPermaLink="true">http://ryan-rushing.com/writing/2012/08/11/school-of-art</guid>
+				<link>http://localhost:4000/writing/2013/01/20/what-i-have-been-doing</link>
+				<guid isPermaLink="true">http://localhost:4000/writing/2013/01/20/what-i-have-been-doing</guid>
 			</item>
 		
 	</channel>
