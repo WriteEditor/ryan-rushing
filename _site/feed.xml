@@ -7,56 +7,27 @@
 		<atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
-				<title>Alice in Wonderland</title>
-				<description>&lt;img alt='Alice in Wonderland lettering' src='../../../../../img/lettering/wonderland-detail.jpg' title='Alice in Wonderland lettering' /&gt;</description>
-				<pubDate>Thu, 21 Feb 2013 00:00:00 -0600</pubDate>
-				<link>http://localhost:4000/lettering/alice-in-wonderland/</link>
-				<guid isPermaLink="true">http://localhost:4000/lettering/alice-in-wonderland/</guid>
+				<title>Quotes</title>
+				<description>&lt;img alt='Alice in Wonderland lettering' src='http://localhost:4000/img/lettering/train-sketch-abe-detail-1.jpg' title='Alice in Wonderland lettering' /&gt;&lt;img alt='Alice in Wonderland lettering' src='http://localhost:4000/img/lettering/train-sketch-abe-detail-2.jpg' title='Alice in Wonderland lettering' /&gt;&lt;img alt='Alice in Wonderland lettering' src='http://localhost:4000/img/lettering/train-sketch-abe.jpg' title='Alice in Wonderland lettering' /&gt;&lt;img alt='Alice in Wonderland lettering' src='http://localhost:4000/img/lettering/train-sketch-crucify.jpg' title='Alice in Wonderland lettering' /&gt;&lt;img alt='Alice in Wonderland lettering' src='http://localhost:4000/img/lettering/train-sketch-everything-detail.jpg' title='Alice in Wonderland lettering' /&gt;&lt;img alt='Alice in Wonderland lettering' src='http://localhost:4000/img/lettering/train-sketch-everything.jpg' title='Alice in Wonderland lettering' /&gt;&lt;img alt='Alice in Wonderland lettering' src='http://localhost:4000/img/lettering/train-sketch-wonderland-detail.jpg' title='Alice in Wonderland lettering' /&gt;&lt;img alt='Alice in Wonderland lettering' src='http://localhost:4000/img/lettering/train-sketch-wonderland.jpg' title='Alice in Wonderland lettering' /&gt;</description>
+				<pubDate>Tue, 11 Nov 5000 00:00:00 -0600</pubDate>
+				<link>http://localhost:4000/lettering/quotes/</link>
+				<guid isPermaLink="true">http://localhost:4000/lettering/quotes/</guid>
 			</item>
 		
 			<item>
-				<title>Texas lasso</title>
-				<description>&lt;img alt='Lettering' src='../../../../../img/lettering/texas-big.png' title='Texas Lettering' /&gt;
-&lt;p&gt;&lt;a href='http://drbl.in/gIDh'&gt;View this on Dribbble&lt;/a&gt;&lt;/p&gt;</description>
-				<pubDate>Thu, 21 Feb 2013 00:00:00 -0600</pubDate>
-				<link>http://localhost:4000/lettering/texas/</link>
-				<guid isPermaLink="true">http://localhost:4000/lettering/texas/</guid>
-			</item>
-		
-			<item>
-				<title>R.A.</title>
-				<description>&lt;img alt='R.A. initials' src='../../../../../img/lettering/r-a.gif' title='R.A. initials' /&gt;</description>
-				<pubDate>Thu, 21 Feb 2013 00:00:00 -0600</pubDate>
-				<link>http://localhost:4000/lettering/ra/</link>
-				<guid isPermaLink="true">http://localhost:4000/lettering/ra/</guid>
+				<title>Places</title>
+				<description>&lt;img alt='Lettering' src='http://localhost:4000/img/lettering/places-texas.png' title='Texas Lettering' /&gt;</description>
+				<pubDate>Sat, 11 Nov 4000 00:00:00 -0600</pubDate>
+				<link>http://localhost:4000/lettering/places/</link>
+				<guid isPermaLink="true">http://localhost:4000/lettering/places/</guid>
 			</item>
 		
 			<item>
 				<title>Pen and Ink Lettering</title>
-				<description>&lt;img alt='lettering, pen and ink' src='../../../../../img/lettering/lettering.jpg' title='lettering, pen and ink' /&gt;</description>
-				<pubDate>Thu, 21 Feb 2013 00:00:00 -0600</pubDate>
+				<description>&lt;img alt='lettering, pen and ink' src='http://localhost:4000/img/lettering/pen-ink-hello-world.jpg' title='lettering, pen and ink' /&gt;&lt;img alt='lettering, pen and ink' src='http://localhost:4000/img/lettering/pen-ink-lettering.jpg' title='lettering, pen and ink' /&gt;&lt;img alt='lettering, pen and ink' src='http://localhost:4000/img/lettering/pen-ink-keep-focus.jpg' title='lettering, pen and ink' /&gt;</description>
+				<pubDate>Tue, 11 Nov 3000 00:00:00 -0600</pubDate>
 				<link>http://localhost:4000/lettering/pen-and-ink/</link>
 				<guid isPermaLink="true">http://localhost:4000/lettering/pen-and-ink/</guid>
-			</item>
-		
-			<item>
-				<title>Numbers</title>
-				<description>&lt;img alt='the number two' src='../../../../../img/lettering/2-detail.jpg' title='the number two' /&gt;</description>
-				<pubDate>Thu, 21 Feb 2013 00:00:00 -0600</pubDate>
-				<link>http://localhost:4000/lettering/numbers/</link>
-				<guid isPermaLink="true">http://localhost:4000/lettering/numbers/</guid>
-			</item>
-		
-			<item>
-				<title>Andrew Greer</title>
-				<description>&lt;h3 id='initial_sketch'&gt;Initial sketch&lt;/h3&gt;
-&lt;img alt='Andrew Greer calligraphy lettering' src='http://localhost:4000/img/lettering/andrew-greer.gif' title='Andrew Greer calligraphy lettering' /&gt;
-&lt;h3 id='final_vector'&gt;Final vector&lt;/h3&gt;
-&lt;img alt='Andrew Greer calligraphy lettering' src='http://localhost:4000/img/lettering/andrew-greer.gif' title='Andrew Greer calligraphy lettering' /&gt;
-&lt;p&gt;&lt;a href='http://dribbble.com/shots/541034-Andrew-Greer'&gt;View this on Dribbble&lt;/a&gt;&lt;/p&gt;</description>
-				<pubDate>Thu, 21 Feb 2013 00:00:00 -0600</pubDate>
-				<link>http://localhost:4000/lettering/andrew/</link>
-				<guid isPermaLink="true">http://localhost:4000/lettering/andrew/</guid>
 			</item>
 		
 			<item>
@@ -196,6 +167,98 @@
 				<pubDate>Sun, 20 Jan 2013 00:00:00 -0600</pubDate>
 				<link>http://localhost:4000/writing/2013/01/20/what-i-have-been-doing</link>
 				<guid isPermaLink="true">http://localhost:4000/writing/2013/01/20/what-i-have-been-doing</guid>
+			</item>
+		
+			<item>
+				<title>May I Borrow Your Phone?</title>
+				<description>&lt;p&gt;I have a beard and long, uncut hair. I wear old hoodies and boots and beanies, and by the end of the day, I&amp;#8217;m tired and don&amp;#8217;t say much to people on the train.&lt;/p&gt;
+
+&lt;p&gt;One day I was on my way to meet my wife at a different train station than usual, where she was going to pick me up so we could head over to her studio.&lt;/p&gt;
+
+&lt;p&gt;I pulled out my phone to call her, but unfortunately, the battery had been drained and my phone was laying lifeless in my palm. I was about 20 minutes from the station, and I needed to get in touch with Rachel.&lt;/p&gt;
+
+&lt;p&gt;Normally, I wouldn&amp;#8217;t be afraid to ask anyone a question, however the question I needed to ask this time hinged on whether or not a person trusted me with their phone. Living in a smartphone dominated world means I wasn&amp;#8217;t simply asking to borrow a phone, but rather, I was asking to be trusted with a device which had access to their Email, Calendar, Facebook, Twitter, financal institutions such as Mint or Paypal, Internet history, and of course, Letterpress games.&lt;/p&gt;
+
+&lt;p&gt;I scoped out the target, a middle-aged woman, who was sitting across the aisle. I took off my thick, dark-green jacket and beanie; my attempt to seem less threating. I start practicing my question.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&amp;#8220;Ma&amp;#8217;am, can I please borrow your cell phone?&amp;#8221; &lt;em&gt;Too forward.&lt;/em&gt;&lt;/li&gt;
+
+&lt;li&gt;&amp;#8220;Excuse me. May I please borrow your phone?&amp;#8221; &lt;em&gt;Overly nice, she&amp;#8217;d be suspicious.&lt;/em&gt;&lt;/li&gt;
+
+&lt;li&gt;&amp;#8220;Hi, excuse me, would you mind if I borrowed your phone for a quick call?&amp;#8221; &lt;em&gt;Perfect. Friendly, to the point. Just the right amount of information.&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The train doors shut, and the next station wouldn&amp;#8217;t be for 10 minutes. On this train line, that&amp;#8217;s the longest between stops. She&amp;#8217;ll know this, and realize I have nowhere to run. Plus, the conductor is standing right there! Now is my chance.&lt;/p&gt;
+
+&lt;p&gt;Leaning in my seat toward her, &amp;#8220;Hi, excuse me.&amp;#8221; I said to the woman who was very interested in her book.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;No response. Crap, I didn&amp;#8217;t expect this. That book must be awesome.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;A bit louder, &amp;#8220;Hi, ma&amp;#8217;am?&amp;#8221;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Nothing. Surely she can hear me, right?&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;The conductor and I make eye contact and we both shrug.&lt;/p&gt;
+
+&lt;p&gt;Practically yelling, &amp;#8220;Excuse me, ma&amp;#8217;am?&amp;#8221; &lt;em&gt;She looks up, thank God.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;#8220;Hi, not sure if you could hear me not.&amp;#8221; I fake laugh. She is not amused.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Remember the script, Ryan!&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;#8220;Would you mind if I borrowed your phone for a quick call? My phone is dead and I need to call my wife who&amp;#8217;s waiting at the final stop.&amp;#8221;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Crap, way too much information. There&amp;#8217;s no way she&amp;#8217;ll believe that.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;#8221;&amp;#8230;,&amp;#8221; says the bookworm.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;&amp;#8230;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;#8221;I&amp;#8217;d&amp;#8230; rather not.&amp;#8221;&lt;/p&gt;
+
+&lt;p&gt;Nodding, I barely get out, &amp;#8220;Okay.&amp;#8221;&lt;/p&gt;
+
+&lt;p&gt;What?! Two minutes before this train wreck of a conversation, I saw her sliding her fingertips around the device with the training of an Angry Birds veteran.&lt;/p&gt;
+
+&lt;p&gt;Then I realized how much of a gamble this request was. I have no idea if I looked different (perhaps in an alternate universe where sans-beard, I worked in a suit and tie and had the charm of a prince), Jane McNotrust and I would be best friends. In that world we&amp;#8217;d talk about the days when phone batteries lasted nothing short of a week and how phones only placed calls or maybe sent a text message.&lt;/p&gt;
+
+&lt;p&gt;But we don&amp;#8217;t live there. We live in a world of consolidation and efficiency. Because of our investment into this idea of singular devices and connectibility, the request to call a loved one for less than 60 seconds, turns into a stress-inducing judgement call with much more to lose than just a cheap phone and some contact information.&lt;/p&gt;
+
+&lt;p&gt;After Jane left me high and dry, the conductor, having witnessed all this, chuckled and walked over. He reached into his pocket and pulled out his phone and handed it to me.&lt;/p&gt;
+
+&lt;p&gt;I quietly laughed, thanked him, and called my wife on his old Motorola Razr. The call quality was exceptional.&lt;/p&gt;</description>
+				<pubDate>Sat, 01 Dec 2012 00:00:00 -0600</pubDate>
+				<link>http://localhost:4000/writing/2012/12/01/may-I-borrow-your-phone</link>
+				<guid isPermaLink="true">http://localhost:4000/writing/2012/12/01/may-I-borrow-your-phone</guid>
+			</item>
+		
+			<item>
+				<title>User Testing</title>
+				<description>&lt;p&gt;Yesterday was my first experience testing a site that I designed. (For these tests, we used &lt;a href='http://usertesting.com'&gt;http://usertesting.com&lt;/a&gt;). The users followed a script with tasks, and as they tried to run through the script, they recorded their screens and articulated what they were thinking.&lt;/p&gt;
+
+&lt;p&gt;Watching the users interact with the site was humbling and quite odd for me. It was a very cool experience to see someone use a site, following the path you intend for them to take to find specific information.&lt;/p&gt;</description>
+				<pubDate>Wed, 07 Nov 2012 00:00:00 -0600</pubDate>
+				<link>http://localhost:4000/writing/2012/11/07/user-testing</link>
+				<guid isPermaLink="true">http://localhost:4000/writing/2012/11/07/user-testing</guid>
+			</item>
+		
+			<item>
+				<title>Working Pattern</title>
+				<description>&lt;p&gt;Working everyday is hard, and keeping a pattern is difficult. Plans naturally change, yet we willingly tie ourselves to a pattern on which our entire life leans.&lt;/p&gt;
+
+&lt;p&gt;I don&amp;#8217;t drive to work. Thankfully, I&amp;#8217;m able to rely on public transit to get to and from work with no problem. My commute consists of a 20 minute train ride (between two trains), a 20 minute bus ride, and a 20 minute walk. The trains and buses arrive at the same time every day (most of the time), and my walking time is very peaceful.&lt;/p&gt;
+
+&lt;p&gt;In the mornings I leave my apartment at the same time everyday, walk in the &lt;a href='http://kalkomey.com'&gt;Kalkomey&lt;/a&gt; doors at about the same time, sit down at my desk and do work. In the evenings, I leave at the same time everyday and get home at 5:02pm consistently. My wife and I go to bed around 9 pm every night.&lt;/p&gt;
+
+&lt;p&gt;In fact, my wife and I rely so heavily on our daily repetition, last year we got rid of both our extremely unreliable cars and bought a single, reliable vehicle. Also, since she&amp;#8217;s also a public transit fiend, our car doesn&amp;#8217;t move for most of the week. It&amp;#8217;s glorious. The system that I&amp;#8217;ve subscribed to may seem like a huge headache, and to be honest, when one delay sets off other delays, it is, but this happens rarely. However, the limitations set by my commute are quickly handled by planning ahead, allowing room for error, and not getting angry when things go awry.&lt;/p&gt;
+
+&lt;p&gt;If I used our car more often and owned a smartphone hooked into the internet, keeping schedule would be &lt;em&gt;more&lt;/em&gt; difficult for me, not less difficult. Traps like looking at Reddit for a few more minutes, not showering until a few minutes later, or getting an extra 30 minutes of sleep has caused tardiness more often than I&amp;#8217;d like to admit. I thought I could spare the time, since I controlled my pattern.&lt;/p&gt;
+
+&lt;p&gt;In the environment I&amp;#8217;ve set up, I don&amp;#8217;t make decisions about the perfect timing to beat traffic, nor do I think about the last second I can wait to wake up in the morning. Those plans are out of my hand, which allows me to focus on accomplishing more important things.&lt;/p&gt;</description>
+				<pubDate>Mon, 05 Nov 2012 00:00:00 -0600</pubDate>
+				<link>http://localhost:4000/writing/2012/11/05/working-pattern</link>
+				<guid isPermaLink="true">http://localhost:4000/writing/2012/11/05/working-pattern</guid>
 			</item>
 		
 	</channel>
