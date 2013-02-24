@@ -22,7 +22,7 @@ subtitle: Designer
 	<nav class="l2 m1-m2 s-all" id="writings">
 		<h3>Writings</h3>
 		<ul>
-			{% for item in site.categories.writing offset:0 limit:12 %}
+			{% for item in site.categories.writing offset:0 limit:5 %}
 			<li>
 				<a href="{{ item.url }}">{{ item.title }}</a>
 			</li>
@@ -31,15 +31,6 @@ subtitle: Designer
 	</nav>
 
 	<nav class="l3 m3-m4 s-all" id="projects">
-		<h3>Lettering</h3>
-		<ul>
-			{% for item in site.categories.lettering %}
-			<li>
-				<a href="{{ item.url }}">{{ item.title }}</a>
-			</li>
-			{% endfor %}
-		</ul>
-
 		<h3>Projects (external links)</h3>
 		<ul>
 			<li><a href="http://canyoudefinelove.com">Can you define love?</a></li>

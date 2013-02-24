@@ -7,30 +7,6 @@
 		<atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
-				<title>Quotes</title>
-				<description>&lt;img alt='Alice in Wonderland lettering' src='http://localhost:4000/img/lettering/train-sketch-abe-detail-1.jpg' title='Alice in Wonderland lettering' /&gt;&lt;img alt='Alice in Wonderland lettering' src='http://localhost:4000/img/lettering/train-sketch-abe-detail-2.jpg' title='Alice in Wonderland lettering' /&gt;&lt;img alt='Alice in Wonderland lettering' src='http://localhost:4000/img/lettering/train-sketch-abe.jpg' title='Alice in Wonderland lettering' /&gt;&lt;img alt='Alice in Wonderland lettering' src='http://localhost:4000/img/lettering/train-sketch-crucify.jpg' title='Alice in Wonderland lettering' /&gt;&lt;img alt='Alice in Wonderland lettering' src='http://localhost:4000/img/lettering/train-sketch-everything-detail.jpg' title='Alice in Wonderland lettering' /&gt;&lt;img alt='Alice in Wonderland lettering' src='http://localhost:4000/img/lettering/train-sketch-everything.jpg' title='Alice in Wonderland lettering' /&gt;&lt;img alt='Alice in Wonderland lettering' src='http://localhost:4000/img/lettering/train-sketch-wonderland-detail.jpg' title='Alice in Wonderland lettering' /&gt;&lt;img alt='Alice in Wonderland lettering' src='http://localhost:4000/img/lettering/train-sketch-wonderland.jpg' title='Alice in Wonderland lettering' /&gt;</description>
-				<pubDate>Tue, 11 Nov 5000 00:00:00 -0600</pubDate>
-				<link>http://localhost:4000/lettering/quotes/</link>
-				<guid isPermaLink="true">http://localhost:4000/lettering/quotes/</guid>
-			</item>
-		
-			<item>
-				<title>Places</title>
-				<description>&lt;img alt='Lettering' src='http://localhost:4000/img/lettering/places-texas.png' title='Texas Lettering' /&gt;</description>
-				<pubDate>Sat, 11 Nov 4000 00:00:00 -0600</pubDate>
-				<link>http://localhost:4000/lettering/places/</link>
-				<guid isPermaLink="true">http://localhost:4000/lettering/places/</guid>
-			</item>
-		
-			<item>
-				<title>Pen and Ink Lettering</title>
-				<description>&lt;img alt='lettering, pen and ink' src='http://localhost:4000/img/lettering/pen-ink-hello-world.jpg' title='lettering, pen and ink' /&gt;&lt;img alt='lettering, pen and ink' src='http://localhost:4000/img/lettering/pen-ink-lettering.jpg' title='lettering, pen and ink' /&gt;&lt;img alt='lettering, pen and ink' src='http://localhost:4000/img/lettering/pen-ink-keep-focus.jpg' title='lettering, pen and ink' /&gt;</description>
-				<pubDate>Tue, 11 Nov 3000 00:00:00 -0600</pubDate>
-				<link>http://localhost:4000/lettering/pen-and-ink/</link>
-				<guid isPermaLink="true">http://localhost:4000/lettering/pen-and-ink/</guid>
-			</item>
-		
-			<item>
 				<title>The Problem with Infinity</title>
 				<description>&lt;h3 id='the_old_days'&gt;The Old Days&lt;/h3&gt;
 
@@ -259,6 +235,44 @@
 				<pubDate>Mon, 05 Nov 2012 00:00:00 -0600</pubDate>
 				<link>http://localhost:4000/writing/2012/11/05/working-pattern</link>
 				<guid isPermaLink="true">http://localhost:4000/writing/2012/11/05/working-pattern</guid>
+			</item>
+		
+			<item>
+				<title>Learning Agile</title>
+				<description>&lt;p&gt;I&amp;#8217;ve been on the UX team at &lt;a href='http://kalkomey.com/'&gt;Kalkomey&lt;/a&gt; for about three weeks now, and I&amp;#8217;ve learned lots. One thing I&amp;#8217;ve learned about is Agile and &lt;a href='http://en.wikipedia.org/wiki/Scrum_(development'&gt;Scrum&lt;/a&gt;, and although the specific lingo is still very new to me, I&amp;#8217;m getting the hang of it and cannot imagine another way to develop web apps.&lt;/p&gt;
+
+&lt;p&gt;The primary idea of Agile is this: focus on a set of features for a time, then release it. Yes those features (or “user stories” as they are sometimes called) could be improved, yes there could be more of them, but the point is to get it out there. Once it&amp;#8217;s released and in a live “beta test” of sorts, watch how users interact with it, take notes, and start the process again.&lt;/p&gt;
+
+&lt;p&gt;Iteration is the key. Iterate on the features that users use.&lt;/p&gt;
+
+&lt;p&gt;Although this may seem like common sense, it isn&amp;#8217;t. In fact, it&amp;#8217;s against my nature as a designer to release something not packed with features, which have the tiniest bit of attention built into them. However, in web/software development, the “&lt;a href='http://en.wikipedia.org/wiki/Release_early,_release_often'&gt;release early, release often&lt;/a&gt;” model makes the most sense. Don&amp;#8217;t misunderstand me, the Agile method isn&amp;#8217;t meant release incomplete features, but rather, the goal is release a small number of completed features, which are core to your app/product first. Once need arises for more stuff, introduce more stuff, but only when you need it.&lt;/p&gt;
+
+&lt;p&gt;I love this idea so much that I&amp;#8217;ve incorporated it into my personal life - even housework. Focusing my attention on doing one thing at a time, with a larger goal in mind, has taken a lot of the stress away from cleaning the entire apartment. Breaking my chores into bite-size pieces helps not get overwhelmed when I see the &lt;em&gt;whole&lt;/em&gt; apartment needs a top to bottom cleaning.&lt;/p&gt;
+
+&lt;p&gt;I realize many of you have been practicing this method for a while, but if you&amp;#8217;ve never tried it out, give it a shot. You won&amp;#8217;t develop apps the same way again.&lt;/p&gt;</description>
+				<pubDate>Fri, 26 Oct 2012 00:00:00 -0500</pubDate>
+				<link>http://localhost:4000/writing/2012/10/26/learning-agile</link>
+				<guid isPermaLink="true">http://localhost:4000/writing/2012/10/26/learning-agile</guid>
+			</item>
+		
+			<item>
+				<title>Don't Assume</title>
+				<description>&lt;p&gt;I once saw a homeless guy give a burrito to another homeless guy, and a few minutes later give another burrito to someone else. My misconception that all homeless people were out for themselves was blown out of the water. The idea that they were less fortunate because they had less money, left my mind.&lt;/p&gt;
+
+&lt;p&gt;In design, it&amp;#8217;s important for us not to assume anything. We can&amp;#8217;t guess what others will do, because people surprise us. They will do something unexpected, and if our decisions were based on personal preference or bad research, we&amp;#8217;ll be caught off guard. I try not to assume when it comes to design. It&amp;#8217;s not really about being awesome, it&amp;#8217;s about paying attention.&lt;/p&gt;</description>
+				<pubDate>Wed, 03 Oct 2012 00:00:00 -0500</pubDate>
+				<link>http://localhost:4000/writing/2012/10/03/dont-assume</link>
+				<guid isPermaLink="true">http://localhost:4000/writing/2012/10/03/dont-assume</guid>
+			</item>
+		
+			<item>
+				<title>On Drinking Sprite</title>
+				<description>&lt;p&gt;By definition, a sprite is an elf or fairy, so next time you drink Sprite&lt;sup&gt;&amp;reg;&lt;/sup&gt;, imagine you&amp;#8217;re consuming the life-force of a magical elfin fairy creature.&lt;/p&gt;
+
+&lt;p&gt;Your pain is my gain, Tinkerbell.&lt;/p&gt;</description>
+				<pubDate>Mon, 27 Aug 2012 00:00:00 -0500</pubDate>
+				<link>http://localhost:4000/writing/2012/08/27/sprite</link>
+				<guid isPermaLink="true">http://localhost:4000/writing/2012/08/27/sprite</guid>
 			</item>
 		
 	</channel>
