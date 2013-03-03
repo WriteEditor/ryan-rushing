@@ -8,7 +8,14 @@
 		
 			<item>
 				<title>Quotes</title>
-				<description>&lt;img alt='Alice in Wonderland lettering' src='http://localhost:4000/img/lettering/train-sketch-abe-detail-1.jpg' title='Alice in Wonderland lettering' /&gt;&lt;img alt='Alice in Wonderland lettering' src='http://localhost:4000/img/lettering/train-sketch-abe-detail-2.jpg' title='Alice in Wonderland lettering' /&gt;&lt;img alt='Alice in Wonderland lettering' src='http://localhost:4000/img/lettering/train-sketch-abe.jpg' title='Alice in Wonderland lettering' /&gt;&lt;img alt='Alice in Wonderland lettering' src='http://localhost:4000/img/lettering/train-sketch-crucify.jpg' title='Alice in Wonderland lettering' /&gt;&lt;img alt='Alice in Wonderland lettering' src='http://localhost:4000/img/lettering/train-sketch-everything-detail.jpg' title='Alice in Wonderland lettering' /&gt;&lt;img alt='Alice in Wonderland lettering' src='http://localhost:4000/img/lettering/train-sketch-everything.jpg' title='Alice in Wonderland lettering' /&gt;&lt;img alt='Alice in Wonderland lettering' src='http://localhost:4000/img/lettering/train-sketch-wonderland-detail.jpg' title='Alice in Wonderland lettering' /&gt;&lt;img alt='Alice in Wonderland lettering' src='http://localhost:4000/img/lettering/train-sketch-wonderland.jpg' title='Alice in Wonderland lettering' /&gt;</description>
+				<description>&lt;h3 id='abraham_lincoln'&gt;Abraham Lincoln&lt;/h3&gt;
+&lt;img alt='' src='http://localhost:4000/img/lettering/quote-tree.jpg' /&gt;
+&lt;h3 id='from_alice_in_wonderland_the_movie'&gt;From Alice in Wonderland, the movie&lt;/h3&gt;
+&lt;img src='http://localhost:4000/img/lettering/quote-alice-2.jpg' /&gt;
+&lt;h3 id='leonardo_da_vinci'&gt;Leonardo da Vinci&lt;/h3&gt;
+&lt;img src='http://localhost:4000/img/lettering/quote-everything.jpg' /&gt;
+&lt;h3 id='pontius_pilate__john_1915'&gt;Pontius Pilate - John 19:15&lt;/h3&gt;
+&lt;img src='http://localhost:4000/img/lettering/quote-crucify.jpg' /&gt;&lt;img src='http://localhost:4000/img/lettering/quote-crucify-2.jpg' /&gt;</description>
 				<pubDate>Tue, 11 Nov 5000 00:00:00 -0600</pubDate>
 				<link>http://localhost:4000/lettering/quotes/</link>
 				<guid isPermaLink="true">http://localhost:4000/lettering/quotes/</guid>
