@@ -3,38 +3,38 @@
 	<channel>
 		<title>Ryan Rushing, designer</title>
 		<description>Ryan is a designer living in the Dallas-area. Sometimes he writes.</description>
-		<link>http://localhost:4000</link>
-		<atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+		<link>http://ryan-rushing.com</link>
+		<atom:link href="http://ryan-rushing.com/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
 				<title>Quotes</title>
 				<description>&lt;h3 id='abraham_lincoln'&gt;Abraham Lincoln&lt;/h3&gt;
-&lt;img alt='' src='http://localhost:4000/img/lettering/quote-tree.jpg' /&gt;
+&lt;img alt='' src='http://ryan-rushing.com/img/lettering/quote-tree.jpg' /&gt;
 &lt;h3 id='from_alice_in_wonderland_the_movie'&gt;From Alice in Wonderland, the movie&lt;/h3&gt;
-&lt;img src='http://localhost:4000/img/lettering/quote-alice-2.jpg' /&gt;
+&lt;img src='http://ryan-rushing.com/img/lettering/quote-alice-2.jpg' /&gt;
 &lt;h3 id='leonardo_da_vinci'&gt;Leonardo da Vinci&lt;/h3&gt;
-&lt;img src='http://localhost:4000/img/lettering/quote-everything.jpg' /&gt;
+&lt;img src='http://ryan-rushing.com/img/lettering/quote-everything.jpg' /&gt;
 &lt;h3 id='pontius_pilate__john_1915'&gt;Pontius Pilate - John 19:15&lt;/h3&gt;
-&lt;img src='http://localhost:4000/img/lettering/quote-crucify.jpg' /&gt;&lt;img src='http://localhost:4000/img/lettering/quote-crucify-2.jpg' /&gt;</description>
+&lt;img src='http://ryan-rushing.com/img/lettering/quote-crucify.jpg' /&gt;&lt;img src='http://ryan-rushing.com/img/lettering/quote-crucify-2.jpg' /&gt;</description>
 				<pubDate>Tue, 11 Nov 5000 00:00:00 -0600</pubDate>
-				<link>http://localhost:4000/lettering/quotes/</link>
-				<guid isPermaLink="true">http://localhost:4000/lettering/quotes/</guid>
+				<link>http://ryan-rushing.com/lettering/quotes/</link>
+				<guid isPermaLink="true">http://ryan-rushing.com/lettering/quotes/</guid>
 			</item>
 		
 			<item>
 				<title>Places</title>
-				<description>&lt;img alt='Lettering' src='http://localhost:4000/img/lettering/places-texas.png' title='Texas Lettering' /&gt;</description>
+				<description>&lt;img alt='Lettering' src='http://ryan-rushing.com/img/lettering/places-texas.png' title='Texas Lettering' /&gt;</description>
 				<pubDate>Sat, 11 Nov 4000 00:00:00 -0600</pubDate>
-				<link>http://localhost:4000/lettering/places/</link>
-				<guid isPermaLink="true">http://localhost:4000/lettering/places/</guid>
+				<link>http://ryan-rushing.com/lettering/places/</link>
+				<guid isPermaLink="true">http://ryan-rushing.com/lettering/places/</guid>
 			</item>
 		
 			<item>
 				<title>Pen and Ink</title>
-				<description>&lt;img alt='lettering, pen and ink' src='http://localhost:4000/img/lettering/pen-ink-hello-world.jpg' title='lettering, pen and ink' /&gt;&lt;img alt='lettering, pen and ink' src='http://localhost:4000/img/lettering/pen-ink-lettering.jpg' title='lettering, pen and ink' /&gt;&lt;img alt='lettering, pen and ink' src='http://localhost:4000/img/lettering/pen-ink-keep-focus.jpg' title='lettering, pen and ink' /&gt;</description>
+				<description>&lt;img alt='lettering, pen and ink' src='http://ryan-rushing.com/img/lettering/pen-ink-hello-world.jpg' title='lettering, pen and ink' /&gt;&lt;img alt='lettering, pen and ink' src='http://ryan-rushing.com/img/lettering/pen-ink-lettering.jpg' title='lettering, pen and ink' /&gt;&lt;img alt='lettering, pen and ink' src='http://ryan-rushing.com/img/lettering/pen-ink-keep-focus.jpg' title='lettering, pen and ink' /&gt;</description>
 				<pubDate>Tue, 11 Nov 3000 00:00:00 -0600</pubDate>
-				<link>http://localhost:4000/lettering/pen-and-ink/</link>
-				<guid isPermaLink="true">http://localhost:4000/lettering/pen-and-ink/</guid>
+				<link>http://ryan-rushing.com/lettering/pen-and-ink/</link>
+				<guid isPermaLink="true">http://ryan-rushing.com/lettering/pen-and-ink/</guid>
 			</item>
 		
 			<item>
@@ -84,9 +84,9 @@
 &lt;p&gt;If a million people download an ebook in an hour, the server&amp;#8217;s cost goes up. Maybe the price during high traffic times should go up as well. Maybe if you&amp;#8217;re a patient and frugal shopper, you&amp;#8217;re willing to wait until another time to make the purchase to get a better deal and more value. In the case of the library (where you don&amp;#8217;t have to purchase anything), maybe there are a limited number of ebooks available for download at high peak times, rather than the infinite number of ebooks ready for download at low traffic times.&lt;/p&gt;
 
 &lt;p&gt;Whatever formula or algorithm we use, we should not use the same simple pricing models for digital items as we&amp;#8217;ve been using with physical items since the invention of trade. Our technologies to create things have changed dramatically, and our economics for digital storefronts should try to keep up.&lt;/p&gt;</description>
-				<pubDate>Wed, 20 Feb 2013 00:00:00 -0600</pubDate>
-				<link>http://localhost:4000/writing/2013/02/20/the-problem-with-infinity</link>
-				<guid isPermaLink="true">http://localhost:4000/writing/2013/02/20/the-problem-with-infinity</guid>
+				<pubDate>Sun, 03 Mar 2013 00:00:00 -0600</pubDate>
+				<link>http://ryan-rushing.com/writing/2013/03/03/the-problem-with-infinity</link>
+				<guid isPermaLink="true">http://ryan-rushing.com/writing/2013/03/03/the-problem-with-infinity</guid>
 			</item>
 		
 			<item>
@@ -106,8 +106,8 @@
 
 &lt;p&gt;Our products, new ideas, and even artistic talents aren&amp;#8217;t magic tricks. They are no less amazing, or more believable at first exposure, but where magic tricks send us whirling back to reality when they end, our groundbreaking inventions don&amp;#8217;t. They continue on and affect our reality in more ways than a ten minute adrenaline rush, and that&amp;#8217;s more amazing than making the Statue of Liberty vanish into thin air and bringing it back.&lt;/p&gt;</description>
 				<pubDate>Sun, 03 Feb 2013 00:00:00 -0600</pubDate>
-				<link>http://localhost:4000/writing/2013/02/03/all-magic-tricks-have-an-ending</link>
-				<guid isPermaLink="true">http://localhost:4000/writing/2013/02/03/all-magic-tricks-have-an-ending</guid>
+				<link>http://ryan-rushing.com/writing/2013/02/03/all-magic-tricks-have-an-ending</link>
+				<guid isPermaLink="true">http://ryan-rushing.com/writing/2013/02/03/all-magic-tricks-have-an-ending</guid>
 			</item>
 		
 			<item>
@@ -120,8 +120,8 @@
 
 &lt;p&gt;Learn to command your own hand into well-written communication, and I have full confidence you&amp;#8217;ll become a more attentive, detail-oriented, patient designer.&lt;/p&gt;</description>
 				<pubDate>Sun, 27 Jan 2013 00:00:00 -0600</pubDate>
-				<link>http://localhost:4000/writing/2013/01/27/the-importance-of-handwriting</link>
-				<guid isPermaLink="true">http://localhost:4000/writing/2013/01/27/the-importance-of-handwriting</guid>
+				<link>http://ryan-rushing.com/writing/2013/01/27/the-importance-of-handwriting</link>
+				<guid isPermaLink="true">http://ryan-rushing.com/writing/2013/01/27/the-importance-of-handwriting</guid>
 			</item>
 		
 			<item>
@@ -164,8 +164,8 @@
 
 &lt;p&gt;I&amp;#8217;m writing, reading, making improvements to this site, drawing lettering, and constantly keeping track of all ideas, not matter how big or small; there are lots of them.&lt;/p&gt;</description>
 				<pubDate>Sun, 20 Jan 2013 00:00:00 -0600</pubDate>
-				<link>http://localhost:4000/writing/2013/01/20/what-i-have-been-doing</link>
-				<guid isPermaLink="true">http://localhost:4000/writing/2013/01/20/what-i-have-been-doing</guid>
+				<link>http://ryan-rushing.com/writing/2013/01/20/what-i-have-been-doing</link>
+				<guid isPermaLink="true">http://ryan-rushing.com/writing/2013/01/20/what-i-have-been-doing</guid>
 			</item>
 		
 			<item>
@@ -228,8 +228,8 @@
 
 &lt;p&gt;I quietly laughed, thanked him, and called my wife on his old Motorola Razr. The call quality was exceptional.&lt;/p&gt;</description>
 				<pubDate>Sat, 01 Dec 2012 00:00:00 -0600</pubDate>
-				<link>http://localhost:4000/writing/2012/12/01/may-I-borrow-your-phone</link>
-				<guid isPermaLink="true">http://localhost:4000/writing/2012/12/01/may-I-borrow-your-phone</guid>
+				<link>http://ryan-rushing.com/writing/2012/12/01/may-I-borrow-your-phone</link>
+				<guid isPermaLink="true">http://ryan-rushing.com/writing/2012/12/01/may-I-borrow-your-phone</guid>
 			</item>
 		
 			<item>
@@ -238,8 +238,8 @@
 
 &lt;p&gt;Watching the users interact with the site was humbling and quite odd for me. It was a very cool experience to see someone use a site, following the path you intend for them to take to find specific information.&lt;/p&gt;</description>
 				<pubDate>Wed, 07 Nov 2012 00:00:00 -0600</pubDate>
-				<link>http://localhost:4000/writing/2012/11/07/user-testing</link>
-				<guid isPermaLink="true">http://localhost:4000/writing/2012/11/07/user-testing</guid>
+				<link>http://ryan-rushing.com/writing/2012/11/07/user-testing</link>
+				<guid isPermaLink="true">http://ryan-rushing.com/writing/2012/11/07/user-testing</guid>
 			</item>
 		
 			<item>
@@ -256,8 +256,8 @@
 
 &lt;p&gt;In the environment I&amp;#8217;ve set up, I don&amp;#8217;t make decisions about the perfect timing to beat traffic, nor do I think about the last second I can wait to wake up in the morning. Those plans are out of my hand, which allows me to focus on accomplishing more important things.&lt;/p&gt;</description>
 				<pubDate>Mon, 05 Nov 2012 00:00:00 -0600</pubDate>
-				<link>http://localhost:4000/writing/2012/11/05/working-pattern</link>
-				<guid isPermaLink="true">http://localhost:4000/writing/2012/11/05/working-pattern</guid>
+				<link>http://ryan-rushing.com/writing/2012/11/05/working-pattern</link>
+				<guid isPermaLink="true">http://ryan-rushing.com/writing/2012/11/05/working-pattern</guid>
 			</item>
 		
 	</channel>
