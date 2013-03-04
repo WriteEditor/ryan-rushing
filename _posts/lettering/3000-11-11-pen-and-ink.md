@@ -1,7 +1,7 @@
 ---
 layout: wide-individual
-title: Pen and Ink Lettering
-subtitle: brushes, ink, and pens, oh my
+title: Pen and Ink
+subtitle: pens and ink and brushes, oh my
 category: lettering
 description: brushes, ink, and pens, oh my
 permalink: /lettering/pen-and-ink/
