@@ -58,6 +58,7 @@
 						<ul id="site-nav" class="l1 m1 s1">
 							<li><a href="/writing">writing</a></li>
 							<li><a href="/lettering">lettering</a></li>
+							<li><a href="/about">about</a></li>
 						</ul>
 						{% endif %}
 
@@ -76,9 +77,9 @@
 						<div class="l1 m1 s1" id="logo-wrap">					
 					
 							{% if page.logo %} 
-								<a href="/about/"><img src="/img/for-projects/{{ page.logo }}" alt="{{ page.title }}"/></a>
+								<a href="/"><img src="/img/for-projects/{{ page.logo }}" alt="{{ page.title }}"/></a>
 							{% else %}
-								<a href="/about/"><img{% if page.category contains 'writing' %} class="writing-logo"{% endif %} src="/img/ryan-rushing-logo.png" alt=""></a>
+								<a href="/"><img{% if page.category contains 'writing' %} class="writing-logo"{% endif %} src="/img/ryan-rushing-logo.png" alt=""></a>
 							{% endif %}
 
 						</div>
