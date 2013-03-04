@@ -6,7 +6,7 @@ body		{ line-height: 1.8; font-size: 110%;}
 
 header          { width: 100%; float: left; clear: both; margin: 50px 0 0 0;}
 #contact-info   { text-align: right; list-style: none;}
-#site-nav		{ list-style: none; padding: 0 0 20px 0;} 
+#site-nav		{ list-style: none; padding: 0 0 40px 0;} 
 #site-nav li 	{ text-align: center;}
 
 #logo-wrap a { max-width: 70px; display: block; text-align: center; margin: 0 auto} 
