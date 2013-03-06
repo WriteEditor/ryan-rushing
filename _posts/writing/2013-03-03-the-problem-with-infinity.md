@@ -5,13 +5,13 @@ category: writing
 ---
 
 ### The Old Days
-Historically speaking, making something meant it was tangible, and having more resourses, such as time, money, and natural resources, meant more physical objects could be created. With physical items, there's always a one-to-one trade: creating things demands resources, and creating lots of things demands lots of resources.
+Historically speaking, making something meant it was tangible, and having more resources, such as time, money, and natural resources, meant more physical objects could be created. With physical items, there's always a one-to-one trade: creating things demands resources, and creating lots of things demands lots of resources.
 
 After physical objects are made, the one-to-one trade-off carries over into the business world when some form of currency is accepted for the object. You give me this, and I give you that. Simple.
 
-The written word, whether by printing press or by human hand, has been around for millenia. When Gutenburg invented the printing press in 1450s, he didn't change the fundamental limitations of phyics, however, he did increase the effenciecy of making a large number of physical items. More books in less time. After selling the first batch of books, more books need to be made if I want to sell more.
+The written word, whether by printing press or by human hand, has been around for millennia. When Gutenberg invented the printing press in 1450s, he didn't change the fundamental limitations of physics, however, he did increase the efficiency of making a large number of physical items. More books in less time. After selling the first batch of books, more books need to be made if I want to sell more.
 
-These days, emormous libraries contain an unfathomable number of pages, covers, and letters holding vast amounts of information and stories. And yet, there is a limit to how many physical books can exist. Between the resources it takes to create books and the physical space it takes to store books, we are still faced with limits.
+These days, enormous libraries contain an unfathomable number of pages, covers, and letters holding vast amounts of information and stories. And yet, there is a limit to how many physical books can exist. Between the resources it takes to create books and the physical space it takes to store books, we are still faced with limits.
 
 ### Infinity (Close Enough)
 In the digital world, space is cheap and abundant. While the available physical space on Earth is decreasing, the space in the digital world seems to be expanding at break-neck speeds. Whether we're talking about the [Cloud](http://en.wikipedia.org/wiki/Cloud_computing), or just personal computers and mobile devices, these all have a vast space incomparable to physical space in their dimensions. The digital world may as well be infinite.
@@ -23,9 +23,9 @@ Back to books for a moment. If our magnificent libraries decided to completely r
 
 In fact, digital libraries already exist. You don't need to drive there, you don't need to open a door to walk in, and most importantly, __there is no longer the physical limitation of one copy in existence.__
 
-When you go to a physical library and check out a book, you now have that book. Although the content may be the same, the book which you're holding is unique; to break it down to an unneccsary level, each copy of a book has its own set of molecules unique to it.  
+When you go to a physical library and check out a book, you now have that book. Although the content may be the same, the book which you're holding is unique; to break it down to an unnecessary level, each copy of a book has its own set of molecules unique to it.  
 
-Before the libriaian will allow you take the book home, you must give a promise to return the book. There's our one-to-one model at work. I give you this; you give me that.
+Before the librarian will allow you take the book home, you must give a promise to return the book. There's our one-to-one model at work. I give you this; you give me that.
 
 However when we introduce infinity into the mix, we can check out the book, leave, and the next person in line right behind us can check out the same book. And the next person. And the next person. All the way into infinity, and you'll never run out of any of that book. In fact, there are no "molecules" at all with digital items, which means they are the exact same item. Clones, if you will. And each time another clone is created and sold, the benefit to the merchant increases exponentially. Our work involved to create the item stays the same, while we continue to generate income. It's as close to money growing on trees as we can get.
 
