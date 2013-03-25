@@ -21,7 +21,7 @@ I won't show how to install Jekyll; there are plenty of posts that will explain 
      Before learning Markdown, I didn't understand why anyone would use it. Why not just write plain HTML? After using it for a few posts, I soon realized it was to focus on writing, rather than the HTML. With [Markdown](http://daringfireball.net/projects/markdown/)  I'm quickly able to write a post in Sublime Text (with [MarkdownEditing](http://ttscoff.github.com/MarkdownEditing/)), Jekyll compiles it automatically, and I upload the new stuff. No writing loads of HTML for a simple blog post.
 
 +    #### Liquid 
-     While Jekyll is the static-site generator, Liquid is the markup language for creating templates with HTML. The team at Shopify developed it as the templating system behind stores' themes, and now Jekyll, as well as [BigCartel](http://bigcartel.com), [Zendesk](http://zendesk.com), and possibly others, use it for templating.
+     While Jekyll is the static-site generator, [Liquid](http://liquidmarkup.org/) is the markup language for creating templates with HTML. The team at Shopify developed it as the templating system behind stores' themes, and now Jekyll, as well as [BigCartel](http://bigcartel.com), [Zendesk](http://zendesk.com), and possibly others, use it for templating.
 
 Some of this stuff has more of a learning curve than others, but with persistence, it can be learned without being a hardcore developer. If you're the tinkering/hacking type, you'll love using Jekyll and learning all its supporting bits. Have fun!
      
