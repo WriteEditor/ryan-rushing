@@ -5,10 +5,10 @@ body        { background: #f9f9f9; font-family: 'Bitter';}
 #face       { margin: 20px 0;}
 
 #about          { margin: 0 0 20px 0; width: 100%; background: #f3f3f3; float: left; clear: both; border-top: 1px dotted #ccc; border-bottom: 1px dotted #ccc; padding: 40px 0;}
-#about ul       { margin: 20px 0; list-style: disc inside; }
+#about ul       { margin: 20px 0; list-style: disc outside; }
 
-#writings-projects, #individual     { clear: both; border-bottom: 2px solid #eb1072; overflow: hidden; padding: 0 0 40px 0;}
-#writings-projects ul               { list-style: disc inside;}
+#writings-projects, #individual     { clear: both; border-bottom: 2px solid #eb1072; padding: 0 0 40px 0;}
+#writings-projects ul               { list-style: disc outside;}
 
 #disqus_thread {padding: 40px 0 0 0; }
 #disqus_thread img { width: auto;}
