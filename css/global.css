@@ -2,7 +2,7 @@
 
 *           { box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box;}
 body		{ line-height: 1.8; font-size: 110%;}
-.wrapper    { width: 80%; margin: 0 auto; max-width: 900px; overflow: hidden;}
+.wrapper    { width: 80%; margin: 0 auto; max-width: 900px; overflow: hidden; position: relative; z-index: 1;}
 
 header          { width: 100%; float: left; clear: both; margin: 50px 0 0 0;}
 #contact-info   { text-align: right; list-style: none;}

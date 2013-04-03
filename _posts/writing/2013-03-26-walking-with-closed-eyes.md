@@ -3,7 +3,7 @@ layout: individual
 title: Walking With Closed Eyes
 category: writing
 ---
-Occasionally when walking in familiar territory, I close my eyes and see how far I can get without opening my eyes. Usually it's only about five steps before I my equilibrium gets thrown off, and I start walking in an arc. We've all been there.
+Occasionally when walking in familiar territory, I close my eyes and see how far I can get without opening my eyes. Usually it's only about five steps before my equilibrium gets thrown off, and I start walking in an arc. We've all been there.
 
 In addition to keeping balance when walking, the all-important balancing game is complicated by the problem of walking in a straight line, which for a sighted person seems impossible without seeing where the next steps should be, especially in unfamiliar territory.
 

@@ -1,6 +1,9 @@
 /*--- STYLE ALL THE THINGS --*/
 
-body        { background: #f9f9f9; font-family: 'Bitter';}
+body        { background: #f9f9f9; font-family: 'Bitter'; position: relative;} 
+#big-photo-stop { max-height: 200px; overflow: hidden;position: absolute; top: 0; left: 0; width: 100%; }
+#big-photo img { position: absolute; z-index: 0; }
+#big-photo-stop header { position: relative; z-index: 1;}
 
 #face       { margin: 20px 0;}
 

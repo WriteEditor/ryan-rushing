@@ -50,6 +50,15 @@
 				<h6 style="position:fixed; width: 100%; text-align: center; font-weight: 400; font-size: 14px; opacity: .5; background: #efefef;">site url: localhost:4000</h6>
 			{% endif %}
 
+{%comment%}
+	<div id="big-photo-stop">
+		{% if page.header %}
+		<img id="big-photo" src="{{ site.url }}img/in-writings/{{page.header}}" >
+		{% endif %}
+	</div>
+{%endcomment%}
+
+			
 			<div class="wrapper">
 				<header>
 					
@@ -95,37 +104,37 @@
 
 				</header>
 			</div>
+			
+		{{ content }}
 
-			{{ content }}
+		<div class="wrapper">
+			<div class="s-all">
+				<footer class="l2-l3 m-all s-all">
+					<span class="s-hide">
+						I&rsquo;d love to hear from you! You can reach me on <a href="http://twitter.com/drawingtype">Twitter</a> or get at me through email: <a href="mailto:get@ryan-rushing.com">get@ryan-rushing.com</a>. If you&rsquo;re curious, <a href="/about">read more about me</a>.
+						<br>
+						<br>
+						To receive the latest, suscribe to the <a href="/feed.xml">RSS feed</a>.
+					</span>
 
-			<div class="wrapper">
-				<div class="s-all">
-					<footer class="l2-l3 m-all s-all">
-						<span class="s-hide">
-							I&rsquo;d love to hear from you! You can reach me on <a href="http://twitter.com/drawingtype">Twitter</a> or get at me through email: <a href="mailto:get@ryan-rushing.com">get@ryan-rushing.com</a>. If you&rsquo;re curious, <a href="/about">read more about me</a>.
+					<div class="l-hide m-hide">
+						<div class="s-all">
+							<a href="/about/">Learn more about me here,</a> and if you want to contact me, I'd be happy to hear from you!
+
 							<br>
 							<br>
 							To receive the latest, suscribe to the <a href="/feed.xml">RSS feed</a>.
-						</span>
 
-						<div class="l-hide m-hide">
-							<div class="s-all">
-								<a href="/about/">Learn more about me here,</a> and if you want to contact me, I'd be happy to hear from you!
-
-								<br>
-								<br>
-								To receive the latest, suscribe to the <a href="/feed.xml">RSS feed</a>.
-
-								<ul id="contact-info" >
-									<li><a href="mailto:get@ryan-rushing.com">Email</a></li>
-									<li><a href="http://twitter.com/drawingtype">Twitter</a></li>
-									<li><a href="http://dribbble.com/ryanrushing">Dribbble</a></li>
-								</ul>
-							</div>
+							<ul id="contact-info" >
+								<li><a href="mailto:get@ryan-rushing.com">Email</a></li>
+								<li><a href="http://twitter.com/drawingtype">Twitter</a></li>
+								<li><a href="http://dribbble.com/ryanrushing">Dribbble</a></li>
+							</ul>
 						</div>
-					</footer>
-				</div>
+					</div>
+				</footer>
 			</div>
+		</div>
 
 		<script src="/js/gridset-overlay.js"></script>
 
