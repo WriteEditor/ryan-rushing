@@ -7,7 +7,7 @@ body        { background: #f9f9f9; font-family: 'Bitter'; position: relative;}
 
 #face       { margin: 20px 0;}
 
-#about          { margin: 0 0 20px 0; width: 100%; background: #f3f3f3; float: left; clear: both; border-top: 1px dotted #ccc; border-bottom: 1px dotted #ccc; padding: 40px 0;}
+#about          { margin: 20px 0; width: 100%; background: #f3f3f3; float: left; clear: both; border-top: 1px dotted #ccc; border-bottom: 1px dotted #ccc; padding: 40px 0;}
 #about ul       { margin: 20px 0; list-style: disc outside; }
 
 #writings-projects, #individual     { clear: both; border-bottom: 2px solid #eb1072; padding: 0 0 40px 0;}
@@ -65,8 +65,21 @@ a:hover { color: #cc0e60;}
 a::selection, a::-moz-selection     { color: #aaa;  text-decoration: none;}
 
 
+#carbonads-container .carbonad      { width: 100%; position: relative; margin: 0 0 10px 0;}
+#carbonads-container .carbonad-text,
+#carbonads-container .carbonad-tag  { position: absolute; left: 150px; width: 47%; }
+#carbonads-container .carbonad-tag  { bottom: 10px ;}
+#carbonads-container .carbonad-image{ position: absolute; left: 0;}
+
 /* Media Queries */
 
+/*@media only screen and (max-width : 745px) and (min-width : 600px) { 
+    #carbonads-container .carbonad      { width: 100%;  height: auto; text-align: center; }
+    #carbonads-container .carbonad-text,
+    #carbonads-container .carbonad-tag  { position: static; width: 70%; display: block; text-align: center; margin: 0 auto; float: none;}
+    #carbonads-container .carbonad-image{ position: static; width: 100%; float: none;}
+    #carbonads-container .carbonad-image img { width: auto; max-height: 100%; margin: 10px auto 0; }
+}*/
 
 @media only screen and (max-width : 1000px) {
     #archive p              { float: left; clear: left;} 
