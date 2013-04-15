@@ -22,13 +22,15 @@ h4 				{ margin: 0 0 20px 0; font-weight: 400; font-style: italic; color: #777;}
 li h4			{ margin: 0; }
 li p			{ margin: 0 0 20px 0; }
 
+blockquote 		{ margin: 20px 0; padding: 0 20px; border-left: 2px solid #eb1072;   }
+
 article h3 { font-weight: 400;}
 
 #writings-projects h3 { margin: 20px 0;}
 #writings-projects p  { padding: 20px 0 0 0; font-size: 75%; font-style: italic; color: #999;}
 
 a               { color: #214f84; font-style: italic;}
-em              { color: #777;}
+em, blockquote               { color: #777;}
 p + h3  { margin: 20px 0 20px 0;}
 img  			{ width: 100%; border-radius: 3px;}
 
@@ -36,7 +38,7 @@ ol { list-style: decimal-leading-zero outside; }
 ol { padding: 20px 0 20px 40px; } 
 
 #individual figure		{ padding: 40px 0;}
-#individual p + p, #about p + p	{ text-indent: 7%;}
+#individual p + p, #about p + p	{ text-indent: 5%;}
 #individual ul			{ margin: 20px 0; list-style: disc outside; }
 #individual h3, #about h3, #writings-projects h3 { font-weight: 700;}
 #individual ul p + p 		{ text-indent: 0; }

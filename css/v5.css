@@ -58,8 +58,7 @@ a:hover { color: #cc0e60;}
 #archive li:hover a, #archive li:hover p { color: #fff;}
 
 #individual p:last-child:after { content: url(../img/little-logo.png); padding: 0 0 0 5px;}
-#individual ul p:last-child:after, #individual ol p:last-child:after {display: none;} 
-
+#individual ul p:last-child:after, #individual ol p:last-child:after, blockquote p:last-child:after  {display: none;} 
 
 *::selection, *::-moz-selection        { background: #214F84; color: #f9f9f9;}
 a::selection, a::-moz-selection     { color: #aaa;  text-decoration: none;}
