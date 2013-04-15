@@ -116,7 +116,7 @@ header      { width: 100%; float: left; clear: both; margin: 50px 0 0 0;}
     #archive                            { list-style: none !important;}
     #archive a                          { padding: 10px 0;} 
     #archive li, #archive a             { float: left; clear: both; width: 100%;}
-    #archive h3                         { font-size: 100%; float: left; clear: left; margin: 0;}
+    #archive h3                         { font-size: 100%; float: left; clear: left; margin: 0; font-weight: 400;}
     #archive p                          { font-size: 100%; float: right; clear: right; color: #000; font-style: normal; text-decoration: none;}
     #archive li:nth-child(2n)           { background: #fff;}
     #archive li:hover                   { background: #eb1072; box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);}
