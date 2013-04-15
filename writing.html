@@ -6,41 +6,41 @@ permalink: /writing/
 ---
 
 
-<ul id="archive">
-{% for item in site.categories.writing %}
-  <li class="l-padin m-padin s-padin">
-    	<a href="{{ item.url }}">
-    		<h3>{{ item.title }}</h3>
-    		<p class="m-hide s-hide">{{ item.date | date: "%Y-%m-%d" }}</p>
-    		<p class="l-hide">{{ item.date | date: "%B %d, %Y" }}</p>
-    	</a>
-  	</li>
-{% endfor %}
-</ul>
-
-
+	<ul id="archive">
+	{% for item in site.categories.writing %}
+	  <li class="l-padin m-padin s-padin">
+	    	<a href="{{ item.url }}">
+	    		<h3>{{ item.title }}</h3>
+	    		<p class="m-hide s-hide">{{ item.date | date: "%Y-%m-%d" }}</p>
+	    		<p class="l-hide">{{ item.date | date: "%B %d, %Y" }}</p>
+	    	</a>
+	  	</li>
+	{% endfor %}
+	</ul>
 
 
 {% comment %}
-	{% for item in site.categories.writing %}
-		{% capture year %} {{ item.date | date: '%Y' }} {% endcapture %}
-	  	{% capture nyear %}{{ item.next.date | date: '%Y' }}{% endcapture %}
-		
-		{% if year != nyear %}
-		</ol>
-		<h2>{{ item.date | date: '%Y' }}</h2>
+	<ul id="archive">
+{% for item in site.categories.writing %}
+			
+{% capture year %} {{ item.date | date: '%Y' }} {% endcapture %}
+{% capture nyear %}{{ item.next.date | date: '%Y' }}{% endcapture %}
+	
+{% if year != nyear %}
+	</ul>
+	<h4>{{ item.date | date: '%Y' }}</h4>
+{% endif %}
 
+{{year}}---{{nyear}}
+	
+		<li class="l-padin m-padin s-padin">
+	    	<a href="{{ item.url }}">
+	    		<h3>{{ item.title }}</h3>
+	    		<p class="m-hide s-hide">{{ item.date | date: "%Y-%m-%d" }}</p>
+	    		<p class="l-hide">{{ item.date | date: "%B %d, %Y" }}</p>
+	    	</a>
+	  	</li>
 
-		{% endif %}
-		     <li class="l-padin m-padin s-padin">
-		    	<a href="{{ item.url }}">
-		    		<h3>{{ item.title }}</h3>
-		    		<p class="m-hide s-hide">{{ item.date | date: "%B %d" }}</p>
-		    		<p class="l-hide">{{ item.date | date: "%B %d" }}</p>
-		    	</a>
-		  	</li>
-		</ol>	  	
   	{% endfor %}
-  	<ol id="archive">
-
-  		{% endcomment %}
+  	</ul>
+  {% endcomment %}
