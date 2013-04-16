@@ -1,7 +1,7 @@
-auto:       true
-server:     true
-permalink:  /writing/:year/:month/:day/:title
-baseurl:    /
+server: true
+auto: true
+permalink: /writing/:year/:month/:day/:title
+baseurl: /
 name: Ryan Rushing, designer
 description: Ryan is a designer living in the Dallas-area. Sometimes he writes.
 url: http://localhost:4000/
