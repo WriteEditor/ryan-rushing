@@ -26,6 +26,7 @@
 
 			<!-- CSS -->
 			<link rel="stylesheet" type="text/css" href="/css/ryan.css" />
+			<link href="https://get.gridsetapp.com/19062/" rel="stylesheet" />
 			
 			<!--[if lt IE 9]>
 			<link rel="stylesheet" type="text/css" href="/css/gridset-ie-lte8.css"/>
@@ -41,64 +42,57 @@
 				<h6 style="position:fixed; width: 100%; text-align: center; font-weight: 400; font-size: 14px; opacity: .5; background: #efefef;">site url: localhost:4000</h6>
 			{% endif %}
 
-			<div class="wrapper">
-				<header>
+			<header>
+				
+				<div class="l-all m-all s-all">
+					{% if page.url contains 'writing' or page.url contains 'projects' or page.url contains 'about' or page.url contains 'lettering' %}
+					<ul id="site-nav" class="l2 m1 s1">
+						<li><a href="/writing">writing</a></li>
+						<li><a href="/lettering">lettering</a></li>
+						<li><a href="/about">about</a></li>
+					</ul>
+					{% endif %}
 					
-					<div class="l-all m-all s-all">
-						{% if page.url contains 'writing' or page.url contains 'projects' or page.url contains 'about' or page.url contains 'lettering' %}
-						<ul id="site-nav" class="l1 m1 s1">
-							<li><a href="/writing">writing</a></li>
-							<li><a href="/lettering">lettering</a></li>
-							<li><a href="/about">about</a></li>
-						</ul>
+					<ul id="contact-info" class="l4-l5 m3-m4 s-hide">
+						<li><a href="http://twitter.com/drawingtype">Twitter</a></li>
+						<li><a href="http://dribbble.com/ryanrushing">Dribbble</a></li>
+						<li><a href="mailto:get@ryan-rushing.com">Email</a></li>
+					</ul>
+				</div>
+				
+				<div class="l-all m-all s-1">
+					<div class="l2 m1 s1" id="logo-wrap">					
+				
+						{% if page.logo %} 
+							<a href="/"><img src="/img/for-projects/{{ page.logo }}" alt="{{ page.title }}"/></a>
+						{% else %}
+							<a href="/"><img{% if page.category contains 'writing' %} class="writing-logo"{% endif %} src="/img/ryan-rushing-logo.png" alt=""></a>
 						{% endif %}
 
-
-						<ul id="contact-info" class="l2-l4 m3-m4 s-hide">
-							<li><a href="http://twitter.com/drawingtype">Twitter</a></li>
-							<li><a href="http://dribbble.com/ryanrushing">Dribbble</a></li>
-							<li><a href="mailto:get@ryan-rushing.com">Email</a></li>
-						</ul>
-
+					</div>
 						
-					</div>
-					
-					<div class="l-all m-all s-1">
-						<div class="l1 m1 s1" id="logo-wrap">					
-					
-							{% if page.logo %} 
-								<a href="/"><img src="/img/for-projects/{{ page.logo }}" alt="{{ page.title }}"/></a>
-							{% else %}
-								<a href="/"><img{% if page.category contains 'writing' %} class="writing-logo"{% endif %} src="/img/ryan-rushing-logo.png" alt=""></a>
-							{% endif %}
+					<hgroup class="l3 m2-m3 s2">
+						<h1>{{ page.title }}</h1>
+						{% if page.subtitle %} 
+							<h2>{{ page.subtitle }}</h2>
+						{% else %}
+							<h2>{{ page.date | date: "%B %d, %Y" }}</h2>
+						{% endif %}
+					</hgroup>
 
-						</div>
-							
-						<hgroup class="l2 m2-m3 s2">
-							<h1>{{ page.title }}</h1>
-							{% if page.subtitle %} 
-								<h2>{{ page.subtitle }}</h2>
-							{% else %}
-								<h2>{{ page.date | date: "%B %d, %Y" }}</h2>
-							{% endif %}
-						</hgroup>
-
-						<div id="carbonads-container" class="l3 m2-m4 s-all">
-							<div class="carbonad">
-								<div id="azcarbon"></div>
-								<script type="text/javascript">var z = document.createElement("script"); z.type = "text/javascript"; z.async = true; z.src = "http://engine.carbonads.com/z/29084/azcarbon_2_1_0_HORIZ"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(z, s);</script>
-							</div>
+					<div id="carbonads-container" class="l4 m2-m4 s-all">
+						<div class="carbonad">
+							<div id="azcarbon"></div>
+							<script type="text/javascript">var z = document.createElement("script"); z.type = "text/javascript"; z.async = true; z.src = "http://engine.carbonads.com/z/29084/azcarbon_2_1_0_HORIZ"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(z, s);</script>
 						</div>
 					</div>
+				</div>
 
-				</header>
-			</div>
+			</header>
 
 			{{ content }}
 
-		<div class="wrapper">
-			<div class="s-all">
-				<footer class="l2-l3 m-all s-all">
+				<footer class="l3-l4 m-all s-all">
 					<span class="s-hide">
 						I&rsquo;d love to hear from you! You can reach me on <a href="http://twitter.com/drawingtype">Twitter</a> or get at me through email: <a href="mailto:get@ryan-rushing.com">get@ryan-rushing.com</a>. If you&rsquo;re curious, <a href="/about">read more about me</a>.
 						<br>
@@ -122,10 +116,8 @@
 						</div>
 					</div>
 				</footer>
-			</div>
-		</div>
 
-		<script src="/js/gridset-overlay.js"></script>
+		<script src="https://get.gridsetapp.com/19062/overlay/"></script>
 
 		<script type="text/javascript">
 

@@ -14,7 +14,6 @@
 *           { box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box;}
 body        { line-height: 1.8; font-size: 110%; background: #f9f9f9; font-family: 'Bitter'; position: relative;}
 header      { width: 100%; float: left; clear: both; margin: 50px 0 0 0;}
-.wrapper    { width: 80%; margin: 0 auto; max-width: 1100px; overflow: hidden;}
 
     /* Footer styles */
     footer                  { float: left; clear: both; width: 100%; margin: 40px 0 200px 0; opacity: 1;}
@@ -149,7 +148,6 @@ header      { width: 100%; float: left; clear: both; margin: 50px 0 0 0;}
 @media only screen and (max-width : 1000px) {
     #archive p              { float: left; clear: left;} 
     #projects p             { width: 100%; float: left;}
-    .wrapper    { width: 75%;}
 }
 
 @media only screen and (max-width : 500px){
@@ -164,6 +162,5 @@ header      { width: 100%; float: left; clear: both; margin: 50px 0 0 0;}
 }
 
 @media only screen and (max-width : 400px)  {
-    .wrapper    { width: 85%;}
 
 }
