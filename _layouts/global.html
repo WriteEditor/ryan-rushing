@@ -43,17 +43,22 @@
 			{% endif %}
 
 			<header>
-				
 				<div class="l-all m-all s-all">
-					{% if page.url contains 'writing' or page.url contains 'projects' or page.url contains 'about' or page.url contains 'lettering' %}
-					<ul id="site-nav" class="l2 m1 s1">
+					<ul id="site-nav" class="l1-l2 m1 s1">
 						<li><a href="/writing">writing</a></li>
 						<li><a href="http://dribbble.com/ryanrushing">lettering</a></li>
 						<li><a href="/about">about</a></li>
 					</ul>
-					{% endif %}
+
+					<div class="l3 m1 s1" id="logo-wrap">					
+						{% if page.logo %} 
+							<a href="/"><img src="/img/for-projects/{{ page.logo }}" alt="{{ page.title }}"/></a>
+						{% else %}
+							<a href="/"><img{% if page.category contains 'writing' %} class="writing-logo"{% endif %} src="/img/ryan-rushing-logo.png" alt=""></a>
+						{% endif %}
+					</div>
 					
-					<ul id="contact-info" class="l4-l5 m3-m4 s-hide">
+					<ul id="contact-info" class="l5-l6 m3-m4 s-hide">
 						<li><a href="http://twitter.com/drawingtype">Twitter</a></li>
 						<li><a href="http://dribbble.com/ryanrushing">Dribbble</a></li>
 						<li><a href="mailto:get@ryan-rushing.com">Email</a></li>
@@ -61,61 +66,53 @@
 				</div>
 				
 				<div class="l-all m-all s-1">
-					<div class="l2 m1 s1" id="logo-wrap">					
-				
-						{% if page.logo %} 
-							<a href="/"><img src="/img/for-projects/{{ page.logo }}" alt="{{ page.title }}"/></a>
-						{% else %}
-							<a href="/"><img{% if page.category contains 'writing' %} class="writing-logo"{% endif %} src="/img/ryan-rushing-logo.png" alt=""></a>
-						{% endif %}
-
-					</div>
-						
-					<hgroup class="l3 m2-m3 s2">
-						<h1>{{ page.title }}</h1>
-						{% if page.subtitle %} 
-							<h2>{{ page.subtitle }}</h2>
-						{% else %}
-							<h2>{{ page.date | date: "%B %d, %Y" }}</h2>
-						{% endif %}
-					</hgroup>
-
-					<div id="carbonads-container" class="l4 m2-m4 s-all">
-						<div class="carbonad">
-							<div id="azcarbon"></div>
-							<script type="text/javascript">var z = document.createElement("script"); z.type = "text/javascript"; z.async = true; z.src = "http://engine.carbonads.com/z/29084/azcarbon_2_1_0_HORIZ"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(z, s);</script>
+					{% if page.header_img %}
+						<img src="{{ site.url }}/img/in-writings/{{ page.header_img }}">
+					{% else %}
+						<div id="carbonads-container" class="l1-l2 m2-m4 s-all">
+							<div class="carbonad">
+								<div id="azcarbon"></div>
+								<script type="text/javascript">var z = document.createElement("script"); z.type = "text/javascript"; z.async = true; z.src = "http://engine.carbonads.com/z/29084/azcarbon_2_1_0_VERT"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(z, s);</script>
+							</div>
 						</div>
-					</div>
-				</div>
 
+						<hgroup class="l3-l4 m2-m3 s2">
+							{% if page.subtitle %} 
+								<h2>{{ page.subtitle }}</h2>
+							{% else %}
+								<h2>{{ page.date | date: "%B %d, %Y" }}</h2>
+							{% endif %}
+							<h1>{{ page.title }}</h1>
+						</hgroup>
+					{% endif %}
+				</div>
 			</header>
 
 			{{ content }}
 
-				<footer class="l3-l4 m-all s-all">
-					<span class="s-hide">
-						I&rsquo;d love to hear from you! You can reach me on <a href="http://twitter.com/drawingtype">Twitter</a> or get at me through email: <a href="mailto:get@ryan-rushing.com">get@ryan-rushing.com</a>. If you&rsquo;re curious, <a href="/about">read more about me</a>.
+			<footer class="l2-l5 m-all s-all">
+				<span class="l3-l4 s-hide">
+					I&rsquo;d love to hear from you! You can reach me on <a href="http://twitter.com/drawingtype">Twitter</a> or get at me through email: <a href="mailto:get@ryan-rushing.com">get@ryan-rushing.com</a>. If you&rsquo;re curious, <a href="/about">read more about me</a>.
+					<br>
+					<br>
+					To receive the latest, suscribe to the <a href="/feed.xml">RSS feed</a>.
+				</span>
+
+				<div class="l-hide m-hide">
+					<div class="s-all">
+						<a href="/about/">Learn more about me here,</a> and if you want to contact me, I'd be happy to hear from you!
 						<br>
 						<br>
 						To receive the latest, suscribe to the <a href="/feed.xml">RSS feed</a>.
-					</span>
 
-					<div class="l-hide m-hide">
-						<div class="s-all">
-							<a href="/about/">Learn more about me here,</a> and if you want to contact me, I'd be happy to hear from you!
-
-							<br>
-							<br>
-							To receive the latest, suscribe to the <a href="/feed.xml">RSS feed</a>.
-
-							<ul id="contact-info" >
-								<li><a href="mailto:get@ryan-rushing.com">Email</a></li>
-								<li><a href="http://twitter.com/drawingtype">Twitter</a></li>
-								<li><a href="http://dribbble.com/ryanrushing">Dribbble</a></li>
-							</ul>
-						</div>
+						<ul id="contact-info" >
+							<li><a href="mailto:get@ryan-rushing.com">Email</a></li>
+							<li><a href="http://twitter.com/drawingtype">Twitter</a></li>
+							<li><a href="http://dribbble.com/ryanrushing">Dribbble</a></li>
+						</ul>
 					</div>
-				</footer>
+				</div>
+			</footer>
 
 		<script src="https://get.gridsetapp.com/19062/overlay/"></script>
 

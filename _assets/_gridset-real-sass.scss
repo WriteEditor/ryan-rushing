@@ -36,7 +36,7 @@
 // * gs-pxcols(prefix)
 //   Returns a list of all column widths in a grid that are set to fixed pixel width.
 //
-// * gs-gutter(prefix, display unit)
+// * gs-gutter(prefix, (container start, container end), display unit)
 //   Returns the exact gutter of a grid as a numeric value.
 //   
 // * gs-width(prefix, start, end, (container start, container end), display unit)
@@ -54,7 +54,7 @@
 
   @if $prefix == s	{ @return (15,74.875); }
   @if $prefix == m	{ @return (10,27.458333333333336,27.458333333333336,15); }
-  @if $prefix == l	{ @return (10,33.975,33.975,10); }
+  @if $prefix == l	{ @return (10,10,22.425,22.425,10,10); }
 
 }
 
@@ -62,20 +62,20 @@
   
   @if $prefix == s	{ @return (false,false); }
   @if $prefix == m	{ @return (false,false,false,false); }
-  @if $prefix == l	{ @return (false,false,false,false); }
+  @if $prefix == l	{ @return (false,false,false,false,false,false); }
 
 }
 
-@function gs-gutter($prefix, $unit:false){
+@function gs-gutter($prefix, $container: false, $unit:false){
   
   $gutter: 0;
 
   @if $prefix == s	{ $gutter: 10; }
   @if $prefix == m	{ $gutter: 6.66666667; }
-  @if $prefix == l	{ $gutter: 4; }
+  @if $prefix == l	{ $gutter: 3; }
 
-  @if $unit == true { @return #{$gutter + '%'}; }
-  @else { @return $gutter; }
+  @if $unit == true { @return #{gs-adjust($prefix, $gutter, $container) + '%'}; }
+  @else { @return gs-adjust($prefix, $gutter, $container); }
 	
 }
 

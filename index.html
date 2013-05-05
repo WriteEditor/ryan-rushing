@@ -7,37 +7,39 @@ subtitle: Designer
 <article id="about">
 	<div class="wrapper">
 		<div class="l-all m-all s-all">
-				<div class="l3-l4 m-all s-all">
-					<p>
-						I&rsquo;m on the UX team at <a href="http://kalkomey.com">Kalkomey</a>, leading the world in providing recreational safety materials. I'm also the curator of <a href="http://canyoudefinelove.com">Can you define love?</a>, a blog about people and their thoughts on love.
-					</p>
-					<p>
-						I like to <a href="http://dribbble.com/ryanrushing">draw letters</a> and <a href="/writing">write about design</a>.
-					</p>
-				</div>
+			<div class="l3-l4 m-all s-all">
+				<p>
+					I&rsquo;m on the UX team at <a href="http://kalkomey.com">Kalkomey</a>, leading the world in providing recreational safety materials. I'm also the curator of <a href="http://canyoudefinelove.com">Can you define love?</a>, a blog about people and their thoughts on love.
+				</p>
+				<p>
+					I like to <a href="http://dribbble.com/ryanrushing">draw letters</a> and <a href="/writing">write about design</a>.
+				</p>
+			</div>
 		</div>
 	</div>
 </article>
 
-<div class="l-all m-all s-all" id="writings-projects">
-	<nav class="l3 m1-m2 s-all" id="projects">
-		<h3>Projects (external links)</h3>
-		<ul>
-			<li><a href="http://canyoudefinelove.com">Can you define love?</a></li>
-			<li><a href="http://npcc.cc">North Point Christian Church</a></li>
-			<li><a href="http://wecreatehappy.com">We Create Happy</a></li>
-			<li><a href="http://peepersdallas.com">Peeper&rsquo;s</a></li>
-			<li><a href="http://rachelrushing.com">Rachel Rushing</a></li>
-		</ul>
-	</nav>
-	<nav class="l4-l5 m3-m4 s-all" id="writings">
-		<h3>Writings</h3>
-		<ul>
-			{% for item in site.categories.writing offset:0 limit:6 %}
-			<li>
-				<a href="{{ item.url }}">{{ item.title }}</a>
-			</li>
-			{% endfor %}
-		</ul>
-	</nav>
+<div class="l-all">
+	<div class="l3-l4" id="writings-projects">
+		<nav class="l3 m1-m2 s-all" id="projects">
+			<h3>Projects (external links)</h3>
+			<ul>
+				<li><a href="http://canyoudefinelove.com">Can you define love?</a></li>
+				<li><a href="http://npcc.cc">North Point Christian Church</a></li>
+				<li><a href="http://wecreatehappy.com">We Create Happy</a></li>
+				<li><a href="http://peepersdallas.com">Peeper&rsquo;s</a></li>
+				<li><a href="http://rachelrushing.com">Rachel Rushing</a></li>
+			</ul>
+		</nav>
+		<nav class="l4 m3-m4 s-all" id="writings">
+			<h3>Writings</h3>
+			<ul>
+				{% for item in site.categories.writing offset:0 limit:6 %}
+				<li>
+					<a href="{{ item.url }}">{{ item.title }}</a>
+				</li>
+				{% endfor %}
+			</ul>
+		</nav>
+	</div>
 </div>

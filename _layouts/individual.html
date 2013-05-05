@@ -1,7 +1,31 @@
 ---
 layout: global
 ---
+{% if page.background_color %}
+	<style type="text/css">
+		body 	{ background: #{{ page.background_color }}; }
+		a 		{ color: #{{ page.link_color }};}
+		a:hover	{ color: #{{ page.link_hover }};}
+		footer  { border-top: 2px solid #{{ page.link_color }}; }
+	</style>
+{% endif %}
 
-<article id="individual" class="l-padin l3-l4 m2-m4 s-all">
+<article id="individual" class="m2-m4 s-all">
 	{{ content }}
 </article>
+
+<div id="next-prev">
+	<h3>More articles</h3>
+	<ul>
+		{% if page.next %} 
+			<li class="next">
+		    	<a rel="next" href="{{ page.next.url }}">{{ page.next.title }}</a>
+		    </li>
+		{% endif %}
+		{% if page.previous %} 
+			<li class="previous">
+		    	<a rel="prev" href="{{ page.previous.url }}">{{ page.previous.title }}</a>
+		    </li>
+		{% endif %}
+	</ul>
+</div>

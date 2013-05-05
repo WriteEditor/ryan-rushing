@@ -1,22 +1,22 @@
 ---
-layout: listing
+layout: global
 title: Writing
 subtitle: archive
 permalink: /writing/
 ---
 
-
-	<ul id="archive">
+<ul id="archive">
 	{% for item in site.categories.writing %}
-	  <li class="l-padin m-padin s-padin">
+	  <li class="m-padin s-padin">
 	    	<a href="{{ item.url }}">
-	    		<h3>{{ item.title }}</h3>
-	    		<p class="m-hide s-hide">{{ item.date | date: "%Y-%m-%d" }}</p>
-	    		<p class="l-hide">{{ item.date | date: "%B %d, %Y" }}</p>
+	    		<span>
+	    			<h3>{{ item.title }}</h3>
+	    			<p>{{ item.date | date: "%B %d, %Y" }}</p>
+	    		</span>
 	    	</a>
 	  	</li>
 	{% endfor %}
-	</ul>
+</ul>
 
 
 {% comment %}
