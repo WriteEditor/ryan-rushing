@@ -8,7 +8,7 @@
 //    --------------------------------
 //    --------------------------------
 
-@import "gridset-real-sass.scss";
+//@import "gridset-real-sass.scss";
 
 $accent: #eb1072; //pink
 
@@ -45,7 +45,7 @@ header      { width: 100%; float: left; clear: both; margin: 50px 0 0 0;}
         li h4           { margin: 0; }
 
         // // Paragraph grid
-        // #individual {
+         #individual {
         //     clear: both;
         //     overflow: hidden;
             
@@ -62,11 +62,11 @@ header      { width: 100%; float: left; clear: both; margin: 50px 0 0 0;}
         //         //@include gs-span(l, all);
         //     }
 
-        //     blockquote {
-        //         padding: 20px;
-        //         border-left: 2px solid #eb1072;
-        //     }           
-        // }
+             blockquote {
+                 padding: 20px;
+                 border-left: 2px solid #eb1072;
+             }           
+         }
 
         #next-prev{
             clear: both;
@@ -216,7 +216,6 @@ header      { width: 100%; float: left; clear: both; margin: 50px 0 0 0;}
         
 //         p, h3, h4, blockquote, img, ul, ol {
 //             //@include gs-span(m, 3);
-//             background: red;
 //         }
 
 //         blockquote p {
