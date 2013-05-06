@@ -44,29 +44,29 @@ header      { width: 100%; float: left; clear: both; margin: 50px 0 0 0;}
         h4              { margin: 0 0 20px 0; font-weight: 400; font-style: italic; color: #777;}
         li h4           { margin: 0; }
 
-        // Paragraph grid
-        #individual {
-            clear: both;
-            overflow: hidden;
+        // // Paragraph grid
+        // #individual {
+        //     clear: both;
+        //     overflow: hidden;
             
-            p, h3, h4, blockquote, img, ul, ol {
-                @include gs-span(l, 3, 4);
-                clear: both;
-            }
+        //     p, h3, h4, blockquote, img, ul, ol {
+        //         //@include gs-span(l, 3, 4);
+        //         //clear: both;
+        //     }
 
-            blockquote p {
-                @include gs-span(l, 3, 4, (3, 4));
-            }
+        //     blockquote p {
+        //        //@include gs-span(l, 3, 4, (3, 4));
+        //     }
 
-            img.full {
-                @include gs-span(l, all);
-            }
+        //     img.full {
+        //         //@include gs-span(l, all);
+        //     }
 
-            blockquote {
-                padding: 20px;
-                border-left: 2px solid #eb1072;
-            }           
-        }
+        //     blockquote {
+        //         padding: 20px;
+        //         border-left: 2px solid #eb1072;
+        //     }           
+        // }
 
         #next-prev{
             clear: both;
@@ -77,6 +77,7 @@ header      { width: 100%; float: left; clear: both; margin: 50px 0 0 0;}
                 background: #f3f3f3;
                 text-align: center;
                 display: inline-block;
+                width: 100%;
 
                 a {
                     padding:20px 0;
@@ -85,21 +86,17 @@ header      { width: 100%; float: left; clear: both; margin: 50px 0 0 0;}
             }
 
             .next {
-                 @include gs-span(l, 4, 5);
+                 //@include gs-span(l, 4, 5);
             }
             
             .previous {
-                 @include gs-span(l, 2, 3);
+                 //@include gs-span(l, 2, 3);
             }
 
             h3 { 
                 text-align: center;
             }
         }
-
-
-
-
 
         li p                                { margin: 0 0 20px 0; }
         #individual p + p, #about p + p     { text-indent: 3%;}
@@ -134,9 +131,6 @@ header      { width: 100%; float: left; clear: both; margin: 50px 0 0 0;}
         #writings-projects p            { padding: 20px 0 0 0; font-size: 75%; font-style: italic; color: #999;}
 
         // Articles
-        img.writing-logo                { opacity: .3;}
-        img.writing-logo:hover          { opacity: 1;}
-
         #individual p:last-child:after  { content: url(../img/little-logo.png); padding: 0 0 0 5px;}
         #individual ul p:last-child:after, 
         #individual ol p:last-child:after, 
@@ -176,14 +170,14 @@ header      { width: 100%; float: left; clear: both; margin: 50px 0 0 0;}
 
         // archive
         #archive    {
-            @include gs-span(l, all);
+            //@include gs-span(l, all);
             list-style: none !important;
             
             a       { padding: 10px 0;} 
             li, a   { float: left; clear: both; width: 100%;}
             h3      { font-size: 120%; float: left; clear: left; margin: 0; font-weight: 400;}
             p       { font-size: 100%; float: right; clear: right; color: #000; font-style: normal; text-decoration: none;}
-            span    { display: inline-block; @include gs-span(l, 3, 4); }
+            span    { display: inline-block; /*@include gs-span(l, 3, 4);*/ }
             li {
                 &:nth-child(2n)         { background: #fff;}
                 &:hover a, &:hover p    { color: $accent;}
@@ -197,7 +191,7 @@ header      { width: 100%; float: left; clear: both; margin: 50px 0 0 0;}
     // #carbonads-container .carbonad-tag  { bottom: 10px ;}
     // #carbonads-container .carbonad-image{ position: absolute; left: 0;}
 
-    #carbonads-container .carbonad {margin: 50px auto}
+    #carbonads-container .carbonad {margin: 50px auto; background: rgba(255,255,255,.5); border: 0 none;}
     #carbonads-container img { border-radius: 0; width: auto;}
 
 //    --------------------------------
@@ -216,17 +210,42 @@ header      { width: 100%; float: left; clear: both; margin: 50px 0 0 0;}
     #projects p  { width: 100%; float: left;}
 }
 
-@media only screen and (max-width : 500px){
-    body         { font-size: 100%;}
-}
+// @include gs-media(m) {
+//     #individual {
+//         //@include gs-span(m, all);
+        
+//         p, h3, h4, blockquote, img, ul, ol {
+//             //@include gs-span(m, 3);
+//             background: red;
+//         }
+
+//         blockquote p {
+//             //@include gs-span(m, 3);
+//         }
+
+//         img.full {
+//             //@include gs-span(m, all);
+//         }         
+//     }
+// }
 
 @media only screen and (max-width : 450px)  {
     #about      { padding: 20px 0; margin: 0}
-    footer      { opacity: 1; margin: 40px 0 80px 0;}
-    header      { margin: 40px 0 20px 0;}
+    footer      { margin: 40px 0 80px 0;}
+    header      { margin: 0;}
     hgroup      { margin-bottom: 20px;}
+    body    { font-size: 100%;}
 }
 
-@media only screen and (max-width : 400px)  {
+@media only screen and (max-width : 665px)  {
+    
+    #carbonads-container .carbonad {
+        width: 100%;  
+        float: left;
+        clear: both; 
+        height: auto;
+        padding: 0 0 11px 0;
+        margin: 0;
+    }
 
 }

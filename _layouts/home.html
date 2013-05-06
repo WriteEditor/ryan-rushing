@@ -38,12 +38,12 @@
 
 			<header>
 				<div class="l-all m-all s-all">
-					<ul id="site-nav" class="l1-l2 m1 s1">
+					<ul id="site-nav" class="l1-l2 m1-m2 s-hide">
 						<li><a href="/writing">writing</a></li>
 						<li><a href="http://dribbble.com/ryanrushing">lettering</a></li>
 					</ul>
 
-					<div class="l3 m1 s1" id="logo-wrap">					
+					<div class="l3 m3 s-hide" id="logo-wrap">					
 						{% if page.logo %} 
 							<a href="/"><img src="/img/for-projects/{{ page.logo }}" alt="{{ page.title }}"/></a>
 						{% else %}
@@ -51,7 +51,7 @@
 						{% endif %}
 					</div>
 					
-					<ul id="contact-info" class="l5-l6 m3-m4 s-hide">
+					<ul id="contact-info" class="l5-l6 m4-m5 s-hide">
 						<li><a href="http://twitter.com/drawingtype">Twitter</a></li>
 						<li><a href="http://dribbble.com/ryanrushing">Dribbble</a></li>
 						<li><a href="mailto:get@ryan-rushing.com">Email</a></li>
@@ -59,71 +59,87 @@
 				</div>
 				
 				<div class="l-all m-all s-all">
-					<div class="l1-l2 m4 s2" id="carbonads-container">
-						<div style="margin: 0 auto;" class="carbonad">
+					<div id="carbonads-container" class="l1-l2 m1-m2 s-all">
+						<div style="margin: 0 auto;" class="carbonad s2-s4">
 							<div id="azcarbon">
 							</div>
 							<script type="text/javascript">var z = document.createElement("script"); z.type = "text/javascript"; z.async = true; z.src = "http://engine.carbonads.com/z/29084/azcarbon_2_1_0_VERT"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(z, s);</script>
 						</div>
 					</div>
-					<div class="l3-l4 m2-m3 s2">
-						<h1>{{ page.title }}</h1>					
-						<section id="about" class="m-all s-all">
-							<p>
-								I&rsquo;m on the UX team at <a href="http://kalkomey.com">Kalkomey</a>, leading the world in providing recreational safety materials. I'm also the curator of <a href="http://canyoudefinelove.com">Can you define love?</a>, a blog about people and their thoughts on love.
-							</p>
-							<p>
-								I like to <a href="http://dribbble.com/ryanrushing">draw letters</a> and <a href="/writing">write about design</a>.
-							</p>
-						</section>
+					
+
+
+					<div id="mobile-focus" class="l3-l4 m3-m4 s-all">
+						<div class="l-hide m-hide s1" id="logo-wrap">					
+							{% if page.logo %} 
+								<a href="/"><img src="/img/for-projects/{{ page.logo }}" alt="{{ page.title }}"/></a>
+							{% else %}
+								<a href="/"><img{% if page.category contains 'writing' %} class="writing-logo"{% endif %} src="/img/ryan-rushing-logo.png" alt=""></a>
+							{% endif %}
+						</div>
+						
+						<div class="s2-s4">
+							<h1>{{ page.title }}</h1>					
+							<section class="s2-s4" id="about">
+								<p>
+									I&rsquo;m on the UX team at <a href="http://kalkomey.com">Kalkomey</a>, leading the world in providing recreational safety materials. I'm also the curator of <a href="http://canyoudefinelove.com">Can you define love?</a>, a blog about people and their thoughts on love.
+								</p>
+								<p>
+									I like to <a href="http://dribbble.com/ryanrushing">draw letters</a> and <a href="/writing">write about design</a>. <a href="http://rachelrushing.com">We</a> live in the Dallas-area with our greyhound <a href="http://instagram.com/p/X0iKIbwL_z/">Kodak</a>.
+								</p>
+							</section>
+						</div>
 					</div>
 				</div>
-
 			</header>
-			<div class="l-all m-all s-all">
-				<article id="latest-post" class="l3-l4 m-all s-all">
-					{% for item in site.categories.writing limit:1%}
-				    	<h3>Latest Writing:</h3>
-				    	<h1><a href="{{item.url}}">{{ item.title }}</a></h1>
-				    	<p>{{ item.excerpt }} <a href="{{ item.url }}">Continue reading&hellip;</a></p>
-					{% endfor %}
-				</article>
-			</div>
-			<div class="l-all m-all s-all">
-				<article id="recent-posts" class="l3-l4 m2-m3 s-all">
-					<h3>Recent writings</h3>
-					<ul>
-						{% for item in site.categories.writing limit:5 offset:1 %}
-					  	<li>
-					    	<a href="{{ item.url }}">{{ item.title }}</a>
-					  	</li>
-					  	{% endfor %}
-					</ul>
+			<div class="l-all m-all s-all" id="post-wrap">
+				<div class="l-all m-all s2-s3">
+					<article id="latest-post" class="l3-l4 m2-m4 s-all">
+						{% for item in site.categories.writing limit:1 %}
+					    	<h3>Latest Writing:</h3>
+					    	<h2><a href="{{item.url}}">{{ item.title }}</a></h2>
+					    	<p>{{ item.excerpt }} <a href="{{ item.url }}">Continue reading&hellip;</a></p>
+						{% endfor %}
+					</article>
+				</div>
+				<div class="l-all m-all s-all">
+					<article id="recent-posts" class="l3-l4 m2-m4 s2-s3">
+						<h3>Recent writings</h3>
+						<ul>
+							{% for item in site.categories.writing limit:5 offset:1 %}
+						  	<li>
+						    	<a href="{{ item.url }}">{{ item.title }}</a>
+						  	</li>
+						  	{% endfor %}
+						</ul>
+					</article>
+				</div>
 			</div>
 
 			<div id="projects">
-				<h3 class="l-all m-all s-all">Projects</h3>
-				
+				<div class="l-all m-all s-all">
+					<h2 class="l2-l4 m2-m3 s2-s3">Projects</h2>
+				</div>
 				<ul>
 					<li class="l-all m-all s-all">
-						<div class="l2-l3">
-							<h4>Personal project</h4>
+						<div class="l2-l3 m2-m4 s2-s3">
+							<h3>Personal project</h3>
 							<p>
-								<a href="http://canyoudefinelove.com">Can you define love?</a> is a blog of collected love definitions from all over the world. The point of the blog is not to define love, but to show how much we have in common. (redesign currently in progress)
+								<a href="http://canyoudefinelove.com">Can you define love?</a> is a blog of collected love definitions from all over the world. The point of the blog is not to define love, but to show how much we have in common.
 							</p>
 							<ul>
 								<a href="http://canyoudefinelove.com">Visit the site &rarr;</a>
 							</ul>
 						</div>
-						<div class="l4-l5">
+						<div class="l4-l5 m2-m4 s2-s3">
 							<a href="http://canyoudefinelove.com">
-								<img src="/img/for-projects/cydl.jpg" alt="Can you define love?">
+								<img src="/img/for-projects/thumbs/cydl.jpg" alt="Can you define love?">
 							</a>
 						</div>
 					</li>
 					<li class="l-all m-all s-all">
-						<div class="l2-l3">
-							<h4>Client work</h4>
+						<div class="l2-l3 m2-m4 s2-s3">
+							<h3>Client work</h3>
 							<p>
 								<a href="http://npcc.cc">North Point Christian Church</a> needed a rebranding and site redesign that highlighting the diverse, service-oriented spirit of the church.
 							</p>
@@ -131,16 +147,16 @@
 								<a href="http://npcc.cc">Visit the site &rarr;</a>
 							</ul>
 						</div>
-						<div class="l4-l5">
+						<div class="l4-l5 m2-m4 s2-s3">
 							<a href="http://npcc.cc">
-								<img src="/img/for-projects/npcc.jpg" alt="North Point Christian Church">
+								<img src="/img/for-projects/thumbs/npcc.jpg" alt="North Point Christian Church">
 							</a>
 						</div>
 						
 					</li>
 					<li class="l-all m-all s-all">
-						<div class="l2-l3">
-							<h4>Client work</h4>
+						<div class="l2-l3 m2-m4 s2-s3">
+							<h3>Client work</h3>
 							<p>
 								<a href="http://rachelrushing.com">Rachel Rushing</a> is an artist who focuses on alternative process photography and installation work. Her rebranding and site contentrates on a good reading experience for both her portfolio and essays. 
 							</p>
@@ -148,54 +164,33 @@
 								<a href="http://rachelrushing.com">Visit her site &rarr;</a>
 							</ul>
 						</div>
-						<div class="l4-l5">
+						<div class="l4-l5 m2-m4 s2-s3">
 							<a href="http://rachelrushing.com">
-								<img src="/img/for-projects/r.jpg" alt="Rachel Rushing">
+								<img src="/img/for-projects/thumbs/rr.jpg" alt="Rachel Rushing">
 							</a>
 						</div>
 						
-					</li>
-					<li class="l-all m-all s-all">
-						<div class="l2-l3">
-							<h4>Client work</h4>
-							<p>
-								The <a href="http://miss-louveteransvillage.com">Miss-Lou Veteran's Village</a> is a non-profit dedicated to providing jobs opportunities and other resources for veterans in the Mississippi and Louisiana region.
-							</p>
-							<ul>
-								<a href="http://miss-louveteransvillage.com">Visit the site &rarr;</a>
-							</ul>
-						</div>
-						<div class="l4-l5">
-							<a href="http://miss-louveteransvillage.com">
-								<img src="/img/for-projects/mslavv.jpg" alt="Miss-Lou Veteran's Village">
-							</a>
-						</div>
 					</li>
 				</ul>
 			</div>
 		
 
-			<footer class="l2-l5 m-all s-all">
+			<footer class="l2-l5 m2-m4 s2-s3">
 				<span class="l3-l4 s-hide">
-					I&rsquo;d love to hear from you! You can reach me on <a href="http://twitter.com/drawingtype">Twitter</a> or get at me through email: <a href="mailto:get@ryan-rushing.com">get@ryan-rushing.com</a>. If you&rsquo;re curious, <a href="/about">read more about me</a>.
+					I&rsquo;d love to hear from you! You can reach me on <a href="http://twitter.com/drawingtype">Twitter</a> or get at me through email: <a href="mailto:get@ryan-rushing.com">get@ryan-rushing.com</a>.
 					<br>
 					<br>
 					To receive the latest, suscribe to the <a href="/feed.xml">RSS feed</a>.
 				</span>
 
 				<div class="l-hide m-hide">
-					<div class="s-all">
-						<a href="/about/">Learn more about me here,</a> and if you want to contact me, I'd be happy to hear from you!
-						<br>
-						<br>
-						To receive the latest, suscribe to the <a href="/feed.xml">RSS feed</a>.
+					To receive the latest, suscribe to the <a href="/feed.xml">RSS feed</a>.
 
-						<ul id="contact-info" >
-							<li><a href="mailto:get@ryan-rushing.com">Email</a></li>
-							<li><a href="http://twitter.com/drawingtype">Twitter</a></li>
-							<li><a href="http://dribbble.com/ryanrushing">Dribbble</a></li>
-						</ul>
-					</div>
+					<ul id="contact-info" >
+						<li><a href="mailto:get@ryan-rushing.com">Email</a></li>
+						<li><a href="http://twitter.com/drawingtype">Twitter</a></li>
+						<li><a href="http://dribbble.com/ryanrushing">Dribbble</a></li>
+					</ul>
 				</div>
 			</footer>
 

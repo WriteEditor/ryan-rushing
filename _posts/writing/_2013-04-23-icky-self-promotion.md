@@ -6,7 +6,7 @@ background_color: 9b8376
 link_color: ffffff
 link_hover: 222222
 header_img: goo.png
-excerpt: I have read articles, tweets, and inspirational quotes which in some way states good work will lead to success, but there is a fundamental problem with this idea: we don't create work in a vacuum.
+excerpt: No matter the type of work you're doing, there is someone else doing something similar, and if you're starting out, it can be frustrating to do all the good work you can do, but nothing seems to land among your peers as notable.
 ---
 
 I've read articles, tweets, and inspirational quotes which in some way states good work will lead to success, but there is a fundamental problem with this idea: we don't create work in a vacuum.

@@ -1,1 +1,524 @@
-html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}nav ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}input,select{vertical-align:middle}*{box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box}body{line-height:2;font-size:120%;background:#f9f9f9;font-family:'Bitter';position:relative}header{width:100%;float:left;clear:both;margin:50px 0 0 0}footer{float:left;clear:both;width:100%;margin:40px 0 200px 0;border-top:2px solid #eb1072;padding:20px 0 0 0}footer #contact-info{text-align:center;margin:40px 0 0 0}#contact-info{text-align:center;list-style:none}#site-nav{list-style:none;padding:0 0 20px 0}#site-nav li{text-align:center}hgroup{float:left;text-align:left;margin:40px 0 80px 0}h1,h2{width:100%}h1{font-size:300%;line-height:1.2}h2,h3{font-size:100%;font-weight:400}h3{margin:0 0 20px 0;font-weight:700}p+h3{margin:20px 0 20px 0}h4{margin:0 0 20px 0;font-weight:400;font-style:italic;color:#777}li h4{margin:0}#individual{clear:both;overflow:hidden}#individual p,#individual h3,#individual h4,#individual blockquote,#individual img,#individual ul,#individual ol{display:block;float:left;margin-left:26%;margin-right:-100%;width:47.85%;clear:both}#individual blockquote p{display:block;float:left;margin-left:0%;margin-right:-100%;width:100%}#individual img.full{clear:both;display:block;float:left;margin-left:0;width:100%}#individual blockquote{padding:20px;border-left:2px solid #eb1072}#next-prev{clear:both;overflow:hidden;padding:80px 0 0 0}#next-prev .next,#next-prev .previous{background:#f3f3f3;text-align:center;display:inline-block}#next-prev .next a,#next-prev .previous a{padding:20px 0;display:inline-block}#next-prev .next{display:block;float:left;margin-left:51.425%;margin-right:-100%;width:35.425%}#next-prev .previous{display:block;float:left;margin-left:13%;margin-right:-100%;width:35.425%}#next-prev h3{text-align:center}li p{margin:0 0 20px 0}#individual p+p,#about p+p{text-indent:3%}#individual ul p+p{text-indent:0}ol{list-style:decimal-leading-zero outside;padding:20px 0 20px 40px}a{color:#214f84;font-style:italic}a:hover{color:#cc0e60}a::selection,a::-moz-selection{color:#aaa;text-decoration:none}*::selection,*::-moz-selection{background:#214F84;color:#f9f9f9}em,blockquote{color:#777}img{width:100%;border-radius:3px}#individual figure{padding:40px 0}#logo-wrap a{max-width:70px;display:block;margin:20px 0 0 0}#face{margin:20px 0}#about{padding:40px 0}#about ul{margin:20px 0;list-style:disc outside}#writings-projects,#individual{clear:both;padding:0 0 40px 0}#writings-projects ul{list-style:disc outside}#writings-projects h3{margin:20px 0}#writings-projects p{padding:20px 0 0 0;font-size:75%;font-style:italic;color:#999}img.writing-logo{opacity:.3}img.writing-logo:hover{opacity:1}#individual p:last-child:after{content:url(../img/little-logo.png);padding:0 0 0 5px}#individual ul p:last-child:after,#individual ol p:last-child:after,blockquote p:last-child:after{display:none}#lettering-archive a img,#archive a,#archive p,#archive li,img.writing-logo,a,footer{transition-property:all;transition-duration:200ms;transition-timing-function:ease-in-ouy;transition-delay:0ms;-webkit-transition-property:all;-webkit-transition-duration:200ms;-webkit-transition-timing-function:ease-in-out;-webkit-transition-delay:0ms;-moz-transition-property:all;-moz-transition-duration:200ms;-moz-transition-timing-function:ease-in-out;-moz-transition-delay:0ms;-o-transition-property:all;-o-transition-duration:200ms;-o-transition-timing-function:ease-in-out;-o-transition-delay:0ms}#lettering-archive a img{border:2px solid #F9F9F9;margin:20px 0}#lettering-archive a:hover img{border:2px solid #cc0e60}#archive{clear:both;display:block;float:left;margin-left:0;width:100%;list-style:none !important}#archive a{padding:10px 0}#archive li,#archive a{float:left;clear:both;width:100%}#archive h3{font-size:120%;float:left;clear:left;margin:0;font-weight:400}#archive p{font-size:100%;float:right;clear:right;color:#000;font-style:normal;text-decoration:none}#archive span{display:inline-block;display:block;float:left;margin-left:26%;margin-right:-100%;width:47.85%}#archive li:nth-child(2n){background:#fff}#archive li:hover a,#archive li:hover p{color:#eb1072}#carbonads-container .carbonad{margin:50px auto}#carbonads-container img{border-radius:0;width:auto}@media only screen and (max-width: 1000px){#archive p{float:left;clear:left}#projects p{width:100%;float:left}}@media only screen and (max-width: 500px){body{font-size:100%}}@media only screen and (max-width: 450px){#about{padding:20px 0;margin:0}footer{opacity:1;margin:40px 0 80px 0}header{margin:40px 0 20px 0}hgroup{margin-bottom:20px}}#home header{background:url(/img/for-projects/wch/book-background-low-opacity.jpg) no-repeat top left transparent;background-size:100%;margin:0;padding:50px 0}#latest-post{padding:40px 0}#latest-post h3{margin:0}#latest-post h1{margin:0 0 40px 0}#home h3{font-weight:700}#lettering{margin:40px 0}
+/*--- reset everything --*/
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+/* line 22, ../_assets/_reset.scss */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* line 32, ../_assets/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 37, ../_assets/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 41, ../_assets/_reset.scss */
+nav ul {
+  list-style: none;
+}
+
+/* line 45, ../_assets/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 50, ../_assets/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 55, ../_assets/_reset.scss */
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* line 64, ../_assets/_reset.scss */
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+/* line 70, ../_assets/_reset.scss */
+input, select {
+  vertical-align: middle;
+}
+
+/* line 25, ../_assets/_ryan-main.scss */
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+/* line 26, ../_assets/_ryan-main.scss */
+body {
+  line-height: 2;
+  font-size: 120%;
+  background: #f9f9f9;
+  font-family: 'Bitter';
+  position: relative;
+}
+
+/* line 27, ../_assets/_ryan-main.scss */
+header {
+  width: 100%;
+  float: left;
+  clear: both;
+  margin: 50px 0 0 0;
+}
+
+/* line 30, ../_assets/_ryan-main.scss */
+footer {
+  float: left;
+  clear: both;
+  width: 100%;
+  margin: 40px 0 200px 0;
+  border-top: 2px solid #eb1072;
+  padding: 20px 0 0 0;
+}
+
+/* line 31, ../_assets/_ryan-main.scss */
+footer #contact-info {
+  text-align: center;
+  margin: 40px 0 0 0;
+}
+
+/* line 32, ../_assets/_ryan-main.scss */
+#contact-info {
+  text-align: center;
+  list-style: none;
+}
+
+/* line 33, ../_assets/_ryan-main.scss */
+#site-nav {
+  list-style: none;
+  padding: 0 0 20px 0;
+}
+
+/* line 34, ../_assets/_ryan-main.scss */
+#site-nav li {
+  text-align: center;
+}
+
+/* line 38, ../_assets/_ryan-main.scss */
+hgroup {
+  float: left;
+  text-align: left;
+  margin: 40px 0 80px 0;
+}
+
+/* line 39, ../_assets/_ryan-main.scss */
+h1, h2 {
+  width: 100%;
+}
+
+/* line 40, ../_assets/_ryan-main.scss */
+h1 {
+  font-size: 300%;
+  line-height: 1.2;
+}
+
+/* line 41, ../_assets/_ryan-main.scss */
+h2, h3 {
+  font-size: 100%;
+  font-weight: 400;
+}
+
+/* line 42, ../_assets/_ryan-main.scss */
+h3 {
+  margin: 0 0 20px 0;
+  font-weight: 700;
+}
+
+/* line 43, ../_assets/_ryan-main.scss */
+p + h3 {
+  margin: 20px 0 20px 0;
+}
+
+/* line 44, ../_assets/_ryan-main.scss */
+h4 {
+  margin: 0 0 20px 0;
+  font-weight: 400;
+  font-style: italic;
+  color: #777;
+}
+
+/* line 45, ../_assets/_ryan-main.scss */
+li h4 {
+  margin: 0;
+}
+
+/* line 71, ../_assets/_ryan-main.scss */
+#next-prev {
+  clear: both;
+  overflow: hidden;
+  padding: 80px 0 0 0;
+}
+/* line 76, ../_assets/_ryan-main.scss */
+#next-prev .next, #next-prev .previous {
+  background: #f3f3f3;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+}
+/* line 82, ../_assets/_ryan-main.scss */
+#next-prev .next a, #next-prev .previous a {
+  padding: 20px 0;
+  display: inline-block;
+}
+/* line 96, ../_assets/_ryan-main.scss */
+#next-prev h3 {
+  text-align: center;
+}
+
+/* line 101, ../_assets/_ryan-main.scss */
+li p {
+  margin: 0 0 20px 0;
+}
+
+/* line 102, ../_assets/_ryan-main.scss */
+#individual p + p, #about p + p {
+  text-indent: 3%;
+}
+
+/* line 103, ../_assets/_ryan-main.scss */
+#individual ul p + p {
+  text-indent: 0;
+}
+
+/* line 106, ../_assets/_ryan-main.scss */
+ol {
+  list-style: decimal-leading-zero outside;
+  padding: 20px 0 20px 40px;
+}
+
+/* line 109, ../_assets/_ryan-main.scss */
+a {
+  color: #214f84;
+  font-style: italic;
+}
+
+/* line 110, ../_assets/_ryan-main.scss */
+a:hover {
+  color: #cc0e60;
+}
+
+/* line 111, ../_assets/_ryan-main.scss */
+a::selection, a::-moz-selection {
+  color: #aaa;
+  text-decoration: none;
+}
+
+/* line 112, ../_assets/_ryan-main.scss */
+*::selection, *::-moz-selection {
+  background: #214F84;
+  color: #f9f9f9;
+}
+
+/* line 113, ../_assets/_ryan-main.scss */
+em, blockquote {
+  color: #777;
+}
+
+/* line 116, ../_assets/_ryan-main.scss */
+img {
+  width: 100%;
+  border-radius: 3px;
+}
+
+/* line 117, ../_assets/_ryan-main.scss */
+#individual figure {
+  padding: 40px 0;
+}
+
+/* line 120, ../_assets/_ryan-main.scss */
+#logo-wrap a {
+  max-width: 70px;
+  display: block;
+  margin: 20px 0 0 0;
+}
+
+/* line 123, ../_assets/_ryan-main.scss */
+#face {
+  margin: 20px 0;
+}
+
+/* line 124, ../_assets/_ryan-main.scss */
+#about {
+  padding: 40px 0;
+}
+
+/* line 125, ../_assets/_ryan-main.scss */
+#about ul {
+  margin: 20px 0;
+  list-style: disc outside;
+}
+
+/* line 128, ../_assets/_ryan-main.scss */
+#writings-projects, #individual {
+  clear: both;
+  padding: 0 0 40px 0;
+}
+
+/* line 129, ../_assets/_ryan-main.scss */
+#writings-projects ul {
+  list-style: disc outside;
+}
+
+/* line 130, ../_assets/_ryan-main.scss */
+#writings-projects h3 {
+  margin: 20px 0;
+}
+
+/* line 131, ../_assets/_ryan-main.scss */
+#writings-projects p {
+  padding: 20px 0 0 0;
+  font-size: 75%;
+  font-style: italic;
+  color: #999;
+}
+
+/* line 134, ../_assets/_ryan-main.scss */
+#individual p:last-child:after {
+  content: url(../img/little-logo.png);
+  padding: 0 0 0 5px;
+}
+
+/* line 137, ../_assets/_ryan-main.scss */
+#individual ul p:last-child:after,
+#individual ol p:last-child:after,
+blockquote p:last-child:after {
+  display: none;
+}
+
+/* line 143, ../_assets/_ryan-main.scss */
+#lettering-archive a img, #archive a, #archive p, #archive li, img.writing-logo, a, footer {
+  transition-property: all;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in-ouy;
+  transition-delay: 0ms;
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 200ms;
+  -webkit-transition-timing-function: ease-in-out;
+  -webkit-transition-delay: 0ms;
+  -moz-transition-property: all;
+  -moz-transition-duration: 200ms;
+  -moz-transition-timing-function: ease-in-out;
+  -moz-transition-delay: 0ms;
+  -o-transition-property: all;
+  -o-transition-duration: 200ms;
+  -o-transition-timing-function: ease-in-out;
+  -o-transition-delay: 0ms;
+}
+
+/* line 166, ../_assets/_ryan-main.scss */
+#lettering-archive a img {
+  border: 2px solid #F9F9F9;
+  margin: 20px 0;
+}
+
+/* line 167, ../_assets/_ryan-main.scss */
+#lettering-archive a:hover img {
+  border: 2px solid #cc0e60;
+}
+
+/* line 172, ../_assets/_ryan-main.scss */
+#archive {
+  list-style: none !important;
+}
+/* line 176, ../_assets/_ryan-main.scss */
+#archive a {
+  padding: 10px 0;
+}
+/* line 177, ../_assets/_ryan-main.scss */
+#archive li, #archive a {
+  float: left;
+  clear: both;
+  width: 100%;
+}
+/* line 178, ../_assets/_ryan-main.scss */
+#archive h3 {
+  font-size: 120%;
+  float: left;
+  clear: left;
+  margin: 0;
+  font-weight: 400;
+}
+/* line 179, ../_assets/_ryan-main.scss */
+#archive p {
+  font-size: 100%;
+  float: right;
+  clear: right;
+  color: #000;
+  font-style: normal;
+  text-decoration: none;
+}
+/* line 180, ../_assets/_ryan-main.scss */
+#archive span {
+  display: inline-block;
+  /*@include gs-span(l, 3, 4);*/
+}
+/* line 182, ../_assets/_ryan-main.scss */
+#archive li:nth-child(2n) {
+  background: #fff;
+}
+/* line 183, ../_assets/_ryan-main.scss */
+#archive li:hover a, #archive li:hover p {
+  color: #eb1072;
+}
+
+/* line 194, ../_assets/_ryan-main.scss */
+#carbonads-container .carbonad {
+  margin: 50px auto;
+  background: rgba(255, 255, 255, 0.5);
+  border: 0 none;
+}
+
+/* line 195, ../_assets/_ryan-main.scss */
+#carbonads-container img {
+  border-radius: 0;
+  width: auto;
+}
+
+@media only screen and (max-width: 1000px) {
+  /* line 209, ../_assets/_ryan-main.scss */
+  #archive p {
+    float: left;
+    clear: left;
+  }
+
+  /* line 210, ../_assets/_ryan-main.scss */
+  #projects p {
+    width: 100%;
+    float: left;
+  }
+}
+@media only screen and (max-width: 450px) {
+  /* line 233, ../_assets/_ryan-main.scss */
+  #about {
+    padding: 20px 0;
+    margin: 0;
+  }
+
+  /* line 234, ../_assets/_ryan-main.scss */
+  footer {
+    margin: 40px 0 80px 0;
+  }
+
+  /* line 235, ../_assets/_ryan-main.scss */
+  header {
+    margin: 0;
+  }
+
+  /* line 236, ../_assets/_ryan-main.scss */
+  hgroup {
+    margin-bottom: 20px;
+  }
+
+  /* line 237, ../_assets/_ryan-main.scss */
+  body {
+    font-size: 100%;
+  }
+}
+@media only screen and (max-width: 665px) {
+  /* line 242, ../_assets/_ryan-main.scss */
+  #carbonads-container .carbonad {
+    width: 100%;
+    float: left;
+    clear: both;
+    height: auto;
+    padding: 0 0 11px 0;
+    margin: 0;
+  }
+}
+/* line 2, ../_assets/_home.scss */
+#home header {
+  background: url(/img/header-bgnd.jpg) no-repeat top left transparent;
+  background-size: cover;
+  margin: 0;
+  padding: 50px 0;
+}
+
+/* line 9, ../_assets/_home.scss */
+#post-wrap {
+  background: #e8e8e8;
+  padding: 0 0 40px 0;
+  margin: 0 0 40px 0;
+}
+
+/* line 15, ../_assets/_home.scss */
+#latest-post {
+  padding: 40px 0;
+}
+
+/* line 19, ../_assets/_home.scss */
+#latest-post h1 {
+  margin: 0 0 40px 0;
+}
+
+/* line 23, ../_assets/_home.scss */
+#home h3 {
+  font-weight: 700;
+  margin: 0;
+}
+
+/* line 24, ../_assets/_home.scss */
+#home h2 {
+  font-size: 180%;
+  line-height: 1.2;
+}
+
+/* line 26, ../_assets/_home.scss */
+#projects div {
+  padding: 0 0 20px 0;
+}
+
+/* line 27, ../_assets/_home.scss */
+#projects li {
+  margin: 0 0 80px 0;
+}
+
+@media only screen and (max-width: 665px) {
+  /* line 31, ../_assets/_home.scss */
+  #home header {
+    padding: 0;
+  }
+
+  /* line 32, ../_assets/_home.scss */
+  #mobile-focus {
+    padding: 30px 0 0 0;
+  }
+}
