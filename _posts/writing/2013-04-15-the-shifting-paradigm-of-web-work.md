@@ -5,7 +5,7 @@ category: writing
 excerpt: After JT started his solo career, I went to college where everyone's dream job involved working in a design agency. In-house design work was seen as work to pay the bills. It was the means to an end, where the end was becoming a creative director for a design agency. This is changing.
 ---
 
-Designers often explain their orgins in conference bios, about pages, and interviews, and they usually sound something like this:
+Designers often explain their origins in conference bios, about pages, and interviews, and they usually sound something like this:
 
 > I built my first site with Geocities/Angelfire in 1999 all in 
 > tables then read about Jeffery Zeldman and web standards and blah
