@@ -135,6 +135,8 @@ header      { width: 100%; float: left; clear: both; margin: 50px 0 0 0;}
         #individual ul p:last-child:after, 
         #individual ol p:last-child:after, 
         blockquote p:last-child:after  {display: none;} 
+        article ul { margin: 20px 0;}
+        article li { margin: 20px 0;}
 
 
 
@@ -175,8 +177,8 @@ header      { width: 100%; float: left; clear: both; margin: 50px 0 0 0;}
             
             a       { padding: 10px 0;} 
             li, a   { float: left; clear: both; width: 100%;}
-            h3      { font-size: 120%; float: left; clear: left; margin: 0; font-weight: 400;}
-            p       { font-size: 100%; float: right; clear: right; color: #000; font-style: normal; text-decoration: none;}
+            h3      { font-size: 120%; float: left; clear: both; margin: 0; font-weight: 400;}
+            p       { font-size: 100%; float: left; clear: both; color: #000; font-style: normal; text-decoration: none;}
             span    { display: inline-block; /*@include gs-span(l, 3, 4);*/ }
             li {
                 &:nth-child(2n)         { background: #fff;}

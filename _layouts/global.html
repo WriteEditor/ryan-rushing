@@ -1,39 +1,20 @@
 <!doctype html>
-
 	<html>
 		<head>
-
-			<title>
-				{% if page.title %} 
-					{{ page.title }} 
-				{% else %}
-					Ryan Rushing, designer
-				{% endif %}
-			</title>
-			
+			<title>{% if page.title %}{{ page.title }}{% else %}Ryan Rushing, designer{% endif %}</title>
 			<meta charset="utf-8" />
-			
-			{% if page.description %}
-				<meta name="description" content="{{page.description}}" /> 
-			{% else %}
-				<meta name="description" content="Ryan Rushing is a designer in the Dallas area, who makes stuff like websites, lettery things and screenprints." /> 
-			{% endif %} 
-			
+		{% if page.excerpt %}
+			<meta name="description" content="{{page.excerpt}}" /> 
+		{% else %}
+			<meta name="description" content="Ryan Rushing is a designer in the Dallas area, who makes stuff like websites, lettery things and screenprints." /> 
+		{% endif %} 
 			<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1 user-scalable=yes"/>
-			
-			<!-- Icon for home screens -->
 			<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144x144-precomposed.png">
-
-			<!-- CSS -->
+			<link href='http://fonts.googleapis.com/css?family=Bitter:400,700,400italic' rel='stylesheet' type='text/css'>
 			<link rel="stylesheet" type="text/css" href="/css/ryan.css" />
-			
 			<!--[if lt IE 9]>
 			<link rel="stylesheet" type="text/css" href="/css/gridset-ie-lte8.css"/>
 			<![endif]-->
-
-			<!-- Fonts -->
-			<link href='http://fonts.googleapis.com/css?family=Bitter:400,700,400italic' rel='stylesheet' type='text/css'>
-			
 		</head>
 		<body>
 
