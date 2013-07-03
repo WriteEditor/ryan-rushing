@@ -65,7 +65,11 @@ header      { width: 100%; float: left; clear: both; margin: 50px 0 0 0;}
              blockquote {
                  padding: 20px;
                  border-left: 2px solid #eb1072;
-             }           
+             }    
+
+             small { display: block; margin:  -20px 0 20px; font-size: .5em; color: #222;}
+
+             img { margin: 20px 0;}  
          }
 
         #next-prev{
@@ -125,7 +129,7 @@ header      { width: 100%; float: left; clear: both; margin: 50px 0 0 0;}
         #about ul       { margin: 20px 0; list-style: disc outside; }
 
         // Home page
-        #writings-projects, #individual { clear: both; padding: 0 0 40px 0;}
+        #writings-projects, #individual { overflow: hidden; padding: 0 0 40px 0;}
         #writings-projects ul           { list-style: disc outside;}
         #writings-projects h3           { margin: 20px 0;}
         #writings-projects p            { padding: 20px 0 0 0; font-size: 75%; font-style: italic; color: #999;}
@@ -137,6 +141,7 @@ header      { width: 100%; float: left; clear: both; margin: 50px 0 0 0;}
         blockquote p:last-child:after  {display: none;} 
         article ul { margin: 20px 0;}
         article li { margin: 20px 0;}
+        #article-wrap { clear: both; overflow: hidden; width:100%;}
 
 
 
@@ -195,6 +200,8 @@ header      { width: 100%; float: left; clear: both; margin: 50px 0 0 0;}
 
     #carbonads-container .carbonad {margin: 50px auto; background: rgba(255,255,255,.5); border: 0 none;}
     #carbonads-container img { border-radius: 0; width: auto;}
+
+    #article-wrap #carbonads-container .carbonad { margin: 0 auto; }
 
 //    --------------------------------
 //    --------------------------------

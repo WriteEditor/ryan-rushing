@@ -10,9 +10,22 @@ layout: global
 	</style>
 {% endif %}
 
-<article id="individual" class="l3-l4 m2-m4 s2-s3">
+<div id="article-wrap">
+{% if page.header_img %}
+	<div id="carbonads-container" class="l1-l2 m1-m2 s-all">
+		<div class="carbonad s2-s4">
+			<div id="azcarbon">
+			</div>
+			<script type="text/javascript">var z = document.createElement("script"); z.type = "text/javascript"; z.async = true; z.src = "http://engine.carbonads.com/z/29084/azcarbon_2_1_0_VERT"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(z, s);</script>
+		</div>
+	</div>
+{% endif %}	
+
+
+	<article id="individual" class="l3-l4 m3-m4 s2-s3">
 	{{ content }}
-</article>
+	</article>
+</div>
 
 <div id="next-prev" class="l3-l4 m2-m4 s2-s3">
 	<h3>More articles</h3>
