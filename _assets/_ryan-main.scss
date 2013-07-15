@@ -125,14 +125,6 @@ header      { width: 100%; float: left; clear: both; margin: 50px 0 0 0;}
     
         // About page
         #face           { margin: 20px 0;}
-        #about          { padding: 40px 0;}
-        #about ul       { margin: 20px 0; list-style: disc outside; }
-
-        // Home page
-        #writings-projects, #individual { overflow: hidden; padding: 0 0 40px 0;}
-        #writings-projects ul           { list-style: disc outside;}
-        #writings-projects h3           { margin: 20px 0;}
-        #writings-projects p            { padding: 20px 0 0 0; font-size: 75%; font-style: italic; color: #999;}
 
         // Articles
         #individual p:last-child:after  { content: url(../img/little-logo.png); padding: 0 0 0 5px;}
@@ -142,6 +134,8 @@ header      { width: 100%; float: left; clear: both; margin: 50px 0 0 0;}
         article ul { margin: 20px 0;}
         article li { margin: 20px 0;}
         #article-wrap { clear: both; overflow: hidden; width:100%;}
+
+
 
 
 

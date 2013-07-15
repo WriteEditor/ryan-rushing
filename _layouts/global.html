@@ -1,48 +1,11 @@
-<!doctype html>
-	<html>
-		<head>
-			<title>{% if page.title %}{{ page.title }}{% else %}Ryan Rushing, designer{% endif %}</title>
-			<meta charset="utf-8" />
-		{% if page.excerpt %}
-			<meta name="description" content="{{page.excerpt}}" /> 
-		{% else %}
-			<meta name="description" content="Ryan Rushing is a designer in the Dallas area, who makes stuff like websites, lettery things and screenprints." /> 
-		{% endif %} 
-			<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1 user-scalable=yes"/>
-			<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144x144-precomposed.png">
-			<link href='http://fonts.googleapis.com/css?family=Bitter:400,700,400italic' rel='stylesheet' type='text/css'>
-			<link rel="stylesheet" type="text/css" href="/css/ryan.css" />
-			<!--[if lt IE 9]>
-			<link rel="stylesheet" type="text/css" href="/css/gridset-ie-lte8.css"/>
-			<![endif]-->
-		</head>
+{% include head.html %}
 		<body>
-
-			{% if site.url == 'http://localhost:4000' %}
-				<h6 style="position:fixed; width: 100%; text-align: center; font-weight: 400; font-size: 14px; opacity: .5; background: #efefef;">site url: localhost:4000</h6>
-			{% endif %}
-
+			{% include local-env-marker.html %}
 			<header>
 				<div class="l-all m-all s-all">
-					<ul id="site-nav" class="l1-l2 m1-m2 s-hide">
-						<li><a href="/writing">writing</a></li>
-						<li><a href="http://dribbble.com/ryanrushing">lettering</a></li>
-						<li><a href="/">about</a></li>
-					</ul>
-
-					<div class="l3 m3 s-hide" id="logo-wrap">					
-						{% if page.logo %} 
-							<a href="/"><img src="/img/for-projects/{{ page.logo }}" alt="{{ page.title }}"/></a>
-						{% else %}
-							<a href="/"><img{% if page.category contains 'writing' %} class="writing-logo"{% endif %} src="/img/ryan-rushing-logo.png" alt=""></a>
-						{% endif %}
-					</div>
-					
-					<ul id="contact-info" class="l5-l6 m4-m5 s-hide">
-						<li><a href="http://twitter.com/drawingtype">Twitter</a></li>
-						<li><a href="http://dribbble.com/ryanrushing">Dribbble</a></li>
-						<li><a href="mailto:get@ryan-rushing.com">Email</a></li>
-					</ul>
+					{% include site-nav.html %}
+					{% include logo.html %}
+					{% include contact.html %}
 				</div>
 				<div class="l-all m-all s-all">
 					{% if page.header_img %}
@@ -82,39 +45,4 @@
 
 			{{ content }}
 
-			<footer class="l2-l5 m2-m4 s-all">
-				<span class="l3-l4 s-hide">
-					I&rsquo;d love to hear from you! You can reach me on <a href="http://twitter.com/drawingtype">Twitter</a> or get at me through email: <a href="mailto:get@ryan-rushing.com">get@ryan-rushing.com</a>.
-					<br>
-					<br>
-					To receive the latest, suscribe to the <a href="/feed.xml">RSS feed</a>.
-				</span>
-
-				<div class="l-hide m-hide">
-					<div class="s2-s3">
-						To receive the latest, suscribe to the <a href="/feed.xml">RSS feed</a>.
-
-						<ul id="contact-info" >
-							<li><a href="mailto:get@ryan-rushing.com">Email</a></li>
-							<li><a href="http://twitter.com/drawingtype">Twitter</a></li>
-							<li><a href="http://dribbble.com/ryanrushing">Dribbble</a></li>
-						</ul>
-					</div>
-				</div>
-			</footer>
-		<script type="text/javascript">
-
-		  var _gaq = _gaq || [];
-		  _gaq.push(['_setAccount', 'UA-19474850-1']);
-		  _gaq.push(['_trackPageview']);
-
-		  (function() {
-		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		  })();
-
-		</script>
-
-		</body>
-</html>
+			{% include footer.html %}

@@ -1,0 +1,7 @@
+<div class="l3 m3 s-hide" id="logo-wrap">					
+	{% if page.logo %} 
+		<a href="/"><img src="/img/for-projects/{{ page.logo }}" alt="{{ page.title }}"/></a>
+	{% else %}
+		<a href="/"><img{% if page.category contains 'writing' %} class="writing-logo"{% endif %} src="/img/ryan-rushing-logo.png" alt=""></a>
+	{% endif %}
+</div>
