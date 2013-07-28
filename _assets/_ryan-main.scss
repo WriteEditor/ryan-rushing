@@ -24,7 +24,8 @@ $accent: #eb1072; //pink
 
 *           { box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box;}
 body        { line-height: 2; font-size: 120%; background: #f9f9f9; font-family: 'Bitter'; position: relative;}
-header      { width: 100%; float: left; clear: both; margin: 50px 0 0 0;}
+header      { width: 100%; float: left; clear: both; }
+#top-bar    { padding: 20px 0; }
 
     // FOOTER STYLES
     footer                  { float: left; clear: both; width: 100%; margin: 40px 0 200px 0; border-top: 2px solid #eb1072; padding: 20px 0 0 0; }
@@ -245,13 +246,16 @@ header      { width: 100%; float: left; clear: both; margin: 50px 0 0 0;}
 
 @media only screen and (max-width : 665px)  {
     
-    #carbonads-container .carbonad {
+    #article-wrap #carbonads-container .carbonad {
         width: 100%;  
         float: left;
         clear: both; 
         height: auto;
         padding: 0 0 11px 0;
-        margin: 0;
+        margin: 0 0 20px 0;
     }
+
+    #individual p, #about p         { text-align: justify;}
+    #individual p + p, #about p + p { text-indent: 8%;}
 
 }

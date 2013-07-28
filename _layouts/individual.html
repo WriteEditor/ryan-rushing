@@ -3,16 +3,22 @@ layout: global
 ---
 {% if page.background_color %}
 	<style type="text/css">
-		body 	{ background: #{{ page.background_color }}; }
-		a 		{ color: #{{ page.link_color }};}
-		a:hover	{ color: #{{ page.link_hover }};}
-		footer  { border-top: 2px solid #{{ page.link_color }}; }
+		body 		{ background: #{{ page.background_color }}; }
+		a 			{ color: #{{ page.link_color }};}
+		a:hover		{ color: #{{ page.link_hover }};}
+		footer  	{ border-top: 2px solid #{{ page.link_color }}; }
+	</style>
+{% endif %}
+
+{% if page.header_img %}
+	<style type="text/css">
+		#top-bar	{ position: absolute;}
 	</style>
 {% endif %}
 
 <div id="article-wrap">
 {% if page.header_img %}
-	<div id="carbonads-container" class="l1-l2 m1-m2 s-all">
+	<div id="carbonads-container" class="l1-l2 m1-m2 s-all s-padinfull">
 		<div class="carbonad s2-s4">
 			<div id="azcarbon">
 			</div>
@@ -22,7 +28,7 @@ layout: global
 {% endif %}	
 
 
-	<article id="individual" class="l3-l4 m3-m4 s2-s3">
+	<article id="individual" class="l3-l4 m3-m4 s-all s-padinfull">
 	{{ content }}
 	</article>
 </div>
