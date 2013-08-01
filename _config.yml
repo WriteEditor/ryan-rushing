@@ -1,8 +1,7 @@
-server: true
 auto: true
 permalink: /writing/:year/:month/:day/:title
 baseurl: /
 name: Ryan Rushing, designer
-description: Ryan is a designer living in the Dallas-area. Sometimes he writes.
+description: Ryan is a front-end developer and designer living and working in the Dallas, TX area.
 url: http://ryan-rushing.com
-exclude:  [ Gemfile, Gemfile.lock, Procfile, vendor, gems]
+port: 9715
