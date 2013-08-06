@@ -3,5 +3,5 @@ permalink: /writing/:year/:month/:day/:title
 baseurl: /
 name: Ryan Rushing, designer
 description: Ryan is a front-end developer and designer living and working in the Dallas, TX area.
-url: http://localhost:9715/
+url: http://ryan-rushing.com/
 port: 9715
