@@ -3,32 +3,28 @@ layout: home
 title: Ryan Rushing, Dallas-based designer and front-end developer
 ---
 
-<div id="mobile-focus" class="l3-l4 m3-m4 s-all">
-	<div class="l-hide m-hide s-all" id="logo-wrap">					
-		<a href="/"><img src="/img/ryan-rushing-logo.png" alt="Ryan Rushing logo" title="Ryan Rushing"></a>
-	</div>
+
+{% include logo.html %}
+
+<div class="l3-l4 m3-m4 s-all">
+	<div id="latest-post">
+		{% for item in site.categories.writing limit:1 %}
+		<h3>Latest Writing</h3>
+		<h2><a href="{{item.url}}">{{ item.title }}</a></h2>				
+		<section>
+			<p>{{ item.excerpt }} <a href="{{ item.url }}">Continue reading&hellip;</a></p>
+		</section>
+		{% endfor %}
 	
-	<div class="s-all">
-		<div id="latest-post" class="s2-s3">
-			{% for item in site.categories.writing limit:1 %}
-			<h3>Latest Writing</h3>
-    		<h2><a href="{{item.url}}">{{ item.title }}</a></h2>				
-			<section class="s2-s4">
-				<p>{{ item.excerpt }} <a href="{{ item.url }}">Continue reading&hellip;</a></p>
-			</section>
-			{% endfor %}
-		</div>
-		<div class="s2-s3">
-			<article id="recent-posts">
-				<h3>Recent writings</h3>
-				<ul>
-					{% for item in site.categories.writing limit:5 offset:1 %}
-				  	<li>
-				    	<a href="{{ item.url }}">{{ item.title }}</a>
-				  	</li>
-				  	{% endfor %}
-				</ul>
-			</article>
-		</div>
+		<article>
+			<h3>Recent writings</h3>
+			<ul>
+				{% for item in site.categories.writing limit:5 offset:1 %}
+			  	<li>
+			    	<a href="{{ item.url }}">{{ item.title }}</a>
+			  	</li>
+			  	{% endfor %}
+			</ul>
+		</article>
 	</div>
 </div>

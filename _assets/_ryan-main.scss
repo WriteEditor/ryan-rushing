@@ -11,6 +11,8 @@
 //@import "gridset-real-sass.scss";
 
 $accent: #eb1072; //pink
+$sans_serif: "ff-meta-web-pro", "Verdana", verdana, sans-serif;
+$serif: "ff-meta-serif-web-pro", "Georgia", georgia, times, serif;
 
 //    --------------------------------
 //    --------------------------------
@@ -23,9 +25,10 @@ $accent: #eb1072; //pink
 //    --------------------------------
 
 *           { box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box;}
-body        { line-height: 2; font-size: 120%; background: #f9f9f9; font-family: 'Bitter'; position: relative;}
+body        { line-height: 2; font-size: 120%; background: #f9f9f9; font-family: $serif; position: relative;}
 header      { width: 100%; float: left; clear: both; }
-#top-bar    { padding: 20px 0; }
+#top-bar    { z-index: 1;  }
+#top-bar-inner { margin: 60px 0; width: 100%; float: left; overflow: hidden;}
 
     // FOOTER STYLES
     footer                  { float: left; clear: both; width: 100%; margin: 40px 0 200px 0; border-top: 2px solid #eb1072; padding: 20px 0 0 0; }
@@ -36,14 +39,32 @@ header      { width: 100%; float: left; clear: both; }
 
     //GLOBAL TYPOGRAPHY 
         // Headings
-        hgroup          { float: left;text-align: left; margin: 40px 0 80px 0; }
-        h1, h2          { width: 100%; }
+        hgroup          { float: left;text-align: left; margin: 0 0 80px 0; }
+        h1, h2          { width: 100%;}
+        h1, h2, h3      { font-family: $sans_serif; }
         h1              { font-size: 300%; line-height: 1.2}
         h2, h3          { font-size: 100%; font-weight: 400;}
         h3              { margin: 0 0 20px 0; font-weight: 700;}
             p + h3, ul + h3      { margin: 20px 0 20px 0;}
         h4              { margin: 0 0 20px 0; font-weight: 400; font-style: italic; color: #777;}
         li h4           { margin: 0; }
+
+        strong{
+             font-family: $sans_serif;
+             font-weight: 700;
+        }
+
+        em{
+             font-family: $sans_serif;
+             font-weight: 400;
+             font-style: normal;
+        }
+
+        article  p {
+            font-size: 120%;
+        } 
+
+
 
         // // Paragraph grid
          #individual {
@@ -66,6 +87,8 @@ header      { width: 100%; float: left; clear: both; }
              blockquote {
                  padding: 20px;
                  border-left: 2px solid #eb1072;
+                 font-family: $sans_serif;
+                 font-style: italic;
              }    
 
              small { display: block; margin:  -20px 0 20px; font-size: .5em; color: #222;}
@@ -111,7 +134,7 @@ header      { width: 100%; float: left; clear: both; }
         ol              { list-style: decimal-leading-zero outside; padding: 20px 0 20px 40px; }
 
         // Minute typography
-        a               { color: #214f84; font-style: italic;}
+        a               { color: #214f84; font-style: italic; font-family: $sans_serif; }
         a:hover         { color: #cc0e60;}
         a::selection, a::-moz-selection     { color: #aaa;  text-decoration: none;}
         *::selection, *::-moz-selection     { background: #214F84; color: #f9f9f9;}
@@ -122,7 +145,9 @@ header      { width: 100%; float: left; clear: both; }
         #individual figure  { padding: 40px 0;}
 
     // PAGE SPECIFIC
-    #logo-wrap a    { max-width: 70px; display: block; margin: 20px 0 0 0;} 
+    #logo-wrap      { padding: 20px 0 0 0;}
+    #logo-wrap a    { max-width: 85px; display: block; margin: 0 auto;} 
+    #logo-wrap img  { margin: 0;} 
     
         // About page
         #face           { margin: 20px 0;}
@@ -140,7 +165,43 @@ header      { width: 100%; float: left; clear: both; }
         article ul { margin: 20px 0;}
         #article-wrap { clear: both; overflow: hidden; width:100%;}
 
+        .art-directed{
 
+            position: relative;
+            float: left;
+            margin: 0 0 40px 0;
+
+            hgroup{
+                text-align: center;
+                position: absolute;
+                top: 35%;
+                z-index: 0;
+                padding: 40px 0;
+                width: 100%;
+                margin: 0;
+                float: left;
+            }
+            
+            img{
+                position: relative;
+                z-index: 0;
+                float: left;
+                overflow: hidden;
+                border-radius: 0;
+            }
+
+            #logo-wrap {
+                display: block;
+                margin: 0;
+                padding: 0;
+                text-align: center;
+                position: absolute;
+                z-index: 1;
+                width: 100%;
+                text-align: center;
+                bottom: 15%;
+            }
+        }
 
 
 
@@ -149,7 +210,7 @@ header      { width: 100%; float: left; clear: both; }
         #lettering-archive a img, #archive a, #archive p, #archive li, img.writing-logo, a, footer	{
     	transition-property: all;
         transition-duration: 200ms;
-        transition-timing-function: ease-in-ouy;
+        transition-timing-function: ease-in-out;
         transition-delay: 0ms;
 
         -webkit-transition-property: all;
@@ -191,14 +252,10 @@ header      { width: 100%; float: left; clear: both; }
         }
 
     // CARBBON ADS
-    // #carbonads-container .carbonad      { width: 100%; position: relative; margin: 0 0 10px 0;}
-    // #carbonads-container .carbonad-text,
-    // #carbonads-container .carbonad-tag  { position: absolute; left: 150px; width: 47%; }
-    // #carbonads-container .carbonad-tag  { bottom: 10px ;}
-    // #carbonads-container .carbonad-image{ position: absolute; left: 0;}
-
-    #carbonads-container .carbonad {margin: 50px auto; background: rgba(255,255,255,.5); border: 0 none;}
-    #carbonads-container img { border-radius: 0; width: auto;}
+    #carbonads-container { }
+    #carbonads-container .carbonad      { overflow: hidden; width: 100%; position: relative; height: auto; max-width: 300px; margin: 0 auto; background: rgba(255,255,255,.6); border-radius: 3px;}
+    #carbonads-container .carbonad {border: 0 none;}
+    #carbonads-container img { border-radius: 0; width: auto; margin-bottom: 11px;}
 
     #article-wrap #carbonads-container .carbonad { margin: 0 auto; }
 
@@ -216,6 +273,34 @@ header      { width: 100%; float: left; clear: both; }
 @media only screen and (max-width : 1000px) {
     #archive p   { float: left; clear: left;} 
     #projects p  { width: 100%; float: left;}
+
+    .art-directed{
+        hgroup{
+            top: 40%;
+        }
+
+        #logo-wrap {
+           bottom: 5%;
+        }
+    }
+}
+
+@media only screen and (max-width : 900px) {
+    h1 { 
+        font-size: 200%;
+    }
+
+    #top-bar-inner { margin: 20px 0;}
+
+    .art-directed{
+        hgroup{
+            padding: 20px 0;
+        }
+    }
+
+    article  p {
+        font-size: 110%;
+    }
 }
 
 // @include gs-media(m) {
@@ -236,12 +321,55 @@ header      { width: 100%; float: left; clear: both; }
 //     }
 // }
 
+@media only screen and (max-width : 725px)  { 
+    #top-bar {
+        position: static !important;
+    }
+
+    .art-directed{
+        float: left;
+        width: 100%;
+        clear: both;
+
+        hgroup{
+            top: 30%;
+        }
+    }
+}
+
+@media only screen and (max-width : 599px)  { 
+    #top-bar-inner { margin: 0;}
+    #carbonads-container .carbonad { margin: 0; width: 100%; border-radius: 0; max-width: 100%; }
+    #individual p, #about p         { text-align: justify;}
+    #individual p + p, #about p + p { text-indent: 8%;}
+    hgroup      { margin-bottom: 20px;}
+    body        { font-size: 120%; line-height:1.8}
+    header      { margin: 0;}
+
+    article  p {
+        font-size: 100%;
+    }
+    
+    .art-directed{
+        hgroup{
+            position: static;
+        }
+
+        #logo-wrap {
+            top: 30%;
+        }
+    }
+
+    h1 { 
+        font-size: 160%;
+        font-weight: 400;
+    }
+}
+
 @media only screen and (max-width : 450px)  {
+    #carbonads-container .carbonad { margin: 0 auto; }
     #about      { padding: 20px 0; margin: 0}
     footer      { margin: 40px 0 80px 0;}
-    header      { margin: 0;}
-    hgroup      { margin-bottom: 20px;}
-    body    { font-size: 100%;}
 }
 
 @media only screen and (max-width : 665px)  {
@@ -254,8 +382,4 @@ header      { width: 100%; float: left; clear: both; }
         padding: 0 0 11px 0;
         margin: 0 0 20px 0;
     }
-
-    #individual p, #about p         { text-align: justify;}
-    #individual p + p, #about p + p { text-indent: 8%;}
-
 }

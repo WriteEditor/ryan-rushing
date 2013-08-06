@@ -7,8 +7,8 @@ permalink: /writing/
 
 <ul id="archive">
 	{% for item in site.categories.writing %}
-	  <li class="m-padin s-padin">
-	    	<a class="l3-l5 m3-m5 s2-s3" href="{{ item.url }}">
+	  <li class="m-padin s-all s-padinfull">
+	    	<a class="l3-l5 m3-m5" href="{{ item.url }}">
 	    		<span>
 	    			<h3>{{ item.title }}</h3>
 	    			<p>{{ item.date | date: "%B %d, %Y" }}</p>

@@ -2,8 +2,7 @@
 #home header { 
 	background: url(/img/header-bgnd.jpg) no-repeat top left transparent;
 	background-size: cover;
-	margin: 0 0 50px 0;;
-	padding: 50px 0;
+	margin: 0 0 60px 0;
 }
 
 #post-wrap{
@@ -13,13 +12,14 @@
 }
 
 #latest-post {
-	padding: 40px 0;
+	//padding: 40px 0;
 	
 	h1 {
 		margin: 0 0 40px 0;
 	}
 
 	section { margin: 20px 0 0;}
+	article { margin: 40px 0 0 0;}
 }
 
 #post-wrap h2 { margin: 0 0 20px 0;}
@@ -33,7 +33,16 @@
 #recent-posts li                { margin: 0; }
 #recent-posts h3 			{ margin: 20px 0;}
 
+@media only screen and (max-width : 900px)  {
+	#latest-post {
+		padding: 0;
+	}
+}
 @media only screen and (max-width : 665px)  {
 	#home header { padding: 0; }
-	#mobile-focus { padding: 30px 0 0 0;}
+}
+
+@media only screen and (max-width : 599px)  {
+	#home h2 { font-size: 120%;}
+	#projects li 	{ margin: 0 0 20px 0;}
 }
