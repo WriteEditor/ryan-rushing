@@ -8,7 +8,8 @@
 //    --------------------------------
 //    --------------------------------
 
-//@import "gridset-real-sass.scss";
+@import "gridset.scss";
+
 
 $accent: #eb1072; //pink
 $sans_serif: "ff-meta-web-pro", "Verdana", verdana, sans-serif;
@@ -68,21 +69,23 @@ header      { width: 100%; float: left; clear: both; }
 
         // // Paragraph grid
          #individual {
-        //     clear: both;
-        //     overflow: hidden;
+            clear: both;
+            overflow: hidden;
             
-        //     p, h3, h4, blockquote, img, ul, ol {
-        //         //@include gs-span(l, 3, 4);
-        //         //clear: both;
-        //     }
+            p, h3, h4, blockquote, img, ul, ol {
+                @include gs-span(l, 3, 4);
+                //@include gs-span(m, 2, 4);
+                //@include gs-span(s, all);
+                clear: both;
+            }
 
-        //     blockquote p {
-        //        //@include gs-span(l, 3, 4, (3, 4));
-        //     }
+            blockquote p {
+               //@include gs-span(l, 3, 4, (3, 4));
+            }
 
-        //     img.full {
-        //         //@include gs-span(l, all);
-        //     }
+            img.full {
+                //@include gs-span(l, all);
+            }
 
              blockquote {
                  padding: 20px;
