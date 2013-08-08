@@ -74,9 +74,10 @@ header      { width: 100%; float: left; clear: both; }
             
             p, h3, h4, blockquote, img, ul, ol {
                 @include gs-span(l, 3, 4);
-                //@include gs-span(m, 2, 4);
-                //@include gs-span(s, all);
                 clear: both;
+
+                @media(max-width:1000px){ @include gs-span(m, 2, 4); }
+                @media(max-width:600px){ @include gs-span(s, 1, 4); }
             }
 
             blockquote p {
