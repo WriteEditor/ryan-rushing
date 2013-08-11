@@ -7,17 +7,16 @@ permalink: /writing/
 
 <ul id="archive">
 	{% for item in site.categories.writing %}
-	  <li class="m-padin s-all s-padinfull">
-	    	<a class="l3-l5 m3-m5" href="{{ item.url }}">
-	    		<span>
+	 	<li> <!-- class="m-padin s-all s-padinfull" -->
+    		<a href="{{ item.url }}"> <!-- class="l3-l5 m3-m5" -->
+    			<span>
 	    			<h3>{{ item.title }}</h3>
 	    			<p>{{ item.date | date: "%B %d, %Y" }}</p>
 	    		</span>
-	    	</a>
-	  	</li>
+    		</a>
+		</li>
 	{% endfor %}
 </ul>
-
 
 {% comment %}
 	<ul id="archive">
@@ -43,4 +42,4 @@ permalink: /writing/
 
   	{% endfor %}
   	</ul>
-  {% endcomment %}
+{% endcomment %}

@@ -1,42 +1,36 @@
 {% include head.html %}
-		<body>
+<body>
 			
-			{% include local-env-marker.html %}
-			
-			<header>
-				
-				{% include top-bar.html %}
-				
-				<div class="l-all m-all s-all">
-					{% if page.header_img %}
-						<div class="art-directed">
-							
-							{% include logo.html %}
+	{% include local-env-marker.html %}
 
-							<img src="{{ site.url }}/img/in-writings/{{ page.header_img }}">
-							<hgroup>
-								<h1>{{ page.title }}</h1>
-								<h2>{{ page.date | date: "%B %d, %Y" }}</h2>
-							</hgroup>
-						</div>
-					{% else %}
-						{% include logo.html %}
+	<header>
+		
+		{% include top-bar.html %}
 
-						<div id="mobile-focus" class="l3-l4 m3-m4 s-all s-padinfull">
-							<hgroup>
-								{% if page.subtitle %} 
-									<h2>{{ page.subtitle }}</h2>
-								{% else %}
-									<h2>{{ page.date | date: "%B %d, %Y" }}</h2>
-								{% endif %}
-								<h1>{{ page.title }}</h1>
-							</hgroup>				
-						</div>
-
-					{% endif %}
+		{% if page.header_img %}
+			<div id="second-level" class="art-directed">
+				{% include logo.html %}
+				<img src="{{ site.url }}/img/in-writings/{{ page.header_img }}">
+				<div id="hgroup">
+					<h1>{{ page.title }}</h1>
+					<h2>{{ page.date | date: "%B %d, %Y" }}</h2>
 				</div>
-			</header>
+			</div>
+		{% else %}
+			<div id="second-level">
+				{% include logo.html %}
+				<div id="hgroup">
+					{% if page.subtitle %} 
+						<h2>{{ page.subtitle }}</h2>
+					{% else %}
+						<h2>{{ page.date | date: "%B %d, %Y" }}</h2>
+					{% endif %}
+					<h1>{{ page.title }}</h1>
+				</div>
+			</div>			
+		{% endif %}
+	</header>
 
-			{{ content }}
+	{{ content }}
 
-			{% include footer.html %}
+	{% include footer.html %}
