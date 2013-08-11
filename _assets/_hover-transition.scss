@@ -1,0 +1,28 @@
+ // Hovery fade thing
+#archive a, 
+#archive p, 
+#archive li, 
+a
+
+{
+    	
+    transition-property: all;
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0ms;
+
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 200ms;
+    -webkit-transition-timing-function: ease-in-out;
+    -webkit-transition-delay: 0ms;
+
+    -moz-transition-property: all;
+    -moz-transition-duration: 200ms;
+    -moz-transition-timing-function: ease-in-out;
+    -moz-transition-delay: 0ms;
+
+    -o-transition-property: all;
+    -o-transition-duration: 200ms;
+    -o-transition-timing-function: ease-in-out;
+    -o-transition-delay: 0ms;
+}

@@ -2,29 +2,26 @@
 layout: home
 title: Ryan Rushing, Dallas-based designer and front-end developer
 ---
-
-
+	
 {% include logo.html %}
 
-<div class="l3-l4 m3-m4 s-all">
-	<div id="latest-post">
-		{% for item in site.categories.writing limit:1 %}
-		<h3>Latest Writing</h3>
-		<h2><a href="{{item.url}}">{{ item.title }}</a></h2>				
-		<section>
-			<p>{{ item.excerpt }} <a href="{{ item.url }}">Continue reading&hellip;</a></p>
-		</section>
-		{% endfor %}
-	
-		<article>
-			<h3>Recent writings</h3>
-			<ul>
-				{% for item in site.categories.writing limit:5 offset:1 %}
-			  	<li>
-			    	<a href="{{ item.url }}">{{ item.title }}</a>
-			  	</li>
-			  	{% endfor %}
-			</ul>
-		</article>
-	</div>
+<div id="latest-post">
+	{% for item in site.categories.writing limit:1 %}
+	<h3>Latest Writing</h3>
+	<h2><a href="{{item.url}}">{{ item.title }}</a></h2>				
+	<section>
+		<p>{{ item.excerpt }} <a href="{{ item.url }}">Continue reading&hellip;</a></p>
+	</section>
+	{% endfor %}
+
+	<article>
+		<h3>Recent writings</h3>
+		<ul>
+			{% for item in site.categories.writing limit:5 offset:1 %}
+		  	<li>
+		    	<a href="{{ item.url }}">{{ item.title }}</a>
+		  	</li>
+		  	{% endfor %}
+		</ul>
+	</article>
 </div>

@@ -8,7 +8,13 @@
 //    --------------------------------
 //    --------------------------------
 
-//@import "gridset-real-sass.scss";
+@import "gridset.scss";
+@mixin clear {
+    float: left;
+    clear: both;
+    width: 100%;
+}
+
 
 $accent: #eb1072; //pink
 $sans_serif: "ff-meta-web-pro", "Verdana", verdana, sans-serif;
@@ -26,28 +32,130 @@ $serif: "ff-meta-serif-web-pro", "Georgia", georgia, times, serif;
 
 *           { box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box;}
 body        { line-height: 2; font-size: 120%; background: #f9f9f9; font-family: $serif; position: relative;}
-header      { width: 100%; float: left; clear: both; }
-#top-bar    { z-index: 1;  }
-#top-bar-inner { margin: 60px 0; width: 100%; float: left; overflow: hidden;}
 
-    // FOOTER STYLES
-    footer                  { float: left; clear: both; width: 100%; margin: 40px 0 200px 0; border-top: 2px solid #eb1072; padding: 20px 0 0 0; }
-    footer #contact-info    { text-align: center; margin: 40px 0 0 0;}
-    #contact-info           { text-align: center; list-style: none;}
-    #site-nav               { list-style: none; padding: 0 0 20px 0;} 
-    #site-nav li            { text-align: center;}
+header      { 
+    @include clear;
+}
+
+#top-bar    { 
+    z-index: 1; 
+    @include clear;
+}
+
+#top-bar-inner { 
+    margin: 60px 0;
+    
+    @include clear;
+}
+
+    footer                  {
+        margin: 40px 0;
+        border-top: 2px solid #eb1072;
+        padding: 20px 0 0 0;
+        
+        @include clear;
+        @include gs-span(l, 2, 5);
+
+        @media(max-width:1000px){
+            @include gs-span(m, 2, 4);
+        }
+
+        @media(max-width:600px){ 
+            @include gs-span(s, all); 
+        }
+
+        p{
+            text-align: center;
+            margin: 40px 0;
+            @include gs-pad(l, padinfull);
+           
+            @media(max-width:1000px){
+                @include gs-pad(m, padinfull);
+            }
+
+            @media(max-width:600px){ 
+                @include gs-pad(s, padinfull);
+                @include gs-span(s, all); 
+            }
+        }
+    }
+    
+    footer, header
+    {
+        nav ul {
+            list-style: none;
+            padding: 0 0 20px 0;
+        }
+        nav li {
+            text-align: center;
+        }
+    }
+
+    footer nav { 
+        clear: both;
+        margin: 40px 0;
+        @media(max-width:600px){ 
+            @include gs-pad(s, padinfull);
+        }
+    }
+    
+    header nav { 
+        @include gs-span(l, 1, 2);
+
+        @media(max-width:600px){ 
+            display: none;
+        }
+    }
+
+    #contact-info{
+        text-align: center;
+        list-style: none;
+
+        @include gs-span(l, 5, 6);
+
+        @media(max-width:1000px){
+            @include gs-span(m, 4, 5);
+        }
+
+        @media(max-width:600px){ 
+            display: none;
+        }
+    }
 
     //GLOBAL TYPOGRAPHY 
         // Headings
-        hgroup          { float: left;text-align: left; margin: 0 0 80px 0; }
+        
+        #hgroup {
+            text-align: left;
+
+            @include gs-span(l, 3, 4);
+
+            @media(max-width:1000px){
+                @include gs-span(m, 3, 4);
+            }
+
+            @media(max-width:600px){ 
+                @include gs-pad(s, padinfull);
+                @include gs-span(s, all);
+                @include clear;
+            }
+        }
+
         h1, h2          { width: 100%;}
         h1, h2, h3      { font-family: $sans_serif; }
-        h1              { font-size: 300%; line-height: 1.2}
+        h1              { font-size: 300%; line-height: 1.2; font-weight: 700;}
         h2, h3          { font-size: 100%; font-weight: 400;}
         h3              { margin: 0 0 20px 0; font-weight: 700;}
             p + h3, ul + h3      { margin: 20px 0 20px 0;}
         h4              { margin: 0 0 20px 0; font-weight: 400; font-style: italic; color: #777;}
         li h4           { margin: 0; }
+
+        h2 + h1 {
+            margin: 0 0 80px 0;
+            @media(max-width:600px){ 
+                margin: 0 0 20px 0;
+            }
+        }
 
         strong{
              font-family: $sans_serif;
@@ -67,22 +175,31 @@ header      { width: 100%; float: left; clear: both; }
 
 
         // // Paragraph grid
-         #individual {
-        //     clear: both;
-        //     overflow: hidden;
+        #individual {
+            clear: both;
+            overflow: hidden;
             
-        //     p, h3, h4, blockquote, img, ul, ol {
-        //         //@include gs-span(l, 3, 4);
-        //         //clear: both;
-        //     }
+            p, h3, h4, blockquote, img, ul, ol {
+                clear: both;
 
-        //     blockquote p {
-        //        //@include gs-span(l, 3, 4, (3, 4));
-        //     }
+                @include gs-span(l, 3, 4);
 
-        //     img.full {
-        //         //@include gs-span(l, all);
-        //     }
+                @media(max-width:1000px){
+                    @include gs-span(m, 2, 4);
+                }
+                @media(max-width:600px){ 
+                    @include gs-pad(s, padinfull);
+                    @include gs-span(s, all); 
+                }
+            }
+
+            blockquote p {
+               @include gs-span(l, 3, 4, (3, 4));
+            }
+
+            img.full {
+                @include gs-span(l, 1, 6);
+            }
 
              blockquote {
                  padding: 20px;
@@ -97,32 +214,44 @@ header      { width: 100%; float: left; clear: both; }
          }
 
         #next-prev{
-            clear: both;
-            overflow: hidden;
+           
             padding: 80px 0 0 0;
+
+            .next{
+                @include gs-span(l, 4, 5);
+            }
+             .previous {
+                @include gs-span(l, 2, 3);
+            }
 
             .next, .previous {
                 background: #f3f3f3;
                 text-align: center;
                 display: inline-block;
-                width: 100%;
 
+                @media(max-width:1000px){ 
+                    clear:both;
+                    @include gs-span(m, 2, 4);
+                }
+                
+                @media(max-width:600px){
+                    @include gs-span(s, all);
+                    @include gs-pad(s, padinfull);
+                }
+               
                 a {
                     padding:20px 0;
                     display: inline-block;
                 }
             }
 
-            .next {
-                 //@include gs-span(l, 4, 5);
-            }
-            
-            .previous {
-                 //@include gs-span(l, 2, 3);
+            h3, p { 
+                text-align: center;
+                margin: 0;
             }
 
-            h3 { 
-                text-align: center;
+            ul{
+                 margin: 20px 0;
             }
         }
 
@@ -145,25 +274,92 @@ header      { width: 100%; float: left; clear: both; }
         #individual figure  { padding: 40px 0;}
 
     // PAGE SPECIFIC
-    #logo-wrap      { padding: 20px 0 0 0;}
-    #logo-wrap a    { max-width: 85px; display: block; margin: 0 auto;} 
-    #logo-wrap img  { margin: 0;} 
+    #second-level {
+        @include clear;
+    }
+
+    #logo      { 
+        padding: 20px 0 0 0;
+
+        @include gs-span(l, 1, 2);
+
+        @media(max-width:1000px){ 
+            @include gs-span(m, 1, 2);
+        }
+        
+        @media(max-width:600px){
+            @include gs-span(s, all);
+            @include clear;
+        }
+
+        a {
+            max-width: 85px;
+            display: block;
+            margin: 0 auto;
+
+            @media(max-width:1000px){ 
+               max-width: 65px;
+            }
+        }
+
+        img {
+            margin: 0;
+        }
+    }
     
-        // About page
-        #face           { margin: 20px 0;}
-        article#about ul  { list-style: none; margin: 0;}
-        #about li { display: inline}
-        #about li:after { content: ','; }
-        #about li:last-child:after { content:""; display: none;}
-        #about h4 { margin: 20px 0 0 0;}
+    // About page
+    #about {
+        section {
+            @include clear;
+            @include gs-span(l, 3, 4);
+
+            @media(max-width:1000px){ 
+                @include gs-span(m, 3, 4);
+            }
+            
+            @media(max-width:600px){
+                @include gs-span(s, all);
+                @include gs-pad(s, padinfull);
+            }
+        }
+
+        ul  {
+            list-style: none;
+            margin: 0;
+        }
+
+        li {
+            display: inline;
+
+            &:after { content: ','; }
+            &:last-child:after { content:""; display: none;}
+        }
+        
+        h4 { margin: 20px 0 0 0;}
+    }  
+       
+    #face {
+        padding: 20px 0;
+
+        @include clear;
+
+        img {
+            @include gs-span(l, 2, 3);
+        }
+
+        img + img {
+            @include gs-span(l, 4, 5);
+        }
+    }
+
+        
 
         // Articles
         #individual p:last-child:after  { content: url(../img/little-logo.png); padding: 0 0 0 5px;}
         #individual ul p:last-child:after, 
         #individual ol p:last-child:after, 
         blockquote p:last-child:after  {display: none;} 
-        article ul { margin: 20px 0;}
-        #article-wrap { clear: both; overflow: hidden; width:100%;}
+        article ul { margin: 20px 0; list-style: disc;}
 
         .art-directed{
 
@@ -173,7 +369,7 @@ header      { width: 100%; float: left; clear: both; }
             width: 100%;
             clear: both;
 
-            hgroup{
+            #hgroup{
                 text-align: center;
                 position: absolute;
                 top: 35%;
@@ -192,7 +388,7 @@ header      { width: 100%; float: left; clear: both; }
                 border-radius: 0;
             }
 
-            #logo-wrap {
+            #logo {
                 display: block;
                 margin: 0;
                 padding: 0;
@@ -208,58 +404,58 @@ header      { width: 100%; float: left; clear: both; }
 
 
     // ARCHIVES
-        // Hovery fade thing
-        #lettering-archive a img, #archive a, #archive p, #archive li, img.writing-logo, a, footer	{
-    	transition-property: all;
-        transition-duration: 200ms;
-        transition-timing-function: ease-in-out;
-        transition-delay: 0ms;
+    #archive    {
 
-        -webkit-transition-property: all;
-        -webkit-transition-duration: 200ms;
-        -webkit-transition-timing-function: ease-in-out;
-        -webkit-transition-delay: 0ms;
-
-        -moz-transition-property: all;
-        -moz-transition-duration: 200ms;
-        -moz-transition-timing-function: ease-in-out;
-        -moz-transition-delay: 0ms;
-
-        -o-transition-property: all;
-        -o-transition-duration: 200ms;
-        -o-transition-timing-function: ease-in-out;
-        -o-transition-delay: 0ms;
-        }
-
-        // lettering
-        #lettering-archive a img {border: 2px solid #F9F9F9; margin: 20px 0} 
-        #lettering-archive a:hover img { border: 2px solid #cc0e60; }
-
+        list-style: none;
         
+        a { 
+            padding: 10px 0;
+            line-height: 1.4;
 
-        // archive
-        #archive    {
-            //@include gs-span(l, all);
-            list-style: none !important;
+            @include gs-span(l, 3, 5);
             
-            a       { padding: 10px 0;} 
-            li, a   { clear: both;overflow: hidden;}
-            h3      { font-size: 120%; float: left; clear: both; margin: 0; font-weight: 400;}
-            p       { font-size: 100%; float: left; clear: both; color: #000; font-style: normal; text-decoration: none;}
-            span    { display: inline-block; /*@include gs-span(l, 3, 4);*/ }
-            li {
-                &:nth-child(2n)         { background: #fff;}
-                &:hover a, &:hover p    { color: $accent;}
+            @media(max-width:1000px){ 
+                @include gs-span(m, 3, 5);
+            }  
+
+             @media(max-width:600px){ 
+                @include gs-span(s, all);
+                @include gs-pad(s, padinfull);
+            }          
+        } 
+
+        li, a   { clear: both;overflow: hidden;}
+        h3      { float: left; clear: both; margin: 0 0 20px 0; font-weight: 400;}
+        span    { display: inline-block; /*@include gs-span(l, 3, 4);*/ }
+        
+        li {
+            // <!-- class="m-padin s-all s-padinfull" -->
+
+            padding: 20px 0;
+
+            @media(max-width:600px){ 
+               padding: 0;
+            }
+
+            &:nth-child(2n) {
+                background: #fff;
+            }
+
+            &:hover a, 
+            &:hover p {
+                color: $accent;
+            }
+
+            p {
+                @include clear;
+                
+                color: #ccc;
+                font-style: normal;
+                text-decoration: none;
+                margin: 0;
             }
         }
-
-    // CARBBON ADS
-    #carbonads-container { }
-    #carbonads-container .carbonad      { overflow: hidden; width: 100%; position: relative; height: auto; max-width: 300px; margin: 0 auto; background: rgba(255,255,255,.6); border-radius: 3px;}
-    #carbonads-container .carbonad {border: 0 none;}
-    #carbonads-container img { border-radius: 0; width: auto; margin-bottom: 11px;}
-
-    #article-wrap #carbonads-container .carbonad { margin: 0 auto; }
+    }
 
 //    --------------------------------
 //    --------------------------------
@@ -277,11 +473,11 @@ header      { width: 100%; float: left; clear: both; }
     #projects p  { width: 100%; float: left;}
 
     .art-directed{
-        hgroup{
+        #hgroup{
             top: 40%;
         }
 
-        #logo-wrap {
+        #logo {
            bottom: 5%;
         }
     }
@@ -295,7 +491,7 @@ header      { width: 100%; float: left; clear: both; }
     #top-bar-inner { margin: 20px 0;}
 
     .art-directed{
-        hgroup{
+        #hgroup{
             padding: 20px 0;
         }
     }
@@ -333,7 +529,7 @@ header      { width: 100%; float: left; clear: both; }
         width: 100%;
         clear: both;
 
-        hgroup{
+        #hgroup{
             top: 30%;
         }
     }
@@ -341,10 +537,9 @@ header      { width: 100%; float: left; clear: both; }
 
 @media only screen and (max-width : 599px)  { 
     #top-bar-inner { margin: 0;}
-    #carbonads-container .carbonad { margin: 0; width: 100%; border-radius: 0; max-width: 100%; }
     #individual p, #about p         { text-align: justify;}
     #individual p + p, #about p + p { text-indent: 8%;}
-    hgroup      { margin-bottom: 20px;}
+    #hgroup      { margin-bottom: 20px;}
     body        { font-size: 120%; line-height:1.8}
     header      { margin: 0;}
 
@@ -353,11 +548,11 @@ header      { width: 100%; float: left; clear: both; }
     }
     
     .art-directed{
-        hgroup{
+        #hgroup{
             position: static;
         }
 
-        #logo-wrap {
+        #logo {
             top: 30%;
         }
     }
@@ -369,19 +564,6 @@ header      { width: 100%; float: left; clear: both; }
 }
 
 @media only screen and (max-width : 450px)  {
-    #carbonads-container .carbonad { margin: 0 auto; }
     #about      { padding: 20px 0; margin: 0}
     footer      { margin: 40px 0 80px 0;}
-}
-
-@media only screen and (max-width : 665px)  {
-    
-    #article-wrap #carbonads-container .carbonad {
-        width: 100%;  
-        float: left;
-        clear: both; 
-        height: auto;
-        padding: 0 0 11px 0;
-        margin: 0 0 20px 0;
-    }
 }

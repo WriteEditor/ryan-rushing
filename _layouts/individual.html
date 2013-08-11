@@ -17,7 +17,7 @@ layout: global
 			position: absolute;
 		}
 
-		.art-directed hgroup{ 
+		.art-directed #hgroup{ 
 			background: rgba({{ page.heading_background }});
 			color: #{{ page.heading_color }};
 		}
@@ -25,14 +25,15 @@ layout: global
 	</style>
 {% endif %}
 
-<div id="article-wrap" class="l-all m-all s-all">
-	<article id="individual" class="l3-l4 m2-m4 s-all s-padinfull">
-	{{ content }}
-	</article>
-</div>
 
-<div id="next-prev" class="l3-l4 m2-m4 s2-s3">
+<article id="individual">
+	{{ content }}
+</article>
+
+<div id="next-prev">		
 	<h3>More articles</h3>
+	<p>To receive the latest, subscribe to the <a href="/feed.xml">RSS feed</a>.</p>
+	
 	<ul>
 		{% if page.next %} 
 			<li class="next">
@@ -41,7 +42,7 @@ layout: global
 		{% endif %}
 		{% if page.previous %} 
 			<li class="previous">
-		    	<a rel="prev" href="{{ page.previous.url }}">{{ page.previous.title }}</a>
+		    	<a rel="previous" href="{{ page.previous.url }}">{{ page.previous.title }}</a>
 		    </li>
 		{% endif %}
 	</ul>
