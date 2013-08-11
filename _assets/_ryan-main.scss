@@ -169,7 +169,7 @@ header      {
         }
 
         article  p {
-            font-size: 120%;
+            font-size: 100%;
         } 
 
 
@@ -179,7 +179,7 @@ header      {
             clear: both;
             overflow: hidden;
             
-            p, h3, h4, blockquote, img, ul, ol {
+            p, h3, h4, blockquote, img, ul, ol, small {
                 clear: both;
 
                 @include gs-span(l, 3, 4);
@@ -197,9 +197,24 @@ header      {
                @include gs-span(l, 3, 4, (3, 4));
             }
 
-            img.full {
-                @include gs-span(l, 1, 6);
-            }
+            img {
+                padding-top: 20px;
+                padding-bottom: 20px;
+
+                @include gs-pad(l, padinfull);
+
+                @media(max-width:1000px){
+                    @include gs-pad(m, padinfull);
+                }
+
+                @media(max-width:600px){ 
+                    @include gs-pad(s, padinfull);
+                }
+
+                &.full {
+                    @include gs-span(l, all);
+                }
+            } 
 
              blockquote {
                  padding: 20px;
@@ -208,9 +223,23 @@ header      {
                  font-style: italic;
              }    
 
-             small { display: block; margin:  -20px 0 20px; font-size: .5em; color: #222;}
+            small {
+                display: block; 
+                padding:  0 0 40px;
+                font-size: .6em;
+                color: #222;
+                text-align: center;
 
-             img { margin: 20px 0;}  
+                @include gs-pad(l, padinfull);
+           
+                @media(max-width:1000px){
+                    @include gs-pad(m, padinfull);
+                }
+
+                @media(max-width:600px){ 
+                    @include gs-pad(s, padinfull);
+                }
+            }
          }
 
         #next-prev{
@@ -497,7 +526,7 @@ header      {
     }
 
     article  p {
-        font-size: 110%;
+        font-size: 90%;
     }
 }
 
@@ -544,7 +573,7 @@ header      {
     header      { margin: 0;}
 
     article  p {
-        font-size: 100%;
+        font-size: 85%;
     }
     
     .art-directed{
