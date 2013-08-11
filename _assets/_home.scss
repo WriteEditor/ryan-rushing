@@ -1,46 +1,126 @@
-
-#home header { 
-	background: url(/img/header-bgnd.jpg) no-repeat top left transparent;
-	background-size: cover;
-	margin: 0 0 60px 0;
+@mixin clear {
+    float: left;
+    clear: both;
+    width: 100%;
 }
 
-#post-wrap{
-	background: #e8e8e8;
-	padding: 0 0 40px 0;
-	margin: 0 0 40px 0;
-}
-
-#latest-post {	
-	h1 {
-		margin: 0 0 40px 0;
+#home
+{
+	header { 
+		background: url(/img/header-bgnd.jpg) no-repeat top left transparent;
+		background-size: cover;
+		margin: 0 0 60px 0;
 	}
 
-	section { margin: 20px 0 0;}
-	article { margin: 40px 0 0 0;}
+	h2 { 
+		font-size: 180%;
+		line-height: 1.2;
+	}
+
+	h3 {
+		font-weight: 700;
+		margin: 0;
+	}
 }
 
-#post-wrap h2 { margin: 0 0 20px 0;}
+#latest-post {
 
-#home h3 { font-weight: 700; margin: 0;}
-#home h2 { font-size: 180%; line-height: 1.2;}
+	@include gs-span(l, 3, 4);
 
-#projects div	{ padding: 0 0 20px 0;}
-#projects li 	{ margin: 0 0 80px 0;}
+	@media(max-width:1000px){ 
+        @include gs-span(m, 3, 4);
+    }
+    
+    @media(max-width:600px){
+        @include gs-span(s, all);
+        @include gs-pad(s, padinfull);
+    }
+
+	h2 {
+		margin: 0 0 40px 0;
+
+		@media(max-width:1000px){ 
+           font-size: 130%;
+        }
+	}
+
+	section { 
+		margin: 20px 0 0;
+	}
+	article {
+		margin: 40px 0 0 0;
+	}
+}
+
+#projects{
+
+	@media(max-width:600px){
+     	@include gs-pad(s, padinfull);
+    }
+
+	ul {
+		@include clear;
+	}
+	
+	li 	{
+		margin: 20px 0;
+		padding: 20px 0;
+		
+		@include clear;
+
+		.info {
+			@include gs-span(l, 2, 3);
+
+			@media(max-width:1000px){
+			 	@include gs-span(m, 2, 4);
+			 	clear: both;
+			 }
+
+			@media(max-width:600px){
+		     	@include gs-span(s, all);
+		    }
+		}
+
+		.logo {
+			display:  block; 
+			 @include gs-span(l, 4, 5);
+			 
+			 @media(max-width:1000px){
+			 	@include gs-span(m, 2, 4);
+			 	clear: both;
+			 }
+
+			 @media(max-width:600px){
+		        @include gs-span(s, all);
+		    }
+		}
+	}
+
+	h2 {
+
+		@include gs-span(l, 2, 5);
+		clear: both;
+
+		@media(max-width:1000px){ 
+	        @include gs-span(m, 2, 3);
+	    }
+	    
+	    @media(max-width:600px){
+	       	@include gs-span(s, all);
+	   		@include clear;
+	    }
+	}
+}
 
 #recent-posts li                { margin: 0; }
 #recent-posts h3 			{ margin: 20px 0;}
 
-@media only screen and (max-width : 900px)  {
-	#latest-post {
-		padding: 0;
-	}
-}
+
 @media only screen and (max-width : 665px)  {
 	#home header { padding: 0; }
 }
 
-@media only screen and (max-width : 599px)  {
+@media only screen and (max-width : 600	px)  {
 	#home h2 { font-size: 120%;}
 	#projects li 	{ margin: 0 0 20px 0;}
 }
