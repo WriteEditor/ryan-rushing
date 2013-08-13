@@ -1,0 +1,80 @@
+// Blog post pages (not art-directed)
+
+#individual {
+    
+    @include clear-overflow;
+
+    p, h3, h4, blockquote, img, ul, ol, small {
+        
+        @include clear-overflow;
+        @include gs-span(l, 3, 4);
+
+        @media(max-width:1000px){
+            @include gs-span(m, 2, 4);
+        }
+        @media(max-width:600px){ 
+            @include gs-pad(s, padinfull);
+            @include gs-span(s, all); 
+        }
+    }
+
+    p{
+       &:last-child:after {
+            content: url(../img/little-logo.png);
+            padding: 0 0 0 5px;
+       }
+    }
+
+    ul p:last-child:after, ol p:last-child:after, blockquote p:last-child:after  {display: none;} //how do I get this into the p variable a few lines up?
+
+    img {
+        padding-top: $baseline/2;
+        padding-bottom: $baseline/2;
+
+        @include gs-pad(l, padinfull);
+
+        @media(max-width:1000px){
+            @include gs-pad(m, padinfull);
+        }
+
+        @media(max-width:600px){ 
+            @include gs-pad(s, padinfull);
+        }
+
+        &.full {
+            @include gs-span(l, all);
+        }
+    } 
+
+    blockquote {
+        margin-top: $baseline;
+        margin-bottom: $baseline;
+        font-family: $sans_serif;
+        border-left: 2px solid $accent;
+        font-style: italic;
+
+        p {
+            @include clear;
+            padding: 0 $baseline;
+            margin: 0;
+        }
+    }    
+
+    small {
+        display: block; 
+        padding:  0 0 $baseline;
+        font-size: $baseline/3;
+        color: #222;
+        text-align: center;
+
+        @include gs-pad(l, padinfull);
+   
+        @media(max-width:1000px){
+            @include gs-pad(m, padinfull);
+        }
+
+        @media(max-width:600px){ 
+            @include gs-pad(s, padinfull);
+        }
+    }
+ }

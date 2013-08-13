@@ -1,5 +1,90 @@
+//    --------------------------------
+//    --------------------------------
+//    --------------------------------
+//            
+//            Variables/Mixins
+//
+//    --------------------------------
+//    --------------------------------
+//    --------------------------------
+
+
+// Mixins for clearing 
+@mixin clear {
+    float: left;
+    clear: both;
+    width: 100%;
+}
+
+@mixin clear-overflow {
+    overflow: hidden;
+    clear: both;
+}
+
+
+// General site variables
+$accent: #eb1072; //pink
+$sans_serif: "ff-meta-web-pro", "Trebuchet", arial, sans-serif;
+$serif: "ff-meta-serif-web-pro", "Georgia", georgia, times, serif;
+$baseline: 2em;
+
+
+// Media Query Variables (related directly to the Gridset variables)
+// For some reason this isn't working how I want. If I can pass in the CSS, this might work. More research needed.
+
+
+// @mixin large {
+// 	@media(max-width:1000px){ pass in here? }
+// }
+
+// @mixin medium {
+// 	@media(max-width:600px){ pass in here? }
+// }
+
+// @mixin small {
+// 	@media(max-width:400px){ pass in here? }
+// }
+
+
+//    --------------------------------
+//    --------------------------------
+//    --------------------------------
+//            
+//                Imports
+//
+//    --------------------------------
+//    --------------------------------
+//    --------------------------------
+
+// Resets everything
 @import "compass/reset";
+
+// Brings in all the Gridset variables (used in every other file)
+@import "gridset.scss";
+
+// Legacy; needs to be broken up (mostly controls global styles)
 @import "ryan-main.scss";
+
+// Controls styling the header and footer
+@import "header-and-footer.scss"; 
+
+// Controls styling of ads
 @import "ads.scss";
-@import "hover-transition.scss";
+
+// Controls the fancy hover transitions on the links. 
+@import "hover-transition.scss"; 
+
+// Special styling for the home page
 @import "home.scss";
+
+// Controls the typography and styling for blog posts which aren't art directed
+@import "blog-post.scss"; 
+
+// Controls the post navigation at the end of each blog post
+@import "next-prev.scss";
+
+// About page styling
+@import "about.scss";
+
+// Archive page styling
+@import "archive.scss";
