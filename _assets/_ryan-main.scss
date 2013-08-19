@@ -110,6 +110,7 @@ article{
     
     ul {
         margin: $baseline 0;
+        padding: 0 $baseline;
         list-style: disc;
 
         & + p {
@@ -141,6 +142,7 @@ a{
     color: #214f84;
     font-style: italic;
     font-family: $sans_serif;
+    white-space: nowrap;
 
     &:hover {
         color: $accent;
