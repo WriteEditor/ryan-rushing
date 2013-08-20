@@ -3,11 +3,11 @@
 .art-directed{
 
     position: relative;
-    margin: 0 0 40px 0;
+    margin: 0 0 $baseline 0 !important;
     @include clear;
 
     @media(max-width:725px){
-        @include clear-hidden;
+        @include clear-overflow;
     }
 
     #hgroup{
@@ -15,17 +15,18 @@
         position: absolute;
         top: 35%;
         z-index: 0;
-        padding: 40px 0;
-        width: 100%;
+        padding: $baseline 0;
         margin: 0;
-        float: left;
+
+        @include clear;
+        
 
         @media(max-width:1000px){
             top: 40%;
         }
 
         @media(max-width:900px){
-            padding: 20px 0;
+            padding: $baseline/2 0;
         }
 
         @media(max-width:725px){

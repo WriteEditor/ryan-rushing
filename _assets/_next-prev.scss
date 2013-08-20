@@ -12,9 +12,6 @@
     }
 
     .next, .previous {
-        background: #f3f3f3;
-        text-align: center;
-        display: inline-block;
 
         @media(max-width:1000px){ 
             @include clear-overflow;
@@ -29,6 +26,10 @@
         a {
             padding:$baseline 0;
             display: inline-block;
+            background: #f3f3f3;
+            text-align: center;
+            display: inline-block;
+            width: 100%;
         }
     }
 

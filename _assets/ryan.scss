@@ -77,8 +77,9 @@ $baseline: 2em;
 // Special styling for the home page
 @import "home.scss";
 
-// Controls the typography and styling for blog posts which aren't art directed
-@import "blog-post.scss"; 
+// Controls the typography and styling for blog posts
+@import "blog-post.scss"; 	 //default styling
+@import "art-directed.scss"; //art directed posts
 
 // Controls the post navigation at the end of each blog post
 @import "next-prev.scss";
