@@ -62,8 +62,8 @@ $baseline: 2em;
 // Brings in all the Gridset variables (used in every other file)
 @import "gridset.scss";
 
-// Legacy; needs to be broken up (mostly controls global styles)
-@import "ryan-main.scss";
+// Controls global typography and elements
+@import "global.scss";
 
 // Controls styling the header and footer
 @import "header-and-footer.scss"; 

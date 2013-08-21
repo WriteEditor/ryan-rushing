@@ -16,7 +16,7 @@
 }
 
 body {
-    line-height: 2;
+    line-height: $baseline;
     background: #f9f9f9;
     position: relative;
     font-size: $baseline/2;
