@@ -25,3 +25,7 @@ I'm still new to Sass, but from looking at the Gridset files, I learned a lot. M
 I'm putting my site on Github to keep me accountable, and to become a better front-end developer and designer. This probably doesn't need to be said, but if you see some code you like, borrow away.
 
 Finally, if you have critique, I'm all ears. If you have any questions about what I'm doing, feel free to [contact me](get@ryan-rushing.com).
+
+---
+
+**Note:** I had major problems in the beginning when learning Git and had to do some weird stuff to get my files back on track. The "this is the correct stuff, omg" commit message is when that was happening.
