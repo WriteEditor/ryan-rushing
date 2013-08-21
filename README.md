@@ -1,6 +1,6 @@
 # My Personal Site
 
-[My site](http://ryan-rushing.com) is built on [Jekyll](http://jekyllrb.com), [Sass](http://sass-lang.com/) (using [Compass](http://compass-style.org), and [Gridset](gridsetapp.com).
+[My site](http://ryan-rushing.com) is built on [Jekyll](http://jekyllrb.com), [Sass](http://sass-lang.com/) (using [Compass](http://compass-style.org)), and [Gridset](gridsetapp.com).
 
 ### Jekyll (http://jekyllrb.com)
 
