@@ -3,3 +3,4 @@ ehthumbs.db
 Thumbs.db
 _site/
 .sass-cache/
+publish.sh
