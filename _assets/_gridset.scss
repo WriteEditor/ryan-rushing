@@ -54,7 +54,9 @@
 
   @if $prefix == s	{ @return (10,36.125,36.125,10); }
   @if $prefix == m	{ @return (10,10,46.25,10,10); }
+  @if $prefix == mb	{ @return (10,10,21.41666666,21.41666666,10,10); }
   @if $prefix == l	{ @return (10,10,22.425,22.425,10,10); }
+  @if $prefix == lb	{ @return (10,10,22.425,22.425,10,10); }
 
 }
 
@@ -62,7 +64,9 @@
   
   @if $prefix == s	{ @return (false,false,false,false); }
   @if $prefix == m	{ @return (false,false,false,false,false); }
+  @if $prefix == mb	{ @return (false,false,false,false,false,false); }
   @if $prefix == l	{ @return (false,false,false,false,false,false); }
+  @if $prefix == lb	{ @return (false,false,false,false,false,false); }
 
 }
 
@@ -72,7 +76,9 @@
 
   @if $prefix == s	{ $gutter: 2.5; }
   @if $prefix == m	{ $gutter: 3.33333333; }
+  @if $prefix == mb	{ $gutter: 3.33333333; }
   @if $prefix == l	{ $gutter: 3; }
+  @if $prefix == lb	{ $gutter: 3; }
 
   @if $unit == true { @return #{gs-adjust($prefix, $gutter, $container) + '%'}; }
   @else { @return gs-adjust($prefix, $gutter, $container); }
@@ -190,11 +196,11 @@
 
 @mixin gs-media($prefix, $type: false){
 
-  @if $prefix == l {
+  @if $prefix == l or $prefix == lb {
     @media only screen and (min-width: 1000px) { @content; }
   }
 
-  @if $prefix == m {
+  @if $prefix == m or $prefix == mb {
     @if ($type == min) { @media only screen and (min-width: 600px) { @content; } }
     @else if ($type == max) { @media only screen and (max-width: 999px) { @content; } }
     @else if ($type == min-max) { @media only screen and (min-width: 600px) and (max-width: 999px) { @content; } }
@@ -298,4 +304,4 @@
 //   
 //   -------------------------------------------------------------- 
 
-$gs-prefixes: s, m, l;
+$gs-prefixes: s, m, mb, l, lb;

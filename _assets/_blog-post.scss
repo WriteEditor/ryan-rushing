@@ -18,6 +18,76 @@
         }
     }
 
+    p{
+        margin-right: gs-marginleft(l, 6, false, true);
+
+        @media(max-width:1000px){
+            //margin-right: 0;
+        }
+
+    }
+
+    aside{
+
+
+        @include gs-span(l, 5, 6);
+        @include gs-pad(l, padinfull);
+        text-align: center;
+        margin-top: -$baseline; //Since the aside can only be placed at the end of a paragraph, this negative margin will pull the aside up one line to the last line of the previous paragraph to line up with the dagger.
+        font-style: italic;
+        color: #777;
+        font-size: $baseline/2.5;
+
+        @media(max-width:1000px){
+            @include gs-span(mb, 2, 3);
+            @include gs-pad(mb, padin);
+            padding-top: $baseline;
+            padding-bottom: $baseline;
+            background: #f3f3f3;
+            margin-top: 0;
+        }
+
+        @media(max-width:600px){ 
+            @include gs-span(s, all);
+            @include gs-pad(s, padinfull);
+            padding-top: 0;
+            padding-bottom: 0; 
+            background: none 0;
+            color: #222;
+            display: inline-block;
+
+            line-height: $baseline/1.2;
+
+            &:before{ content:"("; }
+            &:after{ content:")";}
+        }
+
+        & + p {
+            text-indent: $baseline;
+            margin-right: 0;
+            clear: none;
+
+            @media(max-width:1000px){
+                clear: none;
+                text-indent: 0;
+                @include gs-span(mb, 4, 5);
+            }
+
+            @media(max-width:600px){ 
+                 clear: left;
+                 text-indent: $baseline;
+                 @include gs-span(s, all);
+                 @include gs-pad(s, padinfull);
+            }
+        }
+    }
+
+    sup{
+            @media(max-width:600px){ 
+                display: none;
+            }
+        }
+
     img {
         padding-top: $baseline/2;
         padding-bottom: $baseline/2;
