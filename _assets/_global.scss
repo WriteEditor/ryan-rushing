@@ -19,8 +19,13 @@ body {
     line-height: $baseline;
     background: #f9f9f9;
     position: relative;
-    font-size: $baseline/2;
+    font-size: $baseline/1.8;
     font-family: $serif;
+
+    @media(max-width:725px){
+        font-size: $baseline/2;
+        line-height: $baseline/1.125;
+    }
 }
 
 //GLOBAL TYPOGRAPHY 
@@ -46,7 +51,7 @@ h2 + h1 {
     margin: 0 0 $baseline 0;
 
     @media(max-width:600px){ 
-        margin: 0 0 $baseline/4 0;
+        margin: 0 0 $baseline/2 0;
     }
 }
 
@@ -57,7 +62,6 @@ h1 {
 
     @media(max-width:600px){ 
         font-size: $baseline;
-        font-weight: 400;
     }
 }
 
