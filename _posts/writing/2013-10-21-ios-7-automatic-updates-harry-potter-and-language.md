@@ -1,81 +1,90 @@
 ---
 layout: individual
-title: Did Apple steal the idea of automatic updates from the Harry Potter series?
-excerpt: Overthinking the physics of spells and charms from Harry Potter using the iOS 7 app store and language.
+title: Thoughts on Harry Potter&rsquo;s wand, iOS 7&rsquo;s automatic updates, and language
+category: writing
+excerpt: I tend to overthink the reality of fiction, which inevitably leads to my dissappointment when something doesn't add up. Suspending my disbelief isn't one of my strong points.
 ---
 
-#### Spoiler alert: there are spoilers about the Harry Potter series in the following article.
+#### **Warning:** there are spoilers of the Harry Potter series in this post.
 
-I tend to overthink the physics of fiction, which inevitably leads to my dissappointment when something doesn't quite add up. In this case, I was reading the books around then time when iOS 7 was announced with one particular feature: automatic updates from apps.
+I tend to overthink the reality of fiction, which inevitably leads to my dissappointment when something doesn't add up. Suspending my disbelief isn't one of my strong points.
 
-The Harry Potter series is among the greatest stories I've ever read. It's full of sacrifice, love, friendship, pain, hatred, and overcoming evil. Although it's classified as a kid's book, it's anything but. You should totally give it a read if you haven't.
+Around the time iOS 7 was announced, I was reading the Harry Potter series for the first time at the request of my sister, who's a die hard fan. <span class="sidenote">I'd seen the movies, but reading the story changed my perception of this so-called children's book.</span>
 
-I expect most are familiar with the story and know it's set in a world where wizards and witches exist all over the world, which remains largely hidden to "muggles", which are us non-magic folk. Before entering Hogwarts School of Witchcraft and Wizardry, which  witches and wizards from about 12 to 18 years old attended, they were sent a school supplies list.
+### Some background
 
-Among the [books, uniform, and other equipment](http://harrypotter.wikia.com/wiki/Supply_list), the first-year students are required to bring a wand. Harry's first wand is made of Holly, has a core of a Phoenix feather, and is 11" long.
+In the Harry Potter universe, wizards, witches, and other magical creatures exist, and their world remains largely hidden to "muggles", which are us non-magic folk. Hogwarts School of Witchcraft and Wizardry seems to be one of the more popular schools teaching magic, and witches and wizards from about 12 to 18 years old attend. As in most other schools, students are sent a school supplies list beforehand.
 
-<img src="http://images2.wikia.nocookie.net/__cb20090531122935/harrypotter/images/f/f4/Lumos_Maxima.gif" alt="Lumos Maxima">
+For first-year students, the [supply list](http://harrypotter.wikia.com/wiki/Supply_list) consists of books, uniforms, general equipment, and of course, a wand.
 
-Early in the first book you'll learn one of the easiest charms is **Lumos**. When it's said, the tip of the wand lights up to create a sort of lantern or flashlight. The charm is used extensively by every character (of any experience level) in any low-light situation.
+<div><img src="{{site.url}}img/in-writings/lumos.jpg" alt="Lumos"> <small>&ldquo;Lumos.&rdquo;</small></div>
 
-<img src="http://images.techhive.com/images/article/2013/09/04-light-em-up-100054196-large.png">
+One of the easiest charms to learn is **Lumos**, and when it's invoked, the wand tip lights up and creates a sort of lantern or flashlight. The lumos charm is used extensively by many characters (of every experience level).
 
-<small>Sound like something else?</small>
 
-Later in the series you'll learn about a very difficult charm called the **Patronus Charm**, and activated by thinking a happy thought, making a circlular wand movement, and saying "Expecto Patronum". 
+<div><img src="{{site.url}}img/in-writings/flashlight.jpg" alt="Flashlight"> <small>Sound like something else?</small></div>
 
-Reading the series coincidentally with the announce of iOS7, combined with my supernatural ability to over-think, I couldn't help but make the connection to the iOS apps and the app store.
+Later in the series you'll learn about a very difficult charm called the **Patronus charm**, and it's activated by thinking a happy thought, making a circlular wand movement, and saying "Expecto Patronum." <span class="sidenote">Which Harry seems to enjoy yelling.</span>
 
-<img src="https://www.apple.com/iphone/compare/images/compare_iphone5s_2x.jpg">
+### Making the connection
 
-By default there are apps on your iPhone, such as the calendar, email, photos, and web browser. <span class="sidenote">And you know, the actual phone app.</span>
+Reading and Harry Potter books and hearing the announcement of iOS 7's new features, I was obviously reminded of the App Store and automatically updated apps. 
 
-There's also the app store, which has some incredibly useful apps. Some are free, some cost lots of money, and perhaps many of which will replace your default ones.
+<div><img src="{{site.url}}img/in-writings/iphone5s.jpg" alt="iOS 7"> <small>You weren't?</small></div>
+
+By default, there are certain applications on your iPhone. Among others, there's a calendar, email, photos, and a web browser. <span class="sidenote">And you know, the actual phone app.</span>
+
+In the App Store, there are some other incredibly useful apps, some of which may replace the default apps.
 
 ### The Wandernet
 
-In some cases, certain wizards and witches are credited with inventing spells and charms, but that begs the question: how does the rest of the wizarding world use a newly invented spell?
+In the Wizarding World, certain wizards and witches are credited with inventing spells and charms. This idea of "new spells" interested me. This means charms weren't willed into existence by an ancient unknown power then passed down generation to generation, but rather, some had been recently developed and modified.
 
-Does the witch "upload" her spell to a sort of <s>App</s> Spell Store, which is then available for "downloaded" by other witches and wizards?
+**So how is a witch or wizard able to use a newly invented charm?**
 
-Remember the Patronus charm we talked about earlier? Dumbledore actually invented a way to send short messages with patronuses, and that was a common way for the Order of the Phoenix to communicate. Was this "invention" an update to the Patronus spell? Patronus version 2.0.0, perhaps?
+Does the inventor upload the charm to the Spell Store in the Wandernet, which is then available for download by others?
 
-The only plausible explanation I could come up with is that the wands were automatically updated with the latest version of any given spell, after the user had used, or downloaded, it.
+For example, the Patronus charm has been "extended" by Dumbledore who invented a way to send short messages with patronuses. Was this modification an update to the Patronus charm? <span class="sidenote">Patronus charm, version 2</span>
 
-### "The Wand Doesn't Have the Power &hellip;"
+I settled on the idea of automatically updating spells through the Wandernet. Once a spell had been recited, the spell would continue to update to the latest version, whenever one was available.
 
-While dicussing this with my wife, she brought up a very good point. 
+### "The Wand Doesn't Have the Power&hellip;"
 
-> It sounds like your theory leans on the wand having the power, but wizards could use other wizards wands and use a spell the first wizard never used. The wand doesn't have the power, the wizard has the power.
+While dicussing this with my wife, she brought up a very good point, which made a lot more sense.
 
-Okay, I have to give her full credit on this, because she blew my mind with her next thought.
+> It sounds like your theory leans on the wand or spell having the 
+> power, but one person could cast a spell from someone else's wand 
+> which never casted that spell. It doesn't seem like the wand has 
+> the power, but rather, the wizard has the power.
+
+Well, crap. I really liked this idea of the Wizard App Store, but you pose a great point, Rachel.
 
 > It's more like language.
 
-When kids say words they don't understand, the word has no power, because they simply don't understand what they are saying. If fact, if the word carries consequences for being said, such as when saying a "bad word", we may simply laugh.
+<div><img src="{{site.url}}img/in-writings/mind-blown.gif" alt="mind blown"> <small>And with that sentence, she blew my mind.</small></div>
 
-<img src="http://www.channelate.com/comics/2012-02-10-f-word.png">
+When people say words they don't understand, the word has no power and communicates little. They simply don't understand what they're saying.
 
-Every person who's capable of speech has the same access to stringing sounds together to create a word. When we say a word or phrase that we're not sure of it's meaning, it's usually because we're mimicing the original place we heard it. 
+<div><img src="{{site.url}}img/in-writings/f-word.png" alt="F Word"><small>[Channelate - The F-Word by Ryan Hudson](http://www.channelate.com/2012/02/10/the-f-word/)</small></div>
 
-Kids curse because they've heard the sounds somewhere else before; they are mimicing someone else around them. It's only until they get older and hear the word more often and in different contexts that we learn the meaning of those words.
-
-That's why one of the best ways to learn a new language is to be immersed in an environment where only that language is spoken. 
+Every person who's capable of speech has equal access to stringing certain sounds together, creating words. Usually when kids say "bad words", they don't know what they mean, they are simply repeating it since they've heard it. <span class="sidenote">And also because it makes the adults laugh.</span> 
 
 ### Back to Hogwarts
 
-In my Harry Potter Over-think of 2013, the "language" is spells, charm, and curses.
+In world of Harry, Ron, and Hermoine, another language they learn the magical language made of spell, curses, charms, and jinxes.
 
-At one point, Harry tries to use one of the so-called "Unforgivable Curses" on Bellatrix. As she's running away, he points his wand and yells "Crucio!", but this has little effect on Bellatrix. Her response:
+In fact, at one point, Harry tries to use one of the so-called "Unforgivable Curses" on Bellatrix. As she's running away, he points his wand and yells "Crucio!" To Harry's dismay, this doesn't have the indented effect on Bellatrix. Her response:
 
-> You need to mean them, Potter! You need to really want to cause pain&hellip; to enjoy it&hellip; righteous anger won't hurt me for long&hellip;"
+> You need to mean them, Potter! You need to really want to cause pain&hellip; to enjoy it&hellip; righteous anger won't hurt me for long&hellip;!"
 
 <small>Bellatrix to Harry, Order of the Phoenix (Book 5)</small>
 
-In this example, Harry didn't know the full meaning of saying those words, and by performing the curse withing fully understanding it, it's full weight was not passed on.
+In this example, Harry didn't know the full meaning of saying those words, and by performing the curse withing fully understanding it, its full weight was not passed onto Bellatrix.
 
-<img src="http://31.media.tumblr.com/tumblr_lw2qagPCWP1qi3qwlo1_500.gif">
+<div><img src="{{site.url}}/img/in-writings/crucio.gif" alt="Crucio!"> <small>Say what you mean, mean what you say.</small></div>
 
-### Not sure what to do now
+### Reality of Fiction
 
-I guess I need a conclusion? What's the main point? 
+Sometimes overthinking the reality of fiction leads nowhere, but in this case, the discussion between myself and [Rachel](http://rachelrushing.com) resulted in a way, however odd, to explain language.
+
+Also, maybe someone from Apple will go ahead and invent wands or whatever.
