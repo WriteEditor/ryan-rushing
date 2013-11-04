@@ -148,6 +148,10 @@ a{
     font-family: $sans_serif;
     white-space: nowrap;
 
+    h2 &, #archive &, #next-prev &{
+         white-space: initial;
+    }
+
     &:hover {
         color: $accent;
     }
