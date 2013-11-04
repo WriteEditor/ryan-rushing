@@ -2,12 +2,12 @@
 layout: individual
 title: Thoughts on Harry Potter&rsquo;s wand, iOS 7&rsquo;s automatic updates, and language
 category: writing
-excerpt: I tend to overthink the reality of fiction, which inevitably leads to my dissappointment when something doesn't add up. Suspending my disbelief isn't one of my strong points.
+excerpt: I tend to over think the reality of fiction, which inevitably leads to my disappointment when something doesn't add up. Suspending my disbelief isn't one of my strong points.
 ---
 
 #### **Warning:** there are spoilers of the Harry Potter series in this post.
 
-I tend to overthink the reality of fiction, which inevitably leads to my dissappointment when something doesn't add up. Suspending my disbelief isn't one of my strong points.
+I tend to over think the reality of fiction, which inevitably leads to my dissappointment when something doesn't add up. Suspending my disbelief isn't one of my strong points.
 
 Around the time iOS 7 was announced, I was reading the Harry Potter series for the first time at the request of my sister, who's a die hard fan. <span class="sidenote">I'd seen the movies, but reading the story changed my perception of this so-called children's book.</span>
 
@@ -24,7 +24,7 @@ One of the easiest charms to learn is **Lumos**, and when it's invoked, the wand
 
 <div><img src="{{site.url}}img/in-writings/flashlight.jpg" alt="Flashlight"> <small>Sound like something else?</small></div>
 
-Later in the series you'll learn about a very difficult charm called the **Patronus charm**, and it's activated by thinking a happy thought, making a circlular wand movement, and saying "Expecto Patronum." <span class="sidenote">Which Harry seems to enjoy yelling.</span>
+Later in the series you'll learn about a very difficult charm called the **Patronus charm**, and it's activated by thinking a happy thought, making a circular wand movement, and saying "Expecto Patronum." <span class="sidenote">Which Harry seems to enjoy yelling.</span>
 
 ### Making the connection
 
@@ -50,7 +50,7 @@ I settled on the idea of automatically updating spells through the Wandernet. On
 
 ### "The Wand Doesn't Have the Power&hellip;"
 
-While dicussing this with my wife, she brought up a very good point, which made a lot more sense.
+While discussing this with my wife, she brought up a very good point, which made a lot more sense.
 
 > It sounds like your theory leans on the wand or spell having the 
 > power, but one person could cast a spell from someone else's wand 
@@ -79,12 +79,12 @@ In fact, at one point, Harry tries to use one of the so-called "Unforgivable Cur
 
 <small>Bellatrix to Harry, Order of the Phoenix (Book 5)</small>
 
-In this example, Harry didn't know the full meaning of saying those words, and by performing the curse withing fully understanding it, its full weight was not passed onto Bellatrix.
+In this example, Harry didn't know the full meaning of saying those words, and by performing the curse without fully understanding it, its full weight was not passed onto Bellatrix.
 
 <div><img src="{{site.url}}/img/in-writings/crucio.gif" alt="Crucio!"> <small>Say what you mean, mean what you say.</small></div>
 
 ### Reality of Fiction
 
-Sometimes overthinking the reality of fiction leads nowhere, but in this case, the discussion between myself and [Rachel](http://rachelrushing.com) resulted in a way, however odd, to explain language.
+Sometimes over thinking the reality of fiction leads nowhere, but in this case, the discussion between myself and [Rachel](http://rachelrushing.com) resulted in a way, however odd, to explain language.
 
 Also, maybe someone from Apple will go ahead and invent wands or whatever.
