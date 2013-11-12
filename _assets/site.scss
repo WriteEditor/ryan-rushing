@@ -59,8 +59,9 @@ $baseline: 2em;
 // Resets everything
 @import "compass/reset";
 
-// Brings in all the Gridset variables (used in every other file)
+// Brings in all the Gridset and layout mixins and functions
 @import "gridset.scss";
+@import "layout.scss";
 
 // Controls global typography and elements
 @import "global.scss";
