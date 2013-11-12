@@ -1,4 +1,6 @@
-//About section - once I get all the layout stuff here, I will refactor to combine styles
+// Once I get all the layout stuff here, I will refactor to combine styles.
+
+//------- About section
 
 #about {
 	 section {
@@ -38,4 +40,55 @@
     	}
     }
 
+}
+
+
+//------- Ads on the site
+
+
+#carbonads-container{
+	@include gs-span(l, 3, 4);
+
+	@media(max-width:1000px){ 
+		@include gs-span(m, 3);
+	}
+
+	@media(max-width:600px){ 
+		@include gs-span(s, 1, 4);
+	}
+}
+
+//------- Archive pages 
+
+#archive    {
+    a {
+        @include gs-span(l, 3, 5);
+        
+        @media(max-width:1000px){ 
+            @include gs-span(m, 3, 5);
+        }  
+
+         @media(max-width:600px){ 
+            @include gs-span(s, all);
+            @include gs-pad(s, padinfull);
+        }          
+    } 
+}
+
+
+//------- "Global" css
+
+#hgroup{
+	@include gs-span(l, 3, 4);
+
+    @media(max-width:1000px){
+        @include gs-span(m, 3, 4);
+    }
+
+    @media(max-width:600px){ 
+        @include clear;
+
+        @include gs-pad(s, padinfull);
+        @include gs-span(s, all);
+    }
 }
