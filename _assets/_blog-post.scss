@@ -1,79 +1,6 @@
 // Blog post pages (not art-directed)
 
 #individual {
-    
-    @include clear-overflow;
-
-    p, h3, h4, blockquote, img, ul, ol, small {
-        
-        @include clear-overflow;
-        @include gs-span(l, 3, 4);
-
-        @media(max-width:1000px){
-            @include gs-span(m, 2, 4);
-        }
-        @media(max-width:600px){ 
-            @include gs-pad(s, padinfull);
-            @include gs-span(s, all); 
-        }
-    }
-
-    p{
-        position: relative;
-        overflow: visible;
-    }
-
-    .sidenote{
-
-        text-align: center;
-        font-style: italic;
-        color: #777;
-        font-size: $baseline/2.5;
-        display: block;
-        top: $baseline*1.25;
-        left: gs-adjust(lb, gs-marginleft(l, 5, (3, 4), false), (1, 6), true);  //adjusting for the containter
-        width: gs-adjust(lb, gs-width(lb, 5, 6, (3, 4), false), (1, 6), true);  //adjusting for the containter 
-        position: absolute;
-        text-indent: 0;
-
-        @include gs-pad(lb, padinfull);
-        
-        
-        @media(max-width:1000px){
-
-            padding: 0;
-            position: static;
-            text-align: left;
-            color: #222;
-            font-size: inherit;
-            display: inline;
-            width: auto;
-            font-style: normal;
-
-            &:before{ content:"("; }
-            &:after{ content:")";}
-
-        }
-
-        & + p {
-            text-indent: $baseline;
-            margin-right: 0;
-            clear: none;
-
-            @media(max-width:1000px){
-                clear: none;
-                text-indent: 0;
-                @include gs-span(mb, 4, 5);
-            }
-
-            @media(max-width:600px){ 
-                 clear: left;
-                 text-indent: $baseline;
-                 @include gs-span(s, all);
-                 @include gs-pad(s, padinfull);
-            }
-        }
-    }
 
     sup{
             @media(max-width:1000px){ 
@@ -84,51 +11,16 @@
     img {
         padding-top: $baseline/2;
         padding-bottom: $baseline/2;
-
-        @include gs-pad(l, padinfull);
-
-        @media(max-width:1000px){
-            @include gs-pad(m, padinfull);
-        }
-
-        @media(max-width:600px){ 
-            @include gs-pad(s, padinfull);
-        }
-
-        &.full {
-            @include gs-span(l, all);
-        }
     } 
 
     blockquote {
         margin-top: $baseline;
         margin-bottom: $baseline;
-        font-family: $sans_serif;
-        font-style: italic;
 
         p {
             @include clear;
             padding: 0 $baseline/2;
             margin: 0 $baseline/2;
-            border-left: 2px solid $accent;
         }
     }    
-
-    small {
-        display: block; 
-        padding:  0 0 $baseline;
-        font-size: $baseline/3;
-        color: #222;
-        text-align: center;
-
-        @include gs-pad(l, padinfull);
-   
-        @media(max-width:1000px){
-            @include gs-pad(m, padinfull);
-        }
-
-        @media(max-width:600px){ 
-            @include gs-pad(s, padinfull);
-        }
-    }
  }

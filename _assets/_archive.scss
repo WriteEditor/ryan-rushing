@@ -4,14 +4,9 @@
 #archive    {
 
     list-style: none;
-    
-    a { 
-        padding: $baseline/2 0;
-        line-height: 1.2;    
-    } 
 
     li, a   { @include clear-overflow;}
-    h3      { @include clear-overflow; margin: 0 0 $baseline/4 0; font-weight: 400; font-size: $baseline/1.5;}
+    
     span    { display: inline-block;}
     
     li {
@@ -25,17 +20,8 @@
             background: #fff;
         }
 
-        &:hover a, 
-        &:hover p {
-            color: $accent;
-        }
-
         p {
             @include clear;
-            
-            color: #ccc;
-            font-style: normal;
-            text-decoration: none;
             margin: 0;
         }
     }

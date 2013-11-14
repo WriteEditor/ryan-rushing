@@ -1,19 +1,4 @@
-header{
 
-    @include clear;
-
-    nav { 
-        @include gs-span(l, 1, 2);
-
-        @media(max-width:600px){ 
-            display: none;
-        }
-    }
-
-   @media(max-width:600px){ 
-        margin: 0;
-    }
-}
 
 footer {
     margin: $baseline*2 0;
@@ -54,16 +39,6 @@ footer {
         @media(max-width:600px){ 
             @include gs-pad(s, padinfull);
             @include gs-span(s, all); 
-        }
-    }
-
-    nav { 
-
-        margin: 0 0 $baseline 0;
-        @include clear-overflow;
-        
-        @media(max-width:600px){ 
-            @include gs-pad(s, padinfull);
         }
     }
 
@@ -148,17 +123,7 @@ footer, header
         @include clear;
 }
 
-#logo { 
-
-    @include gs-span(l, 1, 2);
-
-    @media(max-width:1000px){ 
-        @include gs-span(m, 1, 2);
-    }
-    
-    @media(max-width:600px){
-        @include gs-span(s, 2, 3);
-    }
+#logo {
 
     a {
         max-width: 85px;
@@ -176,32 +141,16 @@ footer, header
 }
 
 #jump-nav{
-    display: inline-block;
-    text-align: center;
-    background: #fff;
-    color: $accent;
-    padding: $baseline/8 $baseline/4;
-    text-decoration: none;
-    font-size: $baseline/2;
-    margin: $baseline/2 0 0 0;
-    font-style: normal;
     
-    @include gs-span(s, 4);
-
-    @media(min-width:601px){
-       display: none;
-    }
+    background: #fff;
+    padding: $baseline/8 $baseline/4;
+    display: inline-block;
+    margin: $baseline/2 0 0 0;
 }
 
 #contact-info{
     text-align: center;
     list-style: none;
-
-    @include gs-span(l, 5, 6);
-
-    @media(max-width:1000px){
-        @include gs-span(m, 4, 5);
-    }
 
     @media(max-width:600px){ 
         display: none;
@@ -217,7 +166,7 @@ footer, header
     &:after{
         content: "";
         display: block;
-        background: url(../img/little-logo.png) no-repeat center center;
+        background: url(/img/little-logo.png) no-repeat center center;
         height: 16px;
         width: 16px;
         background-size: 16px;
