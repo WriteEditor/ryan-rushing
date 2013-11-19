@@ -59,16 +59,6 @@ $baseline: 2em;
 // Resets everything
 @import "compass/reset";
 
-// Brings in all the Gridset and layout mixins and functions
-@import "gridset.scss";
-@import "layout.scss";
-
-// Typography
-@import "typography.scss";
-
-// Controls global typography and elements
-@import "global.scss";
-
 // Controls styling the header and footer
 @import "header-and-footer.scss"; 
 
@@ -81,9 +71,8 @@ $baseline: 2em;
 // Special styling for the home page
 @import "home.scss";
 
-// Controls the typography and styling for blog posts
-@import "blog-post.scss"; 	 //default styling
-@import "art-directed.scss"; //art directed posts
+// Controls the typography and styling for art directed posts
+@import "art-directed.scss";
 
 // Controls the post navigation at the end of each blog post
 @import "next-prev.scss";
@@ -93,3 +82,13 @@ $baseline: 2em;
 
 // Archive page styling
 @import "archive.scss";
+
+// Brings in all the Gridset and layout mixins and functions
+@import "gridset.scss";
+@import "layout.scss";
+
+// Base styles
+@import "base.scss";
+
+// Typography
+@import "typography.scss";

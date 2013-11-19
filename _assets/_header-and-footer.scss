@@ -4,42 +4,10 @@ footer {
     margin: $baseline*2 0;
     padding: $baseline 0;
     border-top: 2px solid $accent;
-    
-    @include clear;
-    @include gs-span(l, 2, 5);
-
-    @media(max-width:1000px){
-        @include gs-span(m, 2, 4);
-    }
-
-    @media(max-width:600px){ 
-        @include gs-span(s, all); 
-    }
-
-    @media(max-width:450px){ 
-        margin: $baseline 0 0 0;
-    }
-
-    strong{
-        @media(max-width:600px){ 
-            @include clear;
-        }
-    }
 
     p{
         text-align: center;
         margin: $baseline 0 0 0;
-        @include clear;
-        @include gs-pad(l, padinfull);
-       
-        @media(max-width:1000px){
-            @include gs-pad(m, padinfull);
-        }
-
-        @media(max-width:600px){ 
-            @include gs-pad(s, padinfull);
-            @include gs-span(s, all); 
-        }
     }
 
     li{
@@ -151,6 +119,7 @@ footer, header
 #contact-info{
     text-align: center;
     list-style: none;
+    clear: none;
 
     @media(max-width:600px){ 
         display: none;

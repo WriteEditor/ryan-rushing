@@ -243,6 +243,42 @@ header{
 }
 
 footer{
+
+    @include clear;
+    @include gs-span(l, 2, 5);
+
+    @media(max-width:1000px){
+        @include gs-span(m, 2, 4);
+    }
+
+    @media(max-width:600px){ 
+        @include gs-span(s, all); 
+    }
+
+    @media(max-width:450px){ 
+        margin: $baseline 0 0 0;
+    }
+
+    strong{
+        @media(max-width:600px){ 
+            @include clear;
+        }
+    }
+
+    p{
+        @include clear;
+        @include gs-pad(l, padinfull);
+
+        @media(max-width:1000px){
+            @include gs-pad(m, padinfull);
+        }
+
+        @media(max-width:600px){ 
+            @include gs-pad(s, padinfull);
+            @include gs-span(s, all); 
+        }
+    }
+
     nav { 
 
         margin: 0 0 $baseline 0;
@@ -280,5 +316,68 @@ footer{
 
     @media(min-width:601px){
        display: none;
+    }
+}
+
+#latest-post{
+    @include gs-span(l, 3, 4);
+
+    @media(max-width:1000px){ 
+        @include gs-span(m, 3, 4);
+    }
+    
+    @media(max-width:600px){
+        @include gs-span(s, all);
+        @include gs-pad(s, padinfull);
+    }
+}
+
+#projects{
+    @media(max-width:600px){
+        @include gs-pad(s, padinfull);
+    }
+
+    li{
+        .info {
+            @include gs-span(l, 2, 3);
+
+            @media(max-width:1000px){
+                @include gs-span(m, 2, 4);
+                clear: both;
+             }
+
+            @media(max-width:600px){
+                @include gs-span(s, all);
+            }
+        }
+
+        .logo {
+            display:  block; 
+             @include gs-span(l, 4, 5);
+             
+             @media(max-width:1000px){
+                @include gs-span(m, 2, 4);
+                clear: both;
+             }
+
+             @media(max-width:600px){
+                @include gs-span(s, all);
+            }
+        }
+    }
+
+    h2 {
+
+        @include gs-span(l, 2, 5);
+        clear: both;
+
+        @media(max-width:1000px){ 
+            @include gs-span(m, 2, 3);
+        }
+        
+        @media(max-width:600px){
+            @include gs-span(s, all);
+            @include clear;
+        }
     }
 }

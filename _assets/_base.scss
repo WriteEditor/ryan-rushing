@@ -1,0 +1,189 @@
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+body {
+    line-height: $baseline;
+    background: #f9f9f9;
+    position: relative;
+    font-size: $baseline/1.8;
+    font-family: $serif;
+
+    @media(max-width:725px){
+        font-size: $baseline/2;
+        line-height: $baseline/1.125;
+    }
+}
+
+// ---------------------------
+// ---------------------------
+//
+// Block-level elements
+//
+// ---------------------------
+// ---------------------------
+
+section { 
+    margin: $baseline 0;
+}
+
+article{
+
+    sup{
+        @media(max-width:1000px){ 
+            display: none;
+        }
+    }
+
+    img {
+        padding-top: $baseline/2;
+        padding-bottom: $baseline/2;
+    }
+
+    blockquote {
+        margin-top: $baseline;
+        margin-bottom: $baseline;
+    } 
+}
+
+ul{
+    clear: both;
+    margin: $baseline 0;
+    list-style: disc;
+}
+
+ol {
+    list-style: decimal-leading-zero outside;
+    padding: $baseline 0 $baseline $baseline*2;
+}
+
+li {
+
+    clear: both;
+
+    p { 
+        margin: 0 0 
+        $baseline 0;
+    }
+
+    h4 {
+        margin: 0;
+    }
+}
+
+img {
+    width: 100%;
+    border-radius: 3px;
+}
+
+// ---------------------------
+// ---------------------------
+//
+// Base Typography
+//
+// ---------------------------
+// ---------------------------
+
+// Headings
+
+    h1 {
+        font-size: $baseline*1.25;
+        line-height: 1.25;
+        font-weight: 700;
+
+        @media(max-width:600px){ 
+            font-size: $baseline;
+        }
+    }
+
+    h2 { 
+        font-size: 180%;
+        line-height: 1.2;
+    }
+
+    h2 + h1 {
+        margin: 0 0 $baseline 0;
+
+        @media(max-width:600px){ 
+            margin: 0 0 $baseline/2 0;
+        }
+    }
+
+    h1, h2, h3      { font-family: $sans_serif; }
+    h2, h3, h4      { font-weight: 400;}
+
+    h3              {
+        margin: 0 0 $baseline 0;
+        font-weight: 700;
+
+        @media(max-width:600px){ 
+            margin: 0 0 $baseline/2 0;
+        }
+    }
+
+    h4 {
+        margin: 0 0 $baseline 0;
+        font-style: italic;
+        line-height: 1.25;
+    }
+
+    h4, em, blockquote  {
+        color: #222;
+    }
+
+    p + h3, ul + h3 {
+        margin: $baseline 0 $baseline 0;
+        
+        @media(max-width:600px){ 
+            margin: $baseline/2 0 $baseline/2 0;
+        }
+    }
+
+// Other Typography
+
+    a{
+        color: #214f84;
+        font-style: italic;
+        font-family: $sans_serif;
+        white-space: nowrap;
+
+        h2 &, #archive &, #next-prev &{
+             white-space: initial;
+        }
+
+        &:hover {
+            color: $accent;
+        }
+    }
+
+    strong{
+        font-family: $sans_serif;
+        font-weight: 700;
+    }
+
+    em{
+        font-family: $sans_serif;
+        font-weight: 400;
+        font-style: italic;
+    }
+
+    p{
+        @include clear;
+        padding: 0 $baseline/2;
+        margin: 0 $baseline/2;
+        
+        ul + & {
+            text-indent: 0;
+        }
+
+         + p { 
+            text-indent: $baseline;
+        }
+        
+        @media(max-width:450px){ 
+            text-align: justify;
+        }
+    }
+
