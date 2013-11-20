@@ -11,7 +11,7 @@
     h3{
     	font-weight: 400;
         font-size: $baseline/1.5;
-        @include clear-overflow;
+        @extend %clear-overflow;
         margin: 0 0 $baseline/4 0;
     }
 

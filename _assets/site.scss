@@ -1,26 +1,23 @@
-//    --------------------------------
-//    --------------------------------
-//    --------------------------------
-//            
-//            Variables/Mixins
+// ---------------------------
+// ---------------------------
 //
-//    --------------------------------
-//    --------------------------------
-//    --------------------------------
+//  Variables/Mixins
+//
+// ---------------------------
+// ---------------------------
 
+// Extends for clearing (can these two be combined or simplified into one somehow?)
 
-// Mixins for clearing 
-@mixin clear {
-    float: left;
+%clear{
+	float: left;
     clear: both;
     width: 100%;
 }
 
-@mixin clear-overflow {
-    overflow: hidden;
+%clear-overflow{
+	overflow: hidden;
     clear: both;
 }
-
 
 // General site variables
 $accent: #eb1072; //pink
@@ -29,59 +26,28 @@ $serif: "ff-meta-serif-web-pro", "Georgia", georgia, times, serif;
 $baseline: 2em;
 
 
-// Media Query Variables (related directly to the Gridset variables)
-// For some reason this isn't working how I want. If I can pass in the CSS, this might work. More research needed.
-
-
-// @mixin large {
-// 	@media(max-width:1000px){ pass in here? }
-// }
-
-// @mixin medium {
-// 	@media(max-width:600px){ pass in here? }
-// }
-
-// @mixin small {
-// 	@media(max-width:400px){ pass in here? }
-// }
-
-
-//    --------------------------------
-//    --------------------------------
-//    --------------------------------
-//            
-//                Imports
+// ---------------------------
+// ---------------------------
 //
-//    --------------------------------
-//    --------------------------------
-//    --------------------------------
+//  Imports
+//
+// ---------------------------
+// ---------------------------
 
 // Resets everything
 @import "compass/reset";
 
-// Controls styling the header and footer
-@import "header-and-footer.scss"; 
-
-// Controls styling of ads
-@import "ads.scss";
-
-// Controls the fancy hover transitions on the links. 
-@import "hover-transition.scss"; 
-
-// Special styling for the home page
-@import "home.scss";
-
 // Controls the typography and styling for art directed posts
 @import "art-directed.scss";
 
-// Controls the post navigation at the end of each blog post
-@import "next-prev.scss";
+// Modular styles
+@import "modules.scss";
 
-// About page styling
-@import "about.scss";
+// Typography
+@import "typography.scss";
 
-// Archive page styling
-@import "archive.scss";
+// Controls the CSS animation
+@import "animation.scss"; 
 
 // Brings in all the Gridset and layout mixins and functions
 @import "gridset.scss";
@@ -89,6 +55,3 @@ $baseline: 2em;
 
 // Base styles
 @import "base.scss";
-
-// Typography
-@import "typography.scss";

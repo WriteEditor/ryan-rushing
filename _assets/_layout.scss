@@ -4,7 +4,7 @@
 
 #about {
 	 section {
-        @include clear;
+        @extend %clear;
         @include gs-span(l, 3, 4);
 
         @media(max-width:1000px){ 
@@ -86,7 +86,7 @@
     }
 
     @media(max-width:600px){ 
-        @include clear;
+        //@extend %clear;
 
         @include gs-pad(s, padinfull);
         @include gs-span(s, all);
@@ -104,11 +104,11 @@
 
 #individual {
     
-    @include clear-overflow;
+    @extend %clear-overflow;
 
     p, h3, h4, blockquote, img, ul, ol, small {
         
-        @include clear-overflow;
+        @extend %clear-overflow;
         @include gs-span(l, 3, 4);
 
         @media(max-width:1000px){
@@ -206,7 +206,7 @@
     .next, .previous {
 
         @media(max-width:1000px){ 
-            @include clear-overflow;
+            //@extend %clear-overflow;
             @include gs-span(m, 2, 4);
         }
         
@@ -227,7 +227,7 @@
 
 header{
 
-    @include clear;
+    @extend %clear;
 
     nav { 
         @include gs-span(l, 1, 2);
@@ -244,7 +244,6 @@ header{
 
 footer{
 
-    @include clear;
     @include gs-span(l, 2, 5);
 
     @media(max-width:1000px){
@@ -261,12 +260,12 @@ footer{
 
     strong{
         @media(max-width:600px){ 
-            @include clear;
+            //@extend %clear;
         }
     }
 
     p{
-        @include clear;
+        @extend %clear;
         @include gs-pad(l, padinfull);
 
         @media(max-width:1000px){
@@ -282,7 +281,7 @@ footer{
     nav { 
 
         margin: 0 0 $baseline 0;
-        @include clear-overflow;
+        @extend %clear-overflow;
         
         @media(max-width:600px){ 
             @include gs-pad(s, padinfull);
@@ -377,7 +376,7 @@ footer{
         
         @media(max-width:600px){
             @include gs-span(s, all);
-            @include clear;
+            //@extend %clear;
         }
     }
 }
