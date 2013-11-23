@@ -10,7 +10,7 @@
 	header { 
 		background: url(/img/header-bgnd.jpg) no-repeat top left transparent;
 		background-size: cover;
-		margin: 0 0 60px 0;
+		margin: 0 0 $baseline*2 0;
 
 		@media(max-width : 665px){
 			padding: 0;
@@ -26,6 +26,10 @@
 			margin: 0;
 			padding: 0;
 		}
+
+        h2 a{
+            text-decoration: none;
+        }
 	}
 
 	section{
@@ -113,11 +117,21 @@
        
     a {
         padding:$baseline 0;
+        margin:$baseline 0;
         display: inline-block;
         background: #f3f3f3;
         text-align: center;
         display: inline-block;
         width: 100%;
+        text-decoration: none;
+        
+        &.rss{
+            @extend a;
+            display: inline;
+            background: none;
+            text-decoration: underline;
+
+        }
     }
     
     h3, p { 
@@ -127,6 +141,10 @@
 
     ul{
          margin: $baseline 0;
+    }
+
+    li{
+        clear: none;
     }
 }
 
@@ -174,6 +192,12 @@
 // ---------------------------
 // ---------------------------
 
+#hgroup{
+    h2{
+        font-size: 1em;
+    }
+}
+
 #top-bar    { 
     z-index: 1; 
     @extend %clear;
@@ -197,8 +221,14 @@
 }
 
 #second-level {
-        margin: $baseline 0 0 0;
         @extend %clear;
+
+        margin: $baseline*3 0 0 0;
+
+        @media(max-width:600px){ 
+        
+            margin: $baseline 0 0 0;  
+        }
 }
 
 #logo {
@@ -223,6 +253,7 @@
     padding: $baseline/8 $baseline/4;
     display: inline-block;
     margin: $baseline/2 0 0 0;
+    display: none;
 }
 
 #contact-info{
@@ -256,6 +287,16 @@
     @extend %clear;
 }
 
+#slide-out{
+    width: $baseline*10;
+    background: #fff;
+    position: fixed;
+    height: 100%;
+    right: -$baseline*10;
+    top: 0;
+    display: none;
+}
+
 // ---------------------------
 // ---------------------------
 //
@@ -264,31 +305,93 @@
 // ---------------------------
 // ---------------------------
 
-#carbonads-container .carbonad { 
-	overflow: hidden;
-	width: 100%;
-	position: relative;
-	height: auto;
-	max-width: 300px;
-	margin: 0 auto;
-	background: rgba(255,255,255,.6);
-	border-radius: 3px;
-	border: 0 none;
 
-	@media(max-width:600px){ 
-		margin: 0;
-		width: 100%;
-		border-radius: 0;
-		max-width: 100%;
-	}
+#carbonads-container{
+    position: static; 
+    margin: 0 0 $baseline 0;
 
-	@media(max-width:450px){ 
-	 	margin: 0 auto;
-	}
-}
+    @media(min-width:1001px){
+       position: absolute;
+    }
 
-#carbonads-container img {
-	border-radius: 0;
-	width: auto;
-	margin-bottom: 11px;
+    a{
+        // zeroing out styles on writing archive
+        float: none !important;
+        display: inline !important;
+        margin: 0 !important;
+
+        &:hover{
+            color: initial;
+        }
+
+    }
+
+    .carbonad { 
+        clear: both;
+        float: left;
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        margin: 0 auto;
+        border-radius: 0;
+        border: 0 none;
+        background: rgba(255,255,255,.6);
+
+        @media(min-width:601px){  
+            padding: 0;
+        }
+
+        @media(min-width:1001px){ 
+            background: none 0;
+        }
+    }
+
+    img {
+        border-radius: 0;
+        width: auto !important;
+        margin: 0;
+        padding: 0;
+        max-width: 100% !important;
+        float: none  !important;
+    
+    }
+
+    span{
+        display: block !important;
+        float: left;
+        font-family: $sans_serif;
+        font-size: $baseline*.4;
+
+        @media(min-width:1001px){
+            clear: both;  
+            padding: 0 10px;          
+        }
+
+        &.carbonad-image {
+            width: 40%;
+            clear: left;
+
+            @media(min-width:1001px){
+                width: 100%;
+                display: block;
+                text-align: center;
+            }
+        }
+
+        &.carbonad-text, &.carbonad-tag{
+            width: 50%;
+            clear: right;
+            margin: 5px 10px;
+            height: auto;
+            text-align: left;
+
+            @media(min-width:1001px){
+                width: 100%;
+                text-align: center;
+                margin: $baseline/3 0;
+                clear: both;
+            }
+        }
+    }
 }

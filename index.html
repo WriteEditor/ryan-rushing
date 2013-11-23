@@ -7,7 +7,6 @@ title: Ryan Rushing, Dallas-based designer and front-end developer
 
 <div id="latest-post">
 	{% for item in site.categories.writing limit:1 %}
-	<h3>Latest Writing</h3>
 	<h2><a href="{{item.url}}">{{ item.title }}</a></h2>				
 	<section>
 		<p>{{ item.excerpt }} <a href="{{ item.url }}">Continue reading&hellip;</a></p>

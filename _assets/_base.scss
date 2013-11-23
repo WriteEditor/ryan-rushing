@@ -5,6 +5,7 @@
 }
 
 body {
+    border-top: 2px solid $accent;
     line-height: $baseline;
     background: #f9f9f9;
     position: relative;
@@ -41,11 +42,6 @@ article{
         padding-top: $baseline/2;
         padding-bottom: $baseline/2;
     }
-
-    blockquote {
-        margin-top: $baseline;
-        margin-bottom: $baseline;
-    } 
 }
 
 ul{
@@ -156,9 +152,9 @@ footer, header
 // Headings
 
     h1 {
-        font-size: $baseline*1.25;
-        line-height: 1.25;
-        font-weight: 700;
+        font-size: $baseline*2;
+        line-height: $baseline/2;
+        font-weight: 400;
 
         @media(max-width:600px){ 
             font-size: $baseline;
@@ -171,10 +167,14 @@ footer, header
     }
 
     h2 + h1 {
-        margin: 0 0 $baseline 0;
+        margin: 0 0 $baseline/2 0;
 
-        @media(max-width:600px){ 
-            margin: 0 0 $baseline/2 0;
+        @media(min-width:750px){
+             margin: 0 0 $baseline 0;
+        }
+
+        @media(min-width:1001px){ 
+            margin: 0 0 $baseline 0;
         }
     }
 
@@ -201,6 +201,8 @@ footer, header
     }
 
     p + h3, ul + h3 {
+
+        @extend %clear;
         margin: $baseline 0 $baseline 0;
         
         @media(max-width:600px){ 
@@ -216,7 +218,7 @@ footer, header
         font-family: $sans_serif;
         white-space: nowrap;
 
-        h2 &, #archive &, #next-prev &{
+        h2 &, #archive &, #next-prev &, #carbonads-container &{
              white-space: initial;
         }
 
@@ -236,10 +238,8 @@ footer, header
         font-style: italic;
     }
 
-    p{
+    p {
         @extend %clear;
-        padding: 0 $baseline/2;
-        margin: 0 $baseline/2;
         
         ul + & {
             text-indent: 0;
@@ -253,4 +253,16 @@ footer, header
             text-align: justify;
         }
     }
+
+    blockquote {
+    
+    @extend %clear;
+    margin-top: $baseline;
+    margin-bottom: $baseline;
+
+    p{
+        padding: 0 $baseline/2;
+        margin: 0 $baseline/2;
+    }
+}
 

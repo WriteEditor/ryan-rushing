@@ -3,6 +3,9 @@
 //------- About section
 
 #about {
+
+    @extend %clear;
+
 	 section {
         @extend %clear;
         @include gs-span(l, 3, 4);
@@ -40,22 +43,6 @@
     	}
     }
 
-}
-
-
-//------- Ads on the site
-
-
-#carbonads-container{
-	@include gs-span(l, 3, 4);
-
-	@media(max-width:1000px){ 
-		@include gs-span(m, 3);
-	}
-
-	@media(max-width:600px){ 
-		@include gs-span(s, 1, 4);
-	}
 }
 
 //------- Archive pages 
@@ -106,7 +93,7 @@
     
     @extend %clear-overflow;
 
-    p, h3, h4, blockquote, img, ul, ol, small {
+    p, h3, h4, img, ul, ol, small {
         
         @extend %clear-overflow;
         @include gs-span(l, 3, 4);
@@ -220,6 +207,43 @@
 // ---------------------------
 // ---------------------------
 //
+// Ads
+//
+// ---------------------------
+// ---------------------------
+
+
+#carbonads-container{
+    @include gs-span(s, all);
+    
+    header &{
+        @include gs-span(s, all);
+
+        @media(min-width:601px){ 
+            @include gs-span(m, 3, 4);
+        }
+
+        @media(min-width:1001px){ 
+           @include gs-span(l, 5, 6);
+        }
+    }
+
+    // @media(max-width:1000px){ 
+    //     @include gs-span(m, 1, 2);
+    // }
+
+    @media(min-width:601px){ 
+        @include gs-span(mb, 2, 5);
+    }
+
+    @media(min-width:1001px){ 
+        @include gs-span(l, 1, 2);
+    }
+}
+
+// ---------------------------
+// ---------------------------
+//
 // Header, Footer
 //
 // ---------------------------
@@ -240,6 +264,8 @@ header{
    @media(max-width:600px){ 
         margin: 0;
     }
+
+
 }
 
 footer{
@@ -311,11 +337,12 @@ footer{
 }
 
 #jump-nav{
-    @include gs-span(s, 4);
+    // @include gs-span(l, 6);
+}
 
-    @media(min-width:601px){
-       display: none;
-    }
+#get-around{
+    background: #fff;
+    @extend %clear;
 }
 
 #latest-post{
