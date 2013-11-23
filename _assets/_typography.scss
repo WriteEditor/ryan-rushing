@@ -1,0 +1,91 @@
+#hgroup {
+    text-align: left;
+}
+
+#archive{
+	 a { 
+        line-height: 1.2;
+        padding: $baseline/2 0;   
+    }
+
+    h3{
+    	font-weight: 400;
+        font-size: $baseline/1.5;
+        @extend %clear-overflow;
+        margin: 0 0 $baseline/4 0;
+    }
+
+    li {
+    		&:hover a, 
+        	&:hover p {
+            	color: $accent;
+        }
+
+        p{
+        	color: #ccc;
+            font-style: normal;
+            text-decoration: none;
+        }
+    }
+}
+
+#individual{
+ 	p{
+        position: relative;
+        overflow: visible;
+    }
+
+    & + p {
+        text-indent: $baseline;
+
+        @media(max-width:1000px){
+            text-indent: 0;
+        }
+
+        @media(max-width:600px){ 
+            text-indent: $baseline;
+        }
+    }
+
+    .sidenote{
+        text-align: center;
+        font-style: italic;
+        color: #777;
+        font-size: $baseline/2.5;
+        display: block;
+        text-indent: 0;
+
+         @media(max-width:1000px){
+         	font-size: inherit;
+            font-style: normal;
+            text-align: left;
+            color: #222;
+
+            &:before{ content:"("; }
+            &:after{ content:")";}
+		}
+    }
+
+    small {
+        font-size: $baseline/3;
+        color: #222;
+        text-align: center;        
+    }
+
+    blockquote {
+        font-family: $sans_serif;
+        font-style: italic;
+
+        p {
+            border-left: 2px solid $accent;
+        }
+    } 
+}
+
+#jump-nav{
+	text-decoration: none;
+    text-align: center;
+    color: $accent;
+    font-size: $baseline/2;
+    font-style: normal;
+}

@@ -1,0 +1,409 @@
+// Once I get all the layout stuff here, I will refactor to combine styles.
+
+//------- About section
+
+#about {
+
+    @extend %clear;
+
+	 section {
+        @extend %clear;
+        @include gs-span(l, 3, 4);
+
+        @media(max-width:1000px){ 
+            @include gs-span(m, 3, 4);
+        }
+        
+        @media(max-width:600px){
+            @include gs-span(s, all);
+            @include gs-pad(s, padinfull);
+        }
+    }
+}
+
+#face {
+	img {
+        @include gs-span(l, 2, 3);
+
+        @media(max-width:1000px){
+         	@include gs-span(m, 2, 4);
+        }
+
+        @media(max-width:600px){
+        	@include gs-span(s, all);
+        	@include gs-pad(s, padinfull);
+        }
+
+        & + img {
+        	@include gs-span(l, 4, 5);
+
+        	@media(max-width:1000px){
+        		display: none;
+        	}
+    	}
+    }
+
+}
+
+//------- Archive pages 
+
+#archive    {
+    a {
+        @include gs-span(l, 3, 5);
+        
+        @media(max-width:1000px){ 
+            @include gs-span(m, 3, 5);
+        }  
+
+         @media(max-width:600px){ 
+            @include gs-span(s, all);
+            @include gs-pad(s, padinfull);
+        }          
+    } 
+}
+
+
+//------- "Global" css
+
+#hgroup{
+	@include gs-span(l, 3, 4);
+
+    @media(max-width:1000px){
+        @include gs-span(m, 3, 4);
+    }
+
+    @media(max-width:600px){ 
+        //@extend %clear;
+
+        @include gs-pad(s, padinfull);
+        @include gs-span(s, all);
+    }
+}
+
+
+// ---------------------------
+// ---------------------------
+//
+// Blog Posts
+//
+// ---------------------------
+// ---------------------------
+
+#individual {
+    
+    @extend %clear-overflow;
+
+    p, h3, h4, img, ul, ol, small {
+        
+        @extend %clear-overflow;
+        @include gs-span(l, 3, 4);
+
+        @media(max-width:1000px){
+            @include gs-span(m, 2, 4);
+        }
+        @media(max-width:600px){ 
+            @include gs-pad(s, padinfull);
+            @include gs-span(s, all); 
+        }
+    }
+    
+    .sidenote{
+        top: $baseline*1.25;
+        left: gs-adjust(lb, gs-marginleft(l, 5, (3, 4), false), (1, 6), true);  //adjusting for the containter
+        width: gs-adjust(lb, gs-width(lb, 5, 6, (3, 4), false), (1, 6), true);  //adjusting for the containter 
+        position: absolute;
+
+        @media(max-width:1000px){
+            padding: 0;
+            position: static;
+            display: inline;
+            width: auto;
+        }
+
+        @include gs-pad(lb, padinfull);
+    }
+
+    img{
+        @include gs-pad(l, padinfull);
+
+        @media(max-width:1000px){
+            @include gs-pad(m, padinfull);
+        }
+
+        @media(max-width:600px){ 
+            @include gs-pad(s, padinfull);
+        }
+
+        &.full {
+            @include gs-span(l, all);
+        }
+    }
+
+    & + p {
+        margin-right: 0;
+        clear: none;
+
+        @media(max-width:1000px){
+            clear: none;
+            @include gs-span(mb, 4, 5);
+        }
+
+        @media(max-width:600px){ 
+             clear: left;
+             @include gs-span(s, all);
+             @include gs-pad(s, padinfull);
+        }
+    }
+
+    small {
+        display: block; 
+        padding:  0 0 $baseline;
+
+        @include gs-pad(l, padinfull);
+   
+        @media(max-width:1000px){
+            @include gs-pad(m, padinfull);
+        }
+
+        @media(max-width:600px){ 
+            @include gs-pad(s, padinfull);
+        }
+    }
+}
+
+// ---------------------------
+// ---------------------------
+//
+// Next, Previous
+//
+// ---------------------------
+// ---------------------------
+
+#next-prev{
+           
+    padding: $baseline*2 0 0 0;
+
+    .next{
+        @include gs-span(l, 4, 5);
+    }
+     .previous {
+        @include gs-span(l, 2, 3);
+    }
+
+    .next, .previous {
+
+        @media(max-width:1000px){ 
+            //@extend %clear-overflow;
+            @include gs-span(m, 2, 4);
+        }
+        
+        @media(max-width:600px){
+            @include gs-span(s, all);
+            @include gs-pad(s, padinfull);
+        }
+    }
+}
+
+// ---------------------------
+// ---------------------------
+//
+// Ads
+//
+// ---------------------------
+// ---------------------------
+
+
+#carbonads-container{
+    @include gs-span(s, all);
+    
+    header &{
+        @include gs-span(s, all);
+
+        @media(min-width:601px){ 
+            @include gs-span(m, 3, 4);
+        }
+
+        @media(min-width:1001px){ 
+           @include gs-span(l, 5, 6);
+        }
+    }
+
+    // @media(max-width:1000px){ 
+    //     @include gs-span(m, 1, 2);
+    // }
+
+    @media(min-width:601px){ 
+        @include gs-span(mb, 2, 5);
+    }
+
+    @media(min-width:1001px){ 
+        @include gs-span(l, 1, 2);
+    }
+}
+
+// ---------------------------
+// ---------------------------
+//
+// Header, Footer
+//
+// ---------------------------
+// ---------------------------
+
+header{
+
+    @extend %clear;
+
+    nav { 
+        @include gs-span(l, 1, 2);
+
+        @media(max-width:600px){ 
+            display: none;
+        }
+    }
+
+   @media(max-width:600px){ 
+        margin: 0;
+    }
+
+
+}
+
+footer{
+
+    @include gs-span(l, 2, 5);
+
+    @media(max-width:1000px){
+        @include gs-span(m, 2, 4);
+    }
+
+    @media(max-width:600px){ 
+        @include gs-span(s, all); 
+    }
+
+    @media(max-width:450px){ 
+        margin: $baseline 0 0 0;
+    }
+
+    strong{
+        @media(max-width:600px){ 
+            //@extend %clear;
+        }
+    }
+
+    p{
+        @extend %clear;
+        @include gs-pad(l, padinfull);
+
+        @media(max-width:1000px){
+            @include gs-pad(m, padinfull);
+        }
+
+        @media(max-width:600px){ 
+            @include gs-pad(s, padinfull);
+            @include gs-span(s, all); 
+        }
+    }
+
+    nav { 
+
+        margin: 0 0 $baseline 0;
+        @extend %clear-overflow;
+        
+        @media(max-width:600px){ 
+            @include gs-pad(s, padinfull);
+        }
+    }
+}
+
+#logo{
+    @include gs-span(l, 1, 2);
+
+    @media(max-width:1000px){ 
+        @include gs-span(m, 1, 2);
+    }
+    
+    @media(max-width:600px){
+        @include gs-span(s, 2, 3);
+    }
+
+}
+
+#contact-info{
+    @include gs-span(l, 5, 6);
+
+    @media(max-width:1000px){
+        @include gs-span(m, 4, 5);
+    }
+}
+
+#jump-nav{
+    // @include gs-span(l, 6);
+}
+
+#get-around{
+    background: #fff;
+    @extend %clear;
+}
+
+#latest-post{
+    @include gs-span(l, 3, 4);
+
+    @media(max-width:1000px){ 
+        @include gs-span(m, 3, 4);
+    }
+    
+    @media(max-width:600px){
+        @include gs-span(s, all);
+        @include gs-pad(s, padinfull);
+    }
+}
+
+#projects{
+    @media(max-width:600px){
+        @include gs-pad(s, padinfull);
+    }
+
+    li{
+        .info {
+            @include gs-span(l, 2, 3);
+
+            @media(max-width:1000px){
+                @include gs-span(m, 2, 4);
+                clear: both;
+             }
+
+            @media(max-width:600px){
+                @include gs-span(s, all);
+            }
+        }
+
+        .logo {
+            display:  block; 
+             @include gs-span(l, 4, 5);
+             
+             @media(max-width:1000px){
+                @include gs-span(m, 2, 4);
+                clear: both;
+             }
+
+             @media(max-width:600px){
+                @include gs-span(s, all);
+            }
+        }
+    }
+
+    h2 {
+
+        @include gs-span(l, 2, 5);
+        clear: both;
+
+        @media(max-width:1000px){ 
+            @include gs-span(m, 2, 3);
+        }
+        
+        @media(max-width:600px){
+            @include gs-span(s, all);
+            //@extend %clear;
+        }
+    }
+}

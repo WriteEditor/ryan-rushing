@@ -1,0 +1,397 @@
+// ---------------------------
+// ---------------------------
+//
+// Home
+//
+// ---------------------------
+// ---------------------------
+
+#home {
+	header { 
+		background: url(/img/header-bgnd.jpg) no-repeat top left transparent;
+		background-size: cover;
+		margin: 0 0 $baseline*2 0;
+
+		@media(max-width : 665px){
+			padding: 0;
+		}
+
+		@media(max-width:665px){
+			h2 {
+				font-size: 120%;
+			}
+		}
+
+		p{
+			margin: 0;
+			padding: 0;
+		}
+
+        h2 a{
+            text-decoration: none;
+        }
+	}
+
+	section{
+		@extend %clear-overflow;
+	}
+}
+
+#projects{
+
+	@extend %clear-overflow;
+	margin: 0 0 $baseline*2;
+
+	li {
+		@extend %clear;
+
+		@media(max-width:600px){
+			li 	{ margin: 0 0 20px 0;}
+		}
+	}
+}
+
+#recent-posts{
+	li { 
+	 	margin: 0;
+	}
+
+	h3 {
+	 	margin: 20px 0;
+	}
+}
+
+
+// ---------------------------
+// ---------------------------
+//
+// About
+//
+// ---------------------------
+// ---------------------------
+
+#about {
+
+    ul  {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        display: inline;
+
+        &:after { content: ','; }
+        &:last-child:after { content:""; display: none;}
+    }
+    
+    h4 {
+        margin: $baseline 0 0 0;
+
+        @media(max-width:600px){ 
+            margin: $baseline/2 0 0 0;
+        }
+    }
+}  
+       
+#face {
+    
+    padding: $baseline 0;
+
+    @extend %clear;
+
+    @media(max-width:600px){ 
+        padding: $baseline/2 0;
+    }
+}
+
+// ---------------------------
+// ---------------------------
+//
+// Next Prev
+//
+// ---------------------------
+// ---------------------------
+
+#next-prev{
+       
+    a {
+        padding:$baseline 0;
+        margin:$baseline 0;
+        display: inline-block;
+        background: #f3f3f3;
+        text-align: center;
+        display: inline-block;
+        width: 100%;
+        text-decoration: none;
+        
+        &.rss{
+            @extend a;
+            display: inline;
+            background: none;
+            text-decoration: underline;
+
+        }
+    }
+    
+    h3, p { 
+        text-align: center;
+        margin: 0;
+    }
+
+    ul{
+         margin: $baseline 0;
+    }
+
+    li{
+        clear: none;
+    }
+}
+
+// ---------------------------
+// ---------------------------
+//
+// Archive
+//
+// ---------------------------
+// ---------------------------
+
+
+#archive    {
+
+    list-style: none;
+
+    li, a   { @extend %clear-overflow;}
+    
+    span    { display: inline-block;}
+    
+    li {
+        padding: $baseline/2 0;
+
+        @media(max-width:600px){ 
+           padding: 0;
+        }
+
+        &:nth-child(2n) {
+            background: #fff;
+        }
+
+        p {
+            @extend %clear;
+            margin: 0;
+        }
+    }
+}
+
+
+// ---------------------------
+// ---------------------------
+//
+// Header, Footer
+//
+// ---------------------------
+// ---------------------------
+
+#hgroup{
+    h2{
+        font-size: 1em;
+    }
+}
+
+#top-bar    { 
+    z-index: 1; 
+    @extend %clear;
+
+    @media(max-width:725px){ 
+        position: static !important;
+    }
+}
+
+#top-bar-inner { 
+    margin: $baseline 0;
+    @extend %clear;
+
+    @media(max-width:725px){ 
+       margin: $baseline/2 0;
+    }
+
+    @media(max-width:600px){ 
+       margin: 0;
+    }
+}
+
+#second-level {
+        @extend %clear;
+
+        margin: $baseline*3 0 0 0;
+
+        @media(max-width:600px){ 
+        
+            margin: $baseline 0 0 0;  
+        }
+}
+
+#logo {
+
+    a {
+        max-width: 85px;
+        display: block;
+        margin: 0 auto;
+
+        @media(max-width:1000px){ 
+           max-width: 65px;
+        }
+    }
+
+    img {
+        margin: 0;
+    }
+}
+
+#jump-nav{
+    background: #fff;
+    padding: $baseline/8 $baseline/4;
+    display: inline-block;
+    margin: $baseline/2 0 0 0;
+    display: none;
+}
+
+#contact-info{
+    text-align: center;
+    list-style: none;
+    clear: none;
+
+    @media(max-width:600px){ 
+        display: none;
+    }
+}
+
+.fancy-separator{
+    display: inline-block;
+    margin: $baseline/2 0;
+
+    @extend %clear;
+
+    &:after{
+        content: "";
+        display: block;
+        background: url(/img/little-logo.png) no-repeat center center;
+        height: 16px;
+        width: 16px;
+        background-size: 16px;
+        margin: 0 auto;
+    }
+}
+
+#nav{
+    @extend %clear;
+}
+
+#slide-out{
+    width: $baseline*10;
+    background: #fff;
+    position: fixed;
+    height: 100%;
+    right: -$baseline*10;
+    top: 0;
+    display: none;
+}
+
+// ---------------------------
+// ---------------------------
+//
+// Ads
+//
+// ---------------------------
+// ---------------------------
+
+
+#carbonads-container{
+    position: static; 
+    margin: 0 0 $baseline 0;
+
+    @media(min-width:1001px){
+       position: absolute;
+    }
+
+    a{
+        // zeroing out styles on writing archive
+        float: none !important;
+        display: inline !important;
+        margin: 0 !important;
+
+        &:hover{
+            color: initial;
+        }
+
+    }
+
+    .carbonad { 
+        clear: both;
+        float: left;
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        margin: 0 auto;
+        border-radius: 0;
+        border: 0 none;
+        background: rgba(255,255,255,.6);
+
+        @media(min-width:601px){  
+            padding: 0;
+        }
+
+        @media(min-width:1001px){ 
+            background: none 0;
+        }
+    }
+
+    img {
+        border-radius: 0;
+        width: auto !important;
+        margin: 0;
+        padding: 0;
+        max-width: 100% !important;
+        float: none  !important;
+    
+    }
+
+    span{
+        display: block !important;
+        float: left;
+        font-family: $sans_serif;
+        font-size: $baseline*.4;
+
+        @media(min-width:1001px){
+            clear: both;  
+            padding: 0 10px;          
+        }
+
+        &.carbonad-image {
+            width: 40%;
+            clear: left;
+
+            @media(min-width:1001px){
+                width: 100%;
+                display: block;
+                text-align: center;
+            }
+        }
+
+        &.carbonad-text, &.carbonad-tag{
+            width: 50%;
+            clear: right;
+            margin: 5px 10px;
+            height: auto;
+            text-align: left;
+
+            @media(min-width:1001px){
+                width: 100%;
+                text-align: center;
+                margin: $baseline/3 0;
+                clear: both;
+            }
+        }
+    }
+}
