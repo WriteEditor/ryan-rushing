@@ -3,12 +3,14 @@
 <body id="home">
 	{% include local-env-marker.html %}
 	<header>
-		{% include top-bar.html %}
-		
 		<div id="second-level">
 			{{ content }}
+
+			{% include ads.html %}
 		</div>
 	</header>
+
+
 
 	<div id="projects">
 		<h2>Projects</h2>

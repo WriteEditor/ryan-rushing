@@ -26,14 +26,15 @@ layout: global
 	</style>
 {% endif %}
 
-
 <article id="individual">
+	{% include ads.html %}
+	
 	{{ content }}
 </article>
 
 <div id="next-prev">		
 	<h3>More articles</h3>
-	<p>To receive the latest, subscribe to the <a href="/feed.xml">RSS feed</a>.</p>
+	<p>To receive the latest, subscribe to the <a class="rss" href="/feed.xml">RSS feed</a>.</p>
 	
 	<ul>
 		{% if page.next %} 
