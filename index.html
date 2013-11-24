@@ -23,4 +23,16 @@ title: Ryan Rushing, Dallas-based designer and front-end developer
 		  	{% endfor %}
 		</ul>
 	</article>
+
+	<article>
+		<h3>Projects</h3>
+		<ul>
+			{% for item in site.categories.projects limit:5 %}
+		  	<li>
+		    	<a href="{{ item.url }}">{{ item.title }}</a>
+		  	</li>
+		  	{% endfor %}
+		</ul>
+	</article>
+
 </div>
