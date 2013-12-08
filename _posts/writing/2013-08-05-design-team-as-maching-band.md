@@ -9,6 +9,7 @@ heading_background: 137,0,0,0.7
 heading_color: ffffff
 link_color: fff
 link_hover: 850000
+logo_color: 890000
 ---
 
 In my university's marching band the most skilled trumpet players were the first trumpets. They were expected to know advanced music theory and obscure scales in difficult keys. They could untangle complex rhythms into screaming riffs of delightful energy and flawlessly execute under pressure. Our first trumpet players worked hard for many years by developing their chops and studying, and they were well on their way to becoming exceptional, leading trumpet players. They were brilliant musicians and rightly received lots of attention.

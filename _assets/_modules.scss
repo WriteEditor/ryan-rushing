@@ -234,6 +234,7 @@
 #logo {
 
     a {
+        position: relative;
         max-width: 85px;
         display: block;
         margin: 0 auto;
@@ -243,8 +244,18 @@
         }
     }
 
-    img {
+    img, svg {
         margin: 0;
+        position: absolute;
+    }
+
+    svg{
+        height: 5em;
+    }
+
+    img{
+        display: none;
+        border-radius: 5em;
     }
 }
 
