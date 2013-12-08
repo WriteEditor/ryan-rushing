@@ -6,7 +6,7 @@
 
     @extend %clear;
 
-	 section {
+     section {
         @extend %clear;
         @include gs-span(l, 3, 4);
 
@@ -22,25 +22,25 @@
 }
 
 #face {
-	img {
+    img {
         @include gs-span(l, 2, 3);
 
         @media(max-width:1000px){
-         	@include gs-span(m, 2, 4);
+            @include gs-span(m, 2, 4);
         }
 
         @media(max-width:600px){
-        	@include gs-span(s, all);
-        	@include gs-pad(s, padinfull);
+            @include gs-span(s, all);
+            @include gs-pad(s, padinfull);
         }
 
         & + img {
-        	@include gs-span(l, 4, 5);
+            @include gs-span(l, 4, 5);
 
-        	@media(max-width:1000px){
-        		display: none;
-        	}
-    	}
+            @media(max-width:1000px){
+                display: none;
+            }
+        }
     }
 
 }
@@ -66,7 +66,7 @@
 //------- "Global" css
 
 #hgroup{
-	@include gs-span(l, 3, 4);
+    @include gs-span(l, 3, 4);
 
     @media(max-width:1000px){
         @include gs-span(m, 3, 4);
@@ -80,29 +80,6 @@
     }
 }
 
-// ---------------------------
-// ---------------------------
-//
-// Projects
-//
-// ---------------------------
-// ---------------------------
-
-#projects{
-    p, h2, h3, h4, img, ul, ol, small {
-        
-        @extend %clear-overflow;
-        @include gs-span(l, 3, 4);
-
-        @media(max-width:1000px){
-            @include gs-span(m, 2, 4);
-        }
-        @media(max-width:600px){ 
-            @include gs-pad(s, padinfull);
-            @include gs-span(s, all); 
-        }
-    }
-}
 
 // ---------------------------
 // ---------------------------
@@ -348,7 +325,10 @@ footer{
     @media(max-width:600px){
         @include gs-span(s, 2, 3);
     }
+}
 
+#tagline{
+    @include gs-span(l, 1, 2, (1, 2));
 }
 
 #contact-info{
@@ -381,6 +361,14 @@ footer{
     }
 }
 
+#recents{
+    @include gs-span(l, 3, 3, (3, 4));
+}
+
+#favorites{
+    @include gs-span(l, 4, 4, (3, 4));
+}
+
 #projects{
     @media(max-width:600px){
         @include gs-pad(s, padinfull);
@@ -391,7 +379,7 @@ footer{
     }
 
     li{
-        .info {
+        .logo {
             @include gs-span(l, 2, 3);
 
             @media(max-width:1000px){
@@ -404,7 +392,7 @@ footer{
             }
         }
 
-        .logo {
+        .info {
             display:  block; 
              @include gs-span(l, 4, 5);
              
@@ -421,8 +409,10 @@ footer{
 
     h2 {
 
-        @include gs-span(l, 2, 5);
         clear: both;
+        text-align: center;
+
+        @include gs-span(l, all);
 
         @media(max-width:1000px){ 
             @include gs-span(m, 2, 3);
@@ -430,7 +420,6 @@ footer{
         
         @media(max-width:600px){
             @include gs-span(s, all);
-            //@extend %clear;
         }
     }
 }

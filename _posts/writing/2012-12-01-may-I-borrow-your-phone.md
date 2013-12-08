@@ -1,7 +1,7 @@
 ---
 layout: individual
 title: May I Borrow Your Phone?
-category: writing
+categories: writing favorite
 ---
 
 I have a beard and long, uncut hair. I wear old hoodies and boots and beanies, and by the end of the day, I'm tired and don't say much to people on the train. 

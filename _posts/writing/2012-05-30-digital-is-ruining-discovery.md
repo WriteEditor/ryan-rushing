@@ -1,7 +1,7 @@
 ---
 layout: individual
 title: On How Digital is Ruining Discovery
-category: writing
+categories: writing favorite
 ---
 
 Digital music, movies, and books are easy to search through, categorize and coupled with complex algorithms, websites can show you related items you may like. On your phone (one of many devices) you may have several hours of music and movies spanning several different genres, and you might even own a device or two for your books and magazines.

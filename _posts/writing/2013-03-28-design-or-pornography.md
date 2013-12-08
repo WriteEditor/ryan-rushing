@@ -1,7 +1,7 @@
 ---
 layout: individual
 title: Design or Pornography
-category: writing
+categories: writing favorite
 excerpt: Occasionally we debate whether something should be classified as design or art. We decide if the creator was acting as a designer or *simply* an artist, implying the latter is weaker and less desirable. When we diminish someone's else work to art, we're claiming there is nothing more to it than its looks, implying if it were "design", it would have a deeper meaning. Alternatively, when we elevate work to art, we're claiming it came to existence by an unknown, black magic. We're using the same word to describe both a good and bad thing.
 ---
 

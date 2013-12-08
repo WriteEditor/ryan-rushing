@@ -8,9 +8,8 @@
 
 #home {
 	header { 
-		background: url(/img/header-bgnd.jpg) no-repeat top left transparent;
-		background-size: cover;
-		margin: 0 0 $baseline*2 0;
+		background: #f9f9f9;
+		margin: 0 0 0 0;
 
 		@media(max-width : 665px){
 			padding: 0;
@@ -37,20 +36,6 @@
 	}
 }
 
-#projects{
-
-	@extend %clear-overflow;
-	margin: 0 0 $baseline*2;
-
-	li {
-		@extend %clear;
-
-		@media(max-width:600px){
-			li 	{ margin: 0 0 20px 0;}
-		}
-	}
-}
-
 #recent-posts{
 	li { 
 	 	margin: 0;
@@ -60,6 +45,56 @@
 	 	margin: 20px 0;
 	}
 }
+
+// ---------------------------
+// ---------------------------
+//
+// Projects (on home page)
+//
+// ---------------------------
+// ---------------------------
+
+#projects{
+
+    @extend %clear-overflow;
+    margin: 0 0 $baseline*2;
+
+    ul{
+        margin: 0;
+    }
+
+    li {
+        @extend %clear;
+         padding: $baseline 0;
+
+
+        @media(max-width:600px){
+            li  { margin: 0 0 $baseline*2 0;}
+        }
+    }
+
+    .logo{
+        text-align: center;
+
+    }
+
+    img{
+        max-width: 200px;
+    }
+
+    h2{
+        padding: $baseline/3 0 $baseline/3 0;
+        margin: $baseline 0 0;
+        background: darken(#f9f9f9, 10%);
+
+    }
+}
+
+#wch    { background: #6cafb9;}
+#cydl   { background: #d9dad2;}
+#npcc   { background: #ffffff;}
+#rr     { background: #18150e;}
+#mslavv { background: url(../img/for-projects/thumbs/mslavv-big.jpg) no-repeat center center; background-size: cover;}
 
 
 // ---------------------------
@@ -237,7 +272,7 @@
         position: relative;
         max-width: 85px;
         display: block;
-        margin: 0 auto;
+        margin: 0 auto 7em auto;
 
         @media(max-width:1000px){ 
            max-width: 65px;
@@ -256,6 +291,29 @@
     img{
         display: none;
         border-radius: 5em;
+    }
+}
+
+#tagline{
+    font-size: 1em;
+    text-align: center;
+    line-height: 1.2;
+    font-style: italic;
+    font-family: $serif;
+
+    span{
+        display: block;
+        width: 100%;
+        font-style: normal;
+        font-family: $sans_serif;
+        font-weight: bold;
+
+    }
+
+    a{
+        color: inherit;
+        font-style: inherit;
+        display: inline;
     }
 }
 

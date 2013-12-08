@@ -13,7 +13,7 @@ title: Ryan Rushing, Dallas-based designer and front-end developer
 	</section>
 	{% endfor %}
 
-	<article>
+	<div id="recents">
 		<h3>Recent writings</h3>
 		<ul>
 			{% for item in site.categories.writing limit:5 offset:1 %}
@@ -22,5 +22,15 @@ title: Ryan Rushing, Dallas-based designer and front-end developer
 		  	</li>
 		  	{% endfor %}
 		</ul>
-	</article>
+	</div>
+	<div id="favorites">
+		<h3>Favorites</h3>
+		<ul>
+			{% for item in site.categories.favorite limit:5%}
+		  	<li>
+		    	<a href="{{ item.url }}">{{ item.title }}</a>
+		  	</li>
+		  	{% endfor %}
+		</ul>
+	</div>
 </div>
