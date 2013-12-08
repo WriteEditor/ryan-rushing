@@ -13,6 +13,14 @@
 					<h2>{{ page.date | date: "%B %d, %Y" }}</h2>
 				</div>
 			</div>
+		{% else if page.project_logo_path %}
+			<div id="second-level">
+				{% include logo.html %}
+				
+				<div id="hgroup">
+					<img src="{{ site.url }}/img/for-projects/{{ page.project_logo_path }}">
+				</div>
+			</div>
 		{% else %}
 			<div id="second-level">
 				{% include logo.html %}

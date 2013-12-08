@@ -21,9 +21,16 @@
     }
 }
 
-#face {
+#face, .double-up {
+
+    @extend %clear-overflow;
+    padding: $baseline 0;
+
     img {
+        clear: none;
         @include gs-span(l, 2, 3);
+        padding: 0;
+
 
         @media(max-width:1000px){
             @include gs-span(m, 2, 4);
@@ -89,7 +96,7 @@
 // ---------------------------
 // ---------------------------
 
-#individual {
+article {
     
     @extend %clear-overflow;
 
