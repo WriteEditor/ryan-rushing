@@ -1,6 +1,6 @@
 ---
 layout: individual
-title: Don&rsquo;t Make Me Think, It Hurts
+title: Don't Make Me Think, It Hurts
 category: writing
 excerpt: There's a parallel with our necessity to exercise, because we don't have physical jobs anymore, and our current state of technology for convenience.
 ---

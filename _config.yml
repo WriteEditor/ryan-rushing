@@ -5,3 +5,4 @@ description: Ryan is a front-end developer and designer living and working in th
 url: http://ryan-rushing.com/
 port: 9715
 markdown: rdiscount
+exclude: [publish.sh, config.rb]
