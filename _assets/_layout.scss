@@ -363,6 +363,10 @@ footer{
         @include gs-pad(s, padinfull);
     }
 
+    ul {
+        @extend %clear;
+    }
+
     li{
         .info {
             @include gs-span(l, 2, 3);
