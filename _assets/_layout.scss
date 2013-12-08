@@ -80,6 +80,29 @@
     }
 }
 
+// ---------------------------
+// ---------------------------
+//
+// Projects
+//
+// ---------------------------
+// ---------------------------
+
+#projects{
+    p, h2, h3, h4, img, ul, ol, small {
+        
+        @extend %clear-overflow;
+        @include gs-span(l, 3, 4);
+
+        @media(max-width:1000px){
+            @include gs-span(m, 2, 4);
+        }
+        @media(max-width:600px){ 
+            @include gs-pad(s, padinfull);
+            @include gs-span(s, all); 
+        }
+    }
+}
 
 // ---------------------------
 // ---------------------------
