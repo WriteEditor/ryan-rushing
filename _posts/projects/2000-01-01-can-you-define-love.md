@@ -7,7 +7,9 @@ logo_color: 222222
 project_logo_path: cydl/cydl-logo.png
 background_color: ebede5
 excerpt: Can you define love? is a blog of collected love definitions from all over the world. The point of the blog is not necessarily to define love, but rather, to show how much we have in common.
-
+category: projects
+project_url: http://canyoudefinelove.com
+project_type: personal project
 ---
 
 ## Challenges

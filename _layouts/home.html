@@ -11,11 +11,20 @@
 	</header>
 
 	<div id="projects">
-
-		<!-- <h2>Projects</h2> -->
-
 		<ul>
-			<li id="wch">
+		{% for item in site.categories.projects %}
+			<li {% if item.background_color %}style="background: #{{ item.background_color }};"{% endif %}>
+				<a class="logo" href="{{ item.permalink }}">
+					<img src="/img/for-projects/{{ item.project_logo_path }}" alt="{{ item.title }}">
+				</a>
+				<div class="info">
+					<p>{{ item.excerpt }}</p>
+					<a href="{{ item.permalink }}">view project</a>
+				</div>	
+			</li>
+		{% endfor %}
+
+			<!-- <li id="wch">
 				<a class="logo" href="http://wecreatehappy.com">
 					<img src="/img/for-projects/wch/we-create-happy-logo.png" alt="We Create Happy">
 				</a>
@@ -29,7 +38,7 @@
 			</li>
 			<li id="cydl">
 				<a class="logo" href="http://canyoudefinelove.com">
-					<img src="/img/for-projects/cydl/cydl-logo.png" alt="Can you define love?"> <!-- use small logo? -->
+					<img src="/img/for-projects/cydl/cydl-logo.png" alt="Can you define love?">
 				</a>
 				<div class="info"> 	
 					<h3>Personal project</h3>
@@ -74,7 +83,7 @@
 					</p>
 					<a href="http://miss-louveteransvillage.com">Learn more &rarr;</a>
 				</div>
-			</li>
+			</li> -->
 		</ul>
 	</div>
 
