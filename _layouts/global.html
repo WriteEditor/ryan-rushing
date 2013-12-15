@@ -7,32 +7,34 @@
 		{% if page.header_img %}
 			<div id="second-level" class="art-directed">
 				{% include logo.html %}
-				<img src="{{ site.url }}/img/in-writings/{{ page.header_img }}">
+				<img src="{{ site.url }}/img/{{ page.header_img }}">
 				<div id="hgroup">
 					<h1>{{ page.title }}</h1>
 					<h2>{{ page.date | date: "%B %d, %Y" }}</h2>
 				</div>
 			</div>
-		{% else if page.project_logo_path %}
-			<div id="second-level">
-				{% include logo.html %}
-				
-				<div id="hgroup">
-					<img src="{{ site.url }}/img/for-projects/{{ page.project_logo_path }}">
-				</div>
-			</div>
 		{% else %}
-			<div id="second-level">
-				{% include logo.html %}
-				<div id="hgroup">
-					{% if page.subtitle %} 
-						<h2>{{ page.subtitle }}</h2>
-					{% else %}
-						<h2>{{ page.date | date: "%B %d, %Y" }}</h2>
-					{% endif %}
-					<h1>{{ page.title }}</h1>
+			{% if page.project_logo_path %}
+				<div id="second-level">
+					{% include logo.html %}
+					
+					<div id="hgroup">
+						<img src="{{ site.url }}/img/for-projects/{{ page.project_logo_path }}">
+					</div>
 				</div>
-			</div>			
+			{% else %}
+				<div id="second-level">
+					{% include logo.html %}
+					<div id="hgroup">
+						{% if page.subtitle %} 
+							<h2>{{ page.subtitle }}</h2>
+						{% else %}
+							<h2>{{ page.date | date: "%B %d, %Y" }}</h2>
+						{% endif %}
+						<h1>{{ page.title }}</h1>
+					</div>
+				</div>			
+			{% endif %}
 		{% endif %}
 	</header>
 

@@ -8,16 +8,6 @@
 
      section {
         @extend %clear;
-        @include gs-span(l, 3, 4);
-
-        @media(max-width:1000px){ 
-            @include gs-span(m, 3, 4);
-        }
-        
-        @media(max-width:600px){
-            @include gs-span(s, all);
-            @include gs-pad(s, padinfull);
-        }
     }
 }
 

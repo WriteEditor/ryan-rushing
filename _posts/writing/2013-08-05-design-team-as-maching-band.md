@@ -4,7 +4,7 @@ title: Design Team as Marching Band
 category: writing
 excerpt: Being a part of a design team can be a challenge if your role has been forgotten. Just as in marching band, there are some parts that play the melody and some parts that play the harmonies.
 background_color: 85bbf2
-header_img: trumpets.jpg
+header_img: in-writings/trumpets.jpg
 heading_background: 137,0,0,0.7
 heading_color: ffffff
 link_color: fff

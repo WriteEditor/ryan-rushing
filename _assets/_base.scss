@@ -203,10 +203,10 @@ footer, header
     p + h3, ul + h3 {
 
         @extend %clear;
-        padding: $baseline 0 0;
+        padding: $baseline;
         
         @media(max-width:600px){ 
-            padding: $baseline/2 0 0 0;
+            padding: $baseline/2 0;
         }
     }
 
