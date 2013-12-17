@@ -75,21 +75,19 @@
 
     .logo{
         text-align: center;
-
     }
-
     h2{
         padding: $baseline/3 0 $baseline/3 0;
         margin: $baseline 0 0;
     }
+
+    // a{
+    //     img{
+        
+    //     max-width: 85px;
+    //     }
+    // } 
 }
-
-#wch    { background: #6cafb9;}
-#cydl   { background: #d9dad2;}
-#npcc   { background: #ffffff;}
-#rr     { background: #18150e;}
-#mslavv { background: url(../img/for-projects/thumbs/mslavv-big.jpg) no-repeat center center; background-size: cover;}
-
 
 // ---------------------------
 // ---------------------------
@@ -265,7 +263,7 @@
     }
 }
 
-#logo {
+#logo{  
 
     a {
         position: relative;

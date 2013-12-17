@@ -14,9 +14,11 @@
 		<ul>
 		{% for item in site.categories.projects %}
 			<li {% if item.background_color %}style="background: #{{ item.background_color }};"{% endif %}>
-				<a class="logo" href="{{ item.permalink }}">
-					<img src="/img/for-projects/{{ item.project_logo_path }}" alt="{{ item.title }}">
-				</a>
+				<div class="logo">
+					<a href="{{ item.permalink }}">
+						<img src="{{ site.url }}/img/for-projects/{{ item.project_shortname }}/{{ item.project_shortname }}-home-logo.png" alt="{{ item.title }}">
+					</a>
+				</div>
 				<div class="info">
 					<p>{{ item.excerpt }}</p>
 					<a href="{{ item.permalink }}">view project</a>

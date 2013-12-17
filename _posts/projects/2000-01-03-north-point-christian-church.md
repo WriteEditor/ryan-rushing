@@ -1,16 +1,15 @@
 ---
 layout: projects
-title: Can you define love?
+title: North Point Christian Church
 subtitle: personal project
-permalink: /projects/defining-love/
-logo_color: 222222
-background_color: ebede5
+permalink: /projects/simple-church/
+logo_color: ea844e
+project_logo_path: npcc/npcc-logo.png
+background_color: ffffff
 excerpt: Can you define love? is a blog of collected love definitions from all over the world. The point of the blog is not necessarily to define love, but rather, to show how much we have in common.
 category: projects
-project_url: http://canyoudefinelove.com
-project_type: personal project
-project_shortname: cydl
-project_duration: 2008-present
+project_url: http://npcc.cc
+project_type: client project
 ---
 
 ## Challenges

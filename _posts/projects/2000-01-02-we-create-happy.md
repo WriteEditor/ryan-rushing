@@ -2,15 +2,14 @@
 layout: projects
 title: Can you define love?
 subtitle: personal project
-permalink: /projects/defining-love/
-logo_color: 222222
-background_color: ebede5
-excerpt: Can you define love? is a blog of collected love definitions from all over the world. The point of the blog is not necessarily to define love, but rather, to show how much we have in common.
+permalink: /projects/making-stuff/
+logo_color: f0faff
+project_logo_path: wch/wch-logo.png
+background_color: 6cafb9 
+excerpt: We Create Happy is a joint effort between Rachel and I. We make many things.
 category: projects
-project_url: http://canyoudefinelove.com
+project_url: http://wecreatehapy.com
 project_type: personal project
-project_shortname: cydl
-project_duration: 2008-present
 ---
 
 ## Challenges

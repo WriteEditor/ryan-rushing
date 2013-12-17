@@ -377,7 +377,6 @@ footer{
 
     li{
         .logo {
-            @extend %clear;
             @include gs-span(l, 3);
 
             @media(max-width:1000px){
@@ -391,8 +390,7 @@ footer{
         }
 
         .info {
-            @extend %clear;
-            @include gs-span(l, 3, 4);
+            @include gs-span(l, 4);
              
             @media(max-width:1000px){
                 @include gs-span(m, 2, 4);
@@ -411,6 +409,18 @@ footer{
         text-align: center;
 
         @include gs-span(l, all);
+
+        @media(max-width:1000px){ 
+            @include gs-span(m, 2, 3);
+        }
+        
+        @media(max-width:600px){
+            @include gs-span(s, all);
+        }
+    }
+
+    aside{
+         @include gs-span(l, 1, 2);
 
         @media(max-width:1000px){ 
             @include gs-span(m, 2, 3);
