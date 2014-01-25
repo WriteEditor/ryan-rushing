@@ -5,7 +5,6 @@
 }
 
 body {
-    border-top: 2px solid $accent;
     line-height: $baseline;
     background: #f9f9f9;
     position: relative;
@@ -46,7 +45,6 @@ article{
 
 ul{
     clear: both;
-    margin: $baseline 0;
     list-style: disc;
 }
 
@@ -76,193 +74,27 @@ img, svg {
 
 footer {
     @extend %clear-overflow;
-    padding: $baseline 0;
-    border-top: 2px solid $accent;
+    padding: $baseline;
+    background: #222;
 
-    p{
-        text-align: center;
-        margin: $baseline 0 0 0;
-    }
+    ul { list-style: none; }
 
     li{
 
-        margin: $baseline/4 0;
+        margin: 0;
         @extend %clear;
-
-        @media(min-width:999px){ 
-            width: 33.3%;
-            clear: none;
-            &:after {
-                display: none;
-            }
-        }
 
         a{
             @extend %clear;
-            line-height: $baseline;
-            padding: $baseline/2 0;
             font-style: normal;
             font-family: $serif;
             font-size: $baseline/2;
             text-decoration: none;
-        }
-
-        p{
-            margin: 0;
-            padding: 0;
-            color: #777;
-        }
-
-        h4{
-            text-decoration: underline;
-            color: #214f84;
-
+            color: #fff;
         }
 
         &:hover *{
             color: $accent;
         }
-
-        &:after { content: "\00A7"; }
-        &:last-child:after { content:""; display: none;}
     }
 }
-    
-footer, header
-{
-    nav{
-        ul {
-            list-style: none;
-        }
-
-        li {
-            text-align: center;
-        }
-    }
-}
-
-// ---------------------------
-// ---------------------------
-//
-// Base Typography
-//
-// ---------------------------
-// ---------------------------
-
-// Headings
-
-    h1 {
-        font-size: $baseline*2;
-        line-height: $baseline/2;
-        font-weight: 400;
-
-        @media(max-width:600px){ 
-            font-size: $baseline;
-        }
-    }
-
-    h2 { 
-        font-size: 180%;
-        line-height: 1.2;
-    }
-
-    h2 + h1 {
-        margin: 0 0 $baseline/2 0;
-
-        @media(min-width:750px){
-             margin: 0 0 $baseline 0;
-        }
-
-        @media(min-width:1001px){ 
-            margin: 0 0 $baseline 0;
-        }
-    }
-
-    h1, h2, h3      { font-family: $sans_serif; }
-    h2, h3, h4      { font-weight: 400;}
-
-    h3              {
-        margin: 0 0 $baseline 0;
-        font-weight: 700;
-
-        @media(max-width:600px){ 
-            margin: 0 0 $baseline/2 0;
-        }
-    }
-
-    h4 {
-        margin: 0 0 $baseline 0;
-        font-style: italic;
-        line-height: 1.25;
-    }
-
-    h4, em, blockquote, i  {
-        color: #222;
-    }
-
-    p + h3, ul + h3 {
-
-        @extend %clear;
-        margin: $baseline 0 $baseline 0;
-        
-        @media(max-width:600px){ 
-            margin: $baseline/2 0 $baseline/2 0;
-        }
-    }
-
-// Other Typography
-
-    a{
-        color: #214f84;
-        font-style: italic;
-        font-family: $sans_serif;
-        white-space: nowrap;
-
-        h2 &, #archive &, #next-prev &, #carbonads-container &{
-             white-space: initial;
-        }
-
-        &:hover {
-            color: $accent;
-        }
-    }
-
-    strong{
-        font-family: $sans_serif;
-        font-weight: 700;
-    }
-
-    em{
-        font-family: $sans_serif;
-        font-weight: 400;
-        font-style: italic;
-    }
-
-    p {
-        @extend %clear;
-        
-        ul + & {
-            text-indent: 0;
-        }
-
-         + p { 
-            text-indent: $baseline;
-        }
-        
-        @media(max-width:450px){ 
-            text-align: justify;
-        }
-    }
-
-    blockquote {
-    
-    @extend %clear;
-    margin-top: $baseline;
-    margin-bottom: $baseline;
-
-    p{
-        padding: 0 $baseline/2;
-        margin: 0 $baseline/2;
-    }
-}
-

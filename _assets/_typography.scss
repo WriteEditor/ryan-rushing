@@ -1,6 +1,111 @@
-#hgroup {
-    text-align: left;
+// ---------------------------
+// ---------------------------
+//
+// Base Typography
+//
+// ---------------------------
+// ---------------------------
+
+html{
+    font-size: 62.5%;
 }
+
+// Headings
+h1, h2, h3, h4, h5, h6 {
+    font-size: $baseline;
+     @extend %clear;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+h1, h2, h3{
+    margin: 1em 0;
+}
+
+h2, h3, h4 {
+    font-weight: 400;
+}
+
+h1, h2, h3 {
+    font-family: $sans_serif;
+}
+
+h4 {
+    margin: 0 0 $baseline 0;
+    font-style: italic;
+    line-height: 1.25;
+}
+
+h4, em, blockquote, i  {
+    color: #222;
+}
+
+// Other Typography
+
+    a{
+        color: #214f84;
+        font-family: $sans_serif;
+        white-space: nowrap;
+
+        h2 &, #archive &, #next-prev &, #carbonads-container &{
+             white-space: initial;
+        }
+
+        &:hover {
+            color: $accent;
+        }
+    }
+
+    strong{
+        font-family: $sans_serif;
+        font-weight: 700;
+    }
+
+    em{
+        font-family: $sans_serif;
+        font-weight: 400;
+        font-style: italic;
+    }
+
+    p, li {
+        @extend %clear;
+        font-size: 2em;
+        line-height: 1.4em;
+        
+        ul + & {
+            text-indent: 0;
+        }
+
+        + p { 
+            text-indent: $baseline;
+        }
+        
+        @media(max-width:450px){ 
+            text-align: justify;
+        }
+    }
+
+    blockquote {
+    
+    @extend %clear;
+    margin-top: $baseline;
+    margin-bottom: $baseline;
+
+    p{
+        padding: 0 $baseline/2;
+        margin: 0 $baseline/2;
+    }
+}
+
+// ---------------------------
+// ---------------------------
+//
+// ID-specific Typography
+//
+// ---------------------------
+// ---------------------------
 
 #archive{
 	 a { 
@@ -80,12 +185,4 @@
             border-left: 2px solid $accent;
         }
     } 
-}
-
-#jump-nav{
-	text-decoration: none;
-    text-align: center;
-    color: $accent;
-    font-size: $baseline/2;
-    font-style: normal;
 }

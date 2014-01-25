@@ -1,33 +1,13 @@
 {% include head.html %}
-<body>
-
-	{% include local-env-marker.html %}
-
 	<header>
-		{% if page.header_img %}
-			<div id="second-level" class="art-directed">
-				{% include logo.html %}
-				<img src="{{ site.url }}/img/in-writings/{{ page.header_img }}">
-				<div id="hgroup">
-					<h1>{{ page.title }}</h1>
-					<h2>{{ page.date | date: "%B %d, %Y" }}</h2>
-				</div>
-			</div>
-		{% else %}
-			<div id="second-level">
-				{% include logo.html %}
-				<div id="hgroup">
-					{% if page.subtitle %} 
-						<h2>{{ page.subtitle }}</h2>
-					{% else %}
-						<h2>{{ page.date | date: "%B %d, %Y" }}</h2>
-					{% endif %}
-					<h1>{{ page.title }}</h1>
-				</div>
-			</div>			
-		{% endif %}
+		{% include logo.html %}
+		<h1>{{ page.title }}</h1>
 	</header>
 
-	{{ content }}
+	<div id="main-content">
+		{{ content }}
+	</div>
+	
+	<!-- {% include ads.html %} -->
 
-	{% include footer.html %}
+{% include footer.html %}

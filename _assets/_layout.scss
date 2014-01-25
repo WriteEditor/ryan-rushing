@@ -1,49 +1,27 @@
-// Once I get all the layout stuff here, I will refactor to combine styles.
+#main-content{
+    margin: 2em;
+}
 
-//------- About section
-
-#about {
-
+#main-content, header, footer {
     @extend %clear;
-
-	 section {
-        @extend %clear;
-        @include gs-span(l, 3, 4);
-
-        @media(max-width:1000px){ 
-            @include gs-span(m, 3, 4);
-        }
-        
-        @media(max-width:600px){
-            @include gs-span(s, all);
-            @include gs-pad(s, padinfull);
-        }
-    }
+    @include gs-span(l, 2, 4);
 }
 
-#face {
-	img {
-        @include gs-span(l, 2, 3);
 
-        @media(max-width:1000px){
-         	@include gs-span(m, 2, 4);
-        }
-
-        @media(max-width:600px){
-        	@include gs-span(s, all);
-        	@include gs-pad(s, padinfull);
-        }
-
-        & + img {
-        	@include gs-span(l, 4, 5);
-
-        	@media(max-width:1000px){
-        		display: none;
-        	}
-    	}
-    }
-
+h1, h2, #logo{
+    @extend %clear;
 }
+
+#logo{
+    display: none;
+}
+
+.home-sections{
+    width: 50%;
+}
+
+
+
 
 //------- Archive pages 
 
@@ -63,24 +41,6 @@
 }
 
 
-//------- "Global" css
-
-#hgroup{
-	@include gs-span(l, 3, 4);
-
-    @media(max-width:1000px){
-        @include gs-span(m, 3, 4);
-    }
-
-    @media(max-width:600px){ 
-        //@extend %clear;
-
-        @include gs-pad(s, padinfull);
-        @include gs-span(s, all);
-    }
-}
-
-
 // ---------------------------
 // ---------------------------
 //
@@ -91,21 +51,21 @@
 
 #individual {
     
-    @extend %clear-overflow;
+    
 
-    p, h3, h4, img, ul, ol, small {
+    // p, h3, h4, img, ul, ol, small {
         
-        @extend %clear-overflow;
-        @include gs-span(l, 3, 4);
+    //     @extend %clear-overflow;
+    //     @include gs-span(l, 3, 4);
 
-        @media(max-width:1000px){
-            @include gs-span(m, 2, 4);
-        }
-        @media(max-width:600px){ 
-            @include gs-pad(s, padinfull);
-            @include gs-span(s, all); 
-        }
-    }
+    //     @media(max-width:1000px){
+    //         @include gs-span(m, 2, 4);
+    //     }
+    //     @media(max-width:600px){ 
+    //         @include gs-pad(s, padinfull);
+    //         @include gs-span(s, all); 
+    //     }
+    // }
     
     .sidenote{
         top: $baseline*1.25;
@@ -238,176 +198,5 @@
 
     @media(min-width:1001px){ 
         @include gs-span(l, 1, 2);
-    }
-}
-
-// ---------------------------
-// ---------------------------
-//
-// Header, Footer
-//
-// ---------------------------
-// ---------------------------
-
-header{
-
-    @extend %clear;
-
-    nav { 
-        @include gs-span(l, 1, 2);
-
-        @media(max-width:600px){ 
-            display: none;
-        }
-    }
-
-   @media(max-width:600px){ 
-        margin: 0;
-    }
-
-
-}
-
-footer{
-
-    @include gs-span(l, 2, 5);
-
-    @media(max-width:1000px){
-        @include gs-span(m, 2, 4);
-    }
-
-    @media(max-width:600px){ 
-        @include gs-span(s, all); 
-    }
-
-    @media(max-width:450px){ 
-        margin: $baseline 0 0 0;
-    }
-
-    strong{
-        @media(max-width:600px){ 
-            //@extend %clear;
-        }
-    }
-
-    p{
-        @extend %clear;
-        @include gs-pad(l, padinfull);
-
-        @media(max-width:1000px){
-            @include gs-pad(m, padinfull);
-        }
-
-        @media(max-width:600px){ 
-            @include gs-pad(s, padinfull);
-            @include gs-span(s, all); 
-        }
-    }
-
-    nav { 
-
-        margin: 0 0 $baseline 0;
-        @extend %clear-overflow;
-        
-        @media(max-width:600px){ 
-            @include gs-pad(s, padinfull);
-        }
-    }
-}
-
-#logo{
-    @include gs-span(l, 1, 2);
-
-    @media(max-width:1000px){ 
-        @include gs-span(m, 1, 2);
-    }
-    
-    @media(max-width:600px){
-        @include gs-span(s, 2, 3);
-    }
-
-}
-
-#contact-info{
-    @include gs-span(l, 5, 6);
-
-    @media(max-width:1000px){
-        @include gs-span(m, 4, 5);
-    }
-}
-
-#jump-nav{
-    // @include gs-span(l, 6);
-}
-
-#get-around{
-    background: #fff;
-    @extend %clear;
-}
-
-#latest-post{
-    @include gs-span(l, 3, 4);
-
-    @media(max-width:1000px){ 
-        @include gs-span(m, 3, 4);
-    }
-    
-    @media(max-width:600px){
-        @include gs-span(s, all);
-        @include gs-pad(s, padinfull);
-    }
-}
-
-#projects{
-    @media(max-width:600px){
-        @include gs-pad(s, padinfull);
-    }
-
-    ul {
-        @extend %clear;
-    }
-
-    li{
-        .info {
-            @include gs-span(l, 2, 3);
-
-            @media(max-width:1000px){
-                @include gs-span(m, 2, 4);
-                clear: both;
-             }
-
-            @media(max-width:600px){
-                @include gs-span(s, all);
-            }
-        }
-
-        .logo {
-            display:  block; 
-             @include gs-span(l, 4, 5);
-             
-             @media(max-width:1000px){
-                @include gs-span(m, 2, 4);
-                clear: both;
-             }
-
-             @media(max-width:600px){
-                @include gs-span(s, all);
-            }
-        }
-    }
-
-    h2 {
-
-        @include gs-span(l, 2, 5);
-        clear: both;
-
-        @media(max-width:1000px){ 
-            @include gs-span(m, 2, 3);
-        }
-        
-        @media(max-width:600px){
-            @include gs-span(s, all);
-            //@extend %clear;
-        }
     }
 }

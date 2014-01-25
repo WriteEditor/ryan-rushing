@@ -1,70 +1,6 @@
 // ---------------------------
 // ---------------------------
 //
-// Home
-//
-// ---------------------------
-// ---------------------------
-
-#home {
-	header { 
-		background: url(/img/header-bgnd.jpg) no-repeat top left transparent;
-		background-size: cover;
-		margin: 0 0 $baseline*2 0;
-
-		@media(max-width : 665px){
-			padding: 0;
-		}
-
-		@media(max-width:665px){
-			h2 {
-				font-size: 120%;
-			}
-		}
-
-		p{
-			margin: 0;
-			padding: 0;
-		}
-
-        h2 a{
-            text-decoration: none;
-        }
-	}
-
-	section{
-		@extend %clear-overflow;
-	}
-}
-
-#projects{
-
-	@extend %clear-overflow;
-	margin: 0 0 $baseline*2;
-
-	li {
-		@extend %clear;
-
-		@media(max-width:600px){
-			li 	{ margin: 0 0 20px 0;}
-		}
-	}
-}
-
-#recent-posts{
-	li { 
-	 	margin: 0;
-	}
-
-	h3 {
-	 	margin: 20px 0;
-	}
-}
-
-
-// ---------------------------
-// ---------------------------
-//
 // About
 //
 // ---------------------------
@@ -80,6 +16,9 @@
 
     li {
         display: inline;
+        width: auto;
+        clear: none;
+        float: none;
 
         &:after { content: ','; }
         &:last-child:after { content:""; display: none;}
@@ -234,11 +173,10 @@
 #logo {
 
     a {
-        position: relative;
+       
         max-width: 85px;
         display: block;
-        margin: 0 auto;
-
+       
         @media(max-width:1000px){ 
            max-width: 65px;
         }
@@ -257,14 +195,6 @@
         display: none;
         border-radius: 5em;
     }
-}
-
-#jump-nav{
-    background: #fff;
-    padding: $baseline/8 $baseline/4;
-    display: inline-block;
-    margin: $baseline/2 0 0 0;
-    display: none;
 }
 
 #contact-info{
