@@ -16,7 +16,7 @@ h1, h2, h3, h4, h5, h6 {
      @extend %clear;
 }
 
-h1 {
+h1, h3 {
     font-weight: 700;
 }
 
@@ -24,7 +24,7 @@ h1, h2, h3{
     margin: 1em 0;
 }
 
-h2, h3, h4 {
+h2 {
     font-weight: 400;
 }
 
@@ -47,11 +47,6 @@ h4, em, blockquote, i  {
     a{
         color: #214f84;
         font-family: $sans_serif;
-        white-space: nowrap;
-
-        h2 &, #archive &, #next-prev &, #carbonads-container &{
-             white-space: initial;
-        }
 
         &:hover {
             color: $accent;
@@ -79,7 +74,7 @@ h4, em, blockquote, i  {
         }
 
         + p { 
-            text-indent: $baseline;
+            text-indent: $baseline/2;
         }
         
         @media(max-width:450px){ 

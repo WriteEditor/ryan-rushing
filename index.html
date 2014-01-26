@@ -1,15 +1,29 @@
 ---
 layout: global
-title: Ryan Rushing, Dallas-based designer and front-end developer.
+title: Dallas-based designer, front-end developer, and thing-maker
 ---
 
-<p>
-	I'm a UX designer working for <a href="http://kalkomey.com">Kalkomey</a> during the day, and a letterformer/scupluter at night. <a href="/about">Learn more about me.</a>
-</p>
+<p>When I was in high school a friend told me he could eat an apple in five bites.</p>
+<p>&ldquo;All of it?&rdquo; I asked.</p>
+<p>&ldquo;Yep,&rdquo; he replied as his teeth gripped one side of the apple.</p>
+<p>He struggled with chewing each bite, but sure enough, he did it. Ever since then, I eat the whole apple&hellip; though I usually take smaller bites.</p>
 
-<h3>Recently</h3>
+<hr>
+
+<p>I'm a designer, front-end developer, and I also draw lettering, screenprint, and sculpt. I'm always interested in new things and ideas, whether that means learning a programming language or trying out a new way to eat apples.</p>
+
+<p>Read more <a href="/about/">about me</a>, if you&rsquo;re interested.</p>
+
+<h3>Recently written</h3>
 <ul>
 	{% for item in site.categories.writing limit:5 %}
   	<li><a href="{{ item.url }}">{{ item.title }}</a></li>
   	{% endfor %}
+</ul>
+
+<h3>Work</h3>
+<ul>
+	<li>UX Designer at <a href="http://kalkomey.com">Kalkomey</a></li>
+	<li>Thing-maker at <a href="http://wecreatehappy.com">We Create Happy</a></li>
+	<li>Curator at <a href="http://canyoudefinelove.com">Can you define love?</a></li>
 </ul>

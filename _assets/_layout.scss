@@ -1,9 +1,14 @@
-#main-content{
-    margin: 2em;
+#main-content {
+    @extend %clear;
+    @include gs-span(l, 2, 4);
 }
 
-#main-content, header, footer {
+header, footer{
     @extend %clear;
+    @include gs-span(l, all);
+}
+
+#logo, footer nav {
     @include gs-span(l, 2, 4);
 }
 
@@ -11,15 +16,6 @@
 h1, h2, #logo{
     @extend %clear;
 }
-
-#logo{
-    display: none;
-}
-
-.home-sections{
-    width: 50%;
-}
-
 
 
 
@@ -174,29 +170,5 @@ h1, h2, #logo{
 
 
 #carbonads-container{
-    @include gs-span(s, all);
-    
-    header &{
-        @include gs-span(s, all);
-
-        @media(min-width:601px){ 
-            @include gs-span(m, 3, 4);
-        }
-
-        @media(min-width:1001px){ 
-           @include gs-span(l, 5, 6);
-        }
-    }
-
-    // @media(max-width:1000px){ 
-    //     @include gs-span(m, 1, 2);
-    // }
-
-    @media(min-width:601px){ 
-        @include gs-span(mb, 2, 5);
-    }
-
-    @media(min-width:1001px){ 
-        @include gs-span(l, 1, 2);
-    }
+    @include gs-span(l, 5, 6);
 }

@@ -74,8 +74,9 @@ img, svg {
 
 footer {
     @extend %clear-overflow;
-    padding: $baseline;
-    background: #222;
+    padding: $baseline 0;
+    background: $accent;
+    margin-top: 4em;
 
     ul { list-style: none; }
 
@@ -90,11 +91,32 @@ footer {
             font-family: $serif;
             font-size: $baseline/2;
             text-decoration: none;
-            color: #fff;
+            color: #222;
         }
 
         &:hover *{
-            color: $accent;
+            color: #efefef;
         }
+    }
+}
+
+hr {
+    margin: .5em 0;
+    border: 0;
+    width: 100%;
+    float: left;
+    text-align: center;
+    font-size: 2em;
+    line-height: 2em;
+
+    &:after{
+        content: "\00A7";
+        font-family: $sans_serif;
+        display: block;
+        width: 2em;
+        height: 2em;
+        margin: 0 auto;
+        line-height: 2em;
+        border-radius: 4em;
     }
 }

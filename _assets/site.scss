@@ -20,7 +20,7 @@
 }
 
 // General site variables
-$accent: #eb1072; //pink
+$accent: #9FC565; //green
 $sans_serif: "ff-meta-web-pro", "Trebuchet", arial, sans-serif;
 $serif: "ff-meta-serif-web-pro", "Georgia", georgia, times, serif;
 $baseline: 2em;
@@ -36,9 +36,6 @@ $baseline: 2em;
 
 // Resets everything
 @import "compass/reset";
-
-// Controls the typography and styling for art directed posts
-@import "art-directed.scss";
 
 // Modular styles
 @import "modules.scss";

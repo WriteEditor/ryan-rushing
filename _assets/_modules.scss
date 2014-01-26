@@ -1,3 +1,9 @@
+#logo {
+    max-width: 300px;
+    margin: 1em 0;
+}
+
+
 // ---------------------------
 // ---------------------------
 //
@@ -251,10 +257,6 @@
     position: static; 
     margin: 0 0 $baseline 0;
 
-    @media(min-width:1001px){
-       position: absolute;
-    }
-
     a{
         // zeroing out styles on writing archive
         float: none !important;
@@ -332,6 +334,7 @@
                 text-align: center;
                 margin: $baseline/3 0;
                 clear: both;
+                padding: 0 30%;
             }
         }
     }
