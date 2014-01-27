@@ -5,17 +5,12 @@ subtitle: archive
 permalink: /writing/
 ---
 
-<ul id="archive">
-
-	<li>{% include ads.html %}</li>
-
+<ul>
 	{% for item in site.categories.writing %}
 	 	<li>
     		<a href="{{ item.url }}">
-    			<span>
-	    			<h3>{{ item.title }}</h3>
-	    			<p>{{ item.date | date: "%B %d, %Y" }}</p>
-	    		</span>
+    			<h3>{{ item.title }}</h3>
+    			<p>{{ item.date | date: "%B %d, %Y" }}</p>
     		</a>
 		</li>
 	{% endfor %}

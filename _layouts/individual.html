@@ -2,26 +2,10 @@
 layout: global
 ---
 
-<article id="individual">
-	{% include ads.html %}
-	
+<article>
 	{{ content }}
 </article>
-
-<div id="next-prev">		
-	<h3>More articles</h3>
-	<p>To receive the latest, subscribe to the <a class="rss" href="/feed.xml">RSS feed</a>.</p>
 	
-	<ul>
-		{% if page.next %} 
-			<li class="next">
-		    	<a rel="next" href="{{ page.next.url }}">{{ page.next.title }}</a>
-		    </li>
-		{% endif %}
-		{% if page.previous %} 
-			<li class="previous">
-		    	<a rel="previous" href="{{ page.previous.url }}">{{ page.previous.title }}</a>
-		    </li>
-		{% endif %}
-	</ul>
+<p id="for-more-articles">For more articles, visit the <a href="/writing/">archive</a>.</p>
+
 </div>

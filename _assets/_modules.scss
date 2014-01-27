@@ -59,7 +59,11 @@
 // ---------------------------
 
 #next-prev{
+      
+     margin-top: $baseline;
+     margin-bottom: $baseline;
        
+
     a {
         padding:$baseline 0;
         margin:$baseline 0;

@@ -8,6 +8,11 @@ header, footer{
     @include gs-span(l, all);
 }
 
+header {
+    margin-bottom: $baseline;
+    margin-top: $baseline;
+}
+
 #logo, footer nav {
     @include gs-span(l, 2, 4);
 }
