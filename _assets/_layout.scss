@@ -29,9 +29,13 @@ h1, h2, #logo{
 // ---------------------------
 // ---------------------------
 
-#archive    {
+#archive{
+
+    li{
+         @extend %clear;
+    }
+
     a {
-        @include gs-span(l, 3, 5);
         
         @media(max-width:1000px){ 
             @include gs-span(m, 3, 5);

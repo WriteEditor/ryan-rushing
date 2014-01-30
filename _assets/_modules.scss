@@ -104,19 +104,9 @@
     list-style: none;
 
     li, a   { @extend %clear-overflow;}
-    
-    span    { display: inline-block;}
-    
+        
     li {
         padding: $baseline/2 0;
-
-        @media(max-width:600px){ 
-           padding: 0;
-        }
-
-        &:nth-child(2n) {
-            background: #fff;
-        }
 
         p {
             @extend %clear;
