@@ -1,6 +1,15 @@
 #main-content {
     @extend %clear;
     @include gs-span(l, 2, 3);
+
+    @media(max-width:1000px){ 
+        @include gs-span(m, 2, 3);
+    }
+
+    @media(max-width:600px){ 
+        @include gs-span(s, all);
+        @include gs-pad(s, padinfull);
+    }
 }
 
 header, footer{
@@ -15,6 +24,15 @@ header {
 
 #logo, footer nav {
     @include gs-span(l, 2, 3);
+
+    @media(max-width:1000px){ 
+        @include gs-span(m, 2, 3);
+    }
+
+    @media(max-width:600px){ 
+        @include gs-span(s, all);
+        @include gs-pad(s, padinfull);
+    }
 }
 
 h1, h2, #logo{
@@ -108,4 +126,14 @@ article {
 
 #carbonads-container{
     @include gs-span(l, 5, 6);
+
+    @media(max-width:1000px){
+         @include gs-span(m, 4, 5);
+    }
+
+     @media(max-width:600px){
+        
+         @include gs-span(s, all);
+         @include gs-pad(s, padinfull);
+    }
 }
