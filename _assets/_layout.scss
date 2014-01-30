@@ -1,6 +1,6 @@
 #main-content {
     @extend %clear;
-    @include gs-span(l, 2, 4);
+    @include gs-span(l, 2, 3);
 }
 
 header, footer{
@@ -14,14 +14,17 @@ header {
 }
 
 #logo, footer nav {
-    @include gs-span(l, 2, 4);
+    @include gs-span(l, 2, 3);
 }
-
 
 h1, h2, #logo{
     @extend %clear;
 }
 
+
+#email{ //link in footer
+    @include gs-span(l, 4);
+}
 
 
 //------- Archive pages 
