@@ -44,45 +44,45 @@ h4, em, blockquote, i  {
 
 // Other Typography
 
-    a{
-        color: #214f84;
-        font-family: $sans_serif;
+a{
+    color: #214f84;
+    font-family: $sans_serif;
 
-        &:hover {
-            color: $accent;
-        }
+    &:hover {
+        color: $accent;
+    }
+}
+
+strong{
+    font-family: $sans_serif;
+    font-weight: 700;
+}
+
+em{
+    font-family: $sans_serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+p, li {
+    @extend %clear;
+    font-size: 2em;
+    line-height: 1.4em;
+    
+    ul + & {
+        text-indent: 0;
     }
 
-    strong{
-        font-family: $sans_serif;
-        font-weight: 700;
+    + p { 
+        text-indent: $baseline/2;
     }
-
-    em{
-        font-family: $sans_serif;
-        font-weight: 400;
-        font-style: italic;
+    
+    @media(max-width:450px){ 
+        text-align: justify;
     }
+}
 
-    p, li {
-        @extend %clear;
-        font-size: 2em;
-        line-height: 1.4em;
-        
-        ul + & {
-            text-indent: 0;
-        }
-
-        + p { 
-            text-indent: $baseline/2;
-        }
-        
-        @media(max-width:450px){ 
-            text-align: justify;
-        }
-    }
-
-    blockquote {
+blockquote {
     
     @extend %clear;
     margin-top: $baseline;
@@ -91,7 +91,13 @@ h4, em, blockquote, i  {
     p{
         padding: 0 $baseline/2;
         margin: 0 $baseline/2;
+        border-left: 3px solid $accent;
     }
+}
+
+small{
+    font-size: $baseline/2;
+
 }
 
 // ---------------------------
@@ -129,11 +135,7 @@ h4, em, blockquote, i  {
     }
 }
 
-#individual{
- 	p{
-        position: relative;
-        overflow: visible;
-    }
+article{
 
     & + p {
         text-indent: $baseline;
@@ -145,31 +147,6 @@ h4, em, blockquote, i  {
         @media(max-width:600px){ 
             text-indent: $baseline;
         }
-    }
-
-    .sidenote{
-        text-align: center;
-        font-style: italic;
-        color: #777;
-        font-size: $baseline/2.5;
-        display: block;
-        text-indent: 0;
-
-         @media(max-width:1000px){
-         	font-size: inherit;
-            font-style: normal;
-            text-align: left;
-            color: #222;
-
-            &:before{ content:"("; }
-            &:after{ content:")";}
-		}
-    }
-
-    small {
-        font-size: $baseline/3;
-        color: #222;
-        text-align: center;        
     }
 
     blockquote {

@@ -21,13 +21,13 @@ h1, h2, #logo{
     @extend %clear;
 }
 
-
-#email{ //link in footer
-    @include gs-span(l, 4);
-}
-
-
-//------- Archive pages 
+// ---------------------------
+// ---------------------------
+//
+// Archive pages
+//
+// ---------------------------
+// ---------------------------
 
 #archive    {
     a {
@@ -48,47 +48,13 @@ h1, h2, #logo{
 // ---------------------------
 // ---------------------------
 //
-// Blog Posts
+// Article pages
 //
 // ---------------------------
 // ---------------------------
 
-#individual {
-    
-    
-
-    // p, h3, h4, img, ul, ol, small {
-        
-    //     @extend %clear-overflow;
-    //     @include gs-span(l, 3, 4);
-
-    //     @media(max-width:1000px){
-    //         @include gs-span(m, 2, 4);
-    //     }
-    //     @media(max-width:600px){ 
-    //         @include gs-pad(s, padinfull);
-    //         @include gs-span(s, all); 
-    //     }
-    // }
-    
-    .sidenote{
-        top: $baseline*1.25;
-        left: gs-adjust(lb, gs-marginleft(l, 5, (3, 4), false), (1, 6), true);  //adjusting for the containter
-        width: gs-adjust(lb, gs-width(lb, 5, 6, (3, 4), false), (1, 6), true);  //adjusting for the containter 
-        position: absolute;
-
-        @media(max-width:1000px){
-            padding: 0;
-            position: static;
-            display: inline;
-            width: auto;
-        }
-
-        @include gs-pad(lb, padinfull);
-    }
-
+article {
     img{
-        @include gs-pad(l, padinfull);
 
         @media(max-width:1000px){
             @include gs-pad(m, padinfull);
@@ -122,49 +88,8 @@ h1, h2, #logo{
     small {
         display: block; 
         padding:  0 0 $baseline;
-
-        @include gs-pad(l, padinfull);
-   
-        @media(max-width:1000px){
-            @include gs-pad(m, padinfull);
-        }
-
-        @media(max-width:600px){ 
-            @include gs-pad(s, padinfull);
-        }
-    }
-}
-
-// ---------------------------
-// ---------------------------
-//
-// Next, Previous
-//
-// ---------------------------
-// ---------------------------
-
-#next-prev{
-           
-    padding: $baseline*2 0 0 0;
-
-    .next{
-        @include gs-span(l, 4, 5);
-    }
-     .previous {
-        @include gs-span(l, 2, 3);
-    }
-
-    .next, .previous {
-
-        @media(max-width:1000px){ 
-            //@extend %clear-overflow;
-            @include gs-span(m, 2, 4);
-        }
-        
-        @media(max-width:600px){
-            @include gs-span(s, all);
-            @include gs-pad(s, padinfull);
-        }
+        width: 100%;
+        float: left;
     }
 }
 
