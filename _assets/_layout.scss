@@ -1,20 +1,20 @@
 #main-content {
     @extend %clear;
-    @include gs-span(l, 2, 3);
+    @include gs-span(d, all);
 
-    @media(max-width:1000px){ 
-        @include gs-span(m, 2, 3);
-    }
+    // @media(max-width:1000px){ 
+    //     @include gs-span(m, 2, 3);
+    // }
 
-    @media(max-width:600px){ 
-        @include gs-span(s, all);
-        @include gs-pad(s, padinfull);
-    }
+    // @media(max-width:600px){ 
+    //     @include gs-span(s, all);
+    //     @include gs-pad(s, padinfull);
+    // }
 }
 
 header, footer{
     @extend %clear;
-    @include gs-span(l, all);
+    @include gs-span(d, all);
 }
 
 header {
@@ -22,22 +22,6 @@ header {
     margin-top: $baseline;
 }
 
-#logo, footer nav {
-    @include gs-span(l, 2, 3);
-
-    @media(max-width:1000px){ 
-        @include gs-span(m, 2, 3);
-    }
-
-    @media(max-width:600px){ 
-        @include gs-span(s, all);
-        @include gs-pad(s, padinfull);
-    }
-}
-
-h1, h2, #logo{
-    @extend %clear;
-}
 
 // ---------------------------
 // ---------------------------
@@ -55,14 +39,14 @@ h1, h2, #logo{
 
     a {
         
-        @media(max-width:1000px){ 
-            @include gs-span(m, 3, 5);
-        }  
+        // @media(max-width:1000px){ 
+        //     @include gs-span(m, 3, 5);
+        // }  
 
-         @media(max-width:600px){ 
-            @include gs-span(s, all);
-            @include gs-pad(s, padinfull);
-        }          
+        //  @media(max-width:600px){ 
+        //     @include gs-span(s, all);
+        //     @include gs-pad(s, padinfull);
+        // }          
     } 
 }
 
@@ -78,33 +62,33 @@ h1, h2, #logo{
 article {
     img{
 
-        @media(max-width:1000px){
-            @include gs-pad(m, padinfull);
-        }
+        // @media(max-width:1000px){
+        //     @include gs-pad(m, padinfull);
+        // }
 
-        @media(max-width:600px){ 
-            @include gs-pad(s, padinfull);
-        }
+        // @media(max-width:600px){ 
+        //     @include gs-pad(s, padinfull);
+        // }
 
-        &.full {
-            @include gs-span(l, all);
-        }
+        // &.full {
+        //     @include gs-span(l, all);
+        // }
     }
 
     & + p {
         margin-right: 0;
         clear: none;
 
-        @media(max-width:1000px){
-            clear: none;
-            @include gs-span(mb, 4, 5);
-        }
+        // @media(max-width:1000px){
+        //     clear: none;
+        //     @include gs-span(mb, 4, 5);
+        // }
 
-        @media(max-width:600px){ 
-             clear: left;
-             @include gs-span(s, all);
-             @include gs-pad(s, padinfull);
-        }
+        // @media(max-width:600px){ 
+        //      clear: left;
+        //      @include gs-span(s, all);
+        //      @include gs-pad(s, padinfull);
+        // }
     }
 
     small {
@@ -125,15 +109,71 @@ article {
 
 
 #carbonads-container{
-    @include gs-span(l, 5, 6);
+    display: none;
+    // @include gs-span(l, 5, 6);
 
-    @media(max-width:1000px){
-         @include gs-span(m, 4, 5);
+    // @media(max-width:1000px){
+    //      @include gs-span(m, 4, 5);
+    // }
+
+    //  @media(max-width:600px){
+        
+    //      @include gs-span(s, all);
+    //      @include gs-pad(s, padinfull);
+    // }
+}
+
+// ---------------------------
+// ---------------------------
+//
+// New Stuff
+//
+// ---------------------------
+// ---------------------------
+
+
+
+#logo{
+    text-align: right;
+    
+    img{
+        max-width: 300px;
+        width: auto;
+        margin: 0;
+        float: right;
+    }
+}
+
+.intro{
+    background: $accentColor;
+
+    #main-content{
+        margin-top: $baseline*6;
     }
 
-     @media(max-width:600px){
-        
-         @include gs-span(s, all);
-         @include gs-pad(s, padinfull);
+    nav{
+
+        li{
+            padding: 0 $baseline/2;
+            text-align: right;
+            position: relative;
+            @include gs-span(d, 2);
+        }
+
+        a{
+            text-decoration: none;
+        }
+    }
+
+    section, nav{
+        @include gs-span(d, all);
+    }
+
+    .hgroup{
+        @include gs-span(d, 2);
+    }
+
+    img{
+        @include gs-span(d, 3);
     }
 }

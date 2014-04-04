@@ -33,8 +33,8 @@
 // * gs-grid(prefix)
 //   Returns a list of all column widths (in percentages) in a grid.
 //   
-// * gs-pxcols(prefix)
-//   Returns a list of all column widths in a grid that are set to fixed pixel width.
+// * gs-constraints(prefix)
+//   Returns a list of all column widths in a grid that are constrained to a width, min-width, or max-width.
 //
 // * gs-gutter(prefix, (container start, container end), display unit)
 //   Returns the exact gutter of a grid as a numeric value.
@@ -52,21 +52,15 @@
 
 @function gs-grid($prefix){
 
-  @if $prefix == s	{ @return (10,36.125,36.125,10); }
-  @if $prefix == m	{ @return (10,10,46.25,10,10); }
-  @if $prefix == mb	{ @return (10,10,21.41666666,21.41666666,10,10); }
-  @if $prefix == l	{ @return (10,10,22.425,22.425,10,10); }
-  @if $prefix == lb	{ @return (10,10,22.425,22.425,10,10); }
+  @if $prefix == d	{ @return (7.45454545,46.99991994,7.45454545,29.09090908); }
+  @if $prefix == m	{ @return (100); }
 
 }
 
-@function gs-pxcols($prefix){
+@function gs-contraints($prefix){
   
-  @if $prefix == s	{ @return (false,false,false,false); }
-  @if $prefix == m	{ @return (false,false,false,false,false); }
-  @if $prefix == mb	{ @return (false,false,false,false,false,false); }
-  @if $prefix == l	{ @return (false,false,false,false,false,false); }
-  @if $prefix == lb	{ @return (false,false,false,false,false,false); }
+  @if $prefix == d	{ @return (false,false,false,false); }
+  @if $prefix == m	{ @return (false); }
 
 }
 
@@ -74,11 +68,8 @@
   
   $gutter: 0;
 
-  @if $prefix == s	{ $gutter: 2.5; }
-  @if $prefix == m	{ $gutter: 3.33333333; }
-  @if $prefix == mb	{ $gutter: 3.33333333; }
-  @if $prefix == l	{ $gutter: 3; }
-  @if $prefix == lb	{ $gutter: 3; }
+  @if $prefix == d	{ $gutter: 3; }
+  @if $prefix == m	{ $gutter: 5; }
 
   @if $unit == true { @return #{gs-adjust($prefix, $gutter, $container) + '%'}; }
   @else { @return gs-adjust($prefix, $gutter, $container); }
@@ -107,10 +98,10 @@
   }
   @else {
 		
-    $pxcols: gs-pxcols($grid);
-    $pxcol: nth($pxcols,$start);
+    $conscols: gs-contraints($grid);
+    $conscol: nth($conscols,$start);
 		
-    @if ($pxcol != false) and ($unit == true) { @return #{$pxcol + 'px'}; }
+    @if ($conscol != false) and ($unit == true) { @return #{$conscol}; }
 		
     $measure: nth($cols,$start);
 
@@ -187,28 +178,23 @@
 //   in the opposite direction. Direction = left or right.
 //   
 // * gs-media(prefix, type)
-//   This will generate the appropriate media query for a particular grid. (Sass versions 3.2+ only)
+//   This will generate the appropriate media query for a particular grid based on the range min or max for each grid.
+//   If the type is invalid, the styles will be generated without a media query. (Sass versions 3.2+ only)
 //   Valid types: min, max, min-max
-//   *min* will output a media query for the lowest width the grid applies, *max* will output a media query for the 
-//   maximum width a grid applies, and *min-max* will use both (bookending the query).
+//   *min* will output a media query for the range min, *max* will output a media query for the 
+//   range max, and *min-max* will use both (bookending the query).
 //   
 //   -------------------------------------------------------------- 
 
 @mixin gs-media($prefix, $type: false){
 
-  @if $prefix == l or $prefix == lb {
-    @media only screen and (min-width: 1000px) { @content; }
+  @if $prefix == d {
+    @if ($type == min) or ($type == min-max) { @media only screen and (min-width: 1100px) { @content; } }
+    @else { @content; }
   }
-
-  @if $prefix == m or $prefix == mb {
-    @if ($type == min) { @media only screen and (min-width: 600px) { @content; } }
-    @else if ($type == max) { @media only screen and (max-width: 999px) { @content; } }
-    @else if ($type == min-max) { @media only screen and (min-width: 600px) and (max-width: 999px) { @content; } }
-    @else { @media only screen and (min-width: 600px) { @content; } }
-  }
-
-  @if $prefix == s {
-    @media only screen and (max-width: 599px) { @content; }
+  @else if $prefix == m {
+    @if ($type == min) or ($type == min-max) { @media only screen and (min-width: 320px) { @content; } }
+    @else { @content; }
   }
 
 }
@@ -231,7 +217,7 @@
 	
     display: block;
     float: left;
-    margin-left: #{gs-marginleft($grid, $start, $container) + '%'};  
+    margin-left: gs-marginleft($grid, $start, $container, true);  
     margin-right: $marginright;
     width: gs-width($grid, $start, $end, $container, true);
 	  
@@ -304,4 +290,4 @@
 //   
 //   -------------------------------------------------------------- 
 
-$gs-prefixes: s, m, mb, l, lb;
+$gs-prefixes: d, m;

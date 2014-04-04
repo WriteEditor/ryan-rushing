@@ -1,21 +1,31 @@
----
-layout: global
----
+<!doctype HTML>
+<head>
+	<title>Portfolio and Resume of Ryan Rushing</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="/css/site.css">
+</head>
+<body class="intro">
+	<div id="main-content">
+		<section>
+			<div class="hgroup fade-1">
+				<h3>designer or something</h3>
+				<!-- <h1 id="logo"><img src="/img/ryan-rushing-green-logo.png" class="fade-2"></h1> -->
+				<h1>Ryan Rushing</h1>
+			</div>
+			<img src="/img/ryan-on-construction.jpg" class="fade-2">
+		</section>
+		<nav class="fade-3">
+			<ul>
+				<li class="fade-4"><a href="/about">info</a><span class="sect">&lsaquo;</span></li>
+				<li class="fade-5"><a href="/work">work</a><span class="sect">&lsaquo;</span></li>
+				<li class="fade-6"><a href="/writing">writing</a><span class="sect">&lsaquo;</span></li>
+			</ul>
+		</nav>
+	</div>	
+	
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script type="text/javascript" src="/js/gridset.js"></script>
+	<script type="text/javascript" src="//use.typekit.net/pps5mqy.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
-<article>
-	<p>I'm a designer, front-end developer, and I also draw lettering, screenprint, and sculpt. I'm always interested in new things and ideas, whether that means learning a programming language or trying out a new way to eat apples.</p>
-</article>
-
-<h3>Recently written</h3>
-<ul>
-	{% for item in site.categories.writing limit:5 %}
-  	<li><a href="{{ item.url }}">{{ item.title }}</a></li>
-  	{% endfor %}
-</ul>
-
-<h3>Work</h3>
-<ul>
-	<li>UX Designer at <a href="http://kalkomey.com">Kalkomey</a></li>
-	<li>Thing-maker at <a href="http://wecreatehappy.com">We Create Happy</a></li>
-	<li>Curator at <a href="http://canyoudefinelove.com">Can you define love?</a></li>
-</ul>
+</body>
