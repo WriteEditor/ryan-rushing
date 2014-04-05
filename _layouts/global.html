@@ -1,19 +1,25 @@
 {% include head.html %}
+	<div id="get-around">
+		<nav>
+			<ul>
+				<li class="fade-4"><a href="/about">info</a></li>
+				<li class="fade-5"><a href="/work">work</a></li>
+				<li class="fade-6"><a href="/writing">blog</a></li>
+			</ul>
+		</nav>
+
+		<a id="open-close" href="#cheeseburger">[cheeseburger]</a>
+	</div>
+
 	<header>
-		<a href="/"><img id="logo" src="/img/ryan-rushing-script-logo.jpg"></a>
+		<a id="logo" href="/"><img src="/img/ryan-rushing-script-logo.jpg"></a>
+
+		<a id="twitter" href="http://twitter.com/drawingtype"><img src="/img/twitter.png"> @drawingtype</a>
+
 	</header>
 
 	<div id="main-content">
-		<h1>{{ page.title }}</h1>
 		{{ content }}
-	</div>
-	
-	<div id="carbonads-container">
-		<div class="carbonad">
-			<div id="azcarbon">
-			</div>
-			<script type="text/javascript">var z = document.createElement("script"); z.type = "text/javascript"; z.async = true; z.src = "http://engine.carbonads.com/z/29084/azcarbon_2_1_0_VERT"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(z, s);</script>
-		</div>
-	</div>
 
-{% include footer.html %}
+		{% include footer.html %}
+	</div>

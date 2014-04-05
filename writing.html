@@ -1,5 +1,5 @@
 ---
-layout: global
+layout: individual
 title: Archive
 permalink: /writing/
 ---
@@ -7,10 +7,8 @@ permalink: /writing/
 <ul id="archive">
 	{% for item in site.categories.writing %}
 	 	<li>
-    		<a href="{{ item.url }}">
-    			<h3>{{ item.title }}</h3>
-    			<p>{{ item.date | date: "%B %d, %Y" }}</p>
-    		</a>
+			<h3><a href="{{ item.url }}">{{ item.title }}</a></h3>
+			<p>{{ item.date | date: "%B %d, %Y" }}</p>
 		</li>
 	{% endfor %}
 </ul>

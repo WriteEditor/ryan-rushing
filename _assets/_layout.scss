@@ -1,127 +1,5 @@
-#main-content {
-    @extend %clear;
-    @include gs-span(d, all);
-
-    // @media(max-width:1000px){ 
-    //     @include gs-span(m, 2, 3);
-    // }
-
-    // @media(max-width:600px){ 
-    //     @include gs-span(s, all);
-    //     @include gs-pad(s, padinfull);
-    // }
-}
-
-header, footer{
-    @extend %clear;
-    @include gs-span(d, all);
-}
-
-header {
-    margin-bottom: $baseline;
-    margin-top: $baseline;
-}
 
 
-// ---------------------------
-// ---------------------------
-//
-// Archive pages
-//
-// ---------------------------
-// ---------------------------
-
-#archive{
-
-    li{
-         @extend %clear;
-    }
-
-    a {
-        
-        // @media(max-width:1000px){ 
-        //     @include gs-span(m, 3, 5);
-        // }  
-
-        //  @media(max-width:600px){ 
-        //     @include gs-span(s, all);
-        //     @include gs-pad(s, padinfull);
-        // }          
-    } 
-}
-
-
-// ---------------------------
-// ---------------------------
-//
-// Article pages
-//
-// ---------------------------
-// ---------------------------
-
-article {
-    img{
-
-        // @media(max-width:1000px){
-        //     @include gs-pad(m, padinfull);
-        // }
-
-        // @media(max-width:600px){ 
-        //     @include gs-pad(s, padinfull);
-        // }
-
-        // &.full {
-        //     @include gs-span(l, all);
-        // }
-    }
-
-    & + p {
-        margin-right: 0;
-        clear: none;
-
-        // @media(max-width:1000px){
-        //     clear: none;
-        //     @include gs-span(mb, 4, 5);
-        // }
-
-        // @media(max-width:600px){ 
-        //      clear: left;
-        //      @include gs-span(s, all);
-        //      @include gs-pad(s, padinfull);
-        // }
-    }
-
-    small {
-        display: block; 
-        padding:  0 0 $baseline;
-        width: 100%;
-        float: left;
-    }
-}
-
-// ---------------------------
-// ---------------------------
-//
-// Ads
-//
-// ---------------------------
-// ---------------------------
-
-
-#carbonads-container{
-    display: none;
-    // @include gs-span(l, 5, 6);
-
-    // @media(max-width:1000px){
-    //      @include gs-span(m, 4, 5);
-    // }
-
-    //  @media(max-width:600px){
-        
-    //      @include gs-span(s, all);
-    //      @include gs-pad(s, padinfull);
-    // }
-}
 
 // ---------------------------
 // ---------------------------
@@ -131,49 +9,154 @@ article {
 // ---------------------------
 // ---------------------------
 
+#get-around{
+    background: $accentColor;
 
-
-#logo{
-    text-align: right;
-    
-    img{
-        max-width: 300px;
-        width: auto;
-        margin: 0;
+    nav{
+        overflow: hidden;
+        clear: both;
+        display: none;
+      }
+  
+    li{
+        text-align: center;
+        position: relative;
+        display: inline-block;
+        clear: none;
         float: right;
+        width: 33.3%;
+
+        a{
+            text-decoration: none;
+            background: url("/img/test-static.jpg") no-repeat center center $accentColor;
+            background-size: cover;
+            display: inline-block;
+            color: $subtleColor;
+            width: 100%;
+            text-align: center;
+            padding: 30%;
+
+            &:hover{
+                background: url("http://i.imgur.com/ZOiKmyS.gif") no-repeat center center $subtleDarkColor;
+                color: $subtleColor;
+                background-size: cover;
+            }
+        }
+
     }
 }
 
-.intro{
-    background: $accentColor;
+#open-close{
+    float: right;
+    padding: 1em;
+}
 
-    #main-content{
-        margin-top: $baseline*6;
+
+#logo, #twitter{
+    display: block;
+    width: 100%;
+    clear: both;
+}
+
+#logo{
+    
+    img{
+        max-width: 10em;
+        width: auto;
+        margin: 0;
+        float: left;
     }
+}
 
+#twitter{
+    text-decoration: none;
+    img{
+        max-width: 1.5em; 
+        margin-bottom: -0.25em;
+        margin-top: 3em;
+    }
+}
+
+// Intro
+
+.intro{
+    background: $accentColor;  
+    nav, section{
+         //@include gs-span(d, all);
+    }
     nav{
 
         li{
-            padding: 0 $baseline/2;
-            text-align: right;
+           text-align: center;
             position: relative;
-            @include gs-span(d, 2);
+            display: inline-block;
+            clear: none;
+            float: right;
+            width: 33.3%;
         }
 
         a{
             text-decoration: none;
+            background: url("/img/test-static.jpg") no-repeat center center $subtleDarkColor;
+            background-size: cover;
+            display: inline-block;
+            color: $subtleColor;
+            width: 100%;
+            text-align: center;
+            padding: 30%;
+
+            &:hover{
+                background: url("http://i.imgur.com/ZOiKmyS.gif") no-repeat center center $subtleDarkColor;
+                color: $subtleColor;
+                background-size: cover;
+            }
+        }
+
+        ul{
+             //@include gs-span(d, all);
         }
     }
 
-    section, nav{
-        @include gs-span(d, all);
-    }
-
     .hgroup{
-        @include gs-span(d, 2);
+        //@include gs-span(d, 2);
     }
 
     img{
-        @include gs-span(d, 3);
+        //@include gs-span(d, 3);
+    }
+
+    h1{
+        color: $subtleColor;
+    }
+}
+
+// ---------------------------
+// ---------------------------
+//
+// Archive
+//
+// ---------------------------
+// ---------------------------
+
+
+
+#archive {
+
+    list-style: none;
+
+    li {
+        font-size: $baseline;
+        margin: $baseline/4 0;
+        overflow: hidden;
+        clear: both;
+
+        p {
+            @extend %clear;
+            margin: 0;
+        }
+    }
+
+    h3{
+        margin: $baseline/8 0;
     }
 }

@@ -1,20 +1,9 @@
 
 
-// ---------------------------
-// ---------------------------
-//
-// About
-//
-// ---------------------------
-// ---------------------------
 
-#about {
-
-    ul  {
-        list-style: none;
-        margin: 0 0 0 0;
-        padding: 0;
-    }
+.comma-separated{
+    list-style: none;
+    padding: 0;
 
     li {
         display: inline;
@@ -25,129 +14,5 @@
         &:after { content: ','; }
         &:last-child:after { content:""; display: none;}
     }
-    
-    h4 {
-        margin: 1em 0;
-    }
 }
 
-// ---------------------------
-// ---------------------------
-//
-// Archive
-//
-// ---------------------------
-// ---------------------------
-
-
-#archive    {
-
-    list-style: none;
-
-    li, a   { @extend %clear-overflow;}
-
-    li {
-        padding: $baseline/2 0;
-
-        p {
-            @extend %clear;
-            margin: 0;
-        }
-    }
-}
-
-// ---------------------------
-// ---------------------------
-//
-// Ads
-//
-// ---------------------------
-// ---------------------------
-
-
-#carbonads-container{
-    margin: $baseline*2 0 0 0;
-
-    a{
-        // zeroing out styles on writing archive
-        float: none !important;
-        display: inline !important;
-        margin: 0 !important;
-
-        &:hover{
-            color: initial;
-        }
-
-    }
-
-    .carbonad { 
-        clear: both;
-        float: left;
-        overflow: hidden;
-        width: 100%;
-        height: auto;
-        max-width: 100%;
-        margin: 0 auto;
-        border-radius: 0;
-        border: 0 none;
-        background: rgba(255,255,255,.6);
-
-        @media(min-width:601px){  
-            padding: 0;
-        }
-
-        @media(min-width:1001px){ 
-            background: none 0;
-        }
-    }
-
-    img {
-        border-radius: 0;
-        width: auto !important;
-        height: auto !important;
-        margin: 0;
-        padding: 0;
-        max-width: 100% !important;
-        float: none  !important;
-    
-    }
-
-    span{
-        display: block !important;
-        float: left;
-        font-family: $sans_serif;
-        font-size: $baseline*.4;
-
-        @media(min-width:1001px){
-            clear: both;  
-            padding: 0 10px;          
-        }
-
-        &.carbonad-image {
-            width: 40%;
-            clear: left;
-
-            @media(min-width:1001px){
-                width: 100%;
-                display: block;
-                text-align: center;
-            }
-        }
-
-        &.carbonad-text, &.carbonad-tag{
-            width: 50%;
-            clear: right;
-            margin: 5px 10px;
-            height: auto;
-            text-align: left;
-
-            @media(min-width:1001px){
-                width: 100%;
-                text-align: center;
-                margin: $baseline/3 0;
-                clear: both;
-                padding: 0 30%;
-            }
-        }
-    }
-}
