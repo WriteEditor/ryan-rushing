@@ -8,7 +8,7 @@
 			</ul>
 		</nav>
 
-		<a id="open-close" href="#cheeseburger">[cheeseburger]</a>
+		<a id="open-close" href="#cheeseburger">navigation</a>
 	</div>
 
 	<header>
@@ -16,6 +16,11 @@
 
 		<a id="twitter" href="http://twitter.com/drawingtype"><img src="/img/twitter.png"> @drawingtype</a>
 
+		<aside>
+			{% if page.url contains 'writing' %}
+				{% include writing-sidebar.html %}
+			{% endif %}
+		</aside>
 	</header>
 
 	<div id="main-content">
@@ -23,3 +28,4 @@
 
 		{% include footer.html %}
 	</div>
+

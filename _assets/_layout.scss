@@ -47,8 +47,16 @@
 }
 
 #open-close{
-    float: right;
-    padding: 1em;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    font-family: $serif;
+    font-style: italic;
+
+    &:hover{
+        color: #fff;
+    }
 }
 
 
@@ -59,12 +67,11 @@
 }
 
 #logo{
-    
+    text-align: center;
     img{
         max-width: 10em;
         width: auto;
         margin: 0;
-        float: left;
     }
 }
 

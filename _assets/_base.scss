@@ -107,6 +107,89 @@ h4, em, blockquote, i  {
     color: #222;
 }
 
+aside{
+    font-size: $baseline/3;
+    text-align: center;
+
+    ul{
+        list-style: none;
+        padding: 0 $baseline*1.5;
+    }
+
+    li{
+        padding: $baseline/8 0;
+        margin: $baseline/8 0;
+        border-top: 1px dotted $subtleDarkColor;
+    }
+
+     h4 {
+        font-size: $baseline/2;
+        margin: $baseline/2 0;
+        font-family: $sans_serif;
+        font-style: normal; 
+        font-weight: 700;
+    }
+}
+
+a{
+    color: #214f84;
+    font-family: $sans_serif;
+
+    &:hover {
+        color: $accentColor;
+    }
+
+    aside & {
+        text-decoration: none;
+        font-size: 1em;
+    }
+}
+
+strong{
+    font-family: $sans_serif;
+    font-weight: 700;
+}
+
+em{
+    font-family: $sans_serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+p, li {
+    font-size: $baseline/2;
+    line-height: $baseline/1.25;
+    
+    ul + & {
+        text-indent: 0;
+    }
+
+    + p { 
+        text-indent: $baseline/2;
+    }
+    
+    @media(max-width:450px){ 
+        text-align: justify;
+    }
+}
+
+blockquote {
+    
+    margin-top: $baseline;
+    margin-bottom: $baseline;
+
+    p{
+        padding: 0 $baseline/2;
+        margin: 0 $baseline/2;
+        border-left: 3px solid $accentColor;
+    }
+}
+
+small{
+    font-size: $baseline/2;
+
+}
+
 // ---------------------------
 // ---------------------------
 //

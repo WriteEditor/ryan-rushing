@@ -20,61 +20,6 @@
     }
 }
 
-// Other Typography
-
-a{
-    color: #214f84;
-    font-family: $sans_serif;
-
-    &:hover {
-        color: $accentColor;
-    }
-}
-
-strong{
-    font-family: $sans_serif;
-    font-weight: 700;
-}
-
-em{
-    font-family: $sans_serif;
-    font-weight: 400;
-    font-style: italic;
-}
-
-p, li {
-    font-size: $baseline/2;
-    line-height: $baseline/1.25;
-    
-    ul + & {
-        text-indent: 0;
-    }
-
-    + p { 
-        text-indent: $baseline/2;
-    }
-    
-    @media(max-width:450px){ 
-        text-align: justify;
-    }
-}
-
-blockquote {
-    
-    margin-top: $baseline;
-    margin-bottom: $baseline;
-
-    p{
-        padding: 0 $baseline/2;
-        margin: 0 $baseline/2;
-        border-left: 3px solid $accentColor;
-    }
-}
-
-small{
-    font-size: $baseline/2;
-
-}
 
 // ---------------------------
 // ---------------------------
@@ -163,5 +108,20 @@ article{
 
     h3{
         color: $subtleDarkColor;
+    }
+}
+
+.comma-separated{
+    list-style: none;
+    padding: 0;
+
+    li {
+        display: inline;
+        width: auto;
+        clear: none;
+        float: none;
+
+        &:after { content: ','; }
+        &:last-child:after { content:""; display: none;}
     }
 }
