@@ -5,9 +5,4 @@
   	{% endfor %}
 </ul>
 
-<h4>Latest</h4>
-<ul>
-	{% for item in site.categories.writing limit:5 %}
-  	<li><a href="{{ item.url }}">{{ item.title }}</a></li>
-  	{% endfor %}
-</ul>
+<a id="archive-cta" href="/writing/">writing archive</a>
