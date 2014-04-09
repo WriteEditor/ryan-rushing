@@ -60,7 +60,7 @@
 }
 
 
-#logo, #twitter{
+#logo{
     display: block;
     width: 100%;
     clear: both;
@@ -75,12 +75,17 @@
     }
 }
 
-#twitter{
-    text-decoration: none;
-    img{
-        max-width: 1.5em; 
-        margin-bottom: -0.25em;
-        margin-top: 3em;
+#social{
+
+    margin: $baseline 0;
+
+    li{
+        margin: 0 $baseline/2;
+        padding:0;
+        border-top: 0;
+        display: inline-block;
+        text-align: center;
+        width: 10%;
     }
 }
 
