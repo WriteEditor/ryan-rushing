@@ -259,24 +259,12 @@ img{
 }
 
 footer {
-    @extend %clear-overflow;
     padding: $baseline*2 0;
     margin-top: $baseline*2;
-    background: url('/img/x-marker.jpg') no-repeat top center;
-    background-size: 10%;
-
-    ul { list-style: none; }
-
-    li {
-        margin: 0;
-        @extend %clear;
-
-        a{
-            @extend %clear;
-            font-style: normal;
-            font-family: $serif;
-        }
-    }
+    clear: both;
+    width: 100%;
+    float: left;
+    text-align: center;
 }
 
 hr {
