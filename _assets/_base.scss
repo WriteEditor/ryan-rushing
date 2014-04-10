@@ -24,6 +24,12 @@ header{
     @include gs-span(d, 4);
 }
 
+nav{
+    ul{
+        @include gs-span(d, 2, 3 );
+    }
+} 
+
 #main-content {
     @include gs-span(d, 1, 3);
 }

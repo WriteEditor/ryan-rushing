@@ -11,68 +11,48 @@
 
 #get-around{
     background: $accentColor;
-
+    overflow: hidden;
+    padding: $baseline/2 0;
+        
     nav{
-        overflow: hidden;
-        clear: both;
-        display: none;
-      }
-  
+        @include gs-span(d, 3, 4);
+    }
+
     li{
-        text-align: center;
         position: relative;
-        display: inline-block;
-        clear: none;
-        float: right;
-        width: 33.3%;
+        display: block;
 
         a{
             text-decoration: none;
-            background: url("/img/test-static.jpg") no-repeat center center $accentColor;
-            background-size: cover;
-            display: inline-block;
             color: $subtleColor;
             width: 100%;
-            text-align: center;
-            padding: 30%;
 
             &:hover{
-                background: url("http://i.imgur.com/ZOiKmyS.gif") no-repeat center center $subtleDarkColor;
-                color: $subtleColor;
-                background-size: cover;
+                color: $accentColor2;
             }
-        }
+        }    
+    }
 
+    div{
+       
     }
 }
 
-#open-close{
-    display: inline-block;
-    width: 100%;
-    text-align: center;
-    text-decoration: none;
-    font-family: $serif;
-    font-style: italic;
-
-    &:hover{
-        color: #fff;
-    }
-}
-
-
 #logo{
-    display: block;
-    width: 100%;
-    clear: both;
-}
+    text-align: left;
+    @include gs-span(d, 2);
 
-#logo{
-    text-align: center;
     img{
         max-width: 10em;
         width: auto;
         margin: 0;
     }
+}
+
+#face{
+    max-width: 7.5em;
+    margin: 0 auto;
+    display: block;
 }
 
 #social{
