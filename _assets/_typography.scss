@@ -111,6 +111,15 @@ article{
     }
 }
 
+nav{
+
+    color: $subtleDarkColor;
+
+    a{
+        text-decoration: none;
+    }
+}
+
 .comma-separated{
     list-style: none;
     padding: 0;

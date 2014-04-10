@@ -10,12 +10,12 @@
 // ---------------------------
 
 #get-around{
-    background: $accentColor;
     overflow: hidden;
     padding: $baseline/2 0;
         
     nav{
         @include gs-span(d, 3, 4);
+        border-bottom: $baseline/2 solid $accentColor;
     }
 
     li{
@@ -24,24 +24,18 @@
 
         a{
             text-decoration: none;
-            color: $subtleColor;
             width: 100%;
-
-            &:hover{
-                color: $accentColor2;
-            }
         }    
     }
 
     div{
-       
+        
     }
 }
 
 #logo{
     text-align: left;
     @include gs-span(d, 2);
-
     img{
         max-width: 10em;
         width: auto;
