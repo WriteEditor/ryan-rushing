@@ -2,19 +2,6 @@
 
     list-style: none;
 
-    a{
-       
-        text-decoration: none;
-    }
-
-    p{
-        background: $accentColor2;
-        width: 25%;
-        margin: 2em auto;
-        padding: .5em;
-        border-radius: .25em;
-    }
-
     & > li{
         clear: both;
         float: left;
@@ -28,6 +15,30 @@
     .images{
         @include gs-span(d, 4);
     }
+
+    h2{ 
+        margin: $baseline/2 0 0;
+        float: left;
+        clear: left;
+        width: 50%;
+        text-align: left;
+    }
+
+    h3{ 
+        margin: 0 0 $baseline/2 0;
+        font-weight: 400;
+        color: $subtleDarkColor;
+        float: right;
+        clear: right;
+        width: 50%;
+        text-align: right;
+    }
+
+    .hgroup{
+        width: 100%;
+        float: left;
+        clear:left;
+    }
 }
 
 .project{
@@ -40,7 +51,7 @@
     }
 }
 
-#page-logo{
+.page-logo{
     img{
         max-width: 7.5em;
     }
@@ -103,16 +114,19 @@
 }
 
 
-#aside-cta{
+.cta{
     display: inline-block;
     background: $subtleDarkColor;
     width: 10em;
-    margin: $baseline*2 0;
+    margin: $baseline 0;
     font-size: $baseline/1.5;
     line-height: $baseline/1.5;
     font-family: $serif;
     font-style: italic;
-    padding: $baseline/4 0; 
+    text-align: center;
+    font-weight: 400;
+    padding: $baseline/4 0;
+    text-decoration: none;
 
     &:hover{
         background: $accentColor;
