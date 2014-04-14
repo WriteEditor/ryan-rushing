@@ -3,28 +3,35 @@
 		<a id="logo" href="/"><img src="/img/ryan-rushing-script-logo.jpg"></a>
 		<nav>
 			<a href="/about">about</a> / 
-			<a href="/resume/">r&eacute;sum&eacute;</a> / 
 			<a href="/work">work</a> / 
 			<a href="/writing">writing</a>
 		</nav>
 	</div>
 
+	
 	<header>
-		<a id="face" href="/about"><img src="/img/ryan-on-construction.jpg"></a>
+		<h1>{{ page.title }}</h1>
+		{% if page.logo %}
+			<h1 id="page-logo"><img src="/img/in-work/{{ page.logo }}"></h1>
+		{% endif %}
 		<aside>
 			{% include social.html %}
-
-			{% if page.url contains 'writing' %}
-				{% include writing-sidebar.html %}
-			{% endif %}
-			{% if page.url contains 'about' %}
-				{% include about-sidebar.html %}
-			{% endif %}
 		</aside>
 	</header>
 
 	<div id="main-content">
 		{{ content }}
+
+		{% if page.url contains 'writing' %}
+			<aside>
+				{% include writing-sidebar.html %}
+			</aside>
+		{% endif %}
+		{% if page.url contains 'about' %}
+			<aside>
+				{% include about-sidebar.html %}
+			</aside>
+		{% endif %}
 	</div>
 
 	{% include footer.html %}
