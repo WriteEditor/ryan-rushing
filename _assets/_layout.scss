@@ -6,6 +6,7 @@
         clear: both;
         float: left;
         width: 100%;
+        margin-bottom: 5em;
     }
 
     .info{
@@ -14,32 +15,30 @@
 
     .images{
         @include gs-span(d, 4);
+        position: relative;
+        overflow: hidden;
+
+        img{
+            border-top: $baseline/4 solid $subtleDarkColor;
+            border-left: $baseline/8 solid $subtleDarkColor;
+            border-right: $baseline/8 solid $subtleDarkColor;
+            border-bottom: $baseline/8 solid $subtleDarkColor;
+            max-width: 200%;
+        }
     }
 
     h2{ 
-        margin: $baseline/2 0 0;
-        float: left;
-        clear: left;
-        width: 50%;
         text-align: left;
+        margin: $baseline/2 0 0 0;
     }
 
     h3{ 
         margin: 0 0 $baseline/2 0;
         font-weight: 400;
         color: $subtleDarkColor;
-        float: right;
-        clear: right;
-        width: 50%;
-        text-align: right;
-    }
-
-    .hgroup{
-        width: 100%;
-        float: left;
-        clear:left;
     }
 }
+
 
 .project{
     width: 100%;
@@ -119,7 +118,7 @@
     background: $subtleDarkColor;
     width: 10em;
     margin: $baseline 0;
-    font-size: $baseline/1.5;
+    font-size: $baseline/2;
     line-height: $baseline/1.5;
     font-family: $serif;
     font-style: italic;
