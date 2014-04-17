@@ -44,9 +44,11 @@
     width: 100%;
     clear: both;
     float: left;
+    margin-bottom: 5em;
 
-    h2, .project-images{
+    .project-images, h2{
         @include gs-span(d, 2);
+        clear: both;
     }
 }
 
