@@ -18,7 +18,12 @@
                  float: none;
                  margin-top: $baseline;
             }
-        } 
+        }
+
+        h3{
+            @include gs-span(d, 2, 2, (2, 4));
+            float: none;
+        }
     }
 
     .info{
@@ -35,7 +40,7 @@
         }
     }
 
-    h2{
+    h2, h3{
         @include gs-span(d, 2, 4);
     }
     h2, h3{
@@ -50,8 +55,6 @@
         margin-top: 0;
         font-weight: 400;
         color: $subtleDarkText;
-        @include gs-span(d, 2, 2, (2, 4));
-        float: none;
     }
 
     img{
