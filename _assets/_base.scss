@@ -118,6 +118,11 @@ h4, em, blockquote, i  {
     color: #222;
 }
 
+i{
+    font-style: italic;
+    color: $subtleDarkText
+}
+
 aside{
     font-size: $baseline/3;
     text-align: center;
