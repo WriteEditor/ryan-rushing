@@ -19,12 +19,22 @@
     clear: both;
 }
 
+@mixin vendorize($property, $value) {
+	-webkit-#{$property}: $value;
+	-moz-#{$property}: $value;
+	-ms-#{$property}: $value;
+	-o-#{$property}: $value;
+	#{$property}: $value;
+}
+
 // General site variables
 $accentColor: #9FC565; //green
 $accentColor2: #214f84; //blue
 
 $subtleColor: #F9F9F9; //light-gray
 $subtleDarkColor: darken($subtleColor, 10%); //light-gray
+$subtleDarkText: darken($subtleColor, 50%); //light-gray for text
+
 
 $sans_serif: "ff-meta-web-pro", "Trebuchet", arial, sans-serif;
 $serif: "ff-meta-serif-web-pro", "Georgia", georgia, times, serif;

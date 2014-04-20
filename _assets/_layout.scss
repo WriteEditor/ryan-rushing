@@ -6,7 +6,19 @@
         clear: both;
         float: left;
         width: 100%;
-        margin-bottom: 5em;
+        margin-bottom: 2.5em;
+        padding-bottom: 2.5em;
+    }
+
+    &.project{
+        .info{
+            @include gs-span(d, 2, 4);
+            p{
+                 @include gs-span(d, 2, 2, (2, 4));
+                 float: none;
+                 margin-top: $baseline;
+            }
+        } 
     }
 
     .info{
@@ -19,43 +31,36 @@
         overflow: hidden;
 
         img{
-            border-top: $baseline/4 solid $subtleDarkColor;
-            border-left: $baseline/8 solid $subtleDarkColor;
-            border-right: $baseline/8 solid $subtleDarkColor;
-            border-bottom: $baseline/8 solid $subtleDarkColor;
             max-width: 200%;
         }
     }
 
-    h2{ 
+    h2{
+        @include gs-span(d, 2, 4);
+    }
+    h2, h3{
         text-align: left;
-        margin: $baseline/2 0 0 0;
+        float: none;
+        margin-top: $baseline/2;
+        margin-bottom: 0;
     }
 
     h3{ 
-        margin: 0 0 $baseline/2 0;
+        margin-bottom: $baseline/2;
+        margin-top: 0;
         font-weight: 400;
-        color: $subtleDarkColor;
+        color: $subtleDarkText;
+        @include gs-span(d, 2, 2, (2, 4));
+        float: none;
     }
-}
 
-
-.project{
-    width: 100%;
-    clear: both;
-    float: left;
-    margin-bottom: 5em;
-
-    .project-images, h2{
-        @include gs-span(d, 2);
-        clear: both;
-    }
-}
-
-.page-logo{
     img{
-        max-width: 7.5em;
+        border: $baseline/10 solid $subtleDarkColor;
     }
+}
+
+.portfolio-intro{
+    margin-bottom: 2.5em;
 }
 
 #get-around{

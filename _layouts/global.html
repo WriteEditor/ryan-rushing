@@ -1,7 +1,7 @@
 {% include head.html %}
 	<div id="get-around">
-		<a id="logo" href="/"><img src="/img/ryan-rushing-script-logo.jpg"></a>
-		<nav>
+		<a class="fade-1" id="logo" href="/"><img src="/img/ryan-rushing-script-logo.jpg"></a>
+		<nav class="fade-2">
 			<a href="/about">about</a> / 
 			<a href="/work">work</a> / 
 			<a href="/writing">writing</a>
@@ -10,9 +10,9 @@
 
 	
 	<header>
-		<h1>{{ page.title }}</h1>
-		{% if page.logo %}
-			<h1 class="page-logo"><img src="/img/in-work/{{ page.logo }}"></h1>
+		<h1 class="fade-3">{{ page.title }}</h1>
+		{% if page.date %}
+			<h2>{{ page.date | date: "%B %d, %Y" }}</h1>
 		{% endif %}
 		<aside>
 			{% include social.html %}
@@ -23,14 +23,10 @@
 		{{ content }}
 
 		{% if page.url contains 'writing' %}
-			<aside>
-				{% include writing-sidebar.html %}
-			</aside>
+			{% include writing-sidebar.html %}
 		{% endif %}
 		{% if page.url contains 'about' %}
-			<aside>
-				{% include about-sidebar.html %}
-			</aside>
+			{% include about-sidebar.html %}
 		{% endif %}
 	</div>
 

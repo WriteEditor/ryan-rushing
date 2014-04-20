@@ -110,8 +110,8 @@ h3 {
 
 h4 {
     margin: 0 0 $baseline 0;
-    font-style: italic;
-    line-height: 1.25;
+    font-style: normal;
+    line-height: $baseline/2;
 }
 
 h4, em, blockquote, i  {
@@ -125,6 +125,7 @@ aside{
 
     ul{
         list-style: none;
+        margin: 0 0 $baseline 0;
     }
 
     li{

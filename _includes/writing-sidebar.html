@@ -1,8 +1,8 @@
-<h4>Best of</h4>
+<aside class="fade-5"><h4>Best of</h4>
 <ul>
 	{% for item in site.categories.favorite limit:5 %}
   	<li><a href="{{ item.url }}">{{ item.title }}</a></li>
   	{% endfor %}
 </ul>
 
-<a class="cta" href="/writing/">writing archive</a>
+<a class="cta" href="/writing/">writing archive</a></aside>

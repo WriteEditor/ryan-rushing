@@ -1,29 +1,25 @@
-//  // Hovery fade thing
-// footer li *,
-// #archive a, 
-// #archive p, 
-// #archive li, 
-// a
 
-// {
-    	
-//     transition-property: all;
-//     transition-duration: 200ms;
-//     transition-timing-function: ease-in-out;
-//     transition-delay: 0ms;
+// link hover
 
-//     -webkit-transition-property: all;
-//     -webkit-transition-duration: 200ms;
-//     -webkit-transition-timing-function: ease-in-out;
-//     -webkit-transition-delay: 0ms;
+a {
+	@include vendorize( transition, all 200ms 0ms ease-in-out);
+}
 
-//     -moz-transition-property: all;
-//     -moz-transition-duration: 200ms;
-//     -moz-transition-timing-function: ease-in-out;
-//     -moz-transition-delay: 0ms;
+// Elements appearing 
 
-//     -o-transition-property: all;
-//     -o-transition-duration: 200ms;
-//     -o-transition-timing-function: ease-in-out;
-//     -o-transition-delay: 0ms;
-// }
+[class*=fade-]{
+	position: relative;
+}
+
+@-webkit-keyframes fade-in{
+	0%		{ opacity:0; right: -1%;  }
+	100% 	{ opacity:1; right: 0; }
+}
+
+$fade: 10;
+
+@for $i from 1 through $fade {
+  .fade-#{$i} {
+    @include vendorize( animation, fade-in 200ms #{($fade * 10) * $i}ms 1 both);
+  }
+}
