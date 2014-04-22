@@ -123,6 +123,28 @@
     }
 }
 
+.intro{
+
+    h1, h2, p{
+         width: 100%;
+        float: left;
+        clear: both;
+    }
+
+    h1{
+        font-weight: 400;
+        font-size: 3em;
+        margin-left: 0;
+        margin-bottom: 1em;
+        line-height: 1.2;
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+
+}
 
 .cta{
     display: inline-block;
@@ -144,49 +166,14 @@
     }
 }
 
-// Intro
-
-.intro{
-    position: relative;
-    z-index: 1;
-
-    nav{
-        a{
-            text-decoration: none;
-            background: $subtleDarkColor;
-            background-size: cover;
-            display: inline-block;
-            color: $accentColor2;
-            width: 100%;
-            text-align: center;
-            padding: 5%;
-            font-size: 1em;
-            border-right: 1em solid $accentColor;
-
-
-            &:hover{
-                background: $accentColor;
-                color: $subtleColor;
-                background-size: cover;
-            }
-        }
-    }
-
-    #logo{
-        text-align: left;
-        img{
-            max-width: 20em;
-            width: auto;
-            margin: 0;
-        }
-    }
-}
 
 #cover-img{
-    z-index: 0;
+    z-index: -10;
     position: absolute;
     width: 100%;
     border-radius: 0;
+    top: 0;
+    left: 0;
 }
 
 // ---------------------------

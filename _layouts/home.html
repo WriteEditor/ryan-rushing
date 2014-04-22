@@ -1,20 +1,19 @@
 {% include head.html %}
-
-	<div id="main-content" class="intro">
-		<a id="logo" href="/"><img src="/img/ryan-rushing-script-logo.jpg"></a>
-
-		{{ content }}
-	</div>
-
-	<header class="intro">
-		<nav>
-			<a href="/about">about</a>
-			<a href="/resume/">r&eacute;sum&eacute;</a>
-			<a href="/work">work</a>
+	<div id="get-around">
+		<a class="fade-1" id="logo" href="/"><img src="/img/ryan-rushing-script-logo.jpg"></a>
+		<nav class="fade-2">
+			<a href="/about">about</a> / 
+			<a href="/work">work</a> / 
 			<a href="/writing">writing</a>
 		</nav>
-	</header>
+	</div>
 
-	<img id="cover-img" src="http://i.imgur.com/Ook4rhm.gif">
+	<div id="main-content">
+		{{ content }}
+
+		{% include home-sidebar.html %}
+	</div>
+
+	<img id="cover-img" src="https://i.imgur.com/ogXjigM.gif">
 
 {% include footer.html %}
