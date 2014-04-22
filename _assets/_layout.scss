@@ -16,7 +16,7 @@
             p{
                  @include gs-span(d, 2, 2, (2, 4));
                  float: none;
-                 margin-top: $baseline;
+                 margin: 0;
             }
         }
 
@@ -47,7 +47,7 @@
         text-align: left;
         float: none;
         margin-top: $baseline/2;
-        margin-bottom: 0;
+        margin-bottom: $baseline/2;
     }
 
     h3{ 
@@ -58,6 +58,7 @@
     }
 
     img{
+        margin-top: $baseline/2;
         border: $baseline/10 solid $subtleDarkColor;
     }
 }
