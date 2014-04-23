@@ -69,7 +69,9 @@
 
 #get-around{
     overflow: hidden;
-    padding: $baseline/2 0;
+    padding: $baseline 0;
+    background: $subtleColor;
+    margin-bottom: 2em;
         
     nav{
         @include gs-span(d, 3, 4);
@@ -85,6 +87,16 @@
             width: 100%;
         }    
     }
+
+    .homepage &{
+        border-bottom: $baseline/2 solid $accentColor;
+
+        nav{
+            border-bottom: none;
+            font-size: 1.5em;
+            line-height: 2.5;
+        }
+    }
 }
 
 #logo{
@@ -94,6 +106,10 @@
         max-width: 10em;
         width: auto;
         margin: 0;
+    }
+
+    .homepage &{
+        max-width: 15em;
     }
 }
 
@@ -107,6 +123,12 @@
      max-width: 7.5em;
      width: 100%;
      margin: 0 auto;
+
+     .homepage & {
+        background: $subtleColor;
+        padding: 1em;
+        box-shadow: 0 0 1em rgba(0,0,0,.5);
+     }
 }
 
 #social{
@@ -123,10 +145,10 @@
     }
 }
 
-.intro{
+.homepage{
 
     h1, h2, p{
-         width: 100%;
+        width: 100%;
         float: left;
         clear: both;
     }
@@ -139,11 +161,10 @@
         line-height: 1.2;
     }
 
-    a{
+    article a{
         text-decoration: none;
+        border-bottom: 2px dotted $accentColor2;
     }
-
-
 }
 
 .cta{

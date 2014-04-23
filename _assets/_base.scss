@@ -9,6 +9,11 @@ body {
     background: #f9f9f9;
     position: relative;
     font-family: $serif;
+    
+    &.homepage{
+        background: url('/img/bgnd.gif') no-repeat 0 0;
+        background-size: cover;
+    }   
 
     @media(max-width:725px){
         font-size: $baseline/2;
