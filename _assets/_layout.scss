@@ -88,16 +88,10 @@
         }    
     }
 
-    .homepage &{
-        border-bottom: $baseline/2 solid $accentColor;
-
-        nav{
-            border-bottom: none;
-            font-size: 1.5em;
-            line-height: 2.5;
-        }
-    }
+    
 }
+
+
 
 #logo{
     text-align: left;
@@ -106,10 +100,6 @@
         max-width: 10em;
         width: auto;
         margin: 0;
-    }
-
-    .homepage &{
-        max-width: 15em;
     }
 }
 
@@ -123,12 +113,6 @@
      max-width: 7.5em;
      width: 100%;
      margin: 0 auto;
-
-     .homepage & {
-        background: $subtleColor;
-        padding: 1em;
-        box-shadow: 0 0 1em rgba(0,0,0,.5);
-     }
 }
 
 #social{
@@ -164,6 +148,11 @@
     article a{
         text-decoration: none;
         border-bottom: 2px dotted $accentColor2;
+    }
+
+    #get-around{
+        border-bottom: $baseline/2 solid $accentColor;
+        margin-bottom: 5%;
     }
 }
 

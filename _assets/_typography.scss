@@ -1,25 +1,16 @@
-.hgroup{
-    text-align: right;
-
-    h1{
-        font-size: $baseline*1.5;
-        font-weight: 700;
-        margin: 0;
-        line-height: 0;
-    }
-
-    h2, h3{
-        margin: 1em 0;
-        font-weight: 400;
-        font-size: $baseline/2;
-    }
-
-    h3{
-        font-style: italic;
-        margin: 0 0 1em 0;
+#portfolio{
+    .hgroup{
+        h2{
+            margin-top: 2em;
+            margin-bottom: 0;
+        }
+        h3{
+            margin-top: 0;
+            margin-bottom: 2em;
+        }
     }
 }
-
+    
 
 // ---------------------------
 // ---------------------------
