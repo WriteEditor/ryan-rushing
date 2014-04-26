@@ -1,3 +1,10 @@
+.date{
+     @include gs-span(d, 2, 4);
+     font-size: $baseline/2.5;
+     color: $subtleDarkText;
+     margin-top: 1.5em;
+}
+
 #portfolio{
 
     list-style: none;
