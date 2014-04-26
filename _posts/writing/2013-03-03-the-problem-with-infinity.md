@@ -4,7 +4,6 @@ title: The Problem with Infinity
 category: writing
 ---
 
-### The Old Days
 Historically speaking, making something meant it was tangible, and having more resources, such as time, money, and natural resources, meant more physical objects could be created. With physical items, there's always a one-to-one trade: creating things demands resources, and creating lots of things demands lots of resources.
 
 After physical objects are made, the one-to-one trade-off carries over into the business world when some form of currency is accepted for the object. You give me this, and I give you that. Simple.

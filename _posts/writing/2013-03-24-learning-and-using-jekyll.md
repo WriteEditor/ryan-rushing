@@ -4,7 +4,7 @@ title: Learning From and Using Jekyll
 category: writing
 ---
 
-It's been about two and a half months since I launched my new site using [Jekyll](https://github.com/mojombo/jekyll) after spending about a month redesigning it.
+It's been about two and a half months since I launched my new site using Jekyll, a static-site generator (http://jekyllrb.com) after spending about a month redesigning it.
 
 I won't show how to install Jekyll; there are plenty of posts that will explain it better than me (although, I will say [this post](http://pragmaticstudio.com/blog/2010/9/23/install-rails-ruby-mac) helped me get the necessary Ruby bits installed), however, I would like to share things I've learned, apart from simply how to use Jekyll.
 

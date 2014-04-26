@@ -1,6 +1,6 @@
 ---
 layout: individual
-title: Thoughts on Harry Potter&rsquo;s wand, iOS 7&rsquo;s automatic updates, and language
+title: Musings on the Harry Potter Universe
 category: writing
 excerpt: I tend to over think the reality of fiction, which inevitably leads to my disappointment when something doesn't add up. Suspending my disbelief isn't one of my strong points.
 ---
