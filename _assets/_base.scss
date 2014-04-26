@@ -11,7 +11,7 @@ body {
     font-family: $serif;
     
     &.homepage{
-        background: url('/img/bgnd.gif') no-repeat 0 0;
+        background: url('/img/bgnd.gif') repeat-y 0 0;
         background-size: cover;
     }   
 
