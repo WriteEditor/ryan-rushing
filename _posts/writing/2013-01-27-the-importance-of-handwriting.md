@@ -7,7 +7,7 @@ description: I recently celebrated National Handwriting Day with some people at 
 
 I recently celebrated National Handwriting Day with some people at [Weld](http://weld.co/), a coworking space here in Dallas, and although I must admit I've never heard of National Handwriting Day until [Kyle Steed posted about it](http://steedtastic.com/post/40712348305/national-handwriting-day), it was a fun time. (Really, since most of us were practiced at drawing letterforms, it became National Lettering Day for us.)
 
-<img style="float: left; width: 30%; margin: 20px 20px 20px 0;" src="../../../../../img/in-writings/national-handwriting-day.jpg" alt="National Handwriting Day handwriting" />
+<img src="../../../../../img/in-writings/national-handwriting-day.jpg" alt="National Handwriting Day handwriting" />
 
 As I sat writing the copy of [a Craigslist ad](https://twitter.com/drawingtype/status/294271687027982336), the weight of learning and mastering this skill, for both kids and adults, hit me.
 

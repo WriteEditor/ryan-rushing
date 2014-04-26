@@ -18,7 +18,7 @@ I was not that player. In high school, our band went through five directors in t
 
 Whether in a marching band on a field or a rock band in a garage, some parts are the melodic voice, while others are the harmonies. Generally speaking, music is structured to enhance the *whole* sound, rather than one section or part. The harmonizing riffs may or may not be noticeable to the untrained ear, but they are especially noticeable if they stop. With no foundation for the first trumpets' melodic voices to stand on, their sound would be as desirable as nails on a chalkboard.
 
-<img src="http://i.imgur.com/8NwgzGq.jpg">
+<img src="../../../../../img/in-writings/marching-band.jpg" alt="Louisiana Tech Band of Pride" />
 <small>You shouldn't be able to find me, and if you are, I'm doing something wrong.</small>
 
 In most halftime shows, every body on the field is relevant. Each player must consider the way they hold their instrument, take steps, turn, and many other details. While on the field, trusting your fellow bandmates, and especially those immediately surrounding you, is top priority. If things start falling apart during the halftime show, go with it. If you're approaching a group who's standing ten yards off, and you stand in the exact right spot from practice, you're wrong because you're the one sticking out.
