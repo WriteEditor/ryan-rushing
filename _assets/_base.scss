@@ -9,6 +9,11 @@ body {
     background: #f9f9f9;
     position: relative;
     font-family: $serif; 
+    border-top: 1em solid #9fc565;
+
+    @media(min-width:501px){
+        border-top: 0;
+    }
 }
 
 header{

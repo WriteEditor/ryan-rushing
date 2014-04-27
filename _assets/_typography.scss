@@ -37,12 +37,12 @@
 
     h2, h3{
         text-align: left;
-        float: none;
         margin-top: $baseline/2;
         margin-bottom: $baseline/2;
 
         @media(min-width:501px){
             @include gs-span(d, 2, 4);
+            float: none;
         }
     }
 
@@ -51,6 +51,10 @@
         margin-top: 0;
         font-weight: 400;
         color: $subtleDarkText;
+    }
+
+    h4{
+        margin-top: 1em;
     }
 }
 
