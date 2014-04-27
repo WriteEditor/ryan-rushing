@@ -1,9 +1,93 @@
-.date{
-     @include gs-span(d, 2, 4);
-     font-size: $baseline/2.5;
-     color: $subtleDarkText;
-     margin-top: 1.5em;
+// ---------------------------
+// ---------------------------
+//
+// Boss elements
+//
+// ---------------------------
+// ---------------------------
+
+#main-content {
+    padding: 0 1em;
+    @include gs-span(d, all);
+
+    @media(min-width:501px){
+        padding: 0;
+    }
+} 
+
+#get-around{
+    overflow: hidden;
+    background: $subtleColor;
+    padding: 2% 0 0;
+
+    @media(min-width:501px){
+        padding: $baseline 0;
+        margin-bottom: 2em;
+    }
+        
+    nav{
+        text-align: center;
+
+        @media(min-width:501px){
+            text-align: left;
+            @include gs-span(d, 3, 4);
+            border-bottom: $baseline/2 solid $accentColor;
+        }
+    }
+
+    li{
+        position: relative;
+        display: block;
+
+        a{
+            text-decoration: none;
+            width: 100%;
+        }    
+    }
 }
+
+// ---------------------------
+// ---------------------------
+//
+// Home page
+//
+// ---------------------------
+// ---------------------------
+
+.homepage{
+    background: url('/img/bgnd.gif') repeat-y 0 0;
+    background-size: cover;
+
+    #get-around{
+        border-bottom: $baseline/2 solid $accentColor;
+        margin-bottom: 5%;
+    }
+}
+
+#logo{
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    
+    img{
+        max-width: 10em;
+        width: auto;
+        margin: 0;
+    }
+
+    @media(min-width:501px){
+        text-align: left;
+        @include gs-span(d, 2);
+    }
+}
+
+// ---------------------------
+// ---------------------------
+//
+// PORTFOLIO
+//
+// ---------------------------
+// ---------------------------
 
 #portfolio{
 
@@ -17,96 +101,32 @@
         padding-bottom: 2.5em;
     }
 
-    &.project{
-        .info{
-            @include gs-span(d, 2, 4);
-            p{
-                 @include gs-span(d, 2, 2, (2, 4));
-                 float: none;
-                 margin: 0;
-            }
-        }
-
-        h3{
-            @include gs-span(d, 2, 2, (2, 4));
-            float: none;
-        }
-    }
-
     .info{
-         @include gs-span(d, 2);
+        @media(min-width:501px){
+            @include gs-span(d, 2);
+        }
     }
 
     .images{
-        @include gs-span(d, 4);
+        @media(min-width:501px){
+            @include gs-span(d, 4);
+        }
         position: relative;
         overflow: hidden;
 
         img{
-            max-width: 200%;
+            
+            max-width: 100%;
+
+            @media(min-width:501px){
+                max-width: 200%;
+            }
         }
-    }
-
-    h2, h3{
-        @include gs-span(d, 2, 4);
-    }
-    h2, h3{
-        text-align: left;
-        float: none;
-        margin-top: $baseline/2;
-        margin-bottom: $baseline/2;
-    }
-
-    h3{ 
-        margin-bottom: $baseline/2;
-        margin-top: 0;
-        font-weight: 400;
-        color: $subtleDarkText;
     }
 
     img{
         margin-top: $baseline/2;
         border: $baseline/10 solid $subtleDarkColor;
-    }
-}
-
-.portfolio-intro{
-    margin-bottom: 2.5em;
-}
-
-#get-around{
-    overflow: hidden;
-    padding: $baseline 0;
-    background: $subtleColor;
-    margin-bottom: 2em;
-        
-    nav{
-        @include gs-span(d, 3, 4);
-        border-bottom: $baseline/2 solid $accentColor;
-    }
-
-    li{
-        position: relative;
-        display: block;
-
-        a{
-            text-decoration: none;
-            width: 100%;
-        }    
-    }
-
-    
-}
-
-
-
-#logo{
-    text-align: left;
-    @include gs-span(d, 2);
-    img{
-        max-width: 10em;
-        width: auto;
-        margin: 0;
     }
 }
 
@@ -136,63 +156,6 @@
     }
 }
 
-.homepage{
-
-    h1, h2, p{
-        width: 100%;
-        float: left;
-        clear: both;
-    }
-
-    h1{
-        font-weight: 400;
-        font-size: 3em;
-        margin-left: 0;
-        margin-bottom: 1em;
-        line-height: 1.2;
-    }
-
-    article a{
-        text-decoration: none;
-        border-bottom: 2px dotted $accentColor2;
-    }
-
-    #get-around{
-        border-bottom: $baseline/2 solid $accentColor;
-        margin-bottom: 5%;
-    }
-}
-
-.cta{
-    display: inline-block;
-    background: $subtleDarkColor;
-    width: 10em;
-    margin: $baseline 0;
-    font-size: $baseline/2;
-    line-height: $baseline/1.5;
-    font-family: $serif;
-    font-style: italic;
-    text-align: center;
-    font-weight: 400;
-    padding: $baseline/4 0;
-    text-decoration: none;
-
-    &:hover{
-        background: $accentColor;
-        color: #fff;
-    }
-}
-
-
-#cover-img{
-    z-index: -10;
-    position: absolute;
-    width: 100%;
-    border-radius: 0;
-    top: 0;
-    left: 0;
-}
-
 // ---------------------------
 // ---------------------------
 //
@@ -215,9 +178,5 @@
             @extend %clear;
             margin: 0;
         }
-    }
-
-    h3{
-        margin: $baseline/8 0;
     }
 }

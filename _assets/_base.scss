@@ -8,45 +8,81 @@ body {
     line-height: $baseline;
     background: #f9f9f9;
     position: relative;
-    font-family: $serif;
-    
-    &.homepage{
-        background: url('/img/bgnd.gif') repeat-y 0 0;
-        background-size: cover;
-    }   
-
-    @media(max-width:725px){
-        font-size: $baseline/2;
-        line-height: $baseline/1.125;
-    }
+    font-family: $serif; 
 }
 
 header{
+    padding: 0 1em;
+
     @include gs-span(d, all);
     margin-top: 5%;
+
+    @media(min-width:501px){
+        padding: 0;
+    }
+
+    aside{
+        display: none;
+
+        @media(min-width:501px){
+            display: block;
+        }
+    }
 }
 
 aside{
-    @include gs-span(d, 4);
-}
+    font-size: $baseline/3;
+    text-align: center;
+    padding: 0 1em;
+    margin-top: 10%;
+    width: 100%;
 
-h1{
-    @include gs-span(d, 2);
+    @media(min-width:501px){
+        padding: 0 $baseline*1.5;
+        margin: 0;
+        @include gs-span(d, 4);
+    }
+
+    ul{
+        list-style: none;
+        margin: 0 0 $baseline 0;
+    }
+
+    li{
+        padding: $baseline/8 0;
+        margin: $baseline/8 0;
+        border-top: 1px dotted $subtleDarkColor;
+    }
+
+     h4 {
+        font-size: $baseline/2;
+        margin: $baseline/2 0;
+        font-family: $sans_serif;
+        font-style: normal; 
+        font-weight: 700;
+    }
 }
 
 nav{
+    color: $subtleDarkColor;
+
+    a{
+        text-decoration: none;
+    }
+
     ul{
         float: right;
         display: inline-block;
     }
-} 
-
-#main-content {
-    @include gs-span(d, all);
 }
 
-article{
-       @include gs-span(d, 2);
+footer {
+    padding: $baseline*2 0;
+    margin-top: $baseline*2;
+    clear: both;
+    width: 100%;
+    float: left;
+    text-align: center;
 }
 
 // ---------------------------
@@ -57,38 +93,22 @@ article{
 // ---------------------------
 // ---------------------------
 
-@media(min-width:300px){
-    html{
-        font-size: 62.5%;
-    }   
-}
+html{
+    font-size: 75%;
 
-@media(min-width:500px){
-    html{
-        font-size: 75%;
-    }   
-}
-
-@media(min-width:725px){
-    html{
+    @media(min-width:725px){
         font-size: 90%;
-    }   
-}
+    }
 
-@media(min-width:1000px){
-    html{
+    @media(min-width:1000px){
         font-size: 115%;
-    }   
-}
+    }
 
-@media(min-width:1500px){
-    html{
+    @media(min-width:1500px){
         font-size: 135%;
-    }   
+    }
 }
 
-
-// Headings
 h1, h2, h3, h4, h5, h6 {
     font-size: $baseline/1.5;
 }
@@ -96,6 +116,12 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
     font-family: $serif;
     font-weight: 700;
+
+    width: 100%;
+
+    @media(min-width:501px){
+        @include gs-span(d, 2);
+    }
 }
 
 h2, h3{
@@ -127,31 +153,6 @@ i{
     color: $subtleDarkText
 }
 
-aside{
-    font-size: $baseline/3;
-    text-align: center;
-    padding: 0 $baseline*1.5;
-
-    ul{
-        list-style: none;
-        margin: 0 0 $baseline 0;
-    }
-
-    li{
-        padding: $baseline/8 0;
-        margin: $baseline/8 0;
-        border-top: 1px dotted $subtleDarkColor;
-    }
-
-     h4 {
-        font-size: $baseline/2;
-        margin: $baseline/2 0;
-        font-family: $sans_serif;
-        font-style: normal; 
-        font-weight: 700;
-    }
-}
-
 a{
     color: #214f84;
     font-family: $sans_serif;
@@ -178,6 +179,7 @@ em{
 }
 
 p, li {
+    text-align: justify;
     font-size: $baseline/2;
     line-height: $baseline/1.25;
     
@@ -189,8 +191,8 @@ p, li {
         text-indent: $baseline/2;
     }
     
-    @media(max-width:450px){ 
-        text-align: justify;
+    @media(min-width:501px){ 
+        text-align: left;
     }
 }
 
@@ -219,11 +221,25 @@ small{
 // ---------------------------
 // ---------------------------
 
+img{
+    max-width: 100%;
+    border-radius: 3px;
+}
+
 section { 
     margin: $baseline 0;
 }
 
 article{
+    width: 100%;
+    margin-top: 5%;
+    margin-top: 10%;
+
+    @media(min-width:501px){
+        @include gs-span(d, 2);
+        margin-top: 0;
+        margin-bottom: 0;
+    }
 
     sup{
         @media(max-width:1000px){ 
@@ -234,8 +250,16 @@ article{
     img {
         margin-top: $baseline;
         margin-bottom: $baseline;
-        max-width: 100%;
         clear: both;
+    }
+    
+     blockquote {
+        font-family: $sans_serif;
+        font-style: italic;
+
+        p {
+            border-left: 2px solid $accentColor;
+        }
     }
 }
 
@@ -254,50 +278,9 @@ ol {
 }
 
 li {
-
     clear: both;
-
-    p { 
-        margin: 0 0 
-        $baseline 0;
-    }
 
     h4 {
         margin: 0;
-    }
-}
-
-img{
-    max-width: 100%;
-    border-radius: 3px;
-}
-
-footer {
-    padding: $baseline*2 0;
-    margin-top: $baseline*2;
-    clear: both;
-    width: 100%;
-    float: left;
-    text-align: center;
-}
-
-hr {
-    margin: .5em 0;
-    border: 0;
-    width: 100%;
-    float: left;
-    text-align: center;
-    font-size: 2em;
-    line-height: 2em;
-
-    &:after{
-        content: "\00A7";
-        font-family: $sans_serif;
-        display: block;
-        width: 2em;
-        height: 2em;
-        margin: 0 auto;
-        line-height: 2em;
-        border-radius: 4em;
     }
 }
