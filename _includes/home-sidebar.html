@@ -1,19 +1,6 @@
 <aside class="fade-5">
-	{% include social.html %}
 
 	<a id="face" href="/about"><img title="Ryan Rushing" alt="Ryan Rushing" src="/img/ryan-rushing.jpg"></a> 
 
-	<h4>Best of</h4>
-	<ul>
-		{% for item in site.categories.favorite limit:5 %}
-	  	<li><a href="{{ item.url }}">{{ item.title }}</a></li>
-	  	{% endfor %}
-	</ul>
-
-	<h4>Work</h4>
-	<ul>
-	  	<li><a href="/work/kalkomey">Kalkomey</a></li>
-	  	<li><a href="/work/unit-interactive">Unit Interactive</a></li>
-	  	<li><a href="/work/independent">Independent</a></li>
-	</ul>
+	{% include social.html %}
 </aside>
