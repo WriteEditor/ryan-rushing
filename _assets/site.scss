@@ -49,18 +49,10 @@ $baseline: 2em;
 // ---------------------------
 // ---------------------------
 
-// Resets everything
-@import "compass/reset";
+@import "compass/reset"; 	// Reset
+@import "gridset.scss";		// Gridset layout
+@import "base.scss";		// Base styles (all)
+@import "typography.scss";  // Typographic specific (altering base)
+@import "layout.scss";		// Layout specific (altering base)
+@import "animation.scss"; 	// All animation
 
-// Typography
-@import "typography.scss";
-
-// Controls the CSS animation
-@import "animation.scss"; 
-
-// Brings in all the Gridset and layout mixins and functions
-@import "gridset.scss";
-@import "layout.scss";
-
-// Base styles
-@import "base.scss";

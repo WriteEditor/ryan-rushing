@@ -94,11 +94,8 @@ footer {
 // ---------------------------
 
 html{
-    font-size: 75%;
-
-    @media(min-width:725px){
-        font-size: 90%;
-    }
+    
+    font-size: 100%;
 
     @media(min-width:1000px){
         font-size: 115%;
@@ -144,7 +141,7 @@ h4 {
     line-height: $baseline/2;
 }
 
-h4, em, blockquote, i  {
+h4, em, blockquote  {
     color: #222;
 }
 
@@ -154,7 +151,7 @@ i{
 }
 
 a{
-    color: #214f84;
+    color: $accentColor2;
     font-family: $sans_serif;
 
     &:hover {
