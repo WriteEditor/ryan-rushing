@@ -10,6 +10,8 @@ body {
     position: relative;
     font-family: $serif; 
     border-top: 1em solid #9fc565;
+    margin-bottom: 25%;
+    float: left;
 
     @media(min-width:501px){
         border-top: 0;
@@ -57,6 +59,8 @@ aside{
         padding: $baseline/8 0;
         margin: $baseline/8 0;
         border-top: 1px dotted $subtleDarkColor;
+        text-align: center;
+
     }
 
      h4 {
@@ -65,6 +69,8 @@ aside{
         font-family: $sans_serif;
         font-style: normal; 
         font-weight: 700;
+            text-align: center;
+
     }
 }
 
