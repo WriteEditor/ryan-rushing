@@ -33,9 +33,9 @@ header{
 aside{
     font-size: $baseline/3;
     text-align: center;
-    padding: 0 1em;
     margin-top: 10%;
     width: 100%;
+    overflow: hidden;
 
     @media(min-width:501px){
         padding: 0 $baseline*1.5;
@@ -231,6 +231,7 @@ article{
     width: 100%;
     margin-top: 5%;
     margin-top: 10%;
+    overflow: hidden;
 
     @media(min-width:501px){
         @include gs-span(d, 2);
