@@ -5,7 +5,7 @@ category: writing
 description: I'm fascinated with illusions, especially close-up magic like card tricks. Being a willing participant in a brain-hacking, to witness something impossible, is incredibly exciting and attractive.
 ---
 
-<img src="../../../../../img/in-writings/poof.jpg" alt="Poof" title="Gone like the wind." />
+<img src="{{site.url}}/assets/img/in-writings/poof.jpg" alt="Poof" title="Gone like the wind." />
 
 I'm fascinated with illusions, especially close-up magic like card tricks. Being a willing participant in a brain-hacking, to witness something impossible, is incredibly exciting and attractive.
 
@@ -13,7 +13,7 @@ During the magical moments of a trick, logic and reason is pushed out of our min
 
 Our reality becomes a bell-shaped curve while we wait for the punchline. Our suspense builds and builds, until the plot twist is revealed, where we see card you signed at the beginning of the trick is now in your wallet.
 
-<img src="../../../../../img/in-writings/bell-curve-mind-explosion.jpg" alt="Showing where the mind explosion happens in a magic trick." title="Showing where the mind explosion happens in a magic trick." />
+<img src="{{site.url}}/assets/img/in-writings/bell-curve-mind-explosion.jpg" alt="Showing where the mind explosion happens in a magic trick." title="Showing where the mind explosion happens in a magic trick." />
 
 As we come off the high point, hours later after the trick is finished, we tell our friends and family about it. We convince them it was impossible, yet it happened, and we use phrases like "you just had to be there," or "you wouldn't believe me if I told you." Our retelling of the story skews logic even more, and the story becomes an illusion in itself, tricking the listener to suspend their belief of your immense gullibility.
 

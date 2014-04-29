@@ -17,12 +17,12 @@ In the Harry Potter universe, wizards, witches, and other magical creatures exis
 
 For first-year students, the [supply list](http://harrypotter.wikia.com/wiki/Supply_list) consists of books, uniforms, general equipment, and of course, a wand.
 
-<div><img src="{{site.url}}img/in-writings/lumos.jpg" alt="Lumos"> <small>&ldquo;Lumos.&rdquo;</small></div>
+<div><img src="{{site.url}}/assets/img/in-writings/lumos.jpg" alt="Lumos"> <small>&ldquo;Lumos.&rdquo;</small></div>
 
 One of the easiest charms to learn is **Lumos**, and when it's invoked, the wand tip lights up and creates a sort of lantern or flashlight. The lumos charm is used extensively by many characters (of every experience level).
 
 
-<div><img src="{{site.url}}img/in-writings/flashlight.jpg" alt="Flashlight"> <small>Sound like something else?</small></div>
+<div><img src="{{site.url}}/assets/img/in-writings/flashlight.jpg" alt="Flashlight"> <small>Sound like something else?</small></div>
 
 Later in the series you'll learn about a very difficult charm called the **Patronus charm**, and it's activated by thinking a happy thought, making a circular wand movement, and saying "Expecto Patronum." <span class="sidenote">Which Harry seems to enjoy yelling.</span>
 
@@ -30,7 +30,7 @@ Later in the series you'll learn about a very difficult charm called the **Patro
 
 Reading and Harry Potter books and hearing the announcement of iOS 7's new features, I was obviously reminded of the App Store and automatically updated apps. 
 
-<div><img src="{{site.url}}img/in-writings/iphone5s.jpg" alt="iOS 7"> <small>You weren't?</small></div>
+<div><img src="{{site.url}}/assets/img/in-writings/iphone5s.jpg" alt="iOS 7"> <small>You weren't?</small></div>
 
 By default, there are certain applications on your iPhone. Among others, there's a calendar, email, photos, and a web browser. <span class="sidenote">And you know, the actual phone app.</span>
 
@@ -61,11 +61,11 @@ Well, crap. I really liked this idea of the Wizard App Store, but you pose a gre
 
 > It's more like language.
 
-<div><img src="{{site.url}}img/in-writings/mind-blown.gif" alt="mind blown"> <small>And with that sentence, she blew my mind.</small></div>
+<div><img src="{{site.url}}/assets/img/in-writings/mind-blown.gif" alt="mind blown"> <small>And with that sentence, she blew my mind.</small></div>
 
 When people say words they don't understand, the word has no power and communicates little. They simply don't understand what they're saying.
 
-<div><img src="{{site.url}}img/in-writings/f-word.png" alt="F Word"><small>[Channelate - The F-Word by Ryan Hudson](http://www.channelate.com/2012/02/10/the-f-word/)</small></div>
+<div><img src="{{site.url}}/assets/img/in-writings/f-word.png" alt="F Word"><small>[Channelate - The F-Word by Ryan Hudson](http://www.channelate.com/2012/02/10/the-f-word/)</small></div>
 
 Every person who's capable of speech has equal access to stringing certain sounds together, creating words. Usually when kids say "bad words", they don't know what they mean, they are simply repeating it since they've heard it. <span class="sidenote">And also because it makes the adults laugh.</span> 
 
@@ -81,7 +81,7 @@ In fact, at one point, Harry tries to use one of the so-called "Unforgivable Cur
 
 In this example, Harry didn't know the full meaning of saying those words, and by performing the curse without fully understanding it, its full weight was not passed onto Bellatrix.
 
-<div><img src="{{site.url}}/img/in-writings/crucio.gif" alt="Crucio!"> <small>Say what you mean, mean what you say.</small></div>
+<div><img src="{{site.url}}/assets/img/in-writings/crucio.gif" alt="Crucio!"> <small>Say what you mean, mean what you say.</small></div>
 
 ### Reality of Fiction
 

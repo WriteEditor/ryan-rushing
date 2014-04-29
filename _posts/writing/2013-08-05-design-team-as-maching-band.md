@@ -3,13 +3,6 @@ layout: individual
 title: Design Team as Marching Band
 category: writing
 excerpt: Being a part of a design team can be a challenge if your role has been forgotten. Just as in marching band, there are some parts that play the melody and some parts that play the harmonies.
-background_color: 85bbf2
-header_img: trumpets.jpg
-heading_background: 137,0,0,0.7
-heading_color: ffffff
-link_color: fff
-link_hover: 850000
-logo_color: 890000
 ---
 
 In my university's marching band the most skilled trumpet players were the first trumpets. They were expected to know advanced music theory and obscure scales in difficult keys. They could untangle complex rhythms into screaming riffs of delightful energy and flawlessly execute under pressure. Our first trumpet players worked hard for many years by developing their chops and studying, and they were well on their way to becoming exceptional, leading trumpet players. They were brilliant musicians and rightly received lots of attention.
@@ -18,7 +11,7 @@ I was not that player. In high school, our band went through five directors in t
 
 Whether in a marching band on a field or a rock band in a garage, some parts are the melodic voice, while others are the harmonies. Generally speaking, music is structured to enhance the *whole* sound, rather than one section or part. The harmonizing riffs may or may not be noticeable to the untrained ear, but they are especially noticeable if they stop. With no foundation for the first trumpets' melodic voices to stand on, their sound would be as desirable as nails on a chalkboard.
 
-<img src="../../../../../img/in-writings/marching-band.jpg" alt="Louisiana Tech Band of Pride" />
+<img src="{{site.url}}/assets/img/in-writings/marching-band.jpg" alt="Louisiana Tech Band of Pride" />
 <small>You shouldn't be able to find me, and if you are, I'm doing something wrong.</small>
 
 In most halftime shows, every body on the field is relevant. Each player must consider the way they hold their instrument, take steps, turn, and many other details. While on the field, trusting your fellow bandmates, and especially those immediately surrounding you, is top priority. If things start falling apart during the halftime show, go with it. If you're approaching a group who's standing ten yards off, and you stand in the exact right spot from practice, you're wrong because you're the one sticking out.

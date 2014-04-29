@@ -6,19 +6,6 @@
 // ---------------------------
 // ---------------------------
 
-// Extends for clearing (can these two be combined or simplified into one somehow?)
-
-%clear{
-	float: left;
-    clear: both;
-    width: 100%;
-}
-
-%clear-overflow{
-	overflow: hidden;
-    clear: both;
-}
-
 @mixin vendorize($property, $value) {
 	-webkit-#{$property}: $value;
 	-moz-#{$property}: $value;
@@ -49,7 +36,7 @@ $baseline: 2em;
 // ---------------------------
 // ---------------------------
 
-@import "compass/reset"; 	// Reset
+@import "normalize.scss"; 	// Normalize
 @import "gridset.scss";		// Gridset layout
 @import "base.scss";		// Base styles (all)
 @import "typography.scss";  // Typographic specific (altering base)

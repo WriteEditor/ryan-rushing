@@ -9,7 +9,7 @@ I browse the Internet a lot. I scroll through my various social media feeds look
 
 As I was browsing Imgur a few days ago, [I came across this](http://imgur.com/gallery/Iaul0Mg).
 
-<div><img src="{{site.url}}img/in-writings/op-cancer.png" alt="Screenshot of Imgur.com"></div>
+<div><img src="{{site.url}}/assets/img/in-writings/op-cancer.png" alt="Screenshot of Imgur.com"></div>
 
 My cynicism kicked in and I didn't accept it. Maybe the original poster wanted a bunch of fake internet points. Maybe they are lying. Yeah, that's it. After all, if I accept this scenario as real, that means cancer is also real and has claimed yet another life. And I, in my carefree scrolling while giggling at funny pictures of cute kittens, am confronted with this tangible, inescapable picture of human frailty. 
 
