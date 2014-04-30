@@ -101,6 +101,11 @@
 
     #face{
         margin-bottom: 2em;
+        max-width: 100%;
+
+        @media(min-width:501px){
+            max-width: 20em;
+        }
     }     
 
     aside{

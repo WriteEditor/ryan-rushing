@@ -30,6 +30,14 @@
     article a{
         text-decoration: none;
     }
+
+    p{
+        margin-bottom: 2em;
+
+        @media(min-width:600px){
+            margin-bottom: 0em;
+        }
+    }
 }
 
 .hgroup{
@@ -80,8 +88,12 @@
 }
 
 #archive{
-	 a { 
+	a { 
         text-decoration: none;
+    }
+
+    h4{
+        font-style: normal;
     }
 }
 
