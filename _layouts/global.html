@@ -11,26 +11,32 @@
 	</div>
 
 	
-	<header>
-		<h1 class="fade-3">{{ page.title }}</h1>
-		{% if page.date %}
-			<h2 class="date fade-5">{{ page.date | date: "%B %d, %Y" }}</h1>
-		{% endif %}
-		<aside>
-			{% include social.html %}
+	<article id="main-content">
+		<header class="fade-4">
+			<div class="hgroup">
+				<h1 class="fade-3">{{ page.title }}</h1>
+			{% if page.date %}
+				<h2 class="date fade-5">{{ page.date | date: "%B %d, %Y" }}</h1>
+			{% endif %}
+			</div>
+			<aside class="fade-6">
+				{% include social.html %}
+			</aside>
+		</header>
+	
+		<div id="content-focus" class="fade-5">
+			{{ content }}
+		</div>
+
+		<aside class="fade-6">
+			{% if page.url contains 'writing' %}
+				{% include sidebar-writing.html %}
+			{% endif %}
+			{% if page.url contains 'about' %}
+				{% include sidebar-about.html %}
+			{% endif %}
 		</aside>
-	</header>
-
-	<div id="main-content">
-		{{ content }}
-
-		{% if page.url contains 'writing' %}
-			{% include writing-sidebar.html %}
-		{% endif %}
-		{% if page.url contains 'about' %}
-			{% include about-sidebar.html %}
-		{% endif %}
-	</div>
+	</article>
 
 	<footer>
 		<a title="The current state of those things which we care most about and their effect on the human experience." href="https://www.youtube.com/watch?v=quxuRKzBwcg"><img alt="x-marker" id="x-marker" src="/assets/img/x-marker.jpg"></a>
