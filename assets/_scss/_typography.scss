@@ -29,8 +29,7 @@
     }
 
     h2{
-        font-weight: 400;
-        text-transform: uppercase;  
+        font-weight: 400; 
     }
 }
 
@@ -50,31 +49,15 @@
 }
 
 #portfolio{
-    .hgroup{
-        h2{
-            margin-top: 2em;
-            margin-bottom: 0;
-        }
-        h3{
-            margin-top: 0;
-            margin-bottom: 2em;
-        }
+    
+    h2{
+        margin-top: 2em;
+        margin-bottom: 0;
     }
-
-    h2, h3{
-        text-align: left;
-        margin-top: $baseline/2;
-        margin-bottom: $baseline/2;
-
-        @media(min-width:501px){
-            @include gs-span(d, 2, 4);
-            float: none;
-        }
-    }
-
-    h3{ 
-        margin-bottom: $baseline/2;
+    
+    h3{
         margin-top: 0;
+        margin-bottom: 2em;
         font-weight: 400;
         color: $subtleDarkText;
     }
@@ -95,7 +78,7 @@
     width: 100%;
     font-size: .7em;
     font-family: $serif;
-
+    text-transform: uppercase; 
     color: $subtleDarkText;
     margin: 0;
 
