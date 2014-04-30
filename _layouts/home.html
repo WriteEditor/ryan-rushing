@@ -10,10 +10,14 @@
 		</nav>
 	</div>
 
-	<div id="main-content">
-		{{ content }}
-
-		{% include sidebar-home.html %}
-	</div>
+	<article id="main-content">
+		<div id="content-focus" class="fade-5">
+			{{ content }}
+		
+			<aside class="fade-6">
+				{% include sidebar-home.html %}
+			</aside>
+		</div>
+	</article>
 
 {% include footer.html %}

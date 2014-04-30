@@ -100,8 +100,6 @@
     }
 
     #face{
-        max-width: 100%;
-        padding: 0;
         margin-bottom: 2em;
     }     
 
@@ -188,9 +186,13 @@
 }
 
 #face{
-    max-width: 10em;
+    max-width: 20em;
     margin: 0 auto;
     display: block;
+
+    img{
+        margin: 0;
+    }
 }
 
 #x-marker{
