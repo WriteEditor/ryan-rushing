@@ -16,12 +16,20 @@
 }
 
 #content-focus {
-      @include gs-span(d, 2);
-      float: none;
+      @include gs-span(d, all);
+
+      section{
+        @include gs-span(d, 2);
+      }
+
+      aside{
+        @include gs-span(d, 4);
+      }
 }
 
 .hgroup{
-    @include gs-span(d, 2, 3);
+    @include gs-span(d, 2);
+    clear: left;
 }
 
 
@@ -177,8 +185,6 @@
 }
 
 #social{
-
-    margin: 0 0 $baseline 0;
 
     li{
         margin: 0 5%;

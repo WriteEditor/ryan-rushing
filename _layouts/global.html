@@ -26,16 +26,16 @@
 	
 		<div id="content-focus" class="fade-5">
 			{{ content }}
+		
+			<aside class="fade-6">
+				{% if page.url contains 'writing' %}
+					{% include sidebar-writing.html %}
+				{% endif %}
+				{% if page.url contains 'about' %}
+					{% include sidebar-about.html %}
+				{% endif %}
+			</aside>
 		</div>
-
-		<aside class="fade-6">
-			{% if page.url contains 'writing' %}
-				{% include sidebar-writing.html %}
-			{% endif %}
-			{% if page.url contains 'about' %}
-				{% include sidebar-about.html %}
-			{% endif %}
-		</aside>
 	</article>
 
 	<footer>
