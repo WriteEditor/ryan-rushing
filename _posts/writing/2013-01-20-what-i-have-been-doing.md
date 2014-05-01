@@ -2,6 +2,7 @@
 layout: individual
 title: What I Have Been Doing
 category: writing
+excerpt: I'm excited about my personal projects, and I thought I'd share the few holding my attention at the moment.
 ---
 
 #### I'm excited about my personal projects, and I thought I'd share the few holding my attention at the moment.

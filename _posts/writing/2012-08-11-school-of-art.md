@@ -2,6 +2,7 @@
 layout: individual
 title: School of Art
 category: writing
+excerpt: From the Fall of 2004 to the Spring of 2009, I attended Louisiana Tech University. The first four months (two quarters) in school I was learning to be a mechanical engineer and hated most of it. In choosing a major, my goal wasn't to be in an industry I loved, but rather, make mucho dinero.
 ---
 
 ### My experiences were awesome

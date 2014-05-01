@@ -2,6 +2,7 @@
 layout: individual
 title: On Pre-Canned Responses
 category: writing
+excerpt: A large part of my job is customer support for Unify, and like most customer support guys out there, one of the efficiencies I use is macros.
 ---
 
 #### The following post was written when I worked at Unit Interative.

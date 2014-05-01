@@ -2,6 +2,7 @@
 layout: individual
 title: On Church Design
 category: writing
+excerpt: I used to believe that churches should not look good. In fact, when my wife and I moved to Dallas in 2010, we were looking for churches that had an ugly building or sign, hopefully both.
 ---
 
 ### Our Search

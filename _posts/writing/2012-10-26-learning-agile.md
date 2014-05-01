@@ -2,6 +2,7 @@
 layout: individual
 title: Learning Agile
 category: writing
+excerpt: I've been on the UX team at Kalkomey for about three weeks now, and I've learned lots. One thing I've learned about is Agile and Scrum, and although the specific lingo is still very new to me, I'm getting the hang of it and cannot imagine another way to develop web apps.
 ---
 
 I've been on the UX team at [Kalkomey](http://kalkomey.com/) for about three weeks now, and I've learned lots. One thing I've learned about is Agile and [Scrum](http://en.wikipedia.org/wiki/Scrum_(development), and although the specific lingo is still very new to me, I'm getting the hang of it and cannot imagine another way to develop web apps.

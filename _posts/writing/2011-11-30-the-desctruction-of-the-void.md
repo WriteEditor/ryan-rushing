@@ -2,6 +2,7 @@
 layout: individual
 title: The Destruction of the Void
 category: writing
+excerpt: I'm standing still, then pacing back and forth. Frustrated, I stop and stare, waiting for something to happen, but nothing changes. Just a piercing white emptiness before me. I've confronted the Void several times, but this time it's especially threatening. Time creeps by with a menacing consistency only rivaled by Death itself, and the White Void grows with each passing year.
 ---
 
 ### I know what I need to do, but the nothingness is almost too strong. *Almost.*

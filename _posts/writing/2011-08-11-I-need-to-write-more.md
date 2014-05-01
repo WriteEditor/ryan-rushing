@@ -2,6 +2,7 @@
 layout: individual
 title: I Need to Write More
 category: writing
+excerpt: When I designed this version of ryan-rushing.com, I put the most recent post in a very prominent position on my home page in an effort to force my hand to paper and actually write down the ideas that have bouncing around in my brain. That didn&rsquo;t really didn&rsquo;t work as well as I&rsquo;d hoped, but since it&rsquo;s designed like this for now, I need to take avantage of it.
 ---
 
 ####The first paragraph is referencing an old site, not the current version.
