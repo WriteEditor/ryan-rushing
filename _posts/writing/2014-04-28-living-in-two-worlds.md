@@ -1,6 +1,6 @@
 ---
 layout: individual
-title: Connection to Humans
+title: Living in Two Worlds
 category: writing
 ---
 
@@ -22,9 +22,9 @@ There are ways I retain connection to the physical world while working. Both the
 
 While I'm not one of them, many designers and developers found their way into this tangled web by way of Geocities or Angelfire. They were the fiddlers, playing until they got something right. I often wonder what it was like for newborn designers and developers to body surf into this career, purely driven by their amibition and curiousity.
 
-It's no secrect we've entered into a new era to contruct on the web, where [tools are easy to come by](http://frankchimero.com/blog/no-new-tools/) and we're driven to socially media ourselves crazy. While you're out there carving your path, I urge you to explore and find new ways to connect this to that, and that to these. Build inane projects that do one stupid thing. Open source them. Maybe someone will find a practical use, or maybe you'll discover you were right, and it is a waste of time. Either way, you'll likely learn something.
+It's no secrect we've entered into a new era to contruct on the web, where [tools are easy to come by](http://frankchimero.com/blog/no-new-tools/) and we're driven to socially media ourselves crazy. While you're out there carving your path, I urge you to explore and find new ways to connect this to that, and that to these. Use the command-line. Build something with an [Arduino Board](http://arduino.cc). Solve problems [manually](http://artequalswork.com/posts/manual-kerning/) instead of with plugins. Make a looping gif. Build inane projects that do one stupid thing. Open source them. Maybe someone will find a practical use, or maybe you'll discover you were right, and it is a waste of time. 
 
-Remember, in the end, we're all humans connecting to other humans -- whether by fiber-optics between computers or strings between cups. 
+In the end, we're all humans crossing between two worlds, connecting to other humans -- whether by fiber-optics between computers or strings between cups.
 
 
 
