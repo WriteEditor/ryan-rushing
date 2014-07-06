@@ -4,3 +4,4 @@ Thumbs.db
 _site/
 .sass-cache/
 publish.sh
+config.codekit
