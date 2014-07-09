@@ -15,7 +15,7 @@
 }
 
 // General site variables
-$accentColor: #9FC565; //green
+$accentColor: rgba(159, 197, 101, 1); //green (rgba removes the fallback on older browsers, change later)
 $accentColor2: #214f84; //blue
 
 $subtleColor: #F9F9F9; //light-gray
