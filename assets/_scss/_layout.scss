@@ -165,34 +165,29 @@
     img{
         margin-top: 0;
         margin-bottom: 0;
-        border: 0;
         width: 100%;
-        max-height: 100%;
-        border-radius: 0;
+        max-width: 100%;
         float: left;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 0;
+        @include gs-span(d, 2);
     }
 
     .info{
-        position: absolute;
+        
         z-index: 1;
         background: transparentize($accentColor, .2);
         height: 100%;
         width: 100%;
         padding: 2em;
         top: 16em;
+        @include gs-span(d, 4);
     }
 
     & > li{
         display: block;
-        width: 50%;
+        width: 100%;
         float: left;
         clear: none;
         height: 21.5em;
-        border: 2px solid $accentColor;
         position: relative;
         overflow: hidden;
     }

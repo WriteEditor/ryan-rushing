@@ -43,21 +43,3 @@ $fade: 10; //creates 10 classes, (e.g. fade-1, fade-2, etc.), which are 200ms ap
 //
 // ---------------------------
 // ---------------------------
-
-#portfolio{
-	.info{
-		
-		-webkit-transition: opacity 0.35s,
-		-webkit-transform 0.35s;
-		transition: opacity 0.35s,
-		transform 0.35s;
-
-	    -webkit-transform: translate3d(0,0,0);
-		transform: translate3d(0,0,0);
-		
-		&:hover{
-			-webkit-transform: translate3d(0,-16em,0);
-			transform: translate3d(0,-16em,0);
-		}
-	}
-}
