@@ -1,11 +1,23 @@
 
+// ---------------------------
+// ---------------------------
+//
 // link hover
+//
+// ---------------------------
+// ---------------------------
 
 a {
 	@include vendorize( transition, all 200ms 0ms ease-in-out);
 }
 
-// Elements appearing 
+// ---------------------------
+// ---------------------------
+//
+// elements appearing
+//
+// ---------------------------
+// ---------------------------
 
 [class*=fade-]{
 	position: relative;
@@ -16,10 +28,44 @@ a {
 	100% 	{ opacity:1; right: 0; }
 }
 
-$fade: 10;
+$fade: 10; //creates 10 classes, (e.g. fade-1, fade-2, etc.), which are 200ms apart. Makes stair-stepping animations easy.
 
 @for $i from 1 through $fade {
   .fade-#{$i} {
     @include vendorize( animation, fade-in 200ms #{($fade * 10) * $i}ms 1 both);
   }
+}
+
+// ---------------------------
+// ---------------------------
+//
+// hover on portfolio items
+//
+// ---------------------------
+// ---------------------------
+
+// @-webkit-keyframes portfolio-info {
+//   0%   	{ top: 16em; }
+//   10%   { top: 17em; }
+//   90% 	{ top: -1em; }
+//   100% 	{ top: 0; }
+//   120% 	{ top: 16; }
+// }
+
+#portfolio{
+	.info{
+		
+		-webkit-transition: opacity 0.35s,
+		-webkit-transform 0.35s;
+		transition: opacity 0.35s,
+		transform 0.35s;
+
+	    -webkit-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0);
+		
+		&:hover{
+			-webkit-transform: translate3d(0,-16em,0);
+			transform: translate3d(0,-16em,0);
+		}
+	}
 }
