@@ -168,18 +168,11 @@
         width: 100%;
         max-width: 100%;
         float: left;
-        @include gs-span(d, 2);
     }
 
     .info{
-        
-        z-index: 1;
-        background: transparentize($accentColor, .2);
-        height: 100%;
-        width: 100%;
-        padding: 2em;
-        top: 16em;
-        @include gs-span(d, 4);
+        @include gs-span(d, 2);
+
     }
 
     & > li{
@@ -187,7 +180,9 @@
         width: 100%;
         float: left;
         clear: none;
-        height: 21.5em;
+        margin-bottom: 2em;
+        padding-bottom: 2em;
+        border-bottom: 1px solid $subtleDarkColor;
         position: relative;
         overflow: hidden;
     }
