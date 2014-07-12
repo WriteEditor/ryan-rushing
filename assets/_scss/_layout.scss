@@ -92,24 +92,11 @@
     background: url('/assets/img/bgnd.gif') repeat-y 0 0;
     background-size: cover;
     border-top: 0;
+    width: 100%;
 
     #get-around{
         margin-bottom: 5%;
-        border-bottom: 1px solid $accentColor2;
-        box-shadow: 0em 0em 1em rgba(0,0,0,0.8);
-    }
-
-    #face{
-        margin-bottom: 2em;
-        max-width: 100%;
-
-        @media(min-width:501px){
-            max-width: 20em;
-        }
-    }     
-
-    aside{
-        padding: 0;
+        border-bottom: .1em solid #ddd;
     }
 }
 
