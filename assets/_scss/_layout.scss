@@ -89,15 +89,10 @@
 // ---------------------------
 
 .homepage{
-    background: url('/assets/img/bgnd.gif') repeat-y 0 0;
+    background: $subtleColor $subtleColor;
     background-size: cover;
     border-top: 0;
     width: 100%;
-
-    #get-around{
-        margin-bottom: 5%;
-        border-bottom: .1em solid #ddd;
-    }
 }
 
 #logo{
