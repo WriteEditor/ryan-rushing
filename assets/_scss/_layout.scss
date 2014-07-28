@@ -93,6 +93,23 @@
     background-size: cover;
     border-top: 0;
     width: 100%;
+
+    section{
+        width: 100% !important;
+        overflow: hidden !important;
+        margin: 0 !important;
+        text-align: center;
+
+        li{
+            width: 30%;
+            clear: none;
+            display: inline-block;
+        }
+    }
+
+    section, ul{
+        @include gs-span(d, all);
+    }
 }
 
 #logo{

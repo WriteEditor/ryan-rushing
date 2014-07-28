@@ -2,18 +2,55 @@
 layout: home
 ---
 
-<article class="fade-2">
-	<section>
-		<h1>UX designer and lettering artist living in Dallas.</h1>
-		<p><a href="/about/">Curiouser?</a></p>
+	<section class="home-intro">
+		<h1>Designer of user experiences, interfaces, lettering,<br>and other things.  </h1>
+		<a class="cta" href="/about/">Curiouser?</a>
 	</section>
 
-	<section>
-		<h2>Recent work</h2>
+	<section class="home-work">
+		<h2>I make things like</h2>
+		<ul>
+			<li>
+				<img alt=" Casting Off With Wind or Current Toward the Dock" src="/assets/img/in-work/kalkomey/ilo.gif">
+			</li>
+			<li>
+				<img alt="Peeper's Dallas" src="/assets/img/in-work/unit/peepers-home.jpg">
+			</li>
+			<li>
+				<img alt="Read-Rite Market" src="/assets/img/in-work/independent/read-rite-home.jpg">
+			</li>
+		</ul>
+
+		<a class="cta" href="/work/">View all work</a>
 	</section>
 
-	<section>
-		<h2>Recent articles</h2>
+	<section class="home-writings">
+		<h2>I write things like</h2>
+
+		<ul>
+			{% for item in site.categories.favorite limit:5 %}
+		  	<li><a href="{{ item.url }}">{{ item.title }}</a></li>
+		  	{% endfor %}
+
+		  	{% for item in site.categories.writing limit:1 %}
+
+		  	<li>and most recently, <a href="{{ item.url }}">{{ item.title }}</a></li>
+
+		  	{% endfor %}
+		</ul>
+
+		<a class="cta" href="/work/">View all writings</a>
 	</section>
 
-</article>
+	<section class="home-contact">
+		<h2>You can get at me through</h2>
+
+		<ul>
+			<li><a href="mailto:get@ryan-rushing.com">Twitter</a></li>
+			<li><a href="mailto:get@ryan-rushing.com">Dribbble</a></li>
+			<li><a href="mailto:get@ryan-rushing.com">Instagram</a></li>
+
+			<li>or email: <a href="mailto:get@ryan-rushing.com">get@ryan-rushing.com</a></li>
+		</ul>
+	</section>
+
