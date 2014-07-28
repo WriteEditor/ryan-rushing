@@ -94,16 +94,26 @@
     border-top: 0;
     width: 100%;
 
+    section, h2, img{
+        margin: 0;
+    }
+
     section{
         width: 100% !important;
         overflow: hidden !important;
         margin: 0 !important;
         text-align: center;
+        margin: 0;
 
         li{
             width: 30%;
             clear: none;
             display: inline-block;
+        }
+
+        &.home-intro{
+             background: url('/assets/img/bgnd.gif') bottom center;
+             background-size: cover;
         }
     }
 

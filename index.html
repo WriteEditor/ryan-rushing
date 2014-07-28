@@ -1,12 +1,6 @@
 ---
 layout: home
 ---
-
-	<section class="home-intro">
-		<h1>Designer of user experiences, interfaces, lettering,<br>and other things.  </h1>
-		<a class="cta" href="/about/">Curiouser?</a>
-	</section>
-
 	<section class="home-work">
 		<h2>I make things like</h2>
 		<ul>
@@ -34,7 +28,13 @@ layout: home
 
 		  	{% for item in site.categories.writing limit:1 %}
 
-		  	<li>and most recently, <a href="{{ item.url }}">{{ item.title }}</a></li>
+		  	<li>
+		  		and most recently, <a href="{{ item.url }}">{{ item.title }}</a>
+
+		  		<p>
+		  			{{ item.excerpt }}&hellip; <a href="{{ item.url }}">Continue reading</a>
+		  		</p>
+		  	</li>
 
 		  	{% endfor %}
 		</ul>
@@ -42,15 +42,22 @@ layout: home
 		<a class="cta" href="/work/">View all writings</a>
 	</section>
 
-	<section class="home-contact">
+	<section class="home-intro">
+		<h1>Designer of user experiences, interfaces, lettering,<br>and other things.  </h1>
+		<a class="cta" href="/about/">Curiouser?</a>
+
 		<h2>You can get at me through</h2>
 
 		<ul>
-			<li><a href="mailto:get@ryan-rushing.com">Twitter</a></li>
-			<li><a href="mailto:get@ryan-rushing.com">Dribbble</a></li>
-			<li><a href="mailto:get@ryan-rushing.com">Instagram</a></li>
+			<li><a href="http://twitter.com/drawingtype">Twitter</a></li>
+			<li><a href="http://dribbble.com/ryanrushing">Dribbble</a></li>
+			<li><a href="http://instagram.com/variousmfg">Instagram</a></li>
 
 			<li>or email: <a href="mailto:get@ryan-rushing.com">get@ryan-rushing.com</a></li>
 		</ul>
+	</section>
+
+	<section class="home-contact">
+		
 	</section>
 
