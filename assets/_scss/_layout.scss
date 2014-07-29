@@ -103,7 +103,16 @@
         overflow: hidden !important;
         margin: 0 !important;
         text-align: center;
-        margin: 0;
+        margin-top: 0;
+        margin-bottom: 2em;
+        padding-bottom: 2em;
+
+        &:after{
+            content: '...';
+            width: 100%;
+            display: block;
+            text-align: center;
+        }
 
         li{
             width: 30%;
@@ -115,6 +124,31 @@
              background: url('/assets/img/bgnd.gif') bottom center;
              background-size: cover;
         }
+
+        &.home-writing{
+            li{
+                display: block;
+                width: 60%;
+                margin: 1em auto;
+                padding: 1em 0;
+                text-align: center;
+
+                &:nth-child(odd){
+                    background: $subtleDarkColor;
+                }
+            }
+        }
+    }
+
+    ul{
+        margin-bottom: 0;
+    }
+
+    h2{
+        font-size: 2em;
+        font-style: italic;
+        font-family: "jubilat",sans-serif;
+        font-weight: 700;
     }
 
     section, ul{
