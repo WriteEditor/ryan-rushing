@@ -2,7 +2,7 @@
 layout: home
 ---
 	<section class="home-work">
-		<h2>seducing you with irresistable thumbnails</h2>
+		<h2>seducing you with irresistible thumbnails</h2>
 		<h3>yes&hellip; yes&hellip; let the interest flow through you</h3>
 		<ul>
 			<li>
@@ -27,28 +27,14 @@ layout: home
 			{% for item in site.categories.favorite limit:5 %}
 		  	<li><a href="{{ item.url }}">{{ item.title }}</a></li>
 		  	{% endfor %}
-
-		  	{% for item in site.categories.writing limit:1 %}
-
-		  	<li>
-		  		and most recently, <a href="{{ item.url }}">{{ item.title }}</a>
-
-		  		<p>
-		  			{{ item.excerpt }}&hellip; <a href="{{ item.url }}">Continue reading</a>
-		  		</p>
-		  	</li>
-
-		  	{% endfor %}
 		</ul>
 
 		<a class="cta" href="/work/">View all writings</a>
 	</section>
 
-	<section class="home-intro">
-		<h1>Designer of user experiences, interfaces, lettering,<br>and other things.  </h1>
-		<a class="cta" href="/about/">Curiouser?</a>
-
-		<h2>You can get at me through</h2>
+	<section class="home-contact">
+		<h2>call me maybe</h2>
+		<h3>or email or tweet or follow (not in real life, preferably)</h3>
 
 		<ul>
 			<li><a href="http://twitter.com/drawingtype">Twitter</a></li>
@@ -57,6 +43,14 @@ layout: home
 
 			<li>or email: <a href="mailto:get@ryan-rushing.com">get@ryan-rushing.com</a></li>
 		</ul>
+	</section>
+
+	<section class="home-intro">
+		<h1>I&rsquo;m a designer.</h1>
+		<h3>mostly interfaces and user experiences, but I&rsquo;ve done my fair share of lettering.</h3>
+		<a class="cta" href="/about/">Curiouser?</a>
+
+		
 	</section>
 
 	<section class="home-contact">
