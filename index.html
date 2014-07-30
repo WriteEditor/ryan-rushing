@@ -34,9 +34,17 @@ layout: home
 
 	<section class="home-contact">
 		<h2>of course you can get in touch</h2>
-		<h3>Snape kills Dumbledore</h3>
+		<h3 onclick="spoiler()" id="spoiler"><a>spoiler alert</a></h3>
 
-		
+		<script type="text/javascript">
+
+			function spoiler(){
+				document.getElementById('spoiler').innerHTML = 'Snape kills Dumbledore';
+			}
+
+		</script>
+
+
 
 		<ul id="home-social">
 			<li><a href="http://twitter.com/drawingtype">@drawingtype</a></li>
