@@ -161,8 +161,6 @@
                     }
                 }
             }
-
-            
         }
     }
 
@@ -180,6 +178,24 @@
     section, ul{
         @include gs-span(d, all);
     }
+}
+
+#home-social{
+    width: 60%;
+    margin: 0 auto;
+    float: none;
+
+    li{
+        padding-bottom: .5em;
+        margin-bottom: .5em;
+        border-bottom: 1px solid $subtleDarkColor;
+        text-align: center;
+
+        &:last-child{
+            border-bottom: 0;
+        }
+    }
+
 }
 
 #logo{
