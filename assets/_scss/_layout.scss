@@ -127,16 +127,42 @@
 
         &.home-writing{
             li{
-                display: block;
-                width: 60%;
-                margin: 1em auto;
-                padding: 1em 0;
-                text-align: center;
+                display: inline-block;
+                width: 30%;
+                margin: .5% .5%;
 
-                &:nth-child(odd){
-                    background: $subtleDarkColor;
+                &:nth-child(n+1) a {
+                    background: #A8CF96; //greenish
+                }
+                &:nth-child(n+2) a {
+                    background: #C0AA54; //yellowish
+                }
+                &:nth-child(n+3) a {
+                    background: #AB91C4; //purplish
+                }
+                &:nth-child(n+4) a {
+                    background: #E29595; //pinkish
+                }
+
+                &:nth-child(n+5) a {
+                    background: #6D8FD8; //bluish
+                }
+
+                a{
+                    display: block;
+                    width: 100%;
+                    padding: 10% 5%;
+                    text-align: center;
+                    color: $subtleColor;
+                    font-size: 1em;
+
+                    &:hover{
+                        background: $accentColor;
+                    }
                 }
             }
+
+            
         }
     }
 
