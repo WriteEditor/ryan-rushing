@@ -207,16 +207,45 @@
     float: none;
 
     li{
-        padding-bottom: .5em;
-        margin-bottom: .5em;
+        
         border-bottom: 1px solid $subtleDarkColor;
-        text-align: center;
+        width: 100%;
 
-        &:last-child{
+        a{
+            display: block;
+            color: $subtleColor;
+            font-size: 1.25;
+            padding:1em 0;
+            width: 100%;
+            text-align: center;
+
+            &:hover{
+                color: #fff;
+            }
+        }
+
+        &.twitter{
+            background: #55acee;
+        }
+
+        &.dribbble{
+            background: #ea4c89;
+        }
+
+        &.instagram{
+            background: #3f729b;
+        }
+
+        &.vine{
+            background: #00b488;
+        }
+
+        &.email{
+            width: 100%;
+            font-size: 2em;
             border-bottom: 0;
         }
     }
-
 }
 
 #logo{
