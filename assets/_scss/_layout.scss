@@ -146,6 +146,16 @@
               }
         }
 
+        &.home-work{
+            li{
+                width: 100%;
+
+                @media(min-width:501px){
+                     width: 30%;
+                }
+            }
+        }
+
         &.home-writing{
             li{
                 display: block;
