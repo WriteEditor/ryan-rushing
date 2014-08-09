@@ -1,12 +1,10 @@
 .homepage{
     h1{
         font-weight: 400;
-        font-size: 2em;
+        font-size: 1.5em;
         line-height: $baseline/2;
         margin-left: 0;
-        margin-bottom: 1em;
         margin-top: 0;
-        font-style: italic;
 
         a{
             font-family: $serif;
@@ -62,6 +60,10 @@
         font-size: .35em;
         font-weight: 400;
         text-transform: uppercase;
+        width: 100%;
+        clear: both;
+        float: left;
+        margin: 1em 0;
     }
 }
 
@@ -166,6 +168,7 @@
     font-weight: 400;
     padding: $baseline/4 0;
     text-decoration: none;
+    border-radius: .15em;
 
     &:hover{
         background: $accentColor;

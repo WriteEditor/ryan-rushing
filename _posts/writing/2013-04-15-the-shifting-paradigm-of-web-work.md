@@ -1,7 +1,7 @@
 ---
 layout: individual
 title: The Shifting Paradigm of Web Work
-category: writing
+categories: writing favorite
 excerpt: After JT started his solo career, I went to college where everyone's dream job involved working in a design agency. In-house design work was seen as work to pay the bills. It was the means to an end, where the end was becoming a creative director for a design agency. This is changing.
 ---
 

@@ -10,7 +10,6 @@ body {
     position: relative;
     font-family: $serif; 
     border-top: 1em solid $accentColor;
-    margin-bottom: 25%;
     float: left;
 
     @media(min-width:501px){
@@ -131,8 +130,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-family: $serif;
+    font-family: $display;
     font-weight: 700;
+    font-style: italic;
+    font-size: 2em;
 }
 
 h2, h3{
@@ -147,6 +148,10 @@ h3 {
     font-family: $sans_serif;
     font-weight: 700;
     font-size: $baseline/2;
+    line-height: 1.2;
+    width: 100%;
+    float: left;
+    clear: both;    
 }
 
 h4 {
