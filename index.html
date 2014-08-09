@@ -24,7 +24,7 @@ layout: home
 		<h3>how careless of me to choose colors with no meaning</h3>
 
 		<ul>
-			{% for item in site.categories.favorite limit:5 %}
+			{% for item in site.categories.favorite limit:6 %}
 		  		<li><a href="{{ item.url }}">{{ item.title }}</a></li>
 		  	{% endfor %}
 		</ul>

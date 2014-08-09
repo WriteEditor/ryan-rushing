@@ -184,6 +184,10 @@
                     background: #6D8FD8; //bluish
                 }
 
+                &:nth-child(n+6) a {
+                    background: #8BAD9D; //hunter greenish
+                }
+
                 a{
                     display: block;
                     width: 100%;
