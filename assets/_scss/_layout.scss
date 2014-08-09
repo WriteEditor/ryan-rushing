@@ -132,7 +132,7 @@
              background-size: cover;
 
              h1{
-                 font-family: "jubilat",sans-serif;
+                 font-family: $display;
                  font-size: 5em;
                  font-style: italic;
                  font-weight: 900;
@@ -252,14 +252,14 @@
             width: 100%;
             font-size: 2em;
             border-bottom: 0;
-            
-           
+            text-align: center;
+            font-family: $display;
+            font-style: italic;
 
-            a{
-                text-indent: 0;
-                color: #222;
-                 overflow: hidden;
-                white-space: initial;
+            span{
+                font-family: $serif;
+                font-style: normal;
+                font-size: .5em;
             }
         }
     }
