@@ -146,6 +146,10 @@ h3 {
     font-family: $sans_serif;
     font-weight: 700;
     font-size: $baseline/2;
+    line-height: 1.2;
+    width: 100%;
+    float: left;
+    clear: both;    
 }
 
 h4 {

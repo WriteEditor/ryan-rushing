@@ -293,17 +293,15 @@
 
         &.email{
             width: 100%;
-            font-size: 2em;
+            font-size: 1.25em;
             border-bottom: 0;
             text-align: center;
             font-family: $display;
             font-style: italic;
             margin-top: 1em;
 
-            span{
-                font-family: $serif;
-                font-style: normal;
-                font-size: .5em;
+            @media(min-width:700px){
+                font-size: 2em;
             }
         }
     }
