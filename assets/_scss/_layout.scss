@@ -208,8 +208,9 @@
 
     li{
         
-        border-bottom: 1px solid $subtleDarkColor;
-        width: 100%;
+        border-bottom: none;
+        width: 20%;
+        display: inline-block;
 
         a{
             display: block;
@@ -218,6 +219,9 @@
             padding:1em 0;
             width: 100%;
             text-align: center;
+            text-indent: 100%;
+            overflow: hidden;
+            white-space: nowrap;
 
             &:hover{
                 color: #fff;
@@ -225,25 +229,38 @@
         }
 
         &.twitter{
-            background: #55acee;
+            background: url('/assets/img/twitter-home.png') #55acee no-repeat center center;
+            background-size: 50px auto;
         }
 
         &.dribbble{
-            background: #ea4c89;
+            background: url('/assets/img/dribbble-home.png') #ea4c89 no-repeat center center;
+            background-size: 50px auto;
         }
 
         &.instagram{
-            background: #3f729b;
+            background: url('/assets/img/instagram-home.png') #3f729b no-repeat center center;
+            background-size: 50px auto;
         }
 
         &.vine{
-            background: #00b488;
+            background: url('/assets/img/vine-home.png') #00b488 no-repeat center center;
+            background-size: 50px auto;
         }
 
         &.email{
             width: 100%;
             font-size: 2em;
             border-bottom: 0;
+            
+           
+
+            a{
+                text-indent: 0;
+                color: #222;
+                 overflow: hidden;
+                white-space: initial;
+            }
         }
     }
 }
