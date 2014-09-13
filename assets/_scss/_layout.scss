@@ -218,15 +218,6 @@
         margin-bottom: 0;
     }
 
-    h2{
-        font-size: 2em;
-        font-style: italic;
-        font-family: $display;
-        font-weight: 700;
-        overflow: hidden;
-        clear: both;
-    }
-
     section, ul{
         @include gs-span(d, all);
     }

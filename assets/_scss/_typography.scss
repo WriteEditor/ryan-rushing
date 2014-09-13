@@ -19,6 +19,23 @@
         }
     }
 
+    h2{
+        font-size: 1.5em;
+        font-style: italic;
+        font-family: $display;
+        font-weight: 700;
+        overflow: hidden;
+        clear: both;
+
+        @media(min-width:501px){
+            font-size: 1.75em;
+        }
+
+        @media(min-width:600px){
+            font-size: 2em;
+        }
+    }
+
     h1, h2, p{
         width: 100%;
         float: left;
