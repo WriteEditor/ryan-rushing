@@ -1,6 +1,6 @@
 ---
 layout: individual
-title: My Faithful Protector
+title: My Black Rain Jacket
 category: writing
 ---
 
